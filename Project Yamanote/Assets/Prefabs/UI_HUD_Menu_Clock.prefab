@@ -1,0 +1,5740 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8619477185313862654
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8619477185313862649}
+  - component: {fileID: 8619477185313862650}
+  - component: {fileID: 8619477185313862651}
+  - component: {fileID: 8619477185313862648}
+  - component: {fileID: 8619477185313862645}
+  m_Layer: 5
+  m_Name: Button_Quit
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &8619477185313862649
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8619477185313862654}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8619477185342977493}
+  m_Father: {fileID: 8619477186260028456}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -1898.7, y: -20.299988}
+  m_SizeDelta: {x: 22.8647, y: 20.3849}
+  m_Pivot: {x: 0.49999997, y: 0.49999997}
+--- !u!222 &8619477185313862650
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8619477185313862654}
+  m_CullTransparentMesh: 1
+--- !u!114 &8619477185313862651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8619477185313862654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.9372549, g: 0.22745098, b: 0.14509805, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 85c0ab5127a5140e186281dc685b4104, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &8619477185313862648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8619477185313862654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 8619477185313862651}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8619477186260028457}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &8619477185313862645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8619477185313862654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afb80cd9ac4a2f740b221ab805829963, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _text: {fileID: 8619477185342977492}
+  toggleGameObject: {fileID: 0}
+--- !u!1 &8619477185342977498
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8619477185342977493}
+  - component: {fileID: 8619477185342977495}
+  - component: {fileID: 8619477185342977492}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &8619477185342977493
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8619477185342977498}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8619477185313862649}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -19.8}
+  m_SizeDelta: {x: 20.6026, y: -0.4694}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &8619477185342977495
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8619477185342977498}
+  m_CullTransparentMesh: 1
+--- !u!114 &8619477185342977492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8619477185342977498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Close
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 672baec5a3f7b4d329bf5b4052d5109b, type: 2}
+  m_sharedMaterial: {fileID: 4707819496639375797, guid: 672baec5a3f7b4d329bf5b4052d5109b, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 12
+  m_fontSizeBase: 12
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 1
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: -0.20624161, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &8619477185612645461
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8619477185612645460}
+  - component: {fileID: 8619477185612645462}
+  - component: {fileID: 8619477185612645463}
+  m_Layer: 5
+  m_Name: Phone
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &8619477185612645460
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8619477185612645461}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8619477186260028456}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 380, y: 0}
+  m_SizeDelta: {x: 1083.3627, y: 1083.3627}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &8619477185612645462
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8619477185612645461}
+  m_CullTransparentMesh: 1
+--- !u!114 &8619477185612645463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8619477185612645461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 2532ed2255e3f6a438100a6e60c0a8be, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!1 &8619477186260028457
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8619477186260028456}
+  - component: {fileID: 8619477186260028459}
+  - component: {fileID: 8619477186260028458}
+  m_Layer: 5
+  m_Name: UI_HUD_Menu_Clock
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &8619477186260028456
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8619477186260028457}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8619477187190463466}
+  - {fileID: 8619477185612645460}
+  - {fileID: 8619477185313862649}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.000061035, y: 0}
+  m_SizeDelta: {x: 1920, y: 1080}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &8619477186260028459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8619477186260028457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f0634de35703b54ba28d1fe043a51e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  routesList:
+  - originStation: 1
+    destinationStation: 2
+    journeyCost: 12550
+    timeDepart: 6:08
+    timeArrive: 7:08
+    trainLine: Shinkansen Komachi 6
+    numberOfTransfers:
+    - transferStation: 12
+      transferTimeArrive: 8:15
+      transferTimeDepart: 8:20
+      transferTrainLine: Shinkansen Yamabiko 50
+  - originStation: 1
+    destinationStation: 2
+    journeyCost: 12550
+    timeDepart: 7:16
+    timeArrive: 10:07
+    trainLine: Shinkansen Komachi 10
+    numberOfTransfers:
+    - transferStation: 12
+      transferTimeArrive: 9:29
+      transferTimeDepart: 9:41
+      transferTrainLine: Shinkansen Yamabiko 132
+  - originStation: 1
+    destinationStation: 2
+    journeyCost: 12550
+    timeDepart: 8:11
+    timeArrive: 11:08
+    trainLine: Shinkansen Komachi 14
+    numberOfTransfers:
+    - transferStation: 12
+      transferTimeArrive: 10:29
+      transferTimeDepart: 10:41
+      transferTrainLine: Shinkansen Yamabiko 136
+  - originStation: 1
+    destinationStation: 2
+    journeyCost: 12550
+    timeDepart: 9:12
+    timeArrive: 12:10
+    trainLine: Shinkansen Komachi 16
+    numberOfTransfers:
+    - transferStation: 12
+      transferTimeArrive: 11:29
+      transferTimeDepart: 11:44
+      transferTrainLine: Shinkansen Yamabiko 138
+  - originStation: 1
+    destinationStation: 2
+    journeyCost: 12550
+    timeDepart: 10:07
+    timeArrive: 13:10
+    trainLine: Shinkansen Komachi 18
+    numberOfTransfers:
+    - transferStation: 12
+      transferTimeArrive: 12:29
+      transferTimeDepart: 12:44
+      transferTrainLine: Shinkansen Yamabiko 140
+  - originStation: 1
+    destinationStation: 2
+    journeyCost: 12340
+    timeDepart: 11:07
+    timeArrive: 14:46
+    trainLine: Shinkansen Komachi 22
+    numberOfTransfers:
+    - transferStation: 10
+      transferTimeArrive: 12:49
+      transferTimeDepart: 13:07
+      transferTrainLine: Shinkansen Yamabiko 142
+  - originStation: 1
+    destinationStation: 2
+    journeyCost: 12550
+    timeDepart: 12:13
+    timeArrive: 15:10
+    trainLine: Shinkansen Komachi 24
+    numberOfTransfers:
+    - transferStation: 12
+      transferTimeArrive: 14:29
+      transferTimeDepart: 14:44
+      transferTrainLine: Shinkansen Yamabiko 144
+  - originStation: 1
+    destinationStation: 2
+    journeyCost: 12550
+    timeDepart: 13:06
+    timeArrive: 16:10
+    trainLine: Shinkansen Komachi 28
+    numberOfTransfers:
+    - transferStation: 12
+      transferTimeArrive: 15:29
+      transferTimeDepart: 15:44
+      transferTrainLine: Shinkansen Yamabiko 146
+  - originStation: 1
+    destinationStation: 2
+    journeyCost: 12550
+    timeDepart: 14:14
+    timeArrive: 16:56
+    trainLine: Shinkansen Komachi 32
+    numberOfTransfers:
+    - transferStation: 12
+      transferTimeArrive: 16:29
+      transferTimeDepart: 16:34
+      transferTrainLine: Shinkansen Yamabiko 148
+  - originStation: 1
+    destinationStation: 2
+    journeyCost: 12550
+    timeDepart: 15:06
+    timeArrive: 18:09
+    trainLine: Shinkansen Komachi 34
+    numberOfTransfers:
+    - transferStation: 12
+      transferTimeArrive: 17:29
+      transferTimeDepart: 17:43
+      transferTrainLine: Shinkansen Yamabiko 154
+  - originStation: 1
+    destinationStation: 2
+    journeyCost: 12550
+    timeDepart: 16:12
+    timeArrive: 19:10
+    trainLine: Shinkansen Komachi 38
+    numberOfTransfers:
+    - transferStation: 12
+      transferTimeArrive: 18:29
+      transferTimeDepart: 18:44
+      transferTrainLine: Shinkansen Yamabiko 156
+  - originStation: 1
+    destinationStation: 2
+    journeyCost: 12550
+    timeDepart: 16:34
+    timeArrive: 20:22
+    trainLine: Shinkansen Komachi 40
+    numberOfTransfers:
+    - transferStation: 12
+      transferTimeArrive: 18:14
+      transferTimeDepart: 18:40
+      transferTrainLine: Shinkansen Yamabiko 64
+  - originStation: 1
+    destinationStation: 2
+    journeyCost: 12340
+    timeDepart: 17:10
+    timeArrive: 21:20
+    trainLine: Shinkansen Komachi 42
+    numberOfTransfers:
+    - transferStation: 10
+      transferTimeArrive: 18:49
+      transferTimeDepart: 19:40
+      transferTrainLine: Shinkansen Yamabiko 66
+  - originStation: 1
+    destinationStation: 2
+    journeyCost: 12340
+    timeDepart: 17:10
+    timeArrive: 20:22
+    trainLine: Shinkansen Komachi 46
+    numberOfTransfers:
+    - transferStation: 10
+      transferTimeArrive: 19:29
+      transferTimeDepart: 20:00
+      transferTrainLine: Shinkansen Yamabiko 222
+  - originStation: 1
+    destinationStation: 2
+    journeyCost: 12550
+    timeDepart: 18:16
+    timeArrive: 20:58
+    trainLine: Shinkansen Komachi 48
+    numberOfTransfers:
+    - transferStation: 12
+      transferTimeArrive: 20:29
+      transferTimeDepart: 20:37
+      transferTrainLine: Shinkansen Yamabiko 70
+  - originStation: 1
+    destinationStation: 2
+    journeyCost: 12550
+    timeDepart: 19:10
+    timeArrive: 22:08
+    trainLine: Shinkansen Komachi 48
+    numberOfTransfers:
+    - transferStation: 12
+      transferTimeArrive: 21:29
+      transferTimeDepart: 21:47
+      transferTrainLine: Shinkansen Yamabiko 70
+  - originStation: 1
+    destinationStation: 2
+    journeyCost: 12550
+    timeDepart: 20:14
+    timeArrive: 6:32
+    trainLine: Shinkansen Komachi 48
+    numberOfTransfers:
+    - transferStation: 12
+      transferTimeArrive: 23:01
+      transferTimeDepart: 6:06
+      transferTrainLine: Shinkansen Yamabiko 202
+  - originStation: 1
+    destinationStation: 3
+    journeyCost: 3610
+    timeDepart: 5:27
+    timeArrive: 9:26
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 7
+      transferTimeArrive: 7:59
+      transferTimeDepart: 8:48
+      transferTrainLine: JP Gono Line
+  - originStation: 1
+    destinationStation: 3
+    journeyCost: 3410
+    timeDepart: 6:15
+    timeArrive: 11:04
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 6
+      transferTimeArrive: 7:11
+      transferTimeDepart: 7:23
+      transferTrainLine: JP Gono Line
+  - originStation: 1
+    destinationStation: 3
+    journeyCost: 3080
+    timeDepart: 7:28
+    timeArrive: 11:08
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 7
+      transferTimeArrive: 10:02
+      transferTimeDepart: 10:23
+      transferTrainLine: JP Gono Line
+  - originStation: 1
+    destinationStation: 3
+    journeyCost: 3410
+    timeDepart: 9:46
+    timeArrive: 14:30
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 6
+      transferTimeArrive: 10:43
+      transferTimeDepart: 10:59
+      transferTrainLine: JP Gono Line
+  - originStation: 1
+    destinationStation: 3
+    journeyCost: 3940
+    timeDepart: 10:51
+    timeArrive: 15:02
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 6
+      transferTimeArrive: 11:45
+      transferTimeDepart: 11:54
+      transferTrainLine: JP Gono Line
+  - originStation: 1
+    destinationStation: 3
+    journeyCost: 3610
+    timeDepart: 11:39
+    timeArrive: 15:09
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 7
+      transferTimeArrive: 14:21
+      transferTimeDepart: 14:30
+      transferTrainLine: JP Gono Line
+  - originStation: 1
+    destinationStation: 3
+    journeyCost: 3080
+    timeDepart: 13:31
+    timeArrive: 17:20
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 7
+      transferTimeArrive: 16:12
+      transferTimeDepart: 16:28
+      transferTrainLine: JP Gono Line
+  - originStation: 1
+    destinationStation: 3
+    journeyCost: 3940
+    timeDepart: 13:58
+    timeArrive: 18:17
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 6
+      transferTimeArrive: 14:52
+      transferTimeDepart: 14:59
+      transferTrainLine: JP Gono Line
+  - originStation: 1
+    destinationStation: 3
+    journeyCost: 4970
+    timeDepart: 15:52
+    timeArrive: 19:34
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 7
+      transferTimeArrive: 18:01
+      transferTimeDepart: 18:48
+      transferTrainLine: JP Ou Line
+  - originStation: 1
+    destinationStation: 3
+    journeyCost: 3080
+    timeDepart: 15:19
+    timeArrive: 19:34
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 7
+      transferTimeArrive: 17:52
+      transferTimeDepart: 18:48
+      transferTrainLine: JP Gono Line
+  - originStation: 1
+    destinationStation: 3
+    journeyCost: 3080
+    timeDepart: 17:31
+    timeArrive: 20:58
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 7
+      transferTimeArrive: 19:52
+      transferTimeDepart: 19:10
+      transferTrainLine: JP Gono Line
+  - originStation: 1
+    destinationStation: 3
+    journeyCost: 3080
+    timeDepart: 19:25
+    timeArrive: 6:24
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 7
+      transferTimeArrive: 21:28
+      transferTimeDepart: 5:39
+      transferTrainLine: JP Gono Line
+  - originStation: 1
+    destinationStation: 4
+    journeyCost: 8150
+    timeDepart: 6:08
+    timeArrive: 8:34
+    trainLine: Shinkansen Komachi 6
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 7:35
+      transferTimeDepart: 7:59
+      transferTrainLine: Shinkansen Hayabusa 95
+  - originStation: 1
+    destinationStation: 4
+    journeyCost: 7240
+    timeDepart: 5:27
+    timeArrive: 10:15
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 7
+      transferTimeArrive: 7:59
+      transferTimeDepart: 8:57
+      transferTrainLine: JP Ou Line
+    - transferStation: 14
+      transferTimeArrive: 9:39
+      transferTimeDepart: 9:52
+      transferTrainLine: 7
+  - originStation: 1
+    destinationStation: 4
+    journeyCost: 8150
+    timeDepart: 7:16
+    timeArrive: 10:24
+    trainLine: Shinkansen Komachi 10
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 8:48
+      transferTimeDepart: 9:48
+      transferTrainLine: Shinkansen Hayabusa 5
+  - originStation: 1
+    destinationStation: 4
+    journeyCost: 7240
+    timeDepart: 5:27
+    timeArrive: 11:06
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 7
+      transferTimeArrive: 7:59
+      transferTimeDepart: 9:52
+      transferTrainLine: JP Ou Line
+    - transferStation: 14
+      transferTimeArrive: 10:31
+      transferTimeDepart: 10:39
+      transferTrainLine: 7
+  - originStation: 1
+    destinationStation: 4
+    journeyCost: 7240
+    timeDepart: 7:28
+    timeArrive: 12:15
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 7
+      transferTimeArrive: 10:02
+      transferTimeDepart: 10:53
+      transferTrainLine: JP Ou Line
+    - transferStation: 14
+      transferTimeArrive: 11:34
+      transferTimeDepart: 11:52
+      transferTrainLine: Shinkansen Hayabusa 22
+  - originStation: 1
+    destinationStation: 4
+    journeyCost: 8150
+    timeDepart: 10:07
+    timeArrive: 13:04
+    trainLine: Shinkansen Komachi 18
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 11:47
+      transferTimeDepart: 12:37
+      transferTrainLine: Shinkansen Hayabusa 17
+  - originStation: 1
+    destinationStation: 4
+    journeyCost: 7240
+    timeDepart: 7:28
+    timeArrive: 13:06
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 7
+      transferTimeArrive: 10:02
+      transferTimeDepart: 11:36
+      transferTrainLine: JP Ou Line
+    - transferStation: 14
+      transferTimeArrive: 12:21
+      transferTimeDepart: 12:39
+      transferTrainLine: Shinkansen Hayabusa 18
+  - originStation: 1
+    destinationStation: 4
+    journeyCost: 8150
+    timeDepart: 9:12
+    timeArrive: 11:26
+    trainLine: Shinkansen Komachi 16
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 10:49
+      transferTimeDepart: 10:59
+      transferTrainLine: Shinkansen Hayabusa 9
+  - originStation: 1
+    destinationStation: 4
+    journeyCost: 8150
+    timeDepart: 10:07
+    timeArrive: 13:04
+    trainLine: Shinkansen Komachi 18
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 11:47
+      transferTimeDepart: 12:37
+      transferTrainLine: Shinkansen Hayabusa 17
+  - originStation: 1
+    destinationStation: 4
+    journeyCost: 8150
+    timeDepart: 11:07
+    timeArrive: 13:33
+    trainLine: Shinkansen Komachi 22
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 12:49
+      transferTimeDepart: 13:05
+      transferTrainLine: Shinkansen Hayabusa 19
+  - originStation: 1
+    destinationStation: 4
+    journeyCost: 8150
+    timeDepart: 12:13
+    timeArrive: 15:04
+    trainLine: Shinkansen Komachi 24
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 13:48
+      transferTimeDepart: 14:37
+      transferTrainLine: Shinkansen Hayabusa 23
+  - originStation: 1
+    destinationStation: 4
+    journeyCost: 8150
+    timeDepart: 13:06
+    timeArrive: 16:13
+    trainLine: Shinkansen Komachi 28
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 14:48
+      transferTimeDepart: 15:37
+      transferTrainLine: Shinkansen Hayabusa 25
+  - originStation: 1
+    destinationStation: 4
+    journeyCost: 8150
+    timeDepart: 14:14
+    timeArrive: 17:07
+    trainLine: Shinkansen Komachi 32
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 15:48
+      transferTimeDepart: 16:37
+      transferTrainLine: Shinkansen Hayabusa 27
+  - originStation: 1
+    destinationStation: 4
+    journeyCost: 8150
+    timeDepart: 15:06
+    timeArrive: 18:11
+    trainLine: Shinkansen Komachi 34
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 16:48
+      transferTimeDepart: 17:37
+      transferTrainLine: Shinkansen Hayabusa 46
+  - originStation: 1
+    destinationStation: 4
+    journeyCost: 8380
+    timeDepart: 15:52
+    timeArrive: 19:05
+    trainLine: Limited Express Tsugaru 5
+    numberOfTransfers:
+    - transferStation: 1
+      transferTimeArrive: 18:30
+      transferTimeDepart: 18:38
+      transferTrainLine: Shinkansen Hayabusa 46
+  - originStation: 1
+    destinationStation: 4
+    journeyCost: 8150
+    timeDepart: 16:34
+    timeArrive: 19:08
+    trainLine: Shinkansen Komachi 40
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 18:14
+      transferTimeDepart: 18:37
+      transferTrainLine: Shinkansen Hayabusa 35
+  - originStation: 1
+    destinationStation: 4
+    journeyCost: 8150
+    timeDepart: 17:10
+    timeArrive: 20:12
+    trainLine: Shinkansen Komachi 42
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 18:49
+      transferTimeDepart: 19:37
+      transferTrainLine: Shinkansen Hayabusa 39
+  - originStation: 1
+    destinationStation: 4
+    journeyCost: 8150
+    timeDepart: 18:16
+    timeArrive: 21:08
+    trainLine: Shinkansen Komachi 46
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 20:49
+      transferTimeDepart: 21:38
+      transferTrainLine: Shinkansen Hayabusa 43
+  - originStation: 1
+    destinationStation: 4
+    journeyCost: 7240
+    timeDepart: 17:31
+    timeArrive: 21:07
+    trainLine: JP Ou Line Rapid
+    numberOfTransfers:
+    - transferStation: 7
+      transferTimeArrive: 19:52
+      transferTimeDepart: 19:55
+      transferTrainLine: JP Ou Line
+    - transferStation: 14
+      transferTimeArrive: 20:30
+      transferTimeDepart: 20:40
+      transferTrainLine: Shinkansen Hayabusa 96
+  - originStation: 1
+    destinationStation: 4
+    journeyCost: 8150
+    timeDepart: 19:10
+    timeArrive: 22:05
+    trainLine: Shinkansen Komachi 48
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 20:49
+      transferTimeDepart: 21:38
+      transferTrainLine: Shinkansen Hayabusa 43
+  - originStation: 1
+    destinationStation: 4
+    journeyCost: 7240
+    timeDepart: 17:31
+    timeArrive: 22:14
+    trainLine: JP Ou Line Rapid
+    numberOfTransfers:
+    - transferStation: 7
+      transferTimeArrive: 19:52
+      transferTimeDepart: 19:55
+      transferTrainLine: JP Ou Line
+    - transferStation: 14
+      transferTimeArrive: 20:30
+      transferTimeDepart: 21:47
+      transferTrainLine: Shinkansen Hayate 98
+  - originStation: 1
+    destinationStation: 4
+    journeyCost: 8150
+    timeDepart: 20:14
+    timeArrive: 23:07
+    trainLine: Shinkansen Komachi 96
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 21:49
+      transferTimeDepart: 22:31
+      transferTrainLine: Shinkansen Hayabusa 45
+  - originStation: 1
+    destinationStation: 4
+    journeyCost: 7240
+    timeDepart: 19:25
+    timeArrive: 06:40
+    trainLine: JP Ou Line Rapid
+    numberOfTransfers:
+    - transferStation: 14
+      transferTimeArrive: 22:11
+      transferTimeDepart: 6:17
+      transferTrainLine: Shinkansen Hayabusa 4
+  - originStation: 1
+    destinationStation: 5
+    journeyCost: 2310
+    timeDepart: 6:15
+    timeArrive: 9:03
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 6
+      transferTimeArrive: 7:11
+      transferTimeDepart: 7:23
+      transferTrainLine: JP Gono Line
+  - originStation: 1
+    destinationStation: 5
+    journeyCost: 2310
+    timeDepart: 9:46
+    timeArrive: 12:33
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 6
+      transferTimeArrive: 10:43
+      transferTimeDepart: 10:59
+      transferTrainLine: JP Gono Line
+  - originStation: 1
+    destinationStation: 5
+    journeyCost: 3790
+    timeDepart: 8:35
+    timeArrive: 12:33
+    trainLine: Limited Express Tsugaru 1
+    numberOfTransfers:
+    - transferStation: 6
+      transferTimeArrive: 9:21
+      transferTimeDepart: 10:59
+      transferTrainLine: JP Gono Line
+  - originStation: 1
+    destinationStation: 5
+    journeyCost: 2310
+    timeDepart: 15:19
+    timeArrive: 18:08
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 6
+      transferTimeArrive: 16:19
+      transferTimeDepart: 16:33
+      transferTrainLine: JP Gono Line
+  - originStation: 1
+    destinationStation: 5
+    journeyCost: 3790
+    timeDepart: 12:40
+    timeArrive: 18:08
+    trainLine: Limited Express Tsugaru 3
+    numberOfTransfers:
+    - transferStation: 6
+      transferTimeArrive: 13:26
+      transferTimeDepart: 16:33
+      transferTrainLine: JP Gono Line
+  - originStation: 1
+    destinationStation: 5
+    journeyCost: 2310
+    timeDepart: 16:27
+    timeArrive: 19:52
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 6
+      transferTimeArrive: 17:24
+      transferTimeDepart: 18:09
+      transferTrainLine: JP Gono Line
+  - originStation: 1
+    destinationStation: 5
+    journeyCost: 3790
+    timeDepart: 15:52
+    timeArrive: 19:52
+    trainLine: Limited Express Tsugaru 5
+    numberOfTransfers:
+    - transferStation: 6
+      transferTimeArrive: 16:39
+      transferTimeDepart: 18:09
+      transferTrainLine: JP Gono Line
+  - originStation: 1
+    destinationStation: 6
+    journeyCost: 990
+    timeDepart: 5:27
+    timeArrive: 6:25
+    trainLine: JP Ou Line
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 6
+    journeyCost: 990
+    timeDepart: 6:15
+    timeArrive: 7:11
+    trainLine: JP Ou Line
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 6
+    journeyCost: 990
+    timeDepart: 7:28
+    timeArrive: 8:25
+    trainLine: JP Ou Line
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 6
+    journeyCost: 1520
+    timeDepart: 8:20
+    timeArrive: 9:12
+    trainLine: Resort Shirakami 1
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 6
+    journeyCost: 2470
+    timeDepart: 8:35
+    timeArrive: 9:21
+    trainLine: Limited Express Tsugaru 1
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 6
+    journeyCost: 990
+    timeDepart: 9:46
+    timeArrive: 10:43
+    trainLine: JP Ou Line
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 6
+    journeyCost: 1520
+    timeDepart: 10:51
+    timeArrive: 11:45
+    trainLine: Resort Shirakami 3
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 6
+    journeyCost: 990
+    timeDepart: 10:58
+    timeArrive: 12:00
+    trainLine: JP Ou Line
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 6
+    journeyCost: 990
+    timeDepart: 11:39
+    timeArrive: 12:40
+    trainLine: JP Ou Line
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 6
+    journeyCost: 2470
+    timeDepart: 12:40
+    timeArrive: 13:26
+    trainLine: Limited Express Tsugaru 3
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 6
+    journeyCost: 990
+    timeDepart: 13:31
+    timeArrive: 14:31
+    trainLine: JP Ou Line
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 6
+    journeyCost: 2470
+    timeDepart: 15:52
+    timeArrive: 16:39
+    trainLine: Limited Express Tsugaru 5
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 6
+    journeyCost: 1520
+    timeDepart: 13:58
+    timeArrive: 14:52
+    trainLine: Resort Shirakami 5
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 6
+    journeyCost: 990
+    timeDepart: 15:19
+    timeArrive: 16:19
+    trainLine: JP Ou Line
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 6
+    journeyCost: 2470
+    timeDepart: 15:52
+    timeArrive: 16:39
+    trainLine: Limited Express Tsugaru 5
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 6
+    journeyCost: 990
+    timeDepart: 16:27
+    timeArrive: 17:24
+    trainLine: JP Ou Line
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 6
+    journeyCost: 990
+    timeDepart: 17:31
+    timeArrive: 18:30
+    trainLine: JP Ou Line Rapid
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 6
+    journeyCost: 990
+    timeDepart: 18:00
+    timeArrive: 19:01
+    trainLine: JP Ou Line
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 6
+    journeyCost: 990
+    timeDepart: 18:29
+    timeArrive: 19:30
+    trainLine: JP Ou Line
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 6
+    journeyCost: 990
+    timeDepart: 19:25
+    timeArrive: 20:19
+    trainLine: JP Ou Line Rapid
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 6
+    journeyCost: 990
+    timeDepart: 20:27
+    timeArrive: 21:27
+    trainLine: JP Ou Line
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 6
+    journeyCost: 990
+    timeDepart: 21:17
+    timeArrive: 22:26
+    trainLine: JP Ou Line
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 7
+    journeyCost: 2640
+    timeDepart: 5:27
+    timeArrive: 7:59
+    trainLine: JP Ou Line
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 7
+    journeyCost: 2640
+    timeDepart: 7:28
+    timeArrive: 10:02
+    trainLine: JP Ou Line
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 7
+    journeyCost: 4530
+    timeDepart: 8:35
+    timeArrive: 10:38
+    trainLine: Limited Express Tsugaru 1
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 7
+    journeyCost: 10900
+    timeDepart: 8:11
+    timeArrive: 12:00
+    trainLine: Shinkansen Komachi 14
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 9:46
+      transferTimeDepart: 10:32
+      transferTrainLine: Shinkansen Hayabusa 7
+    - transferStation: 14
+      transferTimeArrive: 11:19
+      transferTimeDepart: 11:28
+      transferTrainLine: JP Ou Line Rapid
+  - originStation: 1
+    destinationStation: 7
+    journeyCost: 10900
+    timeDepart: 9:12
+    timeArrive: 12:39
+    trainLine: Shinkansen Komachi 16
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 10:49
+      transferTimeDepart: 10:59
+      transferTrainLine: Shinkansen Hayabusa 9
+    - transferStation: 14
+      transferTimeArrive: 11:51
+      transferTimeDepart: 12:03
+      transferTrainLine: JP Ou Line
+  - originStation: 1
+    destinationStation: 7
+    journeyCost: 4600
+    timeDepart: 8:20
+    timeArrive: 12:48
+    trainLine: Resort Shirakami 1
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 7
+    journeyCost: 10900
+    timeDepart: 10:07
+    timeArrive: 14:20
+    trainLine: Shinkansen Komachi 18
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 11:47
+      transferTimeDepart: 12:37
+      transferTrainLine: Shinkansen Hayabusa 17
+    - transferStation: 14
+      transferTimeArrive: 13:29
+      transferTimeDepart: 13:43
+      transferTrainLine: JP Ou Line
+  - originStation: 1
+    destinationStation: 7
+    journeyCost: 2640
+    timeDepart: 11:39
+    timeArrive: 14:21
+    trainLine: JP Ou Line
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 7
+    journeyCost: 4530
+    timeDepart: 12:40
+    timeArrive: 14:45
+    trainLine: Limited Express Tsugaru 3
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 7
+    journeyCost: 10900
+    timeDepart: 11:07
+    timeArrive: 14:45
+    trainLine: Shinkansen Komachi 22
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 12:49
+      transferTimeDepart: 13:05
+      transferTrainLine: Shinkansen Hayabusa 19
+    - transferStation: 14
+      transferTimeArrive: 13:57
+      transferTimeDepart: 14:10
+      transferTrainLine: JP Ou Line
+  - originStation: 1
+    destinationStation: 7
+    journeyCost: 4600
+    timeDepart: 10:51
+    timeArrive: 15:49
+    trainLine: Resort Shirakami 3
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 7
+    journeyCost: 2640
+    timeDepart: 13:31
+    timeArrive: 16:12
+    trainLine: JP Ou Line
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 7
+    journeyCost: 10900
+    timeDepart: 12:13
+    timeArrive: 16:24
+    trainLine: Shinkansen Komachi 24
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 13:48
+      transferTimeDepart: 14:37
+      transferTrainLine: Shinkansen Hayabusa 23
+    - transferStation: 14
+      transferTimeArrive: 15:29
+      transferTimeDepart: 15:42
+      transferTrainLine: JP Ou Line
+  - originStation: 1
+    destinationStation: 7
+    journeyCost: 10900
+    timeDepart: 13:06
+    timeArrive: 17:27
+    trainLine: Shinkansen Komachi 28
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 14:48
+      transferTimeDepart: 15:37
+      transferTrainLine: Shinkansen Hayabusa 25
+    - transferStation: 14
+      transferTimeArrive: 16:43
+      transferTimeDepart: 16:51
+      transferTrainLine: JP Ou Line
+  - originStation: 1
+    destinationStation: 7
+    journeyCost: 2640
+    timeDepart: 15:19
+    timeArrive: 17:52
+    trainLine: JP Ou Line
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 7
+    journeyCost: 4530
+    timeDepart: 15:52
+    timeArrive: 18:01
+    trainLine: Limited Express Tsugaru 5
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 7
+    journeyCost: 2640
+    timeDepart: 13:31
+    timeArrive: 16:12
+    trainLine: JP Ou Line
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 7
+    journeyCost: 4600
+    timeDepart: 13:58
+    timeArrive: 18:35
+    trainLine: Resort Shirakami 5
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 7
+    journeyCost: 4600
+    timeDepart: 16:27
+    timeArrive: 18:59
+    trainLine: JP Ou Line
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 7
+    journeyCost: 2640
+    timeDepart: 17:31
+    timeArrive: 19:52
+    trainLine: JP Ou Line Rapid
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 7
+    journeyCost: 10900
+    timeDepart: 16:12
+    timeArrive: 20:00
+    trainLine: Shinkansen Komachi 38
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 17:48
+      transferTimeDepart: 17:53
+      transferTrainLine: Shinkansen Hayabusa 33
+    - transferStation: 14
+      transferTimeArrive: 18:43
+      transferTimeDepart: 19:12
+      transferTrainLine: JP Ou Line
+  - originStation: 1
+    destinationStation: 7
+    journeyCost: 10900
+    timeDepart: 16:34
+    timeArrive: 20:35
+    trainLine: Shinkansen Komachi 40
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 18:14
+      transferTimeDepart: 18:37
+      transferTrainLine: Shinkansen Hayabusa 35
+    - transferStation: 14
+      transferTimeArrive: 19:37
+      transferTimeDepart: 19:52
+      transferTrainLine: JP Ou Line
+  - originStation: 1
+    destinationStation: 7
+    journeyCost: 2640
+    timeDepart: 19:25
+    timeArrive: 21:38
+    trainLine: JP Ou Line Rapid
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 18:14
+      transferTimeDepart: 18:37
+      transferTrainLine: Shinkansen Hayabusa 35
+    - transferStation: 14
+      transferTimeArrive: 19:37
+      transferTimeDepart: 19:52
+      transferTrainLine: JP Ou Line
+  - originStation: 1
+    destinationStation: 7
+    journeyCost: 10900
+    timeDepart: 17:10
+    timeArrive: 21:29
+    trainLine: Shinkansen Komachi 42
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 18:49
+      transferTimeDepart: 19:37
+      transferTrainLine: Shinkansen Hayabusa 39
+    - transferStation: 14
+      transferTimeArrive: 20:40
+      transferTimeDepart: 20:49
+      transferTrainLine: JP Ou Line
+  - originStation: 1
+    destinationStation: 7
+    journeyCost: 10900
+    timeDepart: 18:16
+    timeArrive: 22:34
+    trainLine: Shinkansen Komachi 46
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 19:48
+      transferTimeDepart: 20:37
+      transferTrainLine: Shinkansen Hayabusa 41
+    - transferStation: 14
+      transferTimeArrive: 21:37
+      transferTimeDepart: 21:53
+      transferTrainLine: JP Ou Line
+  - originStation: 1
+    destinationStation: 7
+    journeyCost: 10900
+    timeDepart: 19:10
+    timeArrive: 23:18
+    trainLine: Shinkansen Komachi 48
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 20:49
+      transferTimeDepart: 21:38
+      transferTrainLine: Shinkansen Hayabusa 43
+    - transferStation: 14
+      transferTimeArrive: 22:30
+      transferTimeDepart: 22:41
+      transferTrainLine: JP Ou Line
+  - originStation: 1
+    destinationStation: 7
+    journeyCost: 2640
+    timeDepart: 20:27
+    timeArrive: 6:31
+    trainLine: JP Ou Line
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 8
+    journeyCost: 8250
+    timeDepart: 6:08
+    timeArrive: 8:28
+    trainLine: Shinkansen Komachi 6
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 7:35
+      transferTimeDepart: 8:01
+      transferTrainLine: Shinkansen Hayabusa 8
+  - originStation: 1
+    destinationStation: 8
+    journeyCost: 8250
+    timeDepart: 7:16
+    timeArrive: 9:44
+    trainLine: Shinkansen Komachi 10
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 8:48
+      transferTimeDepart: 9:06
+      transferTrainLine: Shinkansen Hayabusa 108
+  - originStation: 1
+    destinationStation: 8
+    journeyCost: 8150
+    timeDepart: 8:11
+    timeArrive: 10:46
+    trainLine: Shinkansen Komachi 14
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 9:46
+      transferTimeDepart: 10:07
+      transferTrainLine: Shinkansen Yamabiko 52
+  - originStation: 1
+    destinationStation: 8
+    journeyCost: 8150
+    timeDepart: 9:12
+    timeArrive: 11:46
+    trainLine: Shinkansen Komachi 16
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 10:49
+      transferTimeDepart: 11:07
+      transferTrainLine: Shinkansen Yamabiko 54
+  - originStation: 1
+    destinationStation: 8
+    journeyCost: 8150
+    timeDepart: 10:07
+    timeArrive: 12:46
+    trainLine: Shinkansen Komachi 18
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 11:47
+      transferTimeDepart: 12:07
+      transferTrainLine: Shinkansen Yamabiko 56
+  - originStation: 1
+    destinationStation: 8
+    journeyCost: 8150
+    timeDepart: 11:07
+    timeArrive: 13:47
+    trainLine: Shinkansen Komachi 22
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 12:49
+      transferTimeDepart: 13:07
+      transferTrainLine: Shinkansen Yamabiko 58
+  - originStation: 1
+    destinationStation: 8
+    journeyCost: 8150
+    timeDepart: 12:13
+    timeArrive: 14:47
+    trainLine: Shinkansen Komachi 24
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 13:48
+      transferTimeDepart: 14:07
+      transferTrainLine: Shinkansen Yamabiko 60
+  - originStation: 1
+    destinationStation: 8
+    journeyCost: 8150
+    timeDepart: 13:06
+    timeArrive: 15:47
+    trainLine: Shinkansen Komachi 28
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 14:48
+      transferTimeDepart: 15:07
+      transferTrainLine: Shinkansen Yamabiko 62
+  - originStation: 1
+    destinationStation: 8
+    journeyCost: 8150
+    timeDepart: 14:14
+    timeArrive: 16:47
+    trainLine: Shinkansen Komachi 32
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 15:48
+      transferTimeDepart: 16:07
+      transferTrainLine: Shinkansen Hayabusa 110
+  - originStation: 1
+    destinationStation: 8
+    journeyCost: 8250
+    timeDepart: 15:06
+    timeArrive: 17:47
+    trainLine: Shinkansen Komachi 34
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 16:48
+      transferTimeDepart: 17:07
+      transferTrainLine: Shinkansen Hayabusa 112
+  - originStation: 1
+    destinationStation: 8
+    journeyCost: 8150
+    timeDepart: 16:12
+    timeArrive: 18:33
+    trainLine: Shinkansen Komachi 38
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 17:48
+      transferTimeDepart: 17:54
+      transferTrainLine: Shinkansen Yamabiko 64
+  - originStation: 1
+    destinationStation: 8
+    journeyCost: 12680
+    timeDepart: 15:52
+    timeArrive: 21:08
+    trainLine: Limited Express Tsugaru 5
+    numberOfTransfers:
+    - transferStation: 14
+      transferTimeArrive: 18:30
+      transferTimeDepart: 18:38
+      transferTrainLine: Shinkansen Hayabusa 46
+    - transferStation: 11
+      transferTimeArrive: 19:44
+      transferTimeDepart: 20:29
+      transferTrainLine: Shinkansen Yamabiko 70
+  - originStation: 1
+    destinationStation: 8
+    journeyCost: 8150
+    timeDepart: 16:34
+    timeArrive: 19:21
+    trainLine: Shinkansen Komachi 40
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 18:14
+      transferTimeDepart: 18:40
+      transferTrainLine: Shinkansen Yamabiko 66
+  - originStation: 1
+    destinationStation: 8
+    journeyCost: 8150
+    timeDepart: 17:10
+    timeArrive: 20:20
+    trainLine: Shinkansen Komachi 42
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 18:49
+      transferTimeDepart: 19:40
+      transferTrainLine: Shinkansen Yamabiko 68
+  - originStation: 1
+    destinationStation: 8
+    journeyCost: 8150
+    timeDepart: 18:16
+    timeArrive: 21:08
+    trainLine: Shinkansen Komachi 46
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 19:48
+      transferTimeDepart: 20:29
+      transferTrainLine: Shinkansen Yamabiko 70
+  - originStation: 1
+    destinationStation: 8
+    journeyCost: 3080
+    timeDepart: 18:46
+    timeArrive: 22:20
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 18
+      transferTimeArrive: 20:03
+      transferTimeDepart: 20:10
+      transferTrainLine: JP Kitakami Line
+    - transferStation: 9
+      transferTimeArrive: 21:25
+      transferTimeDepart: 21:40
+      transferTrainLine: JP Tohoku Line
+  - originStation: 1
+    destinationStation: 8
+    journeyCost: 5480
+    timeDepart: 15:43
+    timeArrive: 19:21
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 18
+      transferTimeArrive: 16:58
+      transferTimeDepart: 17:16
+      transferTrainLine: JP Kitakami Line
+    - transferStation: 9
+      transferTimeArrive: 18:35
+      transferTimeDepart: 19:03
+      transferTrainLine: Shinkansen Yamabiko 66
+  - originStation: 1
+    destinationStation: 8
+    journeyCost: 5480
+    timeDepart: 15:43
+    timeArrive: 20:20
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 18
+      transferTimeArrive: 16:58
+      transferTimeDepart: 17:16
+      transferTrainLine: JP Kitakami Line
+    - transferStation: 9
+      transferTimeArrive: 18:35
+      transferTimeDepart: 20:03
+      transferTrainLine: Shinkansen Yamabiko 68
+  - originStation: 1
+    destinationStation: 8
+    journeyCost: 5480
+    timeDepart: 15:43
+    timeArrive: 21:08
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 18
+      transferTimeArrive: 16:58
+      transferTimeDepart: 17:16
+      transferTrainLine: JP Kitakami Line
+    - transferStation: 9
+      transferTimeArrive: 18:35
+      transferTimeDepart: 20:49
+      transferTrainLine: Shinkansen Yamabiko 70
+  - originStation: 1
+    destinationStation: 8
+    journeyCost: 3080
+    timeDepart: 9:12
+    timeArrive: 12:34
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 18
+      transferTimeArrive: 10:29
+      transferTimeDepart: 10:35
+      transferTrainLine: JP Kitakami Line Rapid
+    - transferStation: 9
+      transferTimeArrive: 11:51
+      transferTimeDepart: 11:56
+      transferTrainLine: JP Tohoku Line
+  - originStation: 1
+    destinationStation: 8
+    journeyCost: 8250
+    timeDepart: 20:14
+    timeArrive: 22:28
+    trainLine: Shinkansen Komachi 96
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 8
+    journeyCost: 11640
+    timeDepart: 19:25
+    timeArrive: 8:08
+    trainLine: JP Ou Line Rapid
+    numberOfTransfers:
+    - transferStation: 14
+      transferTimeArrive: 22:11
+      transferTimeDepart: 6:17
+      transferTrainLine: Shinkansen Hayabusa 4
+    - transferStation: 11
+      transferTimeArrive: 7:09
+      transferTimeDepart: 7:27
+      transferTrainLine: Shinkansen Hayabusa 104
+  - originStation: 1
+    destinationStation: 8
+    journeyCost: 3080
+    timeDepart: 22:40
+    timeArrive: 8:49
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 18
+      transferTimeArrive: 23:48
+      transferTimeDepart: 6:38
+      transferTrainLine: JP Kitakami Line
+    - transferStation: 9
+      transferTimeArrive: 8:01
+      transferTimeDepart: 8:09
+      transferTrainLine: JP Tohoku Line
+  - originStation: 1
+    destinationStation: 8
+    journeyCost: 11640
+    timeDepart: 19:25
+    timeArrive: 9:44
+    trainLine: JP Ou Line Rapid
+    numberOfTransfers:
+    - transferStation: 14
+      transferTimeArrive: 22:11
+      transferTimeDepart: 7:43
+      transferTrainLine: Shinkansen Hayabusa 10
+    - transferStation: 11
+      transferTimeArrive: 8:43
+      transferTimeDepart: 9:06
+      transferTrainLine: Shinkansen Hayabusa 108
+  - originStation: 1
+    destinationStation: 8
+    journeyCost: 5580
+    timeDepart: 22:40
+    timeArrive: 8:28
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 18
+      transferTimeArrive: 23:47
+      transferTimeDepart: 6:38
+      transferTrainLine: JP Ou Line
+    - transferStation: 9
+      transferTimeArrive: 8:01
+      transferTimeDepart: 8:15
+      transferTrainLine: Shinkansen Hayabusa 8
+  - originStation: 1
+    destinationStation: 8
+    journeyCost: 5580
+    timeDepart: 22:40
+    timeArrive: 8:47
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 18
+      transferTimeArrive: 23:47
+      transferTimeDepart: 6:38
+      transferTrainLine: JP Kitakami Line
+    - transferStation: 9
+      transferTimeArrive: 8:01
+      transferTimeDepart: 8:29
+      transferTrainLine: Shinkansen Hayabusa 106
+  - originStation: 1
+    destinationStation: 8
+    journeyCost: 3080
+    timeDepart: 22:40
+    timeArrive: 8:49
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 18
+      transferTimeArrive: 23:47
+      transferTimeDepart: 6:38
+      transferTrainLine: JP Kitakami Line
+    - transferStation: 9
+      transferTimeArrive: 8:01
+      transferTimeDepart: 8:09
+      transferTrainLine: JP Tohoku Line
+  - originStation: 1
+    destinationStation: 9
+    journeyCost: 7590
+    timeDepart: 6:08
+    timeArrive: 8:15
+    trainLine: Shinkansen Komachi 6
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 7:35
+      transferTimeDepart: 8:01
+      transferTrainLine: Shinkansen Hayabusa 6
+  - originStation: 1
+    destinationStation: 9
+    journeyCost: 2310
+    timeDepart: 6:17
+    timeArrive: 9:05
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 18
+      transferTimeArrive: 7:27
+      transferTimeDepart: 7:41
+      transferTrainLine: JP Kitakami Line
+  - originStation: 1
+    destinationStation: 9
+    journeyCost: 7590
+    timeDepart: 7:16
+    timeArrive: 9:25
+    trainLine: Shinkansen Komachi 10
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 8:48
+      transferTimeDepart: 9:06
+      transferTrainLine: Shinkansen Hayabusa 108
+  - originStation: 1
+    destinationStation: 9
+    journeyCost: 7490
+    timeDepart: 8:11
+    timeArrive: 10:26
+    trainLine: Shinkansen Komachi 14
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 9:46
+      transferTimeDepart: 10:07
+      transferTrainLine: Shinkansen Yamabiko 52
+  - originStation: 1
+    destinationStation: 9
+    journeyCost: 7490
+    timeDepart: 9:12
+    timeArrive: 11:26
+    trainLine: Shinkansen Komachi 16
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 10:49
+      transferTimeDepart: 11:07
+      transferTrainLine: Shinkansen Yamabiko 54
+  - originStation: 1
+    destinationStation: 9
+    journeyCost: 2310
+    timeDepart: 9:12
+    timeArrive: 11:51
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 10:29
+      transferTimeDepart: 10:35
+      transferTrainLine: JP Kitakami Line Rapid
+  - originStation: 1
+    destinationStation: 9
+    journeyCost: 7490
+    timeDepart: 10:07
+    timeArrive: 12:26
+    trainLine: Shinkansen Komachi 18
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 11:47
+      transferTimeDepart: 12:07
+      transferTrainLine: Shinkansen Yamabiko 56
+  - originStation: 1
+    destinationStation: 9
+    journeyCost: 7490
+    timeDepart: 11:07
+    timeArrive: 13:26
+    trainLine: Shinkansen Komachi 22
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 12:49
+      transferTimeDepart: 13:07
+      transferTrainLine: Shinkansen Yamabiko 58
+  - originStation: 1
+    destinationStation: 9
+    journeyCost: 12130
+    timeDepart: 8:35
+    timeArrive: 13:26
+    trainLine: Limited Express Tsugaru 1
+    numberOfTransfers:
+    - transferStation: 14
+      transferTimeArrive: 11:07
+      transferTimeDepart: 11:20
+      transferTrainLine: Shinkansen Hayabusa 20
+    - transferStation: 11
+      transferTimeArrive: 12:11
+      transferTimeDepart: 13:07
+      transferTrainLine: Shinkansen Yamabiko 58
+  - originStation: 1
+    destinationStation: 9
+    journeyCost: 7490
+    timeDepart: 12:13
+    timeArrive: 14:26
+    trainLine: Shinkansen Komachi 24
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 13:48
+      transferTimeDepart: 14:07
+      transferTrainLine: Shinkansen Komachi 60
+  - originStation: 1
+    destinationStation: 9
+    journeyCost: 2310
+    timeDepart: 11:48
+    timeArrive: 15:06
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 18
+      transferTimeArrive: 13:08
+      transferTimeDepart: 13:46
+      transferTrainLine: JP Kitakami Line
+  - originStation: 1
+    destinationStation: 9
+    journeyCost: 7490
+    timeDepart: 13:06
+    timeArrive: 15:26
+    trainLine: Shinkansen Komachi 28
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 14:48
+      transferTimeDepart: 15:07
+      transferTrainLine: Shinkansen Yamabiko 62
+  - originStation: 1
+    destinationStation: 9
+    journeyCost: 7590
+    timeDepart: 14:14
+    timeArrive: 16:26
+    trainLine: Shinkansen Komachi 32
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 15:48
+      transferTimeDepart: 16:07
+      transferTrainLine: Shinkansen Hayabusa 110
+  - originStation: 1
+    destinationStation: 9
+    journeyCost: 7590
+    timeDepart: 15:06
+    timeArrive: 17:26
+    trainLine: Shinkansen Komachi 34
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 16:48
+      transferTimeDepart: 17:07
+      transferTrainLine: Shinkansen Hayabusa 112
+  - originStation: 1
+    destinationStation: 9
+    journeyCost: 7490
+    timeDepart: 16:12
+    timeArrive: 18:13
+    trainLine: Shinkansen Komachi 38
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 17:48
+      transferTimeDepart: 17:54
+      transferTrainLine: Shinkansen Yabaiko 64
+  - originStation: 1
+    destinationStation: 9
+    journeyCost: 2310
+    timeDepart: 15:43
+    timeArrive: 18:35
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 18
+      transferTimeArrive: 16:58
+      transferTimeDepart: 17:16
+      transferTrainLine: JP Kitakami Line
+  - originStation: 1
+    destinationStation: 9
+    journeyCost: 7490
+    timeDepart: 16:34
+    timeArrive: 18:59
+    trainLine: Shinkansen Komachi 40
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 18:14
+      transferTimeDepart: 18:40
+      transferTrainLine: Shinkansen Yamabiko 66
+  - originStation: 1
+    destinationStation: 9
+    journeyCost: 7490
+    timeDepart: 17:10
+    timeArrive: 19:59
+    trainLine: Shinkansen Komachi 42
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 18:49
+      transferTimeDepart: 19:40
+      transferTrainLine: Shinkansen Yamabiko 68
+  - originStation: 1
+    destinationStation: 9
+    journeyCost: 7490
+    timeDepart: 18:16
+    timeArrive: 20:48
+    trainLine: Shinkansen Komachi 46
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 19:48
+      transferTimeDepart: 20:29
+      transferTrainLine: Shinkansen Yamabiko 70
+  - originStation: 1
+    destinationStation: 9
+    journeyCost: 2310
+    timeDepart: 18:46
+    timeArrive: 21:25
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 20:03
+      transferTimeDepart: 20:10
+      transferTrainLine: JP Kitakami Line
+  - originStation: 1
+    destinationStation: 9
+    journeyCost: 7590
+    timeDepart: 20:14
+    timeArrive: 22:10
+    trainLine: Shinkansen Komachi 96
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 9
+    journeyCost: 11090
+    timeDepart: 19:25
+    timeArrive: 7:45
+    trainLine: JP Ou Line Rapid
+    numberOfTransfers:
+    - transferStation: 14
+      transferTimeArrive: 22:11
+      transferTimeDepart: 6:17
+      transferTrainLine: Shinkansen Hayabusa 4
+    - transferStation: 11
+      transferTimeArrive: 7:09
+      transferTimeDepart: 7:27
+      transferTrainLine: Shinkansen Hayabusa 104
+  - originStation: 1
+    destinationStation: 9
+    journeyCost: 2310
+    timeDepart: 22:40
+    timeArrive: 8:01
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 18
+      transferTimeArrive: 23:47
+      transferTimeDepart: 6:38
+      transferTrainLine: JP Kitakami Line
+  - originStation: 1
+    destinationStation: 9
+    journeyCost: 5800
+    timeDepart: 19:10
+    timeArrive: 22:03
+    trainLine: Shinkansen Komachi 48
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 20:49
+      transferTimeDepart: 21:13
+      transferTrainLine: JP Tohoku Line
+  - originStation: 1
+    destinationStation: 10
+    journeyCost: 11110
+    timeDepart: 6:08
+    timeArrive: 8:56
+    trainLine: Shinkansen Komachi 6
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 8:15
+      transferTimeDepart: 8:30
+      transferTrainLine: JP Tohoku Line
+  - originStation: 1
+    destinationStation: 10
+    journeyCost: 11110
+    timeDepart: 7:16
+    timeArrive: 10:09
+    trainLine: Shinkansen Komachi 10
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 9:29
+      transferTimeDepart: 9:46
+      transferTrainLine: JP Tohoku Line
+  - originStation: 1
+    destinationStation: 10
+    journeyCost: 11110
+    timeDepart: 8:11
+    timeArrive: 11:02
+    trainLine: Shinkansen Komachi 14
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 10:29
+      transferTimeDepart: 10:39
+      transferTrainLine: JP Tohoku Line
+  - originStation: 1
+    destinationStation: 10
+    journeyCost: 11110
+    timeDepart: 9:12
+    timeArrive: 12:14
+    trainLine: Shinkansen Komachi 16
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 11:29
+      transferTimeDepart: 11:50
+      transferTrainLine: JP Tohoku Line
+  - originStation: 1
+    destinationStation: 10
+    journeyCost: 11110
+    timeDepart: 10:07
+    timeArrive: 13:09
+    trainLine: Shinkansen Komachi 18
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 12:29
+      transferTimeDepart: 12:45
+      transferTrainLine: JP Tohoku Line
+  - originStation: 1
+    destinationStation: 10
+    journeyCost: 11110
+    timeDepart: 11:07
+    timeArrive: 14:15
+    trainLine: Shinkansen Komachi 22
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 13:29
+      transferTimeDepart: 13:51
+      transferTrainLine: JP Tohoku Line
+  - originStation: 1
+    destinationStation: 10
+    journeyCost: 11110
+    timeDepart: 12:13
+    timeArrive: 15:49
+    trainLine: Shinkansen Komachi 24
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 14:29
+      transferTimeDepart: 15:25
+      transferTrainLine: JP Tohoku Line
+  - originStation: 1
+    destinationStation: 10
+    journeyCost: 11110
+    timeDepart: 13:06
+    timeArrive: 16:06
+    trainLine: Shinkansen Komachi 28
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 15:29
+      transferTimeDepart: 15:43
+      transferTrainLine: JP Tohoku Line
+  - originStation: 1
+    destinationStation: 10
+    journeyCost: 11110
+    timeDepart: 14:14
+    timeArrive: 17:07
+    trainLine: Shinkansen Komachi 32
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 16:29
+      transferTimeDepart: 16:43
+      transferTrainLine: JP Tohoku Line
+  - originStation: 1
+    destinationStation: 10
+    journeyCost: 11110
+    timeDepart: 15:06
+    timeArrive: 18:07
+    trainLine: Shinkansen Komachi 34
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 17:29
+      transferTimeDepart: 17:42
+      transferTrainLine: JP Tohoku Line
+  - originStation: 1
+    destinationStation: 10
+    journeyCost: 11110
+    timeDepart: 16:12
+    timeArrive: 19:21
+    trainLine: Shinkansen Komachi 38
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 18:29
+      transferTimeDepart: 18:58
+      transferTrainLine: JP Tohoku Line
+  - originStation: 1
+    destinationStation: 10
+    journeyCost: 11110
+    timeDepart: 16:34
+    timeArrive: 19:41
+    trainLine: Shinkansen Komachi 40
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 18:55
+      transferTimeDepart: 19:16
+      transferTrainLine: JP Tohoku Line
+  - originStation: 1
+    destinationStation: 10
+    journeyCost: 11110
+    timeDepart: 17:10
+    timeArrive: 20:04
+    trainLine: Shinkansen Komachi 42
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 19:29
+      transferTimeDepart: 19:40
+      transferTrainLine: JP Tohoku Line
+  - originStation: 1
+    destinationStation: 10
+    journeyCost: 9350
+    timeDepart: 20:14
+    timeArrive: 7:02
+    trainLine: Shinkansen Komachi 96
+    numberOfTransfers:
+    - transferStation: 8
+      transferTimeArrive: 22:28
+      transferTimeDepart: 5:56
+      transferTrainLine: JP Tohoku Line
+  - originStation: 1
+    destinationStation: 10
+    journeyCost: 11110
+    timeDepart: 18:16
+    timeArrive: 21:31
+    trainLine: Shinkansen Komachi 46
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 20:29
+      transferTimeDepart: 21:05
+      transferTrainLine: JP Tohoku Line
+  - originStation: 1
+    destinationStation: 10
+    journeyCost: 11110
+    timeDepart: 19:10
+    timeArrive: 22:05
+    trainLine: Shinkansen Komachi 48
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 21:29
+      transferTimeDepart: 21:41
+      transferTrainLine: JP Tohoku Line
+  - originStation: 1
+    destinationStation: 10
+    journeyCost: 11110
+    timeDepart: 20:14
+    timeArrive: 23:55
+    trainLine: Shinkansen Komachi 96
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 23:01
+      transferTimeDepart: 23:29
+      transferTrainLine: JP Tohoku Line
+  - originStation: 1
+    destinationStation: 11
+    journeyCost: 4700
+    timeDepart: 6:08
+    timeArrive: 7:35
+    trainLine: Shinkansen Komachi 6
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 11
+    journeyCost: 4700
+    timeDepart: 7:16
+    timeArrive: 8:48
+    trainLine: Shinkansen Komachi 10
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 11
+    journeyCost: 4700
+    timeDepart: 8:11
+    timeArrive: 9:46
+    trainLine: Shinkansen Komachi 14
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 11
+    journeyCost: 9550
+    timeDepart: 5:27
+    timeArrive: 10:44
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 7
+      transferTimeArrive: 7:14
+      transferTimeDepart: 7:16
+      transferTrainLine: JP Ou Line
+    - transferStation: 14
+      transferTimeArrive: 9:39
+      transferTimeDepart: 9:52
+      transferTrainLine: Shinkansen Hayabusa 16
+  - originStation: 1
+    destinationStation: 11
+    journeyCost: 4700
+    timeDepart: 9:12
+    timeArrive: 10:49
+    trainLine: Shinkansen Komachi 16
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 11
+    journeyCost: 4700
+    timeDepart: 10:07
+    timeArrive: 11:47
+    trainLine: Shinkansen Komachi 18
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 11
+    journeyCost: 10690
+    timeDepart: 8:35
+    timeArrive: 12:11
+    trainLine: Limited Express Tsugaru 1
+    numberOfTransfers:
+    - transferStation: 14
+      transferTimeArrive: 11:07
+      transferTimeDepart: 11:20
+      transferTrainLine: Shinkansen Hayabusa 20
+  - originStation: 1
+    destinationStation: 11
+    journeyCost: 10690
+    timeDepart: 8:35
+    timeArrive: 12:45
+    trainLine: Limited Express Tsugaru 1
+    numberOfTransfers:
+    - transferStation: 14
+      transferTimeArrive: 11:07
+      transferTimeDepart: 11:52
+      transferTrainLine: Shinkansen Hayabusa 22
+  - originStation: 1
+    destinationStation: 11
+    journeyCost: 4700
+    timeDepart: 11:07
+    timeArrive: 12:49
+    trainLine: Shinkansen Komachi 22
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 11
+    journeyCost: 5810
+    timeDepart: 9:12
+    timeArrive: 12:54
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 18
+      transferTimeArrive: 10:29
+      transferTimeDepart: 10:35
+      transferTrainLine: JP Kitakami Line Rapid
+    - transferStation: 9
+      transferTimeArrive: 11:51
+      transferTimeDepart: 12:34
+      transferTrainLine: Shinkansen Yamabiko 55
+  - originStation: 1
+    destinationStation: 11
+    journeyCost: 5810
+    timeDepart: 9:12
+    timeArrive: 12:58
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 18
+      transferTimeArrive: 10:29
+      transferTimeDepart: 10:35
+      transferTrainLine: JP Kitakami Line Rapid
+    - transferStation: 9
+      transferTimeArrive: 11:51
+      transferTimeDepart: 12:09
+      transferTrainLine: JP Tohoku Line
+  - originStation: 1
+    destinationStation: 11
+    journeyCost: 10690
+    timeDepart: 8:35
+    timeArrive: 13:44
+    trainLine: Limited Express Tsugaru 1
+    numberOfTransfers:
+    - transferStation: 14
+      transferTimeArrive: 11:07
+      transferTimeDepart: 12:39
+      transferTrainLine: Shinkansen Hayabusa 24
+  - originStation: 1
+    destinationStation: 11
+    journeyCost: 4700
+    timeDepart: 11:07
+    timeArrive: 12:49
+    trainLine: Shinkansen Komachi 22
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 11
+    journeyCost: 4700
+    timeDepart: 12:13
+    timeArrive: 13:48
+    trainLine: Shinkansen Komachi 24
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 11
+    journeyCost: 4700
+    timeDepart: 13:06
+    timeArrive: 14:48
+    trainLine: Shinkansen Komachi 28
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 11
+    journeyCost: 4700
+    timeDepart: 14:14
+    timeArrive: 15:48
+    trainLine: Shinkansen Komachi 32
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 11
+    journeyCost: 5810
+    timeDepart: 11:48
+    timeArrive: 15:54
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 18
+      transferTimeArrive: 13:08
+      transferTimeDepart: 13:46
+      transferTrainLine: JP Kitakami Line
+    - transferStation: 9
+      transferTimeArrive: 15:06
+      transferTimeDepart: 15:34
+      transferTrainLine: Shinkansen Yamabiko 61
+  - originStation: 1
+    destinationStation: 11
+    journeyCost: 3410
+    timeDepart: 11:48
+    timeArrive: 16:11
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 18
+      transferTimeArrive: 13:08
+      transferTimeDepart: 13:46
+      transferTrainLine: JP Kitakami Line
+    - transferStation: 9
+      transferTimeArrive: 15:06
+      transferTimeDepart: 15:22
+      transferTrainLine: JP Tohoku Line
+  - originStation: 1
+    destinationStation: 11
+    journeyCost: 10690
+    timeDepart: 12:40
+    timeArrive: 16:44
+    trainLine: Limited Express Tsugaru 3
+    numberOfTransfers:
+    - transferStation: 14
+      transferTimeArrive: 15:14
+      transferTimeDepart: 15:52
+      transferTrainLine: Shinkansen Hayabusa 34
+  - originStation: 1
+    destinationStation: 11
+    journeyCost: 4700
+    timeDepart: 15:06
+    timeArrive: 16:48
+    trainLine: Shinkansen Komachi 34
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 11
+    journeyCost: 5810
+    timeDepart: 11:48
+    timeArrive: 16:54
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 18
+      transferTimeArrive: 13:08
+      transferTimeDepart: 13:46
+      transferTrainLine: JP Kitakami Line
+    - transferStation: 9
+      transferTimeArrive: 15:06
+      transferTimeDepart: 16:35
+      transferTrainLine: Shinkansen Yamabiko 63
+  - originStation: 1
+    destinationStation: 11
+    journeyCost: 4700
+    timeDepart: 14:14
+    timeArrive: 15:48
+    trainLine: Shinkansen Komachi 32
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 11
+    journeyCost: 4700
+    timeDepart: 15:06
+    timeArrive: 16:48
+    trainLine: Shinkansen Komachi 34
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 11
+    journeyCost: 4700
+    timeDepart: 16:12
+    timeArrive: 17:48
+    trainLine: Shinkansen Komachi 38
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 11
+    journeyCost: 4700
+    timeDepart: 16:34
+    timeArrive: 18:14
+    trainLine: Shinkansen Komachi 40
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 11
+    journeyCost: 4700
+    timeDepart: 17:10
+    timeArrive: 18:49
+    trainLine: Shinkansen Komachi 42
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 11
+    journeyCost: 10690
+    timeDepart: 15:52
+    timeArrive: 19:44
+    trainLine: Limited Express Tsugaru 5
+    numberOfTransfers:
+    - transferStation: 14
+      transferTimeArrive: 18:30
+      transferTimeDepart: 18:38
+      transferTrainLine: Shinkansen Hayabusa 46
+  - originStation: 1
+    destinationStation: 11
+    journeyCost: 10080
+    timeDepart: 16:27
+    timeArrive: 20:45
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 7
+      transferTimeArrive: 18:59
+      transferTimeDepart: 19:02
+      transferTrainLine: Resort Shirakami 5
+    - transferStation: 14
+      transferTimeArrive: 19:32
+      transferTimeDepart: 19:44
+      transferTrainLine: Shinkansen Hayabusa 48
+  - originStation: 1
+    destinationStation: 11
+    journeyCost: 9550
+    timeDepart: 17:31
+    timeArrive: 21:45
+    trainLine: JP Ou Line Rapid
+    numberOfTransfers:
+    - transferStation: 7
+      transferTimeArrive: 19:52
+      transferTimeDepart: 19:55
+      transferTrainLine: JP Ou Line
+    - transferStation: 14
+      transferTimeArrive: 20:30
+      transferTimeDepart: 20:40
+      transferTrainLine: Shinkansen Hayabusa 96
+  - originStation: 1
+    destinationStation: 11
+    journeyCost: 4700
+    timeDepart: 18:16
+    timeArrive: 19:48
+    trainLine: Shinkansen Komachi 46
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 11
+    journeyCost: 4700
+    timeDepart: 19:10
+    timeArrive: 20:49
+    trainLine: Shinkansen Komachi 48
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 11
+    journeyCost: 4700
+    timeDepart: 20:14
+    timeArrive: 21:49
+    trainLine: Shinkansen Komachi 96
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 11
+    journeyCost: 5910
+    timeDepart: 18:46
+    timeArrive: 22:23
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 18
+      transferTimeArrive: 20:03
+      transferTimeDepart: 20:10
+      transferTrainLine: JP Kitakami Line
+    - transferStation: 9
+      transferTimeArrive: 21:25
+      transferTimeDepart: 22:04
+      transferTrainLine: Shinkansen Hayabusa 11
+  - originStation: 1
+    destinationStation: 11
+    journeyCost: 3410
+    timeDepart: 18:46
+    timeArrive: 22:45
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 18
+      transferTimeArrive: 20:03
+      transferTimeDepart: 20:10
+      transferTrainLine: JP Kitakami Line
+    - transferStation: 9
+      transferTimeArrive: 21:25
+      transferTimeDepart: 21:53
+      transferTrainLine: JP Tohoku Line
+  - originStation: 1
+    destinationStation: 11
+    journeyCost: 9550
+    timeDepart: 17:31
+    timeArrive: 22:48
+    trainLine: JP Ou Line Rapid
+    numberOfTransfers:
+    - transferStation: 7
+      transferTimeArrive: 19:52
+      transferTimeDepart: 19:55
+      transferTrainLine: JP Ou Line
+    - transferStation: 14
+      transferTimeArrive: 20:30
+      transferTimeDepart: 21:47
+      transferTrainLine: Shinkansen Hayate 98
+  - originStation: 1
+    destinationStation: 11
+    journeyCost: 5810
+    timeDepart: 18:46
+    timeArrive: 23:31
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 18
+      transferTimeArrive: 20:03
+      transferTimeDepart: 20:10
+      transferTrainLine: JP Kitakami Line
+    - transferStation: 9
+      transferTimeArrive: 21:25
+      transferTimeDepart: 23:11
+      transferTrainLine: Shinkansen Yamabiko 69
+  - originStation: 1
+    destinationStation: 11
+    journeyCost: 9550
+    timeDepart: 19:25
+    timeArrive: 7:09
+    trainLine: JP Ou Line Rapid
+    numberOfTransfers:
+    - transferStation: 14
+      transferTimeArrive: 22:11
+      transferTimeDepart: 6:17
+      transferTrainLine: Shinkansen Hayabusa 4
+  - originStation: 1
+    destinationStation: 12
+    journeyCost: 17360
+    timeDepart: 6:08
+    timeArrive: 9:24
+    trainLine: Shinkansen Komachi 6
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 12
+    journeyCost: 17360
+    timeDepart: 7:16
+    timeArrive: 10:38
+    trainLine: Shinkansen Komachi 10
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 12
+    journeyCost: 15250
+    timeDepart: 6:17
+    timeArrive: 11:30
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 18
+      transferTimeArrive: 7:27
+      transferTimeDepart: 7:41
+      transferTrainLine: JP Kitakami Line
+    - transferStation: 9
+      transferTimeArrive: 9:05
+      transferTimeDepart: 9:26
+      transferTrainLine: Shinkansen Hayabusa 108
+  - originStation: 1
+    destinationStation: 12
+    journeyCost: 17360
+    timeDepart: 8:11
+    timeArrive: 11:38
+    trainLine: Shinkansen Komachi 14
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 12
+    journeyCost: 14650
+    timeDepart: 5:54
+    timeArrive: 12:22
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 15
+      transferTimeArrive: 8:43
+      transferTimeDepart: 9:16
+      transferTrainLine: Shinkansen Tsubasa 136
+  - originStation: 1
+    destinationStation: 12
+    journeyCost: 17360
+    timeDepart: 9:12
+    timeArrive: 12:38
+    trainLine: Shinkansen Komachi 16
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 12
+    journeyCost: 14830
+    timeDepart: 6:17
+    timeArrive: 12:58
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 18
+      transferTimeArrive: 7:27
+      transferTimeDepart: 7:41
+      transferTrainLine: JP Kitakami Line
+    - transferStation: 9
+      transferTimeArrive: 9:05
+      transferTimeDepart: 10:29
+      transferTrainLine: Shinkansen Yamabiko 52
+  - originStation: 1
+    destinationStation: 12
+    journeyCost: 17360
+    timeDepart: 10:07
+    timeArrive: 13:38
+    trainLine: Shinkansen Komachi 18
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 12
+    journeyCost: 17360
+    timeDepart: 9:12
+    timeArrive: 12:38
+    trainLine: Shinkansen Komachi 16
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 12
+    journeyCost: 17360
+    timeDepart: 10:07
+    timeArrive: 13:38
+    trainLine: Shinkansen Komachi 18
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 12
+    journeyCost: 19280
+    timeDepart: 8:35
+    timeArrive: 14:06
+    trainLine: Limited Express Tsugaru 1
+    numberOfTransfers:
+    - transferStation: 14
+      transferTimeArrive: 11:07
+      transferTimeDepart: 11:20
+      transferTrainLine: Shinkansen Hayabusa 20
+  - originStation: 1
+    destinationStation: 12
+    journeyCost: 14650
+    timeDepart: 8:09
+    timeArrive: 14:22
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 15
+      transferTimeArrive: 10:46
+      transferTimeDepart: 11:17
+      transferTrainLine: Shinkansen Tsubasa 140
+  - originStation: 1
+    destinationStation: 12
+    journeyCost: 17360
+    timeDepart: 11:07
+    timeArrive: 14:38
+    trainLine: Shinkansen Komachi 22
+    numberOfTransfers:
+    - transferStation: 15
+      transferTimeArrive: 10:46
+      transferTimeDepart: 11:17
+      transferTrainLine: Shinkansen Tsubasa 140
+  - originStation: 1
+    destinationStation: 12
+    journeyCost: 14830
+    timeDepart: 9:12
+    timeArrive: 14:58
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 18
+      transferTimeArrive: 10:29
+      transferTimeDepart: 10:35
+      transferTrainLine: JP Kitakami Line Rapid
+    - transferStation: 9
+      transferTimeArrive: 11:51
+      transferTimeDepart: 12:29
+      transferTrainLine: Shinkansen Yamabiko 56
+  - originStation: 1
+    destinationStation: 12
+    journeyCost: 17360
+    timeDepart: 12:13
+    timeArrive: 15:38
+    trainLine: Shinkansen Komachi 24
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 12
+    journeyCost: 17360
+    timeDepart: 13:06
+    timeArrive: 16:38
+    trainLine: Shinkansen Komachi 28
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 12
+    journeyCost: 17360
+    timeDepart: 14:14
+    timeArrive: 17:38
+    trainLine: Shinkansen Komachi 32
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 12
+    journeyCost: 14830
+    timeDepart: 11:48
+    timeArrive: 17:58
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 18
+      transferTimeArrive: 13:08
+      transferTimeDepart: 13:46
+      transferTrainLine: JP Kitakami Line
+    - transferStation: 9
+      transferTimeArrive: 15:06
+      transferTimeDepart: 15:29
+      transferTrainLine: Shinkansen Yamabiko 62
+  - originStation: 1
+    destinationStation: 12
+    journeyCost: 14650
+    timeDepart: 11:48
+    timeArrive: 18:22
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 15
+      transferTimeArrive: 14:48
+      transferTimeDepart: 15:17
+      transferTrainLine: Shinkansen Tsubasa 150
+  - originStation: 1
+    destinationStation: 12
+    journeyCost: 17360
+    timeDepart: 15:06
+    timeArrive: 18:38
+    trainLine: Shinkansen Komachi 34
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 12
+    journeyCost: 17360
+    timeDepart: 16:12
+    timeArrive: 19:38
+    trainLine: Shinkansen Komachi 38
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 12
+    journeyCost: 17360
+    timeDepart: 16:34
+    timeArrive: 20:06
+    trainLine: Shinkansen Komachi 40
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 12
+    journeyCost: 17360
+    timeDepart: 17:10
+    timeArrive: 20:38
+    trainLine: Shinkansen Komachi 42
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 12
+    journeyCost: 14830
+    timeDepart: 15:43
+    timeArrive: 21:34
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 18
+      transferTimeArrive: 16:58
+      transferTimeDepart: 17:16
+      transferTrainLine: JP Kitakami Line
+    - transferStation: 9
+      transferTimeArrive: 18:35
+      transferTimeDepart: 19:03
+      transferTrainLine: Shinkansen Yamabiko 66
+  - originStation: 1
+    destinationStation: 12
+    journeyCost: 17360
+    timeDepart: 18:16
+    timeArrive: 21:38
+    trainLine: Shinkansen Komachi 46
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 12
+    journeyCost: 17360
+    timeDepart: 19:10
+    timeArrive: 22:38
+    trainLine: Shinkansen Komachi 48
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 12
+    journeyCost: 15250
+    timeDepart: 18:46
+    timeArrive: 7:43
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 18
+      transferTimeArrive: 20:03
+      transferTimeDepart: 20:10
+      transferTrainLine: JP Ou Line
+    - transferStation: 9
+      transferTimeArrive: 21:25
+      transferTimeDepart: 22:11
+      transferTrainLine: Shinkansen Hayabusa 96
+    - transferStation: 13
+      transferTimeArrive: 23:01
+      transferTimeDepart: 6:36
+      transferTrainLine: Shinkansen Hayabusa 2
+  - originStation: 1
+    destinationStation: 12
+    journeyCost: 15250
+    timeDepart: 18:46
+    timeArrive: 8:30
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 18
+      transferTimeArrive: 20:03
+      transferTimeDepart: 20:10
+      transferTrainLine: JP Ou Line
+    - transferStation: 9
+      transferTimeArrive: 21:25
+      transferTimeDepart: 6:29
+      transferTrainLine: Shinkansen Hayabusa 96
+  - originStation: 1
+    destinationStation: 12
+    journeyCost: 18140
+    timeDepart: 19:25
+    timeArrive: 8:59
+    trainLine: JP Ou Line Rapid
+    numberOfTransfers:
+    - transferStation: 14
+      transferTimeArrive: 22:11
+      transferTimeDepart: 6:17
+      transferTrainLine: Shinkansen Hayabusa 4
+  - originStation: 1
+    destinationStation: 13
+    journeyCost: 10560
+    timeDepart: 6:08
+    timeArrive: 8:15
+    trainLine: Shinkansen Komachi 6
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 13
+    journeyCost: 10560
+    timeDepart: 7:16
+    timeArrive: 9:29
+    trainLine: Shinkansen Komachi 10
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 13
+    journeyCost: 8220
+    timeDepart: 6:17
+    timeArrive: 10:19
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 18
+      transferTimeArrive: 7:27
+      transferTimeDepart: 7:41
+      transferTrainLine: JP Kitakami Line
+    - transferStation: 9
+      transferTimeArrive: 9:05
+      transferTimeDepart: 9:26
+      transferTrainLine: Shinkansen Hayabusa 108
+  - originStation: 1
+    destinationStation: 13
+    journeyCost: 10560
+    timeDepart: 8:11
+    timeArrive: 10:29
+    trainLine: Shinkansen Komachi 14
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 13
+    journeyCost: 10560
+    timeDepart: 9:12
+    timeArrive: 11:29
+    trainLine: Shinkansen Komachi 16
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 13
+    journeyCost: 10560
+    timeDepart: 10:07
+    timeArrive: 12:29
+    trainLine: Shinkansen Komachi 18
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 13
+    journeyCost: 15090
+    timeDepart: 8:35
+    timeArrive: 12:55
+    trainLine: Limited Express Tsugaru 1
+    numberOfTransfers:
+    - transferStation: 14
+      transferTimeArrive: 11:07
+      transferTimeDepart: 11:20
+      transferTrainLine: Shinkansen Hayabusa 20
+  - originStation: 1
+    destinationStation: 13
+    journeyCost: 8010
+    timeDepart: 9:12
+    timeArrive: 13:22
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 18
+      transferTimeArrive: 10:29
+      transferTimeDepart: 10:35
+      transferTrainLine: JP Kitakami Line
+    - transferStation: 9
+      transferTimeArrive: 11:51
+      transferTimeDepart: 12:29
+      transferTrainLine: Shinkansen Yamabiko 56
+  - originStation: 1
+    destinationStation: 13
+    journeyCost: 10560
+    timeDepart: 11:07
+    timeArrive: 13:29
+    trainLine: Shinkansen Komachi 22
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 13
+    journeyCost: 10560
+    timeDepart: 12:13
+    timeArrive: 14:29
+    trainLine: Shinkansen Komachi 24
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 13
+    journeyCost: 10560
+    timeDepart: 13:06
+    timeArrive: 15:29
+    trainLine: Shinkansen Komachi 28
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 13
+    journeyCost: 10460
+    timeDepart: 10:16
+    timeArrive: 16:06
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 15
+      transferTimeArrive: 12:56
+      transferTimeDepart: 13:18
+      transferTrainLine: Shinkansen Tsubasu 144
+    - transferStation: 2
+      transferTimeArrive: 15:14
+      transferTimeDepart: 15:38
+      transferTrainLine: Shinkansen Yamabiko 141
+  - originStation: 0
+    destinationStation: 13
+    journeyCost: 8010
+    timeDepart: 11:48
+    timeArrive: 16:22
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 18
+      transferTimeArrive: 13:08
+      transferTimeDepart: 13:46
+      transferTrainLine: JP Kitakami Line
+    - transferStation: 9
+      transferTimeArrive: 15:06
+      transferTimeDepart: 15:29
+      transferTrainLine: Shinkansen Yamabiko 62
+  - originStation: 1
+    destinationStation: 13
+    journeyCost: 10560
+    timeDepart: 14:14
+    timeArrive: 16:29
+    trainLine: Shinkansen Komachi 32
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 13
+    journeyCost: 10560
+    timeDepart: 15:06
+    timeArrive: 17:29
+    trainLine: Shinkansen Komachi 34
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 13
+    journeyCost: 10560
+    timeDepart: 16:12
+    timeArrive: 18:29
+    trainLine: Shinkansen Komachi 38
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 13
+    journeyCost: 10560
+    timeDepart: 16:34
+    timeArrive: 18:55
+    trainLine: Shinkansen Komachi 40
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 13
+    journeyCost: 10560
+    timeDepart: 17:10
+    timeArrive: 19:29
+    trainLine: Shinkansen Komachi 42
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 13
+    journeyCost: 8010
+    timeDepart: 15:43
+    timeArrive: 19:58
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 18
+      transferTimeArrive: 16:58
+      transferTimeDepart: 17:16
+      transferTrainLine: JP Kitakami Line
+    - transferStation: 9
+      transferTimeArrive: 18:35
+      transferTimeDepart: 19:03
+      transferTrainLine: Shinkansen Yamabiko 66
+  - originStation: 1
+    destinationStation: 13
+    journeyCost: 15090
+    timeDepart: 15:52
+    timeArrive: 20:29
+    trainLine: Limited Express Tsugaru 5
+    numberOfTransfers:
+    - transferStation: 14
+      transferTimeArrive: 18:30
+      transferTimeDepart: 18:38
+      transferTrainLine: Shinkansen Hayabusa 46
+  - originStation: 1
+    destinationStation: 13
+    journeyCost: 8010
+    timeDepart: 15:43
+    timeArrive: 20:52
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 18
+      transferTimeArrive: 16:58
+      transferTimeDepart: 17:16
+      transferTrainLine: JP Kitakami Line
+    - transferStation: 9
+      transferTimeArrive: 18:35
+      transferTimeDepart: 20:03
+      transferTrainLine: Shinkansen Komachi 68
+  - originStation: 1
+    destinationStation: 13
+    journeyCost: 10560
+    timeDepart: 18:16
+    timeArrive: 20:29
+    trainLine: Shinkansen Komachi 46
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 13
+    journeyCost: 10560
+    timeDepart: 19:10
+    timeArrive: 21:29
+    trainLine: Shinkansen Komachi 48
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 13
+    journeyCost: 10560
+    timeDepart: 20:14
+    timeArrive: 23:01
+    trainLine: Shinkansen Komachi 96
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 13
+    journeyCost: 8220
+    timeDepart: 18:46
+    timeArrive: 7:19
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 18
+      transferTimeArrive: 20:03
+      transferTimeDepart: 20:10
+      transferTrainLine: JP Kitakami Line
+    - transferStation: 9
+      transferTimeArrive: 21:25
+      transferTimeDepart: 6:29
+      transferTrainLine: Shinkansen Hayabusa 102
+  - originStation: 1
+    destinationStation: 13
+    journeyCost: 8010
+    timeDepart: 18:46
+    timeArrive: 7:42
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 18
+      transferTimeArrive: 20:03
+      transferTimeDepart: 20:10
+      transferTrainLine: JP Kitakami Line
+    - transferStation: 9
+      transferTimeArrive: 21:25
+      transferTimeDepart: 6:51
+      transferTrainLine: Shinkansen Yamabiko 94
+  - originStation: 1
+    destinationStation: 13
+    journeyCost: 13950
+    timeDepart: 19:25
+    timeArrive: 7:50
+    trainLine: JP Ou Line Rapid
+    numberOfTransfers:
+    - transferStation: 14
+      transferTimeArrive: 22:11
+      transferTimeDepart: 6:17
+      transferTrainLine: Shinkansen Hayabusa 4
+  - originStation: 1
+    destinationStation: 13
+    journeyCost: 8010
+    timeDepart: 18:46
+    timeArrive: 8:11
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 18
+      transferTimeArrive: 20:03
+      transferTimeDepart: 20:10
+      transferTrainLine: JP Kitakami Line
+    - transferStation: 9
+      transferTimeArrive: 21:25
+      transferTimeDepart: 7:23
+      transferTrainLine: Shinkansen Yamabiko 50
+  - originStation: 1
+    destinationStation: 13
+    journeyCost: 8220
+    timeDepart: 18:46
+    timeArrive: 8:11
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 18
+      transferTimeArrive: 20:03
+      transferTimeDepart: 20:10
+      transferTrainLine: JP Kitakami Line
+    - transferStation: 9
+      transferTimeArrive: 21:25
+      transferTimeDepart: 7:50
+      transferTrainLine: Shinkansen Hayabusa 104
+  - originStation: 1
+    destinationStation: 13
+    journeyCost: 8220
+    timeDepart: 22:40
+    timeArrive: 8:55
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 18
+      transferTimeArrive: 23:47
+      transferTimeDepart: 6:38
+      transferTrainLine: JP Kitakami Line
+    - transferStation: 9
+      transferTimeArrive: 8:01
+      transferTimeDepart: 8:15
+      transferTrainLine: Shinkansen Hayabusa 8
+  - originStation: 1
+    destinationStation: 13
+    journeyCost: 8220
+    timeDepart: 22:40
+    timeArrive: 9:19
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 18
+      transferTimeArrive: 23:47
+      transferTimeDepart: 6:38
+      transferTrainLine: JP Kitakami Line
+    - transferStation: 9
+      transferTimeArrive: 8:01
+      transferTimeDepart: 8:29
+      transferTrainLine: Shinkansen Hayabusa 8
+  - originStation: 1
+    destinationStation: 14
+    journeyCost: 3410
+    timeDepart: 5:27
+    timeArrive: 8:43
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 7
+      transferTimeArrive: 7:59
+      transferTimeDepart: 8:04
+      transferTrainLine: JP Ou Line
+  - originStation: 1
+    destinationStation: 14
+    journeyCost: 5700
+    timeDepart: 8:35
+    timeArrive: 11:07
+    trainLine: Limited Express Tsugaru 1
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 14
+    journeyCost: 10350
+    timeDepart: 8:11
+    timeArrive: 11:19
+    trainLine: Shinkansen Komachi 14
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 9:46
+      transferTimeDepart: 10:32
+      transferTrainLine: Shinkansen Hayabusa 7
+  - originStation: 1
+    destinationStation: 14
+    journeyCost: 3410
+    timeDepart: 7:28
+    timeArrive: 11:34
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 7
+      transferTimeArrive: 10:02
+      transferTimeDepart: 10:53
+      transferTrainLine: JP Ou Line
+  - originStation: 1
+    destinationStation: 14
+    journeyCost: 10350
+    timeDepart: 10:07
+    timeArrive: 13:29
+    trainLine: Shinkansen Komachi 18
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 11:47
+      transferTimeDepart: 12:37
+      transferTrainLine: Shinkansen Hayabusa 17
+  - originStation: 1
+    destinationStation: 14
+    journeyCost: 5700
+    timeDepart: 12:40
+    timeArrive: 15:14
+    trainLine: Limited Express Tsugaru 3
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 14
+    journeyCost: 10350
+    timeDepart: 11:07
+    timeArrive: 13:57
+    trainLine: Shinkansen Komachi 22
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 12:49
+      transferTimeDepart: 13:05
+      transferTrainLine: Shinkansen Hayabusa 19
+  - originStation: 1
+    destinationStation: 14
+    journeyCost: 10350
+    timeDepart: 12:13
+    timeArrive: 15:29
+    trainLine: Shinkansen Komachi 24
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 13:48
+      transferTimeDepart: 14:37
+      transferTrainLine: Shinkansen Hayabusa 23
+  - originStation: 1
+    destinationStation: 14
+    journeyCost: 10350
+    timeDepart: 13:06
+    timeArrive: 16:43
+    trainLine: Shinkansen Komachi 28
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 14:48
+      transferTimeDepart: 15:37
+      transferTrainLine: Shinkansen Hayabusa 25
+  - originStation: 1
+    destinationStation: 14
+    journeyCost: 10350
+    timeDepart: 14:14
+    timeArrive: 17:29
+    trainLine: Shinkansen Komachi 32
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 15:48
+      transferTimeDepart: 16:37
+      transferTrainLine: Shinkansen Hayabusa 27
+  - originStation: 1
+    destinationStation: 14
+    journeyCost: 10350
+    timeDepart: 15:06
+    timeArrive: 17:41
+    trainLine: Shinkansen Komachi 34
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 16:48
+      transferTimeDepart: 16:53
+      transferTrainLine: Shinkansen Hayabusa 29
+  - originStation: 1
+    destinationStation: 14
+    journeyCost: 5700
+    timeDepart: 15:52
+    timeArrive: 18:30
+    trainLine: Limited Express Tsugaru 5
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 14
+    journeyCost: 10350
+    timeDepart: 16:12
+    timeArrive: 18:43
+    trainLine: Shinkansen Komachi 38
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 17:48
+      transferTimeDepart: 17:53
+      transferTrainLine: Shinkansen Hayabusa 33
+  - originStation: 1
+    destinationStation: 14
+    journeyCost: 3410
+    timeDepart: 15:19
+    timeArrive: 19:10
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 7
+      transferTimeArrive: 17:52
+      transferTimeDepart: 18:33
+      transferTrainLine: JP Ou Line
+  - originStation: 1
+    destinationStation: 14
+    journeyCost: 10350
+    timeDepart: 16:34
+    timeArrive: 19:37
+    trainLine: Shinkansen Komachi 40
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 18:14
+      transferTimeDepart: 18:37
+      transferTrainLine: Shinkansen Hayabusa 35
+  - originStation: 1
+    destinationStation: 14
+    journeyCost: 3410
+    timeDepart: 16:27
+    timeArrive: 19:47
+    trainLine: JP Ou Line
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 14
+    journeyCost: 3410
+    timeDepart: 17:31
+    timeArrive: 20:30
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 7
+      transferTimeArrive: 19:52
+      transferTimeDepart: 19:55
+      transferTrainLine: JP Ou Line
+  - originStation: 1
+    destinationStation: 14
+    journeyCost: 10350
+    timeDepart: 17:10
+    timeArrive: 20:40
+    trainLine: Shinkansen Komachi 42
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 18:49
+      transferTimeDepart: 19:37
+      transferTrainLine: Shinkansen Hayabusa 39
+  - originStation: 1
+    destinationStation: 14
+    journeyCost: 10350
+    timeDepart: 18:16
+    timeArrive: 21:37
+    trainLine: Shinkansen Komachi 46
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 19:48
+      transferTimeDepart: 20:37
+      transferTrainLine: Shinkansen Hayabusa 41
+  - originStation: 1
+    destinationStation: 14
+    journeyCost: 3410
+    timeDepart: 19:25
+    timeArrive: 22:11
+    trainLine: JP Ou Line Rapid
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 14
+    journeyCost: 10350
+    timeDepart: 19:10
+    timeArrive: 22:30
+    trainLine: Shinkansen Komachi 48
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 20:49
+      transferTimeDepart: 21:38
+      transferTrainLine: Shinkansen Hayabusa 43
+  - originStation: 1
+    destinationStation: 14
+    journeyCost: 10350
+    timeDepart: 20:14
+    timeArrive: 23:36
+    trainLine: Shinkansen Komachi 96
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 21:49
+      transferTimeDepart: 22:31
+      transferTrainLine: Shinkansen Hayabusa 45
+  - originStation: 1
+    destinationStation: 15
+    journeyCost: 2640
+    timeDepart: 5:54
+    timeArrive: 8:43
+    trainLine: JP Ou Line
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 15
+    journeyCost: 2640
+    timeDepart: 8:09
+    timeArrive: 10:46
+    trainLine: JP Ou Line
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 15
+    journeyCost: 2640
+    timeDepart: 10:16
+    timeArrive: 12:56
+    trainLine: JP Ou Line
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 15
+    journeyCost: 2640
+    timeDepart: 11:48
+    timeArrive: 14:48
+    trainLine: JP Ou Line
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 15
+    journeyCost: 2640
+    timeDepart: 13:45
+    timeArrive: 16:28
+    trainLine: JP Ou Line
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 15
+    journeyCost: 2640
+    timeDepart: 15:43
+    timeArrive: 18:26
+    trainLine: JP Ou Line
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 15
+    journeyCost: 16540
+    timeDepart: 17:10
+    timeArrive: 22:45
+    trainLine: Shinkansen Komachi 42
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 19:29
+      transferTimeDepart: 20:17
+      transferTrainLine: Shinkansen Yamabiko 158
+    - transferStation: 2
+      transferTimeArrive: 20:44
+      transferTimeDepart: 20:56
+      transferTrainLine: Shinkansen Tsubasa 157
+  - originStation: 1
+    destinationStation: 15
+    journeyCost: 2640
+    timeDepart: 16:43
+    timeArrive: 19:46
+    trainLine: Shinkansen Komachi 42
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 15
+    journeyCost: 2640
+    timeDepart: 17:44
+    timeArrive: 20:48
+    trainLine: JP Ou Line
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 15
+    journeyCost: 2640
+    timeDepart: 17:44
+    timeArrive: 20:48
+    trainLine: JP Ou Line
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 16
+    journeyCost: 17580
+    timeDepart: 6:08
+    timeArrive: 10:05
+    trainLine: Shinkansen Komachi 6
+    numberOfTransfers:
+    - transferStation: 12
+      transferTimeArrive: 9:24
+      transferTimeDepart: 9:35
+      transferTrainLine: JP Saikyo Line Rapid
+  - originStation: 1
+    destinationStation: 16
+    journeyCost: 17580
+    timeDepart: 7:16
+    timeArrive: 11:26
+    trainLine: Shinkansen Komachi 10
+    numberOfTransfers:
+    - transferStation: 12
+      transferTimeArrive: 10:38
+      transferTimeDepart: 10:50
+      transferTrainLine: JP Saikyo Line Rapid
+  - originStation: 1
+    destinationStation: 16
+    journeyCost: 17580
+    timeDepart: 8:11
+    timeArrive: 12:26
+    trainLine: Shinkansen Komachi 14
+    numberOfTransfers:
+    - transferStation: 12
+      transferTimeArrive: 11:38
+      transferTimeDepart: 11:50
+      transferTrainLine: JP Saikyo Line Rapid
+  - originStation: 1
+    destinationStation: 16
+    journeyCost: 17580
+    timeDepart: 9:12
+    timeArrive: 13:26
+    trainLine: Shinkansen Komachi 16
+    numberOfTransfers:
+    - transferStation: 12
+      transferTimeArrive: 12:38
+      transferTimeDepart: 12:50
+      transferTrainLine: JP Saikyo Line Rapid
+  - originStation: 1
+    destinationStation: 16
+    journeyCost: 17580
+    timeDepart: 10:07
+    timeArrive: 14:26
+    trainLine: Shinkansen Komachi 18
+    numberOfTransfers:
+    - transferStation: 12
+      transferTimeArrive: 13:38
+      transferTimeDepart: 13:50
+      transferTrainLine: JP Saikyo Line Rapid
+  - originStation: 1
+    destinationStation: 16
+    journeyCost: 18630
+    timeDepart: 12:13
+    timeArrive: 17:19
+    trainLine: Shinkansen Komachi 24
+    numberOfTransfers:
+    - transferStation: 12
+      transferTimeArrive: 15:38
+      transferTimeDepart: 16:46
+      transferTrainLine: Limited Express Spacia Kinugawa 6
+  - originStation: 1
+    destinationStation: 16
+    journeyCost: 18630
+    timeDepart: 14:14
+    timeArrive: 18:35
+    trainLine: Shinkansen Komachi 32
+    numberOfTransfers:
+    - transferStation: 12
+      transferTimeArrive: 17:38
+      transferTimeDepart: 18:04
+      transferTrainLine: Limited Express Nikko 8
+  - originStation: 1
+    destinationStation: 16
+    journeyCost: 17580
+    timeDepart: 15:06
+    timeArrive: 19:21
+    trainLine: Shinkansen Komachi 34
+    numberOfTransfers:
+    - transferStation: 12
+      transferTimeArrive: 18:38
+      transferTimeDepart: 18:50
+      transferTrainLine: JP Saikyo Line Rapid
+  - originStation: 1
+    destinationStation: 16
+    journeyCost: 17580
+    timeDepart: 16:12
+    timeArrive: 20:23
+    trainLine: Shinkansen Komachi 38
+    numberOfTransfers:
+    - transferStation: 12
+      transferTimeArrive: 19:38
+      transferTimeDepart: 19:50
+      transferTrainLine: JP Saikyo Line Rapid
+  - originStation: 1
+    destinationStation: 16
+    journeyCost: 17580
+    timeDepart: 16:34
+    timeArrive: 21:02
+    trainLine: Shinkansen Komachi 40
+    numberOfTransfers:
+    - transferStation: 12
+      transferTimeArrive: 20:06
+      transferTimeDepart: 20:30
+      transferTrainLine: JP Saikyo Line Rapid
+  - originStation: 1
+    destinationStation: 16
+    journeyCost: 17580
+    timeDepart: 17:10
+    timeArrive: 21:22
+    trainLine: Shinkansen Komachi 42
+    numberOfTransfers:
+    - transferStation: 12
+      transferTimeArrive: 20:38
+      transferTimeDepart: 20:50
+      transferTrainLine: JP Saikyo Line Rapid
+  - originStation: 1
+    destinationStation: 16
+    journeyCost: 18870
+    timeDepart: 19:10
+    timeArrive: 6:49
+    trainLine: Shinkansen Komachi 48
+    numberOfTransfers:
+    - transferStation: 12
+      transferTimeArrive: 22:38
+      transferTimeDepart: 6:20
+      transferTrainLine: Limited Express Narita Express 5
+  - originStation: 1
+    destinationStation: 17
+    journeyCost: 5470
+    timeDepart: 5:54
+    timeArrive: 10:00
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 15
+      transferTimeArrive: 8:43
+      transferTimeDepart: 9:16
+      transferTrainLine: Shinkansen Tsubasa 136
+  - originStation: 1
+    destinationStation: 17
+    journeyCost: 11660
+    timeDepart: 6:08
+    timeArrive: 10:21
+    trainLine: Shinkansen Komachi 6
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 8:15
+      transferTimeDepart: 9:04
+      transferTrainLine: JP Senzan Line Rapid
+  - originStation: 1
+    destinationStation: 17
+    journeyCost: 3470
+    timeDepart: 5:54
+    timeArrive: 10:42
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 15
+      transferTimeArrive: 8:43
+      transferTimeDepart: 9:32
+      transferTrainLine: JP Yamagata Line
+  - originStation: 1
+    destinationStation: 17
+    journeyCost: 11660
+    timeDepart: 7:16
+    timeArrive: 11:29
+    trainLine: Shinkansen Komachi 10
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 9:29
+      transferTimeDepart: 10:08
+      transferTrainLine: JP Senzan Line
+  - originStation: 1
+    destinationStation: 17
+    journeyCost: 5470
+    timeDepart: 8:09
+    timeArrive: 12:06
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 15
+      transferTimeArrive: 10:46
+      transferTimeDepart: 11:17
+      transferTrainLine: Shinkansen Tsubasa 140
+  - originStation: 1
+    destinationStation: 17
+    journeyCost: 11660
+    timeDepart: 8:11
+    timeArrive: 12:33
+    trainLine: Shinkansen Komachi 14
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 10:29
+      transferTimeDepart: 11:18
+      transferTrainLine: JP Senzan Line Rapid
+  - originStation: 1
+    destinationStation: 17
+    journeyCost: 3470
+    timeDepart: 8:09
+    timeArrive: 12:57
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 15
+      transferTimeArrive: 10:46
+      transferTimeDepart: 11:40
+      transferTrainLine: JP Yamagata Line
+  - originStation: 1
+    destinationStation: 17
+    journeyCost: 11660
+    timeDepart: 9:12
+    timeArrive: 13:34
+    trainLine: Shinkansen Komachi 16
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 11:29
+      transferTimeDepart: 12:11
+      transferTrainLine: JP Senzan Line
+  - originStation: 1
+    destinationStation: 17
+    journeyCost: 5470
+    timeDepart: 10:16
+    timeArrive: 14:02
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 15
+      transferTimeArrive: 12:56
+      transferTimeDepart: 13:18
+      transferTrainLine: Shinkansen Tsubasa 144
+  - originStation: 1
+    destinationStation: 17
+    journeyCost: 11660
+    timeDepart: 10:07
+    timeArrive: 14:16
+    trainLine: Shinkansen Komachi 18
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 12:29
+      transferTimeDepart: 13:01
+      transferTrainLine: JP Senzan Line Rapid
+  - originStation: 1
+    destinationStation: 17
+    journeyCost: 11660
+    timeDepart: 11:07
+    timeArrive: 15:17
+    trainLine: Shinkansen Komachi 22
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 13:29
+      transferTimeDepart: 14:04
+      transferTrainLine: JP Senzan Line Rapid
+  - originStation: 1
+    destinationStation: 17
+    journeyCost: 5470
+    timeDepart: 11:48
+    timeArrive: 16:05
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 15
+      transferTimeArrive: 14:48
+      transferTimeDepart: 15:17
+      transferTrainLine: Shinkansen Tsubasa 150
+  - originStation: 1
+    destinationStation: 17
+    journeyCost: 11660
+    timeDepart: 12:13
+    timeArrive: 16:25
+    trainLine: Shinkansen Komachi 24
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 14:29
+      transferTimeDepart: 15:00
+      transferTrainLine: JP Senzan Line
+  - originStation: 1
+    destinationStation: 17
+    journeyCost: 11660
+    timeDepart: 13:06
+    timeArrive: 17:18
+    trainLine: Shinkansen Komachi 28
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 15:29
+      transferTimeDepart: 16:00
+      transferTrainLine: JP Senzan Line Rapid
+  - originStation: 1
+    destinationStation: 17
+    journeyCost: 5470
+    timeDepart: 13:45
+    timeArrive: 18:02
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 15
+      transferTimeArrive: 16:28
+      transferTimeDepart: 17:12
+      transferTrainLine: Shinkansen Tsubasa 156
+  - originStation: 1
+    destinationStation: 17
+    journeyCost: 5470
+    timeDepart: 15:43
+    timeArrive: 19:29
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 15
+      transferTimeArrive: 18:26
+      transferTimeDepart: 18:43
+      transferTrainLine: Shinkansen Tsubasa 158
+  - originStation: 1
+    destinationStation: 17
+    journeyCost: 11660
+    timeDepart: 14:14
+    timeArrive: 18:21
+    trainLine: Shinkansen Komachi 32
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 16:29
+      transferTimeDepart: 17:00
+      transferTrainLine: JP Senzan Line
+  - originStation: 1
+    destinationStation: 17
+    journeyCost: 11660
+    timeDepart: 15:06
+    timeArrive: 19:12
+    trainLine: Shinkansen Komachi 34
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 17:29
+      transferTimeDepart: 17:46
+      transferTrainLine: JP Senzan Line
+  - originStation: 1
+    destinationStation: 17
+    journeyCost: 5470
+    timeDepart: 16:43
+    timeArrive: 20:41
+    trainLine: JP Ou Line
+    numberOfTransfers:
+    - transferStation: 15
+      transferTimeArrive: 19:46
+      transferTimeDepart: 19:57
+      transferTrainLine: Shinkansen Tsubasa 160
+  - originStation: 1
+    destinationStation: 17
+    journeyCost: 11660
+    timeDepart: 17:10
+    timeArrive: 21:01
+    trainLine: Shinkansen Komachi 42
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 19:29
+      transferTimeDepart: 19:38
+      transferTrainLine: JP Senzan Line
+  - originStation: 1
+    destinationStation: 17
+    journeyCost: 14820
+    timeDepart: 16:34
+    timeArrive: 21:57
+    trainLine: Shinkansen Komachi 40
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 18:55
+      transferTimeDepart: 19:05
+      transferTrainLine: JP Tohoku Line
+    - transferStation: 2
+      transferTimeArrive: 20:26
+      transferTimeDepart: 20:56
+      transferTrainLine: Shinkansen Tsubasa 157
+  - originStation: 1
+    destinationStation: 17
+    journeyCost: 11660
+    timeDepart: 18:16
+    timeArrive: 22:24
+    trainLine: Shinkansen Komachi 46
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 20:29
+      transferTimeDepart: 21:04
+      transferTrainLine: JP Senzan Line
+  - originStation: 1
+    destinationStation: 17
+    journeyCost: 15210
+    timeDepart: 19:10
+    timeArrive: 23:26
+    trainLine: Shinkansen Komachi 48
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 21:29
+      transferTimeDepart: 21:47
+      transferTrainLine: Shinkansen Yamabiko 70
+    - transferStation: 2
+      transferTimeArrive: 22:08
+      transferTimeDepart: 22:19
+      transferTrainLine: Shinkansen Tsubasa 159
+  - originStation: 1
+    destinationStation: 17
+    journeyCost: 11660
+    timeDepart: 19:10
+    timeArrive: 23:33
+    trainLine: Shinkansen Komachi 48
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 21:29
+      transferTimeDepart: 22:16
+      transferTrainLine: JP Senzan Line
+  - originStation: 1
+    destinationStation: 17
+    journeyCost: 11660
+    timeDepart: 20:14
+    timeArrive: 7:37
+    trainLine: Shinkansen Komachi 96
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 23:01
+      transferTimeDepart: 6:10
+      transferTrainLine: JP Senzan Line
+  - originStation: 1
+    destinationStation: 17
+    journeyCost: 11660
+    timeDepart: 20:14
+    timeArrive: 7:37
+    trainLine: Shinkansen Komachi 96
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 23:01
+      transferTimeDepart: 6:10
+      transferTrainLine: JP Senzan Line
+  - originStation: 1
+    destinationStation: 18
+    journeyCost: 1340
+    timeDepart: 5:54
+    timeArrive: 7:05
+    trainLine: JP Ou Line
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 18
+    journeyCost: 1340
+    timeDepart: 6:17
+    timeArrive: 7:27
+    trainLine: JP Ou Line
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 18
+    journeyCost: 1340
+    timeDepart: 6:43
+    timeArrive: 7:53
+    trainLine: JP Ou Line
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 18
+    journeyCost: 1340
+    timeDepart: 8:09
+    timeArrive: 9:20
+    trainLine: JP Ou Line
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 18
+    journeyCost: 1340
+    timeDepart: 9:12
+    timeArrive: 10:29
+    trainLine: JP Ou Line
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 18
+    journeyCost: 8690
+    timeDepart: 7:16
+    timeArrive: 11:15
+    trainLine: Shinkansen Komachi 10
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 8:48
+      transferTimeDepart: 9:06
+      transferTrainLine: Shinkansen Hayabusa 108
+    - transferStation: 9
+      transferTimeArrive: 9:25
+      transferTimeDepart: 10:03
+      transferTrainLine: JP Kitakami Line
+  - originStation: 1
+    destinationStation: 18
+    journeyCost: 8590
+    timeDepart: 11:07
+    timeArrive: 14:51
+    trainLine: Shinkansen Komachi 22
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 12:49
+      transferTimeDepart: 13:07
+      transferTrainLine: Shinkansen Yamabiko 58
+    - transferStation: 9
+      transferTimeArrive: 13:26
+      transferTimeDepart: 13:40
+      transferTrainLine: JP Kitakami Line Rapid
+  - originStation: 1
+    destinationStation: 18
+    journeyCost: 1340
+    timeDepart: 10:16
+    timeArrive: 11:32
+    trainLine: JP Ou Line
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 18
+    journeyCost: 1340
+    timeDepart: 11:48
+    timeArrive: 13:08
+    trainLine: JP Ou Line
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 18
+    journeyCost: 1340
+    timeDepart: 12:39
+    timeArrive: 14:01
+    trainLine: JP Ou Line
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 18
+    journeyCost: 1340
+    timeDepart: 13:45
+    timeArrive: 14:57
+    trainLine: JP Ou Line
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 18
+    journeyCost: 1340
+    timeDepart: 14:39
+    timeArrive: 16:00
+    trainLine: JP Ou Line
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 18
+    journeyCost: 1340
+    timeDepart: 15:43
+    timeArrive: 16:58
+    trainLine: JP Ou Line
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 18
+    journeyCost: 1340
+    timeDepart: 16:43
+    timeArrive: 18:04
+    trainLine: JP Ou Line
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 18
+    journeyCost: 1340
+    timeDepart: 17:44
+    timeArrive: 19:15
+    trainLine: JP Ou Line
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 18
+    journeyCost: 8590
+    timeDepart: 16:12
+    timeArrive: 20:00
+    trainLine: Shinkansen Komachi 38
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 17:48
+      transferTimeDepart: 17:54
+      transferTrainLine: Shinkansen Yamabiko 64
+    - transferStation: 9
+      transferTimeArrive: 18:13
+      transferTimeDepart: 18:45
+      transferTrainLine: JP Kitakami Line
+  - originStation: 1
+    destinationStation: 18
+    journeyCost: 1340
+    timeDepart: 18:46
+    timeArrive: 20:03
+    trainLine: JP Ou Line
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 18
+    journeyCost: 1340
+    timeDepart: 19:44
+    timeArrive: 20:59
+    trainLine: JP Ou Line
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 18
+    journeyCost: 1340
+    timeDepart: 21:00
+    timeArrive: 22:11
+    trainLine: JP Ou Line
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 18
+    journeyCost: 1340
+    timeDepart: 21:45
+    timeArrive: 22:53
+    trainLine: JP Ou Line
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 18
+    journeyCost: 1340
+    timeDepart: 22:40
+    timeArrive: 23:47
+    trainLine: JP Ou Line
+    numberOfTransfers: []
+  - originStation: 1
+    destinationStation: 18
+    journeyCost: 6900
+    timeDepart: 20:14
+    timeArrive: 7:25
+    trainLine: Shinkansen Komachi 96
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 21:49
+      transferTimeDepart: 5:11
+      transferTrainLine: JP Tohoku Line
+    - transferStation: 9
+      transferTimeArrive: 5:57
+      transferTimeDepart: 6:10
+      transferTrainLine: JP Kitakami Line
+  - originStation: 1
+    destinationStation: 18
+    journeyCost: 8590
+    timeDepart: 20:14
+    timeArrive: 8:54
+    trainLine: Shinkansen Komachi 96
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 21:49
+      transferTimeDepart: 7:00
+      transferTrainLine: Shinkansen Yamabiko 50
+    - transferStation: 9
+      transferTimeArrive: 7:19
+      transferTimeDepart: 7:38
+      transferTrainLine: JP Kitakami Line
+  - originStation: 1
+    destinationStation: 18
+    journeyCost: 11860
+    timeDepart: 19:25
+    timeArrive: 11:15
+    trainLine: JP Ou Line Rapid
+    numberOfTransfers:
+    - transferStation: 14
+      transferTimeArrive: 22:11
+      transferTimeDepart: 6:49
+      transferTrainLine: Shinkansen Hayabusa 8
+    - transferStation: 9
+      transferTimeArrive: 8:15
+      transferTimeDepart: 10:03
+      transferTrainLine: JP Kitakami Line Rapid
+  - originStation: 2
+    destinationStation: 1
+    journeyCost: 12550
+    timeDepart: 7:39
+    timeArrive: 10:24
+    trainLine: Shinkansen Yamabiko 51
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 7:59
+      transferTimeDepart: 8:06
+      transferTrainLine: Shinkansen Komachi 1
+  - originStation: 2
+    destinationStation: 1
+    journeyCost: 12550
+    timeDepart: 8:38
+    timeArrive: 11:25
+    trainLine: Shinkansen Yamabiko 203
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 8:59
+      transferTimeDepart: 9:05
+      transferTrainLine: Shinkansen Komachi 5
+  - originStation: 2
+    destinationStation: 1
+    journeyCost: 12550
+    timeDepart: 9:50
+    timeArrive: 12:30
+    trainLine: Shinkansen Yamabiko 127
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 10:11
+      transferTimeDepart: 10:16
+      transferTrainLine: Shinkansen Komachi 9
+  - originStation: 2
+    destinationStation: 1
+    journeyCost: 12550
+    timeDepart: 9:40
+    timeArrive: 13:02
+    trainLine: Shinkansen Yamabiko 205
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 10:06
+      transferTimeDepart: 10:42
+      transferTrainLine: Shinkansen Komachi 11
+  - originStation: 2
+    destinationStation: 1
+    journeyCost: 12550
+    timeDepart: 11:14
+    timeArrive: 14:08
+    trainLine: Shinkansen Yamabiko 55
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 11:34
+      transferTimeDepart: 11:54
+      transferTrainLine: Shinkansen Komachi 17
+  - originStation: 2
+    destinationStation: 1
+    journeyCost: 12550
+    timeDepart: 12:17
+    timeArrive: 15:04
+    trainLine: Shinkansen Yamabiko 57
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 12:37
+      transferTimeDepart: 12:54
+      transferTrainLine: Shinkansen Komachi 21
+  - originStation: 2
+    destinationStation: 1
+    journeyCost: 12340
+    timeDepart: 12:17
+    timeArrive: 16:08
+    trainLine: Shinkansen Yamabiko 57
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 13:54
+      transferTimeDepart: 14:35
+      transferTrainLine: Shinkansen Komachi 23
+  - originStation: 2
+    destinationStation: 1
+    journeyCost: 12340
+    timeDepart: 13:17
+    timeArrive: 17:08
+    trainLine: Shinkansen Yamabiko 59
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 14:54
+      transferTimeDepart: 15:35
+      transferTrainLine: Shinkansen Komachi 25
+  - originStation: 2
+    destinationStation: 1
+    journeyCost: 12550
+    timeDepart: 21:17
+    timeArrive: 23:53
+    trainLine: Shinkansen Yamabiko 219
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 21:43
+      transferTimeDepart: 21:48
+      transferTrainLine: Shinkansen Komachi 45
+  - originStation: 2
+    destinationStation: 1
+    journeyCost: 12550
+    timeDepart: 14:17
+    timeArrive: 17:08
+    trainLine: Shinkansen Yamabiko 61
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 14:37
+      transferTimeDepart: 14:54
+      transferTrainLine: Shinkansen Komachi 25
+  - originStation: 2
+    destinationStation: 1
+    journeyCost: 12550
+    timeDepart: 15:17
+    timeArrive: 18:12
+    trainLine: Shinkansen Yamabiko 63
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 15:37
+      transferTimeDepart: 15:54
+      transferTrainLine: Shinkansen Komachi 27
+  - originStation: 2
+    destinationStation: 1
+    journeyCost: 12550
+    timeDepart: 16:17
+    timeArrive: 19:06
+    trainLine: Shinkansen Yamabiko 63
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 16:37
+      transferTimeDepart: 16:54
+      transferTrainLine: Shinkansen Komachi 31
+  - originStation: 2
+    destinationStation: 1
+    journeyCost: 12550
+    timeDepart: 17:17
+    timeArrive: 20:12
+    trainLine: Shinkansen Yamabiko 67
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 17:37
+      transferTimeDepart: 17:54
+      transferTrainLine: Shinkansen Komachi 35
+  - originStation: 2
+    destinationStation: 1
+    journeyCost: 12550
+    timeDepart: 18:17
+    timeArrive: 21:04
+    trainLine: Shinkansen Yamabiko 147
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 18:41
+      transferTimeDepart: 18:54
+      transferTrainLine: Shinkansen Komachi 39
+  - originStation: 2
+    destinationStation: 1
+    journeyCost: 12550
+    timeDepart: 21:17
+    timeArrive: 23:53
+    trainLine: Shinkansen Yamabiko 129
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 21:43
+      transferTimeDepart: 21:48
+      transferTrainLine: Shinkansen Komachi 45
+  - originStation: 2
+    destinationStation: 1
+    journeyCost: 10110
+    timeDepart: 21:55
+    timeArrive: 9:00
+    trainLine: Shinkansen Yamabiko 69
+    numberOfTransfers:
+    - transferStation: 9
+      transferTimeArrive: 23:11
+      transferTimeDepart: 6:10
+      transferTrainLine: JP Kitakami Line
+    - transferStation: 18
+      transferTimeArrive: 7:25
+      transferTimeDepart: 7:25
+      transferTrainLine: JP Ou Line
+  - originStation: 2
+    destinationStation: 1
+    journeyCost: 12550
+    timeDepart: 23:22
+    timeArrive: 9:32
+    trainLine: Shinkansen Yamabiko 223
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 23:47
+      transferTimeDepart: 6:40
+      transferTrainLine: Shinkansen Komachi 95
+  - originStation: 2
+    destinationStation: 3
+    journeyCost: 14130
+    timeDepart: 10:34
+    timeArrive: 17:20
+    trainLine: Shinkansen Yamabiko 129
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 11:00
+      transferTimeDepart: 11:08
+      transferTrainLine: Shinkansen Hayabusa 13
+    - transferStation: 14
+      transferTimeArrive: 12:35
+      transferTimeDepart: 12:48
+      transferTrainLine: Limited Express Tsugaru 4
+  - originStation: 2
+    destinationStation: 3
+    journeyCost: 15080
+    timeDepart: 14:17
+    timeArrive: 20:58
+    trainLine: Shinkansen Yamabiko 61
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 14:37
+      transferTimeDepart: 14:54
+      transferTrainLine: Shinkansen Komachi 25
+    - transferStation: 1
+      transferTimeArrive: 17:08
+      transferTimeDepart: 17:31
+      transferTrainLine: JP Ou Line Rapid
+    - transferStation: 7
+      transferTimeArrive: 19:52
+      transferTimeDepart: 20:12
+      transferTrainLine: JP Gono Line
+  - originStation: 2
+    destinationStation: 3
+    journeyCost: 15080
+    timeDepart: 21:17
+    timeArrive: 11:08
+    trainLine: Shinkansen Yamabiko 219
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 21:43
+      transferTimeDepart: 21:48
+      transferTrainLine: Shinkansen Komachi 45
+    - transferStation: 1
+      transferTimeArrive: 23:53
+      transferTimeDepart: 7:28
+      transferTrainLine: JP Ou Line
+    - transferStation: 7
+      transferTimeArrive: 10:02
+      transferTimeDepart: 10:23
+      transferTrainLine: JP Gono Line
+  - originStation: 2
+    destinationStation: 3
+    journeyCost: 15080
+    timeDepart: 20:28
+    timeArrive: 11:08
+    trainLine: Shinkansen Yamabiko 217
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 20:49
+      transferTimeDepart: 20:55
+      transferTrainLine: Shinkansen Komachi 43
+    - transferStation: 1
+      transferTimeArrive: 23:02
+      transferTimeDepart: 7:28
+      transferTrainLine: JP Ou Line
+    - transferStation: 7
+      transferTimeArrive: 10:02
+      transferTimeDepart: 10:23
+      transferTrainLine: JP Gono Line
+  - originStation: 2
+    destinationStation: 4
+    journeyCost: 11090
+    timeDepart: 7:39
+    timeArrive: 9:21
+    trainLine: Shinkansen Yamabiko 51
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 7:59
+      transferTimeDepart: 8:06
+      transferTrainLine: Shinkansen Hayabusa 1
+  - originStation: 2
+    destinationStation: 4
+    journeyCost: 11090
+    timeDepart: 8:38
+    timeArrive: 10:24
+    trainLine: Shinkansen Yamabiko 203
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 8:59
+      transferTimeDepart: 9:05
+      transferTrainLine: Shinkansen Hayabusa 5
+  - originStation: 2
+    destinationStation: 4
+    journeyCost: 11090
+    timeDepart: 9:50
+    timeArrive: 11:26
+    trainLine: Shinkansen Yamabiko 127
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 10:11
+      transferTimeDepart: 10:16
+      transferTrainLine: Shinkansen Hayabusa 9
+  - originStation: 2
+    destinationStation: 4
+    journeyCost: 11090
+    timeDepart: 9:40
+    timeArrive: 12:01
+    trainLine: Shinkansen Yamabiko 205
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 10:06
+      transferTimeDepart: 10:42
+      transferTrainLine: Shinkansen Hayabusa 11
+  - originStation: 2
+    destinationStation: 4
+    journeyCost: 11090
+    timeDepart: 11:14
+    timeArrive: 13:04
+    trainLine: Shinkansen Yamabiko 55
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 11:34
+      transferTimeDepart: 11:54
+      transferTrainLine: Shinkansen Hayabusa 17
+  - originStation: 2
+    destinationStation: 4
+    journeyCost: 11090
+    timeDepart: 11:38
+    timeArrive: 13:33
+    trainLine: Shinkansen Yamabiko 133
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 12:04
+      transferTimeDepart: 12:17
+      transferTrainLine: Shinkansen Hayabusa 19
+  - originStation: 2
+    destinationStation: 4
+    journeyCost: 10880
+    timeDepart: 11:14
+    timeArrive: 13:33
+    trainLine: Shinkansen Yamabiko 55
+    numberOfTransfers:
+    - transferStation: 8
+      transferTimeArrive: 12:10
+      transferTimeDepart: 12:38
+      transferTrainLine: Shinkansen Hayabusa 19
+  - originStation: 2
+    destinationStation: 4
+    journeyCost: 10880
+    timeDepart: 12:17
+    timeArrive: 15:04
+    trainLine: Shinkansen Yamabiko 57
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 13:54
+      transferTimeDepart: 14:37
+      transferTrainLine: Shinkansen Hayabusa 23
+  - originStation: 2
+    destinationStation: 4
+    journeyCost: 10880
+    timeDepart: 13:17
+    timeArrive: 16:13
+    trainLine: Shinkansen Yamabiko 59
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 14:54
+      transferTimeDepart: 15:37
+      transferTrainLine: Shinkansen Hayabusa 25
+  - originStation: 2
+    destinationStation: 4
+    journeyCost: 10880
+    timeDepart: 15:17
+    timeArrive: 18:11
+    trainLine: Shinkansen Yamabiko 63
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 14:54
+      transferTimeDepart: 15:37
+      transferTrainLine: Shinkansen Hayabusa 25
+  - originStation: 2
+    destinationStation: 4
+    journeyCost: 11090
+    timeDepart: 14:17
+    timeArrive: 16:13
+    trainLine: Shinkansen Yamabiko 61
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 14:37
+      transferTimeDepart: 14:54
+      transferTrainLine: Shinkansen Hayabusa 25
+  - originStation: 2
+    destinationStation: 4
+    journeyCost: 11090
+    timeDepart: 15:17
+    timeArrive: 17:04
+    trainLine: Shinkansen Yamabiko 63
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 15:37
+      transferTimeDepart: 15:54
+      transferTrainLine: Shinkansen Hayabusa 27
+  - originStation: 2
+    destinationStation: 4
+    journeyCost: 11090
+    timeDepart: 16:17
+    timeArrive: 18:11
+    trainLine: Shinkansen Yamabiko 65
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 16:37
+      transferTimeDepart: 16:54
+      transferTrainLine: Shinkansen Hayabusa 31
+  - originStation: 2
+    destinationStation: 4
+    journeyCost: 11090
+    timeDepart: 17:17
+    timeArrive: 19:08
+    trainLine: Shinkansen Yamabiko 67
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 17:37
+      transferTimeDepart: 17:54
+      transferTrainLine: Shinkansen Hayabusa 35
+  - originStation: 2
+    destinationStation: 4
+    journeyCost: 11090
+    timeDepart: 18:17
+    timeArrive: 20:12
+    trainLine: Shinkansen Yamabiko 147
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 18:41
+      transferTimeDepart: 18:54
+      transferTrainLine: Shinkansen Hayabusa 39
+  - originStation: 2
+    destinationStation: 4
+    journeyCost: 10880
+    timeDepart: 21:55
+    timeArrive: 7:25
+    trainLine: Shinkansen Yamabiko 69
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 23:31
+      transferTimeDepart: 6:54
+      transferTrainLine: Shinkansen Hayate 93
+  - originStation: 2
+    destinationStation: 4
+    journeyCost: 11090
+    timeDepart: 19:17
+    timeArrive: 21:08
+    trainLine: Shinkansen Yamabiko 151
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 19:37
+      transferTimeDepart: 19:54
+      transferTrainLine: Shinkansen Hayabusa 41
+  - originStation: 2
+    destinationStation: 4
+    journeyCost: 11090
+    timeDepart: 20:28
+    timeArrive: 22:05
+    trainLine: Shinkansen Yamabiko 217
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 20:49
+      transferTimeDepart: 20:55
+      transferTrainLine: Shinkansen Hayabusa 43
+  - originStation: 2
+    destinationStation: 4
+    journeyCost: 11090
+    timeDepart: 21:17
+    timeArrive: 23:07
+    trainLine: Shinkansen Yamabiko 219
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 21:43
+      transferTimeDepart: 21:48
+      transferTrainLine: Shinkansen Hayabusa 45
+  - originStation: 2
+    destinationStation: 4
+    journeyCost: 10320
+    timeDepart: 22:01
+    timeArrive: 8:34
+    trainLine: JP Tohoku Line
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 23:21
+      transferTimeDepart: 6:40
+      transferTrainLine: Shinkansen Hayabusa 95
+  - originStation: 2
+    destinationStation: 5
+    journeyCost: 14310
+    timeDepart: 12:17
+    timeArrive: 18:08
+    trainLine: Shinkansen Yamabiko 57
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 12:37
+      transferTimeDepart: 12:54
+      transferTrainLine: Shinkansen Komachi 21
+    - transferStation: 1
+      transferTimeArrive: 15:04
+      transferTimeDepart: 15:19
+      transferTrainLine: JP Ou Line
+    - transferStation: 6
+      transferTimeArrive: 16:19
+      transferTimeDepart: 16:33
+      transferTrainLine: JP Gono Line
+  - originStation: 2
+    destinationStation: 5
+    journeyCost: 14310
+    timeDepart: 11:14
+    timeArrive: 18:08
+    trainLine: Shinkansen Yamabiko 55
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 11:34
+      transferTimeDepart: 11:54
+      transferTrainLine: Shinkansen Komachi 17
+    - transferStation: 1
+      transferTimeArrive: 14:08
+      transferTimeDepart: 15:19
+      transferTrainLine: JP Ou Line
+    - transferStation: 6
+      transferTimeArrive: 16:19
+      transferTimeDepart: 16:33
+      transferTrainLine: JP Gono Line
+  - originStation: 2
+    destinationStation: 5
+    journeyCost: 15160
+    timeDepart: 11:14
+    timeArrive: 18:08
+    trainLine: Shinkansen Yamabiko 55
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 12:54
+      transferTimeDepart: 13:05
+      transferTrainLine: Shinkansen Hayabusa 19
+    - transferStation: 14
+      transferTimeArrive: 13:57
+      transferTimeDepart: 14:10
+      transferTrainLine: JP Ou Line
+    - transferStation: 7
+      transferTimeArrive: 14:45
+      transferTimeDepart: 14:50
+      transferTrainLine: JP Gono Line
+    - transferStation: 6
+      transferTimeArrive: 16:23
+      transferTimeDepart: 16:33
+      transferTrainLine: JP Gono Line
+  - originStation: 2
+    destinationStation: 5
+    journeyCost: 16310
+    timeDepart: 10:34
+    timeArrive: 18:08
+    trainLine: Shinkansen Yamabiko 129
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 11:00
+      transferTimeDepart: 11:08
+      transferTrainLine: Shinkansen Hayabusa 13
+    - transferStation: 14
+      transferTimeArrive: 12:35
+      transferTimeDepart: 12:48
+      transferTrainLine: Limited Express Tsugaru 4
+    - transferStation: 6
+      transferTimeArrive: 14:39
+      transferTimeDepart: 16:33
+      transferTrainLine: JP Gono Line
+  - originStation: 2
+    destinationStation: 5
+    journeyCost: 14310
+    timeDepart: 9:50
+    timeArrive: 18:08
+    trainLine: Shinkansen Yamabiko 127
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 10:11
+      transferTimeDepart: 10:42
+      transferTrainLine: Shinkansen Komachi 11
+    - transferStation: 1
+      transferTimeArrive: 13:02
+      transferTimeDepart: 15:19
+      transferTrainLine: JP Ou Line
+    - transferStation: 6
+      transferTimeArrive: 16:19
+      transferTimeDepart: 19:33
+      transferTrainLine: JP Gono Line
+  - originStation: 2
+    destinationStation: 5
+    journeyCost: 14310
+    timeDepart: 13:17
+    timeArrive: 19:52
+    trainLine: Shinkansen Yamabiko 59
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 13:37
+      transferTimeDepart: 13:54
+      transferTrainLine: Shinkansen Komachi 23
+    - transferStation: 1
+      transferTimeArrive: 16:08
+      transferTimeDepart: 16:27
+      transferTrainLine: JP Ou Line
+    - transferStation: 6
+      transferTimeArrive: 17:24
+      transferTimeDepart: 18:09
+      transferTrainLine: JP Gono Line
+  - originStation: 2
+    destinationStation: 5
+    journeyCost: 14310
+    timeDepart: 21:17
+    timeArrive: 9:03
+    trainLine: Shinkansen Yamabiko 219
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 21:43
+      transferTimeDepart: 21:48
+      transferTrainLine: Shinkansen Komachi 45
+    - transferStation: 1
+      transferTimeArrive: 23:53
+      transferTimeDepart: 6:15
+      transferTrainLine: JP Ou Line
+    - transferStation: 6
+      transferTimeArrive: 7:11
+      transferTimeDepart: 7:23
+      transferTrainLine: JP Gono Line
+  - originStation: 2
+    destinationStation: 5
+    journeyCost: 9320
+    timeDepart: 17:35
+    timeArrive: 9:03
+    trainLine: Shinkansen Tsubasa 145
+    numberOfTransfers:
+    - transferStation: 15
+      transferTimeArrive: 19:29
+      transferTimeDepart: 21:37
+      transferTrainLine: JP Ou Line
+    - transferStation: 1
+      transferTimeArrive: 00:16
+      transferTimeDepart: 6:15
+      transferTrainLine: JP Ou Line
+    - transferStation: 6
+      transferTimeArrive: 7:11
+      transferTimeDepart: 7:23
+      transferTrainLine: JP Gono Line
+  - originStation: 2
+    destinationStation: 5
+    journeyCost: 14310
+    timeDepart: 23:22
+    timeArrive: 12:33
+    trainLine: Shinkansen Yamabiko 223
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 23:47
+      transferTimeDepart: 6:40
+      transferTrainLine: Shinkansen Komachi 95
+    - transferStation: 1
+      transferTimeArrive: 9:32
+      transferTimeDepart: 9:46
+      transferTrainLine: JP Ou Line
+    - transferStation: 6
+      transferTimeArrive: 10:43
+      transferTimeDepart: 10:59
+      transferTrainLine: JP Gono Line
+  - originStation: 2
+    destinationStation: 5
+    journeyCost: 10800
+    timeDepart: 17:35
+    timeArrive: 12:33
+    trainLine: Shinkansen Tsubasa 145
+    numberOfTransfers:
+    - transferStation: 15
+      transferTimeArrive: 19:29
+      transferTimeDepart: 20:18
+      transferTrainLine: JP Ou Line
+    - transferStation: 1
+      transferTimeArrive: 23:05
+      transferTimeDepart: 8:35
+      transferTrainLine: Limited Express Tsugaru 1
+    - transferStation: 6
+      transferTimeArrive: 9:21
+      transferTimeDepart: 10:59
+      transferTrainLine: JP Gono Line
+  - originStation: 2
+    destinationStation: 6
+    journeyCost: 13430
+    timeDepart: 7:39
+    timeArrive: 12:00
+    trainLine: Shinkansen Yamabiko 51
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 7:59
+      transferTimeDepart: 8:06
+      transferTrainLine: Shinkansen Komachi 1
+    - transferStation: 1
+      transferTimeArrive: 10:24
+      transferTimeDepart: 10:58
+      transferTrainLine: JP Ou Line
+  - originStation: 2
+    destinationStation: 6
+    journeyCost: 13430
+    timeDepart: 8:38
+    timeArrive: 12:40
+    trainLine: Shinkansen Yamabiko 203
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 8:59
+      transferTimeDepart: 9:05
+      transferTrainLine: Shinkansen Komachi 5
+    - transferStation: 1
+      transferTimeArrive: 11:25
+      transferTimeDepart: 11:39
+      transferTrainLine: JP Ou Line
+  - originStation: 2
+    destinationStation: 6
+    journeyCost: 13430
+    timeDepart: 9:50
+    timeArrive: 14:31
+    trainLine: Shinkansen Yamabiko 127
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 10:11
+      transferTimeDepart: 10:42
+      transferTrainLine: Shinkansen Komachi 11
+    - transferStation: 1
+      transferTimeArrive: 13:02
+      transferTimeDepart: 13:31
+      transferTrainLine: JP Ou Line
+  - originStation: 2
+    destinationStation: 6
+    journeyCost: 15650
+    timeDepart: 10:34
+    timeArrive: 14:39
+    trainLine: Shinkansen Yamabiko 129
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 11:00
+      transferTimeDepart: 11:08
+      transferTrainLine: Shinkansen Hayabusa 13
+    - transferStation: 14
+      transferTimeArrive: 12:35
+      transferTimeDepart: 12:48
+      transferTrainLine: Limited Express Tsugaru 4
+  - originStation: 2
+    destinationStation: 6
+    journeyCost: 13430
+    timeDepart: 12:17
+    timeArrive: 16:19
+    trainLine: Shinkansen Yamabiko 57
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 12:37
+      transferTimeDepart: 12:54
+      transferTrainLine: Shinkansen Komachi 21
+    - transferStation: 1
+      transferTimeArrive: 15:04
+      transferTimeDepart: 15:19
+      transferTrainLine: JP Ou Line
+  - originStation: 2
+    destinationStation: 6
+    journeyCost: 13430
+    timeDepart: 13:17
+    timeArrive: 17:24
+    trainLine: Shinkansen Yamabiko 59
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 13:37
+      transferTimeDepart: 13:54
+      transferTrainLine: Shinkansen Komachi 23
+    - transferStation: 1
+      transferTimeArrive: 16:08
+      transferTimeDepart: 16:27
+      transferTrainLine: JP Ou Line
+  - originStation: 2
+    destinationStation: 6
+    journeyCost: 13430
+    timeDepart: 14:17
+    timeArrive: 18:30
+    trainLine: Shinkansen Yamabiko 61
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 14:37
+      transferTimeDepart: 14:54
+      transferTrainLine: Shinkansen Komachi 25
+    - transferStation: 1
+      transferTimeArrive: 17:08
+      transferTimeDepart: 17:31
+      transferTrainLine: JP Ou Line Rapid
+  - originStation: 2
+    destinationStation: 6
+    journeyCost: 13430
+    timeDepart: 15:17
+    timeArrive: 19:30
+    trainLine: Shinkansen Yamabiko 63
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 15:37
+      transferTimeDepart: 15:54
+      transferTrainLine: Shinkansen Komachi 27
+    - transferStation: 1
+      transferTimeArrive: 18:12
+      transferTimeDepart: 18:29
+      transferTrainLine: JP Ou Line
+  - originStation: 2
+    destinationStation: 6
+    journeyCost: 13430
+    timeDepart: 16:17
+    timeArrive: 20:19
+    trainLine: Shinkansen Yamabiko 65
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 16:37
+      transferTimeDepart: 16:54
+      transferTrainLine: Shinkansen Komachi 31
+    - transferStation: 1
+      transferTimeArrive: 19:06
+      transferTimeDepart: 19:25
+      transferTrainLine: JP Ou Line Rapid
+  - originStation: 2
+    destinationStation: 6
+    journeyCost: 14710
+    timeDepart: 15:17
+    timeArrive: 21:04
+    trainLine: Shinkansen Yamabiko 63
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 15:37
+      transferTimeDepart: 16:03
+      transferTrainLine: Shinkansen Hayabusa 29
+    - transferStation: 14
+      transferTimeArrive: 17:41
+      transferTimeDepart: 18:31
+      transferTrainLine: JP Ou Line
+    - transferStation: 7
+      transferTimeArrive: 19:08
+      transferTimeDepart: 19:20
+      transferTrainLine: JP Ou Line
+  - originStation: 2
+    destinationStation: 6
+    journeyCost: 13430
+    timeDepart: 17:17
+    timeArrive: 21:27
+    trainLine: Shinkansen Yamabiko 67
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 17:37
+      transferTimeDepart: 17:54
+      transferTrainLine: Shinkansen Komachi 35
+    - transferStation: 1
+      transferTimeArrive: 20:12
+      transferTimeDepart: 20:27
+      transferTrainLine: JP Ou Line
+  - originStation: 2
+    destinationStation: 6
+    journeyCost: 13430
+    timeDepart: 18:17
+    timeArrive: 22:26
+    trainLine: Shinkansen Yamabiko 147
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 18:41
+      transferTimeDepart: 18:54
+      transferTrainLine: Shinkansen Komachi 39
+    - transferStation: 1
+      transferTimeArrive: 21:04
+      transferTimeDepart: 21:17
+      transferTrainLine: JP Ou Line
+  - originStation: 2
+    destinationStation: 6
+    journeyCost: 13430
+    timeDepart: 19:17
+    timeArrive: 23:16
+    trainLine: Shinkansen Yamabiko 151
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 19:37
+      transferTimeDepart: 19:54
+      transferTrainLine: Shinkansen Komachi 41
+    - transferStation: 1
+      transferTimeArrive: 22:07
+      transferTimeDepart: 22:19
+      transferTrainLine: JP Ou Line
+  - originStation: 2
+    destinationStation: 6
+    journeyCost: 13430
+    timeDepart: 21:17
+    timeArrive: 6:25
+    trainLine: Shinkansen Yamabiko 219
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 21:43
+      transferTimeDepart: 21:48
+      transferTrainLine: Shinkansen Komachi 45
+    - transferStation: 1
+      transferTimeArrive: 23:53
+      transferTimeDepart: 5:27
+      transferTrainLine: JP Ou Line
+  - originStation: 2
+    destinationStation: 6
+    journeyCost: 9920
+    timeDepart: 17:35
+    timeArrive: 9:21
+    trainLine: Shinkansen Tsubasa 145
+    numberOfTransfers:
+    - transferStation: 15
+      transferTimeArrive: 19:29
+      transferTimeDepart: 20:18
+      transferTrainLine: JP Ou Line
+    - transferStation: 1
+      transferTimeArrive: 23:05
+      transferTimeDepart: 8:35
+      transferTrainLine: Limited Express Tsugaru 1
+  - originStation: 2
+    destinationStation: 6
+    journeyCost: 13430
+    timeDepart: 23:22
+    timeArrive: 10:43
+    trainLine: Shinkansen Yamabiko 223
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 23:47
+      transferTimeDepart: 6:40
+      transferTrainLine: Shinkansen Komachi 95
+    - transferStation: 1
+      transferTimeArrive: 9:32
+      transferTimeDepart: 9:46
+      transferTrainLine: JP Ou Line
+  - originStation: 2
+    destinationStation: 6
+    journeyCost: 10990
+    timeDepart: 21:55
+    timeArrive: 10:43
+    trainLine: Shinkansen Yamabiko 69
+    numberOfTransfers:
+    - transferStation: 9
+      transferTimeArrive: 23:11
+      transferTimeDepart: 6:10
+      transferTrainLine: JP Kitakami Line
+    - transferStation: 18
+      transferTimeArrive: 7:25
+      transferTimeDepart: 7:55
+      transferTrainLine: JP Ou Line
+    - transferStation: 1
+      transferTimeArrive: 9:00
+      transferTimeDepart: 9:46
+      transferTrainLine: JP Ou Line
+  - originStation: 2
+    destinationStation: 7
+    journeyCost: 13280
+    timeDepart: 7:39
+    timeArrive: 10:39
+    trainLine: Shinkansen Yamabiko 51
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 7:59
+      transferTimeDepart: 8:06
+      transferTrainLine: Shinkansen Hayabusa 1
+    - transferStation: 14
+      transferTimeArrive: 9:49
+      transferTimeDepart: 9:58
+      transferTrainLine: JP Ou Line
+  - originStation: 2
+    destinationStation: 7
+    journeyCost: 13280
+    timeDepart: 7:55
+    timeArrive: 11:27
+    trainLine: Shinkansen Yamabiko 293
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 8:20
+      transferTimeDepart: 8:40
+      transferTrainLine: Shinkansen Hayabusa 3
+    - transferStation: 14
+      transferTimeArrive: 10:15
+      transferTimeDepart: 10:46
+      transferTrainLine: JP Ou Line
+  - originStation: 2
+    destinationStation: 7
+    journeyCost: 13070
+    timeDepart: 7:39
+    timeArrive: 11:27
+    trainLine: Shinkansen Yamabiko 51
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 9:18
+      transferTimeDepart: 9:25
+      transferTrainLine: Shinkansen Hayabusa 3
+    - transferStation: 14
+      transferTimeArrive: 10:15
+      transferTimeDepart: 10:46
+      transferTrainLine: JP Ou Line
+  - originStation: 2
+    destinationStation: 7
+    journeyCost: 13280
+    timeDepart: 9:38
+    timeArrive: 12:00
+    trainLine: Shinkansen Yamabiko 125
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 9:38
+      transferTimeDepart: 9:52
+      transferTrainLine: Shinkansen Hayabusa 7
+    - transferStation: 14
+      transferTimeArrive: 11:19
+      transferTimeDepart: 11:28
+      transferTrainLine: JP Ou Line Rapid
+  - originStation: 2
+    destinationStation: 7
+    journeyCost: 13280
+    timeDepart: 7:39
+    timeArrive: 12:00
+    trainLine: Shinkansen Yamabiko 51
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 9:18
+      transferTimeDepart: 9:48
+      transferTrainLine: Shinkansen Hayabusa 5
+    - transferStation: 14
+      transferTimeArrive: 10:52
+      transferTimeDepart: 11:28
+      transferTrainLine: JP Ou Line Rapid
+  - originStation: 2
+    destinationStation: 7
+    journeyCost: 13280
+    timeDepart: 9:50
+    timeArrive: 12:39
+    trainLine: Shinkansen Yamabiko 127
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 10:11
+      transferTimeDepart: 10:16
+      transferTrainLine: Shinkansen Hayabusa 9
+    - transferStation: 14
+      transferTimeArrive: 11:51
+      transferTimeDepart: 12:03
+      transferTrainLine: JP Ou Line
+  - originStation: 2
+    destinationStation: 7
+    journeyCost: 13800
+    timeDepart: 10:34
+    timeArrive: 13:18
+    trainLine: Shinkansen Yamabiko 129
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 11:00
+      transferTimeDepart: 11:08
+      transferTrainLine: Shinkansen Hayabusa 13
+    - transferStation: 14
+      transferTimeArrive: 12:35
+      transferTimeDepart: 12:48
+      transferTrainLine: Limited Express Tsugaru 4
+  - originStation: 2
+    destinationStation: 7
+    journeyCost: 13280
+    timeDepart: 11:14
+    timeArrive: 14:20
+    trainLine: Shinkansen Yamabiko 55
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 11:34
+      transferTimeDepart: 11:54
+      transferTrainLine: Shinkansen Hayabusa 17
+    - transferStation: 14
+      transferTimeArrive: 13:29
+      transferTimeDepart: 13:43
+      transferTrainLine: JP Ou Line
+  - originStation: 2
+    destinationStation: 7
+    journeyCost: 13280
+    timeDepart: 11:38
+    timeArrive: 14:45
+    trainLine: Shinkansen Yamabiko 55
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 12:04
+      transferTimeDepart: 12:17
+      transferTrainLine: Shinkansen Hayabusa 19
+    - transferStation: 14
+      transferTimeArrive: 13:57
+      transferTimeDepart: 14:10
+      transferTrainLine: JP Ou Line
+  - originStation: 2
+    destinationStation: 7
+    journeyCost: 13280
+    timeDepart: 12:17
+    timeArrive: 15:42
+    trainLine: Shinkansen Yamabiko 57
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 12:37
+      transferTimeDepart: 12:54
+      transferTrainLine: Shinkansen Hayabusa 21
+    - transferStation: 14
+      transferTimeArrive: 14:43
+      transferTimeDepart: 14:53
+      transferTrainLine: JP Ou Line
+  - originStation: 2
+    destinationStation: 7
+    journeyCost: 13280
+    timeDepart: 13:17
+    timeArrive: 16:24
+    trainLine: Shinkansen Yamabiko 59
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 13:37
+      transferTimeDepart: 13:54
+      transferTrainLine: Shinkansen Hayabusa 23
+    - transferStation: 14
+      transferTimeArrive: 15:29
+      transferTimeDepart: 15:42
+      transferTrainLine: JP Ou Line
+  - originStation: 2
+    destinationStation: 7
+    journeyCost: 13280
+    timeDepart: 14:17
+    timeArrive: 17:27
+    trainLine: Shinkansen Yamabiko 61
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 14:37
+      transferTimeDepart: 14:54
+      transferTrainLine: Shinkansen Hayabusa 25
+    - transferStation: 14
+      transferTimeArrive: 16:43
+      transferTimeDepart: 16:51
+      transferTrainLine: JP Ou Line
+  - originStation: 2
+    destinationStation: 7
+    journeyCost: 14860
+    timeDepart: 12:17
+    timeArrive: 17:52
+    trainLine: Shinkansen Yamabiko 57
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 12:37
+      transferTimeDepart: 12:54
+      transferTrainLine: Shinkansen Komachi 21
+    - transferStation: 1
+      transferTimeArrive: 15:04
+      transferTimeDepart: 15:19
+      transferTrainLine: JP Ou Line
+  - originStation: 2
+    destinationStation: 7
+    journeyCost: 13280
+    timeDepart: 15:17
+    timeArrive: 18:12
+    trainLine: Shinkansen Yamabiko 63
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 15:37
+      transferTimeDepart: 15:54
+      transferTrainLine: Shinkansen Hayabusa 27
+    - transferStation: 14
+      transferTimeArrive: 17:29
+      transferTimeDepart: 17:37
+      transferTrainLine: JP Ou Line
+  - originStation: 2
+    destinationStation: 7
+    journeyCost: 13280
+    timeDepart: 16:17
+    timeArrive: 20:00
+    trainLine: Shinkansen Yamabiko 65
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 16:37
+      transferTimeDepart: 17:03
+      transferTrainLine: Shinkansen Hayabusa 33
+    - transferStation: 14
+      transferTimeArrive: 18:43
+      transferTimeDepart: 19:12
+      transferTrainLine: JP Ou Line
+  - originStation: 2
+    destinationStation: 7
+    journeyCost: 13070
+    timeDepart: 15:17
+    timeArrive: 20:00
+    trainLine: Shinkansen Yamabiko 63
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 16:54
+      transferTimeDepart: 17:37
+      transferTrainLine: Shinkansen Hayabusa 31
+    - transferStation: 14
+      transferTimeArrive: 18:39
+      transferTimeDepart: 19:12
+      transferTrainLine: JP Ou Line
+  - originStation: 2
+    destinationStation: 7
+    journeyCost: 14930
+    timeDepart: 15:17
+    timeArrive: 20:00
+    trainLine: Shinkansen Yamabiko 63
+    numberOfTransfers:
+    - transferStation: 9
+      transferTimeArrive: 16:32
+      transferTimeDepart: 16:49
+      transferTrainLine: JP Tohoku Line
+    - transferStation: 11
+      transferTimeArrive: 17:42
+      transferTimeDepart: 17:53
+      transferTrainLine: Shhinkansen Hayabusa 33
+    - transferStation: 14
+      transferTimeArrive: 18:43
+      transferTimeDepart: 19:12
+      transferTrainLine: JP Ou Line
+  - originStation: 2
+    destinationStation: 7
+    journeyCost: 13280
+    timeDepart: 17:17
+    timeArrive: 20:35
+    trainLine: Shinkansen Yamabiko 67
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 17:37
+      transferTimeDepart: 18:03
+      transferTrainLine: Shinkansen Hayabusa 37
+    - transferStation: 14
+      transferTimeArrive: 19:41
+      transferTimeDepart: 19:52
+      transferTrainLine: JP Ou Line
+  - originStation: 2
+    destinationStation: 7
+    journeyCost: 13280
+    timeDepart: 18:17
+    timeArrive: 21:29
+    trainLine: Shinkansen Yamabiko 147
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 18:41
+      transferTimeDepart: 18:54
+      transferTrainLine: Shinkansen Hayabusa 39
+    - transferStation: 14
+      transferTimeArrive: 20:40
+      transferTimeDepart: 20:49
+      transferTrainLine: JP Ou Line
+  - originStation: 2
+    destinationStation: 7
+    journeyCost: 13280
+    timeDepart: 19:17
+    timeArrive: 22:34
+    trainLine: Shinkansen Yamabiko 151
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 19:37
+      transferTimeDepart: 19:54
+      transferTrainLine: Shinkansen Hayabusa 41
+    - transferStation: 14
+      transferTimeArrive: 21:37
+      transferTimeDepart: 21:53
+      transferTrainLine: JP Ou Line
+  - originStation: 2
+    destinationStation: 7
+    journeyCost: 13280
+    timeDepart: 20:28
+    timeArrive: 23:18
+    trainLine: Shinkansen Yamabiko 217
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 20:49
+      transferTimeDepart: 20:55
+      transferTrainLine: Shinkansen Hayabusa 43
+    - transferStation: 14
+      transferTimeArrive: 22:30
+      transferTimeDepart: 22:41
+      transferTrainLine: JP Ou Line
+  - originStation: 2
+    destinationStation: 7
+    journeyCost: 13280
+    timeDepart: 21:17
+    timeArrive: 00:23
+    trainLine: Shinkansen Yamabiko 219
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 21:43
+      transferTimeDepart: 21:48
+      transferTrainLine: Shinkansen Hayabusa 45
+    - transferStation: 14
+      transferTimeArrive: 23:36
+      transferTimeDepart: 23:44
+      transferTrainLine: JP Ou Line
+  - originStation: 2
+    destinationStation: 7
+    journeyCost: 13070
+    timeDepart: 21:55
+    timeArrive: 8:39
+    trainLine: Shinkansen Yamabiko 69
+    numberOfTransfers:
+    - transferStation: 11
+      transferTimeArrive: 23:31
+      transferTimeDepart: 6:54
+      transferTrainLine: Shinkansen Hayate 93
+    - transferStation: 14
+      transferTimeArrive: 7:54
+      transferTimeDepart: 8:02
+      transferTrainLine: JP Ou Line
+  - originStation: 2
+    destinationStation: 7
+    journeyCost: 13800
+    timeDepart: 23:22
+    timeArrive: 9:38
+    trainLine: Shinkansen Yamabiko 223
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 23:47
+      transferTimeDepart: 6:40
+      transferTrainLine: Shinkansen Yamabiko 223
+    - transferStation: 14
+      transferTimeArrive: 9:02
+      transferTimeDepart: 9:11
+      transferTrainLine: Limited Express Tsugaru 2
+--- !u!114 &8619477186260028458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8619477186260028457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a317d10a9e6920c45871db4840b1b4bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stationDatabase:
+  - id: 0
+    name: Name
+    type: Type
+    location: Location
+    mapIcon: {fileID: 0}
+  - id: 1
+    name: Akita Station
+    type: Station
+    location: Akita Prefecture
+    mapIcon: {fileID: 0}
+  - id: 2
+    name: Fukushima Station
+    type: Station
+    location: Fukushima Prefecture
+    mapIcon: {fileID: 0}
+  - id: 3
+    name: Goshogawara Station
+    type: Station
+    location: Aomori Prefecture
+    mapIcon: {fileID: 0}
+  - id: 4
+    name: Hachinohe Station
+    type: Station
+    location: Aomori Prefecture
+    mapIcon: {fileID: 0}
+  - id: 5
+    name: Henashi Station
+    type: Station
+    location: Aomori Prefecture
+    mapIcon: {fileID: 0}
+  - id: 6
+    name: Higashi-Noshiro Station
+    type: Station
+    location: Akita Prefecture
+    mapIcon: {fileID: 0}
+  - id: 7
+    name: Hirosaki Station
+    type: Station
+    location: Aomori Prefecture
+    mapIcon: {fileID: 0}
+  - id: 8
+    name: Ichinoseki Station
+    type: Station
+    location: Iwate Prefecture
+    mapIcon: {fileID: 0}
+  - id: 9
+    name: Kitakami Station
+    type: Station
+    location: Iwate Prefecture
+    mapIcon: {fileID: 0}
+  - id: 10
+    name: Matsushima Station
+    type: Station
+    location: Miyagi Prefecture
+    mapIcon: {fileID: 0}
+  - id: 11
+    name: Morioka Station
+    type: Station
+    location: Iwate  Prefecture
+    mapIcon: {fileID: 0}
+  - id: 12
+    name: Omiya Station
+    type: Station
+    location: Saitama Prefecture
+    mapIcon: {fileID: 0}
+  - id: 13
+    name: Sendai Station
+    type: Station
+    location: Miyagi Prefecture
+    mapIcon: {fileID: 0}
+  - id: 14
+    name: Shin-Aomori Station
+    type: Station
+    location: Aomori Prefecture
+    mapIcon: {fileID: 0}
+  - id: 15
+    name: Shinjo Station
+    type: Station
+    location: Yamagata Prefecture
+    mapIcon: {fileID: 0}
+  - id: 16
+    name: Shinjuku Station
+    type: Station
+    location: Tokyo
+    mapIcon: {fileID: 0}
+  - id: 17
+    name: Yamagata Station
+    type: Station
+    location: Yamagata Prefecture
+    mapIcon: {fileID: 0}
+  - id: 18
+    name: Yokote Station
+    type: Station
+    location: Akita Prefecture
+    mapIcon: {fileID: 0}
+--- !u!1 &8619477187190463467
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8619477187190463466}
+  - component: {fileID: 8619477187190463460}
+  - component: {fileID: 4357371677011472392}
+  m_Layer: 5
+  m_Name: Panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &8619477187190463466
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8619477187190463467}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8619477186260028456}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &8619477187190463460
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8619477187190463467}
+  m_CullTransparentMesh: 1
+--- !u!114 &4357371677011472392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8619477187190463467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.07058824, g: 0.07058824, b: 0.07058824, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 4dd70ec2220ae427b9b92a2d02dca9f0, type: 3}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1

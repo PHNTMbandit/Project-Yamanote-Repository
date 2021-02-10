@@ -1,0 +1,16 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# https://www.codeandweb.com/texturepacker/unity
+#
+# $TexturePacker:SmartUpdate:baf9fce12c5d44799895612c97a6c07a:67cb317c454f1a42b3342edf976b09a2:05b1973d5af505187ab927eabd0a5713$
+#
+:format=40300
+:texture=JR_Routes.png
+:size=512x128
+:pivotpoints=enabled
+:borders=disabled
+:alphahandling=ClearTransparentPixels
+
+Shinkansen_Route;1;63;326;64; 0.5030674846625767;0.6484375; 0;0;0;0; 19;118;16;102;0;102;6;112;16;113;25;118;35;318;21;326;17;311;16;315;36;318;36;223;28;217;27;220;57;212;63;227;64;8;41;0;49;20;49; 11;0;4;5;1;2;3;0;1;3;0;3;4;6;9;10;6;7;8;6;8;9;13;14;15;11;13;15;11;12;13;16;17;18

@@ -1,0 +1,17 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# https://www.codeandweb.com/texturepacker/unity
+#
+# $TexturePacker:SmartUpdate:63fe96000d61f51ae4ba965547445052:1615c465a3be9e9c105a0e0548424ef5:235e7934c4d30217cc0ae0e97ff296bf$
+#
+:format=40300
+:texture=Shin-Aomori_Station_Exterior_Sheet.png
+:size=128x256
+:pivotpoints=enabled
+:borders=disabled
+:alphahandling=ClearTransparentPixels
+
+Light_Pole;70;119;27;136; 0.5;0.5; 0;0;0;0; 16;27;132;17;132;17;44;20;44;20;29;17;29;17;0;10;0;10;29;7;29;7;44;10;44;10;132;0;132;0;136;27;136; 12;12;14;15;12;13;14;9;10;11;8;9;11;5;6;7;2;5;7;3;4;5;2;3;5;2;7;12;1;2;12;1;12;15;0;1;15
+Sign_Map;1;187;67;68; 0.5;0.5; 0;0;0;0; 10;67;43;67;0;62;0;62;22;5;22;5;0;0;0;0;43;1;68;66;68; 8;7;8;9;4;5;6;4;6;7;0;7;9;3;4;7;0;1;3;1;2;3;0;3;7

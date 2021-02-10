@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - NPC
+  - Seat
+  - Ground
+  - UI
+  - FX
+  - PE
+  - Parallax
+  - Collider
+  - Tsugaru Line
+  - Door
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Player
+  - Water
+  - UI
+  - NPC
+  - Seat
+  - Door
+  - Ground
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Bcakground 7
+    uniqueID: 503716327
+    locked: 0
+  - name: Background 6
+    uniqueID: 3501543751
+    locked: 0
+  - name: Background 5
+    uniqueID: 1582701049
+    locked: 0
+  - name: Background 4
+    uniqueID: 4289935591
+    locked: 0
+  - name: Background 3
+    uniqueID: 4252611281
+    locked: 0
+  - name: Background 2
+    uniqueID: 1738724767
+    locked: 0
+  - name: Arriving_Station
+    uniqueID: 4042506723
+    locked: 0
+  - name: Background 1
+    uniqueID: 1751843261
+    locked: 0
+  - name: Player & NPCs
+    uniqueID: 3549058061
+    locked: 0
+  - name: Foreground 2
+    uniqueID: 1033332833
+    locked: 0
+  - name: Foreground 1
+    uniqueID: 976748613
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
