@@ -127,5 +127,5 @@ MonoBehaviour:
   m_AutoSaveOnApplicationQuit: 0
   m_SaveFileName: SaveFile
   m_MaxSaves: 5
-  m_InventorySystemManagerItemSaver: {fileID: 0}
+  m_InventorySystemManagerItemSaver: {fileID: 8388670187888747957}
   m_DebugJsonCopy: 0

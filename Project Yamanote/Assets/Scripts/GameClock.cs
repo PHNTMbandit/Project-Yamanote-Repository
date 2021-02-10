@@ -31,8 +31,6 @@ public class GameClock : MonoBehaviour
     public TextMeshProUGUI phoneDate;
     public TextMeshProUGUI actionBarTime;
     public TextMeshProUGUI actionBarDate;
-    public TMP_InputField inputHour;
-    public TMP_InputField inputMinute;
 
     void Start()
     {
