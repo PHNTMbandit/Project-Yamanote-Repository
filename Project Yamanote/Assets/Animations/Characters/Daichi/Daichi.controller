@@ -426,37 +426,37 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: move
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: sitDown
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: sitUp
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: phoneOn
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: phoneOff
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -727,12 +727,12 @@ AnimatorStateMachine:
   - {fileID: -8316268131543082723}
   - {fileID: -976516131571382230}
   m_StateMachineTransitions:
-  - first: {fileID: 1263780470816621541}
-    second:
-    - {fileID: 4358378818108514739}
   - first: {fileID: -6769831167185805120}
     second:
     - {fileID: -8760541438900368454}
+  - first: {fileID: 1263780470816621541}
+    second:
+    - {fileID: 4358378818108514739}
   m_StateMachineBehaviours: []
   m_AnyStatePosition: {x: -40, y: 130, z: 0}
   m_EntryPosition: {x: -50, y: 300, z: 0}

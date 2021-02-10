@@ -25,7 +25,7 @@ public class StationController : MonoBehaviour
     public List<Schedule> trainSchedule = new List<Schedule>();
     [NonSerialized]
     public Schedule scheduleDB;
-    public TrainController trainController;
+    public TrainData trainData;
 
     [SerializeField]
     private Transform _arrivalPosition;
@@ -64,7 +64,7 @@ public class StationController : MonoBehaviour
                 iTween.MoveTo(trainInstance, iTween.Hash("position", _arrivalPosition.position, "time", 10, "delay", 10, "easetype", iTween.EaseType.easeOutCubic, "oncomplete", "TrainArrival", "oncompletetarget", gameObject, "oncompleteparams", trainInstance));
 
                 // Pass information through to respective train scene
-                trainController.SetVariables(i.origin, i.destination, i.timeArriveOriginDT, i.timeArriveDestinationDT);
+                trainData.SetVariables(i.origin, i.destination, i.timeArriveOriginDT, i.timeArriveDestinationDT);
             }
         }
     }
