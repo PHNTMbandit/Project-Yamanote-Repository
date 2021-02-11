@@ -59,6 +59,9 @@ public class Station : MonoBehaviour
     #endregion
 
     #region Set Functions
+    #endregion
+
+    #region Check Functions
     public void TrainArrived()
     {
         isArrived = true;
@@ -69,10 +72,11 @@ public class Station : MonoBehaviour
     }
     #endregion
 
-    #region Check Functions
-    #endregion
-
     #region Other Functions
+    private void AnimationTrigger() => StateMachine.CurrentState.AnimationTrigger();
+
+    private void AnimationFinishTrigger() => StateMachine.CurrentState.AnimationFinishTrigger();
+
     // Train enters the station
     public void TrainArriving()
     {
@@ -90,8 +94,8 @@ public class Station : MonoBehaviour
     // Train has arrived
     public IEnumerator TrainArrivedCouroutine()
     {
-        // Wait for 15 seconds
-        yield return new WaitForSeconds(15);
+        // Wait for 10 seconds
+        yield return new WaitForSeconds(10);
 
         isDeparting = true;
     }

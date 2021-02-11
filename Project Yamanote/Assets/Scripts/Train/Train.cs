@@ -18,12 +18,17 @@ public class Train : MonoBehaviour
 
     #region Check Variables
     public bool isArrived;
+    public bool isDeparted;
     #endregion
 
     #region Other Variables
     [SerializeField] private GameObject[] _parallaxBackground;
-    [SerializeField] private GameObject _trainStation;
-    [SerializeField] private TrainData _trainData;
+    public Transform departTransform;
+    public Transform arrivedTransfrom;
+    public Transform arrivingTransform;
+
+    public TrainData trainData;
+    public GameObject trainStation;
     #endregion
 
     #region Unity Callback Functions
@@ -31,17 +36,17 @@ public class Train : MonoBehaviour
     {
         StateMachine = new TrainStateMachine();
 
-        ArrivedState = new TrainArrivedState(this, StateMachine, _trainData, "arrived");
-        ArrivingState = new TrainArrivingState(this, StateMachine, _trainData, "arriving");
-        DepartingState = new TrainDepartingState(this, StateMachine, _trainData, "departing");
-        TravellingState = new TrainTravellingState(this, StateMachine, _trainData, "travelling");
+        ArrivedState = new TrainArrivedState(this, StateMachine, trainData, "arrived");
+        ArrivingState = new TrainArrivingState(this, StateMachine, trainData, "arriving");
+        DepartingState = new TrainDepartingState(this, StateMachine, trainData, "departing");
+        TravellingState = new TrainTravellingState(this, StateMachine, trainData, "travelling");
     }
 
     private void Start()
     {
         Animator = GetComponent<Animator>();
 
-        StateMachine.Intialise(TravellingState);
+        StateMachine.Intialise(ArrivedState);
     }
 
     private void Update()
@@ -56,6 +61,17 @@ public class Train : MonoBehaviour
     #endregion
 
     #region Set Functions
+    public void TrainDeparted()
+    {
+        isDeparted = false;
+
+        trainStation.transform.position = arrivingTransform.position;
+    }
+
+    public void TrainArrived()
+    {
+        isArrived = true;
+    }
     #endregion
 
     #region Check Functions
@@ -68,22 +84,19 @@ public class Train : MonoBehaviour
 
     public void SpeedDown()
     {
-        // Starts speed down parallax
         _parallaxBackground = GameObject.FindGameObjectsWithTag("Parallax");
         foreach (GameObject background in _parallaxBackground)
         {
             StopCoroutine(background.GetComponent<EasyParallax.SpriteMovement>().SpeedUpParallax());
             StartCoroutine(background.GetComponent<EasyParallax.SpriteMovement>().SpeedDownParallax());
         }
-      
-        // Moves station
-        iTween.MoveTo(_trainStation, iTween.Hash("position", new Vector3(-2f, -0.57f, 0f), "time", 10, "delay", 10, "easetype", iTween.EaseType.easeOutCubic, 
-            "oncomplete", "ITweenOpenDoors", "oncompletetarget", gameObject));
+
+        iTween.MoveTo(trainStation, iTween.Hash("position", arrivedTransfrom.position, "time", 10, "delay", 10, "easetype", iTween.EaseType.easeOutCubic, 
+            "oncomplete", "TrainArrived", "oncompletetarget", gameObject));
     }
 
     public void SpeedUp()
     {
-        // Starts speed up parallax
         _parallaxBackground = GameObject.FindGameObjectsWithTag("Parallax");
         foreach (GameObject background in _parallaxBackground)
         {
@@ -91,13 +104,21 @@ public class Train : MonoBehaviour
             StopCoroutine(background.GetComponent<EasyParallax.SpriteMovement>().SpeedDownParallax());
         }
 
-        // Moves station
-        iTween.MoveTo(_trainStation, iTween.Hash("position", new Vector3(-37.43f, -0.57f, 0f), "time", 10, "easetype", iTween.EaseType.easeInCubic));
+        iTween.MoveTo(trainStation, iTween.Hash("position", departTransform.position, "time", 10, "easetype", iTween.EaseType.easeInCubic, 
+            "oncomplete", "TrainDeparted", "oncompletetarget", gameObject));
     }
 
-    public void ITweenOpenDoors()
+    public IEnumerator TrainArrivedCouroutine()
     {
-        isArrived = true;
+        _parallaxBackground = GameObject.FindGameObjectsWithTag("Parallax");
+        foreach (GameObject background in _parallaxBackground)
+        {
+            background.GetComponent<EasyParallax.SpriteMovement>().Stop();
+        }
+
+        yield return new WaitForSeconds(10);
+
+        isDeparted = true;
     }
     #endregion
 }

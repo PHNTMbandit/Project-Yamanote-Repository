@@ -16,6 +16,10 @@ public class TrainArrivedState : TrainInsideState
     public override void Enter()
     {
         base.Enter();
+
+        train.isArrived = true;
+        train.StartCoroutine(train.TrainArrivedCouroutine());
+        train.trainStation.transform.position = train.arrivedTransfrom.position;
     }
 
     public override void Exit()
@@ -27,10 +31,8 @@ public class TrainArrivedState : TrainInsideState
     {
         base.LogicUpdate();
 
-        if (GameClock.dateTime.TimeOfDay.TotalMinutes.Equals(721))
-        {
+        if (train.isDeparted == true)
             stateMachine.ChangeState(train.DepartingState);
-        }
     }
 
     public override void PhysicsUpdate()

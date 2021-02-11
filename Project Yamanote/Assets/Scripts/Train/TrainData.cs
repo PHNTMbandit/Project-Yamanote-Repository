@@ -7,15 +7,15 @@ public class TrainData : MonoBehaviour
 {
     [NonSerialized] public string originStation;
     [NonSerialized] public string destinationStation;
-    [NonSerialized] public DateTime timeArrive;
-    [NonSerialized] public DateTime timeDepart;
+    [NonSerialized] public DateTime timeArriveOriginDT;
+    [NonSerialized] public DateTime timeArriveDestinationDT;
 
     // Receieve values based on current route
-    public void SetVariables(string originStationString, string destinationStationString, DateTime timeArriveDT, DateTime timeDepartDT)
+    public void SetVariables(string originStationString, string destinationStationString, DateTime timeArriveOrigin, DateTime timeArriveDestination)
     {
         originStation = originStationString;
         destinationStation = destinationStationString;
-        timeArrive = timeArriveDT;
-        timeDepart = timeDepartDT;
+        timeArriveOriginDT = timeArriveOrigin;
+        timeArriveDestinationDT = timeArriveDestination;
     }
 }

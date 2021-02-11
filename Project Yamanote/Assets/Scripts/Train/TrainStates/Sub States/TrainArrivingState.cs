@@ -19,6 +19,7 @@ public class TrainArrivingState : TrainInsideState
         base.Enter();
 
         train.SpeedDown();
+
     }
 
     public override void Exit()

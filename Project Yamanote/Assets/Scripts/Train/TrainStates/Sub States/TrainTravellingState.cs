@@ -28,7 +28,7 @@ public class TrainTravellingState : TrainInsideState
     {
         base.LogicUpdate();
 
-        if (GameClock.dateTime.TimeOfDay.TotalMinutes.Equals(720))
+        if (GameClock.dateTime.TimeOfDay.Equals(train.trainData.timeArriveDestinationDT.TimeOfDay))
         {
             stateMachine.ChangeState(train.ArrivingState);
         }

@@ -113,7 +113,7 @@ public class PlayerController : MonoBehaviour
     #endregion
 
     #region Other Functions
-    private void AnimationTriggerFunction() => StateMachine.CurrentState.AnimationTrigger();
+    private void AnimationTrigger() => StateMachine.CurrentState.AnimationTrigger();
 
     private void AnimationFinishTrigger() => StateMachine.CurrentState.AnimationFinishTrigger();
 

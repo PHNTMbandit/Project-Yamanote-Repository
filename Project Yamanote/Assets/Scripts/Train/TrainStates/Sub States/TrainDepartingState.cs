@@ -33,6 +33,7 @@ public class TrainDepartingState : TrainInsideState
             train.isArrived = false;
             train.SpeedUp();
             stateMachine.ChangeState(train.TravellingState);
+            Debug.Log("animation finished");
         }
     }
 

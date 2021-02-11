@@ -11,7 +11,7 @@ public class DayNightCycle : MonoBehaviour
     public Gradient gradient;
     public Camera gameCamera;
 
-    public Light2D[] mapLights;
+    public GameObject[] mapLights;
 
     public void ChangeColour(float TimeInMinutes)
     {
@@ -32,8 +32,9 @@ public class DayNightCycle : MonoBehaviour
     // Turn lights off or on
     private void ControlLightMaps(bool status)
     {
+        mapLights = GameObject.FindGameObjectsWithTag("Light");
         if (mapLights.Length > 0)
-            foreach (Light2D _light in mapLights)
+            foreach (GameObject _light in mapLights)
                 _light.gameObject.SetActive(status);
     }
 }
