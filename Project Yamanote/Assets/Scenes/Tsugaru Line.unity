@@ -1135,7 +1135,7 @@ GameObject:
   - component: {fileID: 176607375}
   - component: {fileID: 176607374}
   - component: {fileID: 176607373}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Art_BG_SteelGate
   m_TagString: Parallax
   m_Icon: {fileID: 0}
@@ -4651,7 +4651,7 @@ GameObject:
   - component: {fileID: 947297110}
   - component: {fileID: 947297109}
   - component: {fileID: 947297108}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Art_BG_Houses_1
   m_TagString: Parallax
   m_Icon: {fileID: 0}
@@ -4851,7 +4851,7 @@ GameObject:
   - component: {fileID: 1002719514}
   - component: {fileID: 1002719513}
   - component: {fileID: 1002719512}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Art_BG_Houses_4
   m_TagString: Parallax
   m_Icon: {fileID: 0}
@@ -6243,7 +6243,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8388670187888747963, guid: f41808bce060060428174c828171aab1, type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 8388670187888747963, guid: f41808bce060060428174c828171aab1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8092,7 +8092,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1626234082 stripped
 MonoBehaviour:
@@ -8117,7 +8117,7 @@ GameObject:
   - component: {fileID: 1635861994}
   - component: {fileID: 1635861993}
   - component: {fileID: 1635861992}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Art_BG_Houses_2
   m_TagString: Parallax
   m_Icon: {fileID: 0}
@@ -8575,7 +8575,7 @@ GameObject:
   - component: {fileID: 1808984864}
   - component: {fileID: 1808984866}
   - component: {fileID: 1808984865}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Art_BG_ElectricPoles
   m_TagString: Parallax
   m_Icon: {fileID: 0}
@@ -8837,7 +8837,7 @@ GameObject:
   - component: {fileID: 1848736325}
   - component: {fileID: 1848736324}
   - component: {fileID: 1848736323}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Art_BG_Houses_3
   m_TagString: Parallax
   m_Icon: {fileID: 0}
@@ -9092,7 +9092,7 @@ MonoBehaviour:
   miniMapVisibility: 0
   miniMapClampPosition: 0
   distanceToCameraSQR: 10001.289
-  computedIconScale: {x: 0, y: 0, z: 0}
+  computedIconScale: {x: 0.89937794, y: 0.89937794, z: 1}
   iconAlpha: 0
   miniMapIconScale: {x: 0.5, y: 0.5, z: 0.5}
 --- !u!114 &1853363694
@@ -9763,7 +9763,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2007938697
 GameObject:
@@ -10509,7 +10509,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2015321536596795751
 MonoBehaviour:
@@ -10588,102 +10588,6 @@ MonoBehaviour:
     onDialogueSystemUnpause:
       m_PersistentCalls:
         m_Calls: []
---- !u!1 &2510854174769562179
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4091036629043896173}
-  - component: {fileID: 2510854174769562180}
-  m_Layer: 0
-  m_Name: Manager_TrainController
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2510854174769562180
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2510854174769562179}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c593457cd8105e148906690e1707c592, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  trigger: 16
-  condition:
-    luaConditions: []
-    questConditions: []
-    acceptedTags: []
-    acceptedGameObjects: []
-    luaWizardIndex: -1
-    lastEvaluationValue: 0
-  setQuestState: 1
-  questName: 
-  questState: 0
-  setQuestEntryState: 0
-  questEntryNumber: 1
-  questEntryState: 0
-  luaCode: 
-  sequence: 
-  sequenceSpeaker: {fileID: 0}
-  sequenceListener: {fileID: 0}
-  waitOneFrameOnStartOrEnable: 1
-  alertMessage: 
-  textTable: {fileID: 0}
-  alertDuration: 0
-  sendMessages: []
-  barkSource: 0
-  barkConversation: 
-  barkText: 
-  barkTextSequence: 
-  barker: {fileID: 0}
-  barkTarget: {fileID: 0}
-  barkOrder: 0
-  allowBarksDuringConversations: 0
-  skipBarkIfNoValidEntries: 0
-  cacheBarkLines: 0
-  conversation: 
-  conversationConversant: {fileID: 0}
-  conversationActor: {fileID: 0}
-  startConversationEntryID: -1
-  exclusive: 0
-  skipIfNoValidEntries: 0
-  stopConversationOnTriggerExit: 0
-  stopConversationIfTooFar: 0
-  maxConversationDistance: 5
-  monitorConversationDistanceFrequency: 1
-  showCursorDuringConversation: 0
-  pauseGameDuringConversation: 0
-  setActiveActions: []
-  setEnabledActions: []
-  setAnimatorStateActions: []
-  onExecute:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: TrainController, Assembly-CSharp
-        m_MethodName: TrainArrivingFirst
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  useConversationTitlePicker: 1
-  useBarkTitlePicker: 1
-  useQuestNamePicker: 1
-  selectedDatabase: {fileID: 11400000, guid: af811364c06a1f542a8227de157c3053, type: 2}
 --- !u!50 &2638885845326841865
 Rigidbody2D:
   serializedVersion: 4
@@ -15558,7 +15462,7 @@ GameObject:
   - component: {fileID: 8965430609606519448}
   - component: {fileID: 8965430609606519450}
   - component: {fileID: 8965430609606519451}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PE_Snow
   m_TagString: Parallax
   m_Icon: {fileID: 0}
@@ -16349,20 +16253,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2577fa22e249c5446998e06b8e5968f7, type: 3}
---- !u!4 &4091036629043896173
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2510854174769562179}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.810411, y: 0.7072126, z: -2.7690098}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 13
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &4228154701377663520
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17090,7 +16980,7 @@ MonoBehaviour:
   miniMapVisibility: 0
   miniMapClampPosition: 0
   distanceToCameraSQR: 10014.074
-  computedIconScale: {x: 0, y: 0, z: 0}
+  computedIconScale: {x: 0.89937794, y: 0.89937794, z: 1}
   iconAlpha: 0
   miniMapIconScale: {x: 0.5, y: 0.5, z: 0.5}
 --- !u!212 &8965430609606519448

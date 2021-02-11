@@ -72,6 +72,7 @@ public class Train : MonoBehaviour
         _parallaxBackground = GameObject.FindGameObjectsWithTag("Parallax");
         foreach (GameObject background in _parallaxBackground)
         {
+            StopCoroutine(background.GetComponent<EasyParallax.SpriteMovement>().SpeedUpParallax());
             StartCoroutine(background.GetComponent<EasyParallax.SpriteMovement>().SpeedDownParallax());
         }
 
@@ -87,6 +88,7 @@ public class Train : MonoBehaviour
         foreach (GameObject background in _parallaxBackground)
         {
             StartCoroutine(background.GetComponent<EasyParallax.SpriteMovement>().SpeedUpParallax());
+            StopCoroutine(background.GetComponent<EasyParallax.SpriteMovement>().SpeedDownParallax());
         }
 
         // Moves station
