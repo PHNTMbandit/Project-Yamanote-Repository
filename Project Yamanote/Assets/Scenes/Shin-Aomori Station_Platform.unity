@@ -1638,7 +1638,7 @@ PrefabInstance:
       objectReference: {fileID: 1192058646}
     - target: {fileID: 4228154702575912063, guid: 6764842d0ac11784f8137bae10237814, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4228154702575912063, guid: 6764842d0ac11784f8137bae10237814, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1900,7 +1900,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &227454851
 GameObject:
@@ -3034,7 +3034,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   miniMapVisibility: 0
   miniMapClampPosition: 0
-  distanceToCameraSQR: 10016.168
+  distanceToCameraSQR: 10135.192
   computedIconScale: {x: 0.49916196, y: 0.49916196, z: 1}
   iconAlpha: 0
   miniMapIconScale: {x: 0.5, y: 0.5, z: 0.5}
@@ -3859,7 +3859,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4734194444030553872, guid: c4934e0a76e40d547b911caae48581bd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.4199996
+      value: -0.20000076
       objectReference: {fileID: 0}
     - target: {fileID: 4734194444030553872, guid: c4934e0a76e40d547b911caae48581bd, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4414,14 +4414,13 @@ GameObject:
   m_Component:
   - component: {fileID: 689553604}
   - component: {fileID: 689553603}
-  - component: {fileID: 689553605}
   m_Layer: 8
   m_Name: Art_TsugaruLineTrain_Exterior
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &689553603
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4487,85 +4486,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &689553605
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 689553602}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c593457cd8105e148906690e1707c592, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  trigger: 16
-  condition:
-    luaConditions: []
-    questConditions: []
-    acceptedTags: []
-    acceptedGameObjects: []
-    luaWizardIndex: -1
-    lastEvaluationValue: 0
-  setQuestState: 1
-  questName: 
-  questState: 0
-  setQuestEntryState: 0
-  questEntryNumber: 1
-  questEntryState: 0
-  luaCode: 
-  sequence: 
-  sequenceSpeaker: {fileID: 0}
-  sequenceListener: {fileID: 0}
-  waitOneFrameOnStartOrEnable: 1
-  alertMessage: 
-  textTable: {fileID: 0}
-  alertDuration: 0
-  sendMessages: []
-  barkSource: 0
-  barkConversation: 
-  barkText: 
-  barkTextSequence: 
-  barker: {fileID: 0}
-  barkTarget: {fileID: 0}
-  barkOrder: 0
-  allowBarksDuringConversations: 0
-  skipBarkIfNoValidEntries: 0
-  cacheBarkLines: 0
-  conversation: 
-  conversationConversant: {fileID: 0}
-  conversationActor: {fileID: 0}
-  startConversationEntryID: -1
-  exclusive: 0
-  skipIfNoValidEntries: 0
-  stopConversationOnTriggerExit: 0
-  stopConversationIfTooFar: 0
-  maxConversationDistance: 5
-  monitorConversationDistanceFrequency: 1
-  showCursorDuringConversation: 0
-  pauseGameDuringConversation: 0
-  setActiveActions: []
-  setEnabledActions: []
-  setAnimatorStateActions: []
-  onExecute:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1271177271}
-        m_TargetAssemblyTypeName: StationController, Assembly-CSharp
-        m_MethodName: TrainDepartureFirst
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  useConversationTitlePicker: 1
-  useBarkTitlePicker: 1
-  useQuestNamePicker: 1
-  selectedDatabase: {fileID: 11400000, guid: af811364c06a1f542a8227de157c3053, type: 2}
 --- !u!1 &697133688
 GameObject:
   m_ObjectHideFlags: 0
@@ -5041,7 +4961,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 637824154574939744, guid: 75306490556f0a94ea793bbed97be06c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.77
+      value: -8.39
       objectReference: {fileID: 0}
     - target: {fileID: 637824154574939744, guid: 75306490556f0a94ea793bbed97be06c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -6575,7 +6495,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7180870303562499519, guid: 36da88b79b41621469c80b4902a8ae8c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.4199996
+      value: -0.20000076
       objectReference: {fileID: 0}
     - target: {fileID: 7180870303562499519, guid: 36da88b79b41621469c80b4902a8ae8c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -6919,7 +6839,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1191925920 stripped
 GameObject:
@@ -7360,6 +7280,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1271177272}
+  - component: {fileID: 1271177273}
   - component: {fileID: 1271177271}
   m_Layer: 0
   m_Name: Manager_Station
@@ -7377,147 +7298,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1271177270}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8a7cf51adcc99e40ad0899fba890490, type: 3}
+  m_Script: {fileID: 11500000, guid: e6f09cabaf8d3bd4bb997f2d1c26812a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   trainSchedule:
   - origin: Shin-Aomori Station
     destination: Hirosaki Station
-    timeArriveOrigin: 5:46
-    timeArriveDestination: 6:21
+    timeArriveOrigin: 12:00
+    timeArriveDestination: 1:00
     trainLine: Ou Line
-    trainPrefab: {fileID: 8561397282198301730, guid: 0b47a893bbdba6948a228c87bd5d567f, type: 3}
-  - origin: Shin-Aomori Station
-    destination: Hirosaki Station
-    timeArriveOrigin: 6:45
-    timeArriveDestination: 7:30
-    trainLine: Ou Line
-    trainPrefab: {fileID: 8561397282198301730, guid: 0b47a893bbdba6948a228c87bd5d567f, type: 3}
-  - origin: Shin-Aomori Station
-    destination: Hirosaki Station
-    timeArriveOrigin: 7:09
-    timeArriveDestination: 7:50
-    trainLine: Ou Line
-    trainPrefab: {fileID: 8561397282198301730, guid: 0b47a893bbdba6948a228c87bd5d567f, type: 3}
-  - origin: Shin-Aomori Station
-    destination: Hirosaki Station
-    timeArriveOrigin: 7:40
-    timeArriveDestination: 8:19
-    trainLine: Ou Line
-    trainPrefab: {fileID: 8561397282198301730, guid: 0b47a893bbdba6948a228c87bd5d567f, type: 3}
-  - origin: Shin-Aomori Station
-    destination: Hirosaki Station
-    timeArriveOrigin: 9:11
-    timeArriveDestination: 9:38
-    trainLine: Limited Express Tsugaru
-    trainPrefab: {fileID: 0}
-  - origin: Shin-Aomori Station
-    destination: Hirosaki Station
-    timeArriveOrigin: 9:58
-    timeArriveDestination: 10:39
-    trainLine: Ou Line
-    trainPrefab: {fileID: 8561397282198301730, guid: 0b47a893bbdba6948a228c87bd5d567f, type: 3}
-  - origin: Shin-Aomori Station
-    destination: Hirosaki Station
-    timeArriveOrigin: 10:46
-    timeArriveDestination: 11:27
-    trainLine: Ou Line
-    trainPrefab: {fileID: 8561397282198301730, guid: 0b47a893bbdba6948a228c87bd5d567f, type: 3}
-  - origin: Shin-Aomori Station
-    destination: Hirosaki Station
-    timeArriveOrigin: 11:28
-    timeArriveDestination: 12:00
-    trainLine: Ou Line
-    trainPrefab: {fileID: 8561397282198301730, guid: 0b47a893bbdba6948a228c87bd5d567f, type: 3}
-  - origin: Shin-Aomori Station
-    destination: Hirosaki Station
-    timeArriveOrigin: 12:03
-    timeArriveDestination: 12:39
-    trainLine: Ou Line
-    trainPrefab: {fileID: 8561397282198301730, guid: 0b47a893bbdba6948a228c87bd5d567f, type: 3}
-  - origin: Shin-Aomori Station
-    destination: Hirosaki Station
-    timeArriveOrigin: 12:48
-    timeArriveDestination: 13:18
-    trainLine: Limited Express Tsugaru
-    trainPrefab: {fileID: 0}
-  - origin: Shin-Aomori Station
-    destination: Hirosaki Station
-    timeArriveOrigin: 13:43
-    timeArriveDestination: 14:20
-    trainLine: Ou Line
-    trainPrefab: {fileID: 8561397282198301730, guid: 0b47a893bbdba6948a228c87bd5d567f, type: 3}
-  - origin: Shin-Aomori Station
-    destination: Hirosaki Station
-    timeArriveOrigin: 14:10
-    timeArriveDestination: 14:45
-    trainLine: Ou Line
-    trainPrefab: {fileID: 8561397282198301730, guid: 0b47a893bbdba6948a228c87bd5d567f, type: 3}
-  - origin: Shin-Aomori Station
-    destination: Hirosaki Station
-    timeArriveOrigin: 14:53
-    timeArriveDestination: 15:42
-    trainLine: Ou Line
-    trainPrefab: {fileID: 8561397282198301730, guid: 0b47a893bbdba6948a228c87bd5d567f, type: 3}
-  - origin: Shin-Aomori Station
-    destination: Hirosaki Station
-    timeArriveOrigin: 15:42
-    timeArriveDestination: 16:24
-    trainLine: Ou Line
-    trainPrefab: {fileID: 8561397282198301730, guid: 0b47a893bbdba6948a228c87bd5d567f, type: 3}
-  - origin: Shin-Aomori Station
-    destination: Hirosaki Station
-    timeArriveOrigin: 16:03
-    timeArriveDestination: 16:30
-    trainLine: Limited Express Tsugaru
-    trainPrefab: {fileID: 0}
-  - origin: Shin-Aomori Station
-    destination: Hirosaki Station
-    timeArriveOrigin: 16:51
-    timeArriveDestination: 17:27
-    trainLine: Ou Line
-    trainPrefab: {fileID: 8561397282198301730, guid: 0b47a893bbdba6948a228c87bd5d567f, type: 3}
-  - origin: Shin-Aomori Station
-    destination: Hirosaki Station
-    timeArriveOrigin: 17:37
-    timeArriveDestination: 18:12
-    trainLine: Ou Line
-    trainPrefab: {fileID: 8561397282198301730, guid: 0b47a893bbdba6948a228c87bd5d567f, type: 3}
-  - origin: Shin-Aomori Station
-    destination: Hirosaki Station
-    timeArriveOrigin: 18:31
-    timeArriveDestination: 19:08
-    trainLine: Ou Line
-    trainPrefab: {fileID: 8561397282198301730, guid: 0b47a893bbdba6948a228c87bd5d567f, type: 3}
-  - origin: Shin-Aomori Station
-    destination: Hirosaki Station
-    timeArriveOrigin: 19:12
-    timeArriveDestination: 20:00
-    trainLine: Ou Line
-    trainPrefab: {fileID: 8561397282198301730, guid: 0b47a893bbdba6948a228c87bd5d567f, type: 3}
-  - origin: Shin-Aomori Station
-    destination: Hirosaki Station
-    timeArriveOrigin: 19:52
-    timeArriveDestination: 20:35
-    trainLine: Ou Line
-    trainPrefab: {fileID: 8561397282198301730, guid: 0b47a893bbdba6948a228c87bd5d567f, type: 3}
-  - origin: Shin-Aomori Station
-    destination: Hirosaki Station
-    timeArriveOrigin: 20:49
-    timeArriveDestination: 21:29
-    trainLine: Ou Line
-    trainPrefab: {fileID: 8561397282198301730, guid: 0b47a893bbdba6948a228c87bd5d567f, type: 3}
-  - origin: Shin-Aomori Station
-    destination: Hirosaki Station
-    timeArriveOrigin: 21:53
-    timeArriveDestination: 22:34
-    trainLine: Ou Line
-    trainPrefab: {fileID: 8561397282198301730, guid: 0b47a893bbdba6948a228c87bd5d567f, type: 3}
-  trainData: {fileID: 0}
-  _arrivalPosition: {fileID: 1062640903}
-  _instantiatePosition: {fileID: 1247033834}
-  _despawnPosition: {fileID: 7121813199062421815}
-  _startingTrain: {fileID: 689553602}
 --- !u!4 &1271177272
 Transform:
   m_ObjectHideFlags: 0
@@ -7535,6 +7324,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1271177273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1271177270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cfaf424d21fab945ab8a15b5fc9c67b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isArrived: 0
+  isDeparted: 0
+  _stationData: {fileID: 1271177271}
+  _arrivalPosition: {fileID: 1062640903}
+  _instantiatePosition: {fileID: 1247033834}
+  _despawnPosition: {fileID: 7121813199062421815}
+  _train: {fileID: 1878140869}
 --- !u!1 &1279319066
 GameObject:
   m_ObjectHideFlags: 0
@@ -8230,6 +8038,63 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &1413158146
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1291182379338361920, guid: 0b47a893bbdba6948a228c87bd5d567f, type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1291182379338361920, guid: 0b47a893bbdba6948a228c87bd5d567f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -76.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 1291182379338361920, guid: 0b47a893bbdba6948a228c87bd5d567f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.03298116
+      objectReference: {fileID: 0}
+    - target: {fileID: 1291182379338361920, guid: 0b47a893bbdba6948a228c87bd5d567f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1291182379338361920, guid: 0b47a893bbdba6948a228c87bd5d567f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1291182379338361920, guid: 0b47a893bbdba6948a228c87bd5d567f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1291182379338361920, guid: 0b47a893bbdba6948a228c87bd5d567f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1291182379338361920, guid: 0b47a893bbdba6948a228c87bd5d567f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1291182379338361920, guid: 0b47a893bbdba6948a228c87bd5d567f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1291182379338361920, guid: 0b47a893bbdba6948a228c87bd5d567f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1291182379338361920, guid: 0b47a893bbdba6948a228c87bd5d567f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8561397282198301730, guid: 0b47a893bbdba6948a228c87bd5d567f, type: 3}
+      propertyPath: m_Name
+      value: Art_OuLine_Exterior
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0b47a893bbdba6948a228c87bd5d567f, type: 3}
 --- !u!114 &1441787166 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2758068826568781185, guid: ea9311ff0b526a4458b5cfba3adfcaab, type: 3}
@@ -9101,7 +8966,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7162606021163118276, guid: bd97e0342eac7e74780cf3d5fd04cc3d, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 7162606021163118276, guid: bd97e0342eac7e74780cf3d5fd04cc3d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10215,6 +10080,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1878140869 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8561397282198301730, guid: 0b47a893bbdba6948a228c87bd5d567f, type: 3}
+  m_PrefabInstance: {fileID: 1413158146}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1884208723
 GameObject:
   m_ObjectHideFlags: 0
@@ -10481,7 +10351,7 @@ PrefabInstance:
       objectReference: {fileID: 464758582}
     - target: {fileID: 3506197423623609756, guid: dbcd8815a2df1e444b34101945052b40, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 3506197423623609756, guid: dbcd8815a2df1e444b34101945052b40, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11359,7 +11229,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   miniMapVisibility: 0
   miniMapClampPosition: 0
-  distanceToCameraSQR: 10001.856
+  distanceToCameraSQR: 10071.656
   computedIconScale: {x: 0.49916196, y: 0.49916196, z: 1}
   iconAlpha: 0
   miniMapIconScale: {x: 0.5, y: 0.5, z: 0.5}
@@ -11453,7 +11323,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2072230533
 GameObject:
@@ -11806,7 +11676,7 @@ Transform:
   - {fileID: 997387521}
   - {fileID: 466265069}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2146524794
 GameObject:
@@ -13040,7 +12910,7 @@ Transform:
   m_LocalScale: {x: 1.6626011, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 89.96, y: 0, z: -179.953}
 --- !u!199 &6270915276563322146
 ParticleSystemRenderer:
@@ -17930,7 +17800,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8388670187888747963, guid: f41808bce060060428174c828171aab1, type: 3}
       propertyPath: m_RootOrder
-      value: 19
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8388670187888747963, guid: f41808bce060060428174c828171aab1, type: 3}
       propertyPath: m_LocalPosition.x
