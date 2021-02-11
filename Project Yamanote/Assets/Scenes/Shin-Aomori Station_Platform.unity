@@ -633,6 +633,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 29298382, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 162224035, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
@@ -7306,6 +7310,11 @@ MonoBehaviour:
     destination: Hirosaki Station
     timeArriveOrigin: 12:00
     timeArriveDestination: 1:00
+    trainLine: Ou Line
+  - origin: Shin-Aomori Station
+    destination: Hirosaki Station
+    timeArriveOrigin: 12:01
+    timeArriveDestination: 1:01
     trainLine: Ou Line
 --- !u!4 &1271177272
 Transform:

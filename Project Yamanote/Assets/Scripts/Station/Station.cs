@@ -82,7 +82,7 @@ public class Station : MonoBehaviour
     {
         foreach (var i in _stationData.trainSchedule)
         {
-            // Spawn train and move to station
+            //Move train to station
             iTween.MoveTo(_train, iTween.Hash("position", _arrivalPosition.position, "time", 10, "delay", 10, 
                 "easetype", iTween.EaseType.easeOutCubic, "oncomplete", "TrainArrived", "oncompletetarget", gameObject));
 

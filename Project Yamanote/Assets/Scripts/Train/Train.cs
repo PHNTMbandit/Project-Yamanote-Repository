@@ -47,6 +47,8 @@ public class Train : MonoBehaviour
         Animator = GetComponent<Animator>();
 
         StateMachine.Intialise(ArrivedState);
+
+        print(TrainData.timeArriveDestinationDT.TimeOfDay);
     }
 
     private void Update()

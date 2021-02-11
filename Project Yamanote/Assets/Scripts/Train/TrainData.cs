@@ -5,10 +5,10 @@ using UnityEngine;
 
 public class TrainData : MonoBehaviour
 {
-    [NonSerialized] public string originStation;
-    [NonSerialized] public string destinationStation;
-    [NonSerialized] public DateTime timeArriveOriginDT;
-    [NonSerialized] public DateTime timeArriveDestinationDT;
+    [NonSerialized] public static string originStation;
+    [NonSerialized] public static string destinationStation;
+    [NonSerialized] public static DateTime timeArriveOriginDT;
+    [NonSerialized] public static DateTime timeArriveDestinationDT;
 
     // Receieve values based on current route
     public void SetVariables(string originStationString, string destinationStationString, DateTime timeArriveOrigin, DateTime timeArriveDestination)
