@@ -7598,6 +7598,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 29298382, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 162224035, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
@@ -9209,7 +9213,7 @@ MonoBehaviour:
   miniMapVisibility: 0
   miniMapClampPosition: 0
   distanceToCameraSQR: 10001.289
-  computedIconScale: {x: 0.059958525, y: 0.059958525, z: 0.06666666}
+  computedIconScale: {x: 0, y: 0, z: 0}
   iconAlpha: 0
   miniMapIconScale: {x: 0.5, y: 0.5, z: 0.5}
 --- !u!114 &1853363694
@@ -17127,7 +17131,7 @@ MonoBehaviour:
   miniMapVisibility: 0
   miniMapClampPosition: 0
   distanceToCameraSQR: 10014.074
-  computedIconScale: {x: 0.059958525, y: 0.059958525, z: 0.06666666}
+  computedIconScale: {x: 0, y: 0, z: 0}
   iconAlpha: 0
   miniMapIconScale: {x: 0.5, y: 0.5, z: 0.5}
 --- !u!212 &8965430609606519448
