@@ -690,7 +690,7 @@ MonoBehaviour:
   visibleDistanceOverride: 0
   visibleMinDistanceOverride: 0
   minDistanceText: 10
-  title: Door
+  title: Platform
   titleVisibility: 0
   canBeVisited: 1
   visitedDistanceOverride: 0
@@ -793,7 +793,7 @@ MonoBehaviour:
   questEntryState: 0
   luaCode: 
   sequence: LoadLevel(Shin-Aomori Station_Platform@Door6)
-  sequenceSpeaker: {fileID: 0}
+  sequenceSpeaker: {fileID: 186424543}
   sequenceListener: {fileID: 0}
   waitOneFrameOnStartOrEnable: 1
   alertMessage: 
@@ -4082,7 +4082,7 @@ MonoBehaviour:
   visibleDistanceOverride: 0
   visibleMinDistanceOverride: 0
   minDistanceText: 10
-  title: Door
+  title: Platform
   titleVisibility: 0
   canBeVisited: 1
   visitedDistanceOverride: 0
@@ -4185,7 +4185,7 @@ MonoBehaviour:
   questEntryState: 0
   luaCode: 
   sequence: LoadLevel(Shin-Aomori Station_Platform@Door4)
-  sequenceSpeaker: {fileID: 0}
+  sequenceSpeaker: {fileID: 186424543}
   sequenceListener: {fileID: 0}
   waitOneFrameOnStartOrEnable: 1
   alertMessage: 
@@ -4301,7 +4301,7 @@ MonoBehaviour:
   visibleDistanceOverride: 0
   visibleMinDistanceOverride: 0
   minDistanceText: 10
-  title: Door
+  title: Platform
   titleVisibility: 0
   canBeVisited: 1
   visitedDistanceOverride: 0
@@ -4379,7 +4379,7 @@ MonoBehaviour:
   questEntryState: 0
   luaCode: 
   sequence: LoadLevel(Shin-Aomori Station_Platform@Door5)
-  sequenceSpeaker: {fileID: 0}
+  sequenceSpeaker: {fileID: 186424543}
   sequenceListener: {fileID: 0}
   waitOneFrameOnStartOrEnable: 1
   alertMessage: 
