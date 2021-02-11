@@ -7337,7 +7337,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isArrived: 0
-  isDeparted: 0
+  isDeparting: 0
   _stationData: {fileID: 1271177271}
   _arrivalPosition: {fileID: 1062640903}
   _instantiatePosition: {fileID: 1247033834}
