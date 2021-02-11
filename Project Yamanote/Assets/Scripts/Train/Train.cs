@@ -71,8 +71,10 @@ public class Train : MonoBehaviour
         // Starts speed down parallax
         _parallaxBackground = GameObject.FindGameObjectsWithTag("Parallax");
         foreach (GameObject background in _parallaxBackground)
+        {
             StartCoroutine(background.GetComponent<EasyParallax.SpriteMovement>().SpeedDownParallax());
-
+        }
+      
         // Moves station
         iTween.MoveTo(_trainStation, iTween.Hash("position", new Vector3(-2f, -0.57f, 0f), "time", 10, "delay", 10, "easetype", iTween.EaseType.easeOutCubic, 
             "oncomplete", "ITweenOpenDoors", "oncompletetarget", gameObject));
@@ -83,7 +85,9 @@ public class Train : MonoBehaviour
         // Starts speed up parallax
         _parallaxBackground = GameObject.FindGameObjectsWithTag("Parallax");
         foreach (GameObject background in _parallaxBackground)
+        {
             StartCoroutine(background.GetComponent<EasyParallax.SpriteMovement>().SpeedUpParallax());
+        }
 
         // Moves station
         iTween.MoveTo(_trainStation, iTween.Hash("position", new Vector3(-37.43f, -0.57f, 0f), "time", 10, "easetype", iTween.EaseType.easeInCubic));
