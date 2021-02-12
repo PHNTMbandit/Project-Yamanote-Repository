@@ -1333,7 +1333,7 @@ RectTransform:
   - {fileID: 439439910}
   - {fileID: 634314282}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1588,7 +1588,7 @@ Transform:
   - {fileID: 1902459088}
   - {fileID: 645474419}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &341295204
 GameObject:
@@ -1902,7 +1902,7 @@ RectTransform:
   - {fileID: 1391013282}
   - {fileID: 523154554}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2620,7 +2620,7 @@ GameObject:
   - component: {fileID: 528229605}
   - component: {fileID: 528229609}
   m_Layer: 8
-  m_Name: Train
+  m_Name: Art_Train
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2694,7 +2694,7 @@ Transform:
   - {fileID: 410643869}
   - {fileID: 556079675}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!60 &528229604
 PolygonCollider2D:
@@ -3345,7 +3345,7 @@ GameObject:
   - component: {fileID: 606035800}
   - component: {fileID: 606035801}
   m_Layer: 0
-  m_Name: Art_BG_ShinAomoriStation
+  m_Name: Art_ShinAomoriStation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3363,7 +3363,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &606035801
 SpriteRenderer:
@@ -6410,7 +6410,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1436117199}
   m_Layer: 0
-  m_Name: Parallax
+  m_Name: Art_Parallax
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6435,7 +6435,7 @@ Transform:
   - {fileID: 1848736322}
   - {fileID: 1002719511}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1439098477
 PrefabInstance:
@@ -6906,7 +6906,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1166335309052656192, guid: 2a038b004164b7649b7f3dc96cb58b8c, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1166335309052656192, guid: 2a038b004164b7649b7f3dc96cb58b8c, type: 3}
       propertyPath: m_AnchorMax.x
@@ -8153,7 +8153,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1626234082 stripped
 MonoBehaviour:
@@ -9153,7 +9153,7 @@ MonoBehaviour:
   miniMapVisibility: 0
   miniMapClampPosition: 0
   distanceToCameraSQR: 10001.289
-  computedIconScale: {x: 0.059958525, y: 0.059958525, z: 0.06666666}
+  computedIconScale: {x: 0.89937794, y: 0.89937794, z: 1}
   iconAlpha: 0
   miniMapIconScale: {x: 0.5, y: 0.5, z: 0.5}
 --- !u!114 &1853363694
@@ -9854,7 +9854,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2007938697
 GameObject:
@@ -10600,7 +10600,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2015321536596795751
 MonoBehaviour:
@@ -15802,7 +15802,7 @@ PrefabInstance:
       objectReference: {fileID: 1762320611}
     - target: {fileID: 3506197423623609756, guid: dbcd8815a2df1e444b34101945052b40, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 3506197423623609756, guid: dbcd8815a2df1e444b34101945052b40, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16357,7 +16357,7 @@ PrefabInstance:
       objectReference: {fileID: 519420031}
     - target: {fileID: 4228154702575912063, guid: 6764842d0ac11784f8137bae10237814, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 4228154702575912063, guid: 6764842d0ac11784f8137bae10237814, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17067,7 +17067,7 @@ MonoBehaviour:
   miniMapVisibility: 0
   miniMapClampPosition: 0
   distanceToCameraSQR: 10014.074
-  computedIconScale: {x: 0.059958525, y: 0.059958525, z: 0.06666666}
+  computedIconScale: {x: 0.89937794, y: 0.89937794, z: 1}
   iconAlpha: 0
   miniMapIconScale: {x: 0.5, y: 0.5, z: 0.5}
 --- !u!212 &8965430609606519448
