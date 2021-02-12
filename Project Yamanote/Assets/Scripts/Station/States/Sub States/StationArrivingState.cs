@@ -16,6 +16,7 @@ public class StationArrivingState : StationTrainState
     public override void Enter()
     {
         base.Enter();
+        station.isDeparting = false;
         station.TrainArriving();
     }
 

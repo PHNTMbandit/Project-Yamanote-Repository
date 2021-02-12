@@ -2400,41 +2400,9 @@ PrefabInstance:
     m_TransformParent: {fileID: 697133689}
     m_Modifications:
     - target: {fileID: 1811789982, guid: e90f7452502fc944eb9056a24b8705a2, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1811789982, guid: e90f7452502fc944eb9056a24b8705a2, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1811789982, guid: e90f7452502fc944eb9056a24b8705a2, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 119936375}
-    - target: {fileID: 1811789982, guid: e90f7452502fc944eb9056a24b8705a2, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 292770293}
-    - target: {fileID: 1811789982, guid: e90f7452502fc944eb9056a24b8705a2, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1811789982, guid: e90f7452502fc944eb9056a24b8705a2, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: SetActive
-      objectReference: {fileID: 0}
-    - target: {fileID: 1811789982, guid: e90f7452502fc944eb9056a24b8705a2, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: UnityEngine.GameObject, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 1811789982, guid: e90f7452502fc944eb9056a24b8705a2, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1811789982, guid: e90f7452502fc944eb9056a24b8705a2, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 1860574244114689026, guid: e90f7452502fc944eb9056a24b8705a2, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -5480,6 +5448,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 697133689}
     m_Modifications:
+    - target: {fileID: 3438933183030142057, guid: eb73e62e5aef63242baca95305ff38a4, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3438933183030142057, guid: eb73e62e5aef63242baca95305ff38a4, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3438933183030142057, guid: eb73e62e5aef63242baca95305ff38a4, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3438933183030142057, guid: eb73e62e5aef63242baca95305ff38a4, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 197.90894
+      objectReference: {fileID: 0}
+    - target: {fileID: 3438933183030142057, guid: eb73e62e5aef63242baca95305ff38a4, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 214.50293
+      objectReference: {fileID: 0}
+    - target: {fileID: 3438933183030142057, guid: eb73e62e5aef63242baca95305ff38a4, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -311.86328
+      objectReference: {fileID: 0}
     - target: {fileID: 3480450724477709498, guid: eb73e62e5aef63242baca95305ff38a4, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -5564,9 +5556,45 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3884420255826368126, guid: eb73e62e5aef63242baca95305ff38a4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3884420255826368126, guid: eb73e62e5aef63242baca95305ff38a4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SaveSlot
+      objectReference: {fileID: 0}
+    - target: {fileID: 5762779077404113979, guid: eb73e62e5aef63242baca95305ff38a4, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5762779077404113979, guid: eb73e62e5aef63242baca95305ff38a4, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5762779077404113979, guid: eb73e62e5aef63242baca95305ff38a4, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5762779077404113979, guid: eb73e62e5aef63242baca95305ff38a4, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 197.90894
+      objectReference: {fileID: 0}
+    - target: {fileID: 5762779077404113979, guid: eb73e62e5aef63242baca95305ff38a4, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 214.50293
+      objectReference: {fileID: 0}
+    - target: {fileID: 5762779077404113979, guid: eb73e62e5aef63242baca95305ff38a4, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -103.95459
+      objectReference: {fileID: 0}
     - target: {fileID: 5831431055648361823, guid: eb73e62e5aef63242baca95305ff38a4, type: 3}
       propertyPath: m_Name
       value: UI_HUD_Menu_Power
+      objectReference: {fileID: 0}
+    - target: {fileID: 5831431055648361823, guid: eb73e62e5aef63242baca95305ff38a4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb73e62e5aef63242baca95305ff38a4, type: 3}
@@ -7117,11 +7145,6 @@ MonoBehaviour:
     destination: Hirosaki Station
     timeArriveOrigin: 12:00
     timeArriveDestination: 1:00
-    trainLine: Ou Line
-  - origin: Shin-Aomori Station
-    destination: Hirosaki Station
-    timeArriveOrigin: 12:01
-    timeArriveDestination: 1:01
     trainLine: Ou Line
 --- !u!4 &1271177272
 Transform:
@@ -12377,18 +12400,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI_Inventory
       objectReference: {fileID: 0}
-    - target: {fileID: 1166335309052656217, guid: 2a038b004164b7649b7f3dc96cb58b8c, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1166335309052656218, guid: 2a038b004164b7649b7f3dc96cb58b8c, type: 3}
       propertyPath: m_PanelOwner
       value: 
       objectReference: {fileID: 793508101}
-    - target: {fileID: 1166335309052656218, guid: 2a038b004164b7649b7f3dc96cb58b8c, type: 3}
-      propertyPath: m_SetTimeScaleToZeroWhenMenuIsOpened
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1166335309076493288, guid: 2a038b004164b7649b7f3dc96cb58b8c, type: 3}
       propertyPath: m_Inventory
       value: 
@@ -12541,10 +12556,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1166335309457415730, guid: 2a038b004164b7649b7f3dc96cb58b8c, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 292770293}
     - target: {fileID: 1166335309587958362, guid: 2a038b004164b7649b7f3dc96cb58b8c, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

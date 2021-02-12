@@ -104,9 +104,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Key: 
-  m_SaveOnApplicationQuit: 0
+  m_SaveOnApplicationQuit: 1
   m_SaveOnDestroy: 0
-  m_LoadOnStart: 0
+  m_LoadOnStart: 1
   m_UsingNestedItems: 1
   m_SaveItemNames: 1
 --- !u!114 &1113981648089561155
@@ -122,9 +122,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_AutoLoadOnInitialize: 0
-  m_AutoLoadOnSceneLoaded: 0
-  m_AutoSaveOnSceneUnloaded: 0
-  m_AutoSaveOnApplicationQuit: 0
+  m_AutoLoadOnSceneLoaded: 1
+  m_AutoSaveOnSceneUnloaded: 1
+  m_AutoSaveOnApplicationQuit: 1
   m_SaveFileName: SaveFile
   m_MaxSaves: 5
   m_InventorySystemManagerItemSaver: {fileID: 8388670187888747957}

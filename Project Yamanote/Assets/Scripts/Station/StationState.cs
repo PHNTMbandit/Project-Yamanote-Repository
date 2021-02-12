@@ -26,6 +26,7 @@ public class StationState
     {
         DoChecks();
         station.Animator.SetBool(animBoolName, true);
+
         startTime = Time.time;
         Debug.Log(animBoolName);
         isAnimationFinished = false;

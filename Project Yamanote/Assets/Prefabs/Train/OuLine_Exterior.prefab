@@ -1656,11 +1656,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_key: Art_OuLine_Exterior_770698
-  m_appendSaverTypeToKey: 0
+  m_appendSaverTypeToKey: 1
   m_saveAcrossSceneChanges: 1
-  m_restoreStateOnStart: 0
+  m_restoreStateOnStart: 1
   m_usePlayerSpawnpoint: 0
-  m_multiscene: 0
+  m_multiscene: 1
 --- !u!114 &1878140870
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1674,7 +1674,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_key: Art_OuLine_Exterior_870344
-  m_appendSaverTypeToKey: 0
+  m_appendSaverTypeToKey: 1
   m_saveAcrossSceneChanges: 1
-  m_restoreStateOnStart: 0
+  m_restoreStateOnStart: 1
   m_componentToWatch: {fileID: 2946694421477531259}

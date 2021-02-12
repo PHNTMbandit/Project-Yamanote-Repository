@@ -59,6 +59,10 @@ public class Station : MonoBehaviour
     #endregion
 
     #region Set Functions
+    public void TrainStart()
+    {
+        isDeparting = true;
+    }
     #endregion
 
     #region Check Functions
