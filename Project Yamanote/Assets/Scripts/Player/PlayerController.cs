@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEditor;
 using TMPro;
+using PixelCrushers.DialogueSystem;
 
 public class PlayerController : MonoBehaviour
 {
@@ -64,7 +65,7 @@ public class PlayerController : MonoBehaviour
         RB = GetComponent<Rigidbody2D>();
 
         FacingDirection = 1;
-        
+
         StateMachine.Initialise(IdleState);
     }
 

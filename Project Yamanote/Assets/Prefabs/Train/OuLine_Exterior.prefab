@@ -447,12 +447,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: -1112883077
-  visibility: 0
+  visibility: 1
   visibleDistanceOverride: 0
   visibleMinDistanceOverride: 0
   minDistanceText: 20
   title: Ou Line
-  titleVisibility: 0
+  titleVisibility: 1
   canBeVisited: 1
   visitedDistanceOverride: 0
   hideWhenVisited: 0

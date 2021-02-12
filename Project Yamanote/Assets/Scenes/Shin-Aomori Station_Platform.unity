@@ -2926,7 +2926,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: -1274025108
-  visibility: 0
+  visibility: 1
   visibleDistanceOverride: 0
   visibleMinDistanceOverride: 0
   minDistanceText: 20
@@ -2977,7 +2977,7 @@ MonoBehaviour:
   miniMapVisibility: 0
   miniMapClampPosition: 0
   distanceToCameraSQR: 10012.002
-  computedIconScale: {x: 0.49916196, y: 0.49916196, z: 1}
+  computedIconScale: {x: 0.033277463, y: 0.033277463, z: 0.06666666}
   iconAlpha: 0
   miniMapIconScale: {x: 0.5, y: 0.5, z: 0.5}
 --- !u!95 &316473381
@@ -6455,7 +6455,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1122728536}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.1455317, y: -0.45577544, z: -7.2366114}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1393520114}
@@ -7547,6 +7547,7 @@ GameObject:
   - component: {fileID: 1393520117}
   - component: {fileID: 1393520116}
   - component: {fileID: 1393520115}
+  - component: {fileID: 1393520118}
   m_Layer: 0
   m_Name: Shin-Aomori Station_Exterior
   m_TagString: Door
@@ -7562,7 +7563,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1393520113}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 4.22, y: -1.28, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1122728537}
@@ -7686,6 +7687,73 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.0007648, y: 4.0249224}
   m_EdgeRadius: 0
+--- !u!114 &1393520118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1393520113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78ba861a214074aa4bdac708dcacc9fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: -1512444514
+  visibility: 1
+  visibleDistanceOverride: 0
+  visibleMinDistanceOverride: 0
+  minDistanceText: 20
+  title: Shin-Aomori Station Exterior
+  titleVisibility: 1
+  canBeVisited: 1
+  visitedDistanceOverride: 0
+  hideWhenVisited: 0
+  isVisited: 1
+  visitedText: 
+  visitedAudioClip: {fileID: 0}
+  radius: 0
+  iconScale: 1
+  iconNonVisited: {fileID: 21300000, guid: e76538d696dda48feb961bad6994f064, type: 3}
+  iconVisited: {fileID: 21300000, guid: e76538d696dda48feb961bad6994f064, type: 3}
+  tintColor: {r: 1, g: 1, b: 1, a: 1}
+  showPlayModeGizmo: 0
+  clampPosition: 0
+  beaconAudioClip: {fileID: 0}
+  dontDestroyOnLoad: 0
+  heartbeatEnabled: 0
+  heartbeatAudioClip: {fileID: 0}
+  heartbeatDistance: 20
+  heartbeatInterval:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.25
+      inSlope: 0
+      outSlope: 2.75
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 3
+      inSlope: 2.75
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  miniMapVisibility: 0
+  miniMapClampPosition: 0
+  distanceToCameraSQR: 10019.651
+  computedIconScale: {x: 0.49916196, y: 0.49916196, z: 1}
+  iconAlpha: 0
+  miniMapIconScale: {x: 0.5, y: 0.5, z: 0.5}
 --- !u!1 &1404529689
 GameObject:
   m_ObjectHideFlags: 0
@@ -8083,8 +8151,81 @@ PrefabInstance:
       propertyPath: m_Name
       value: Art_OuLine_Exterior
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3293244704126697897, guid: 0b47a893bbdba6948a228c87bd5d567f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0b47a893bbdba6948a228c87bd5d567f, type: 3}
+--- !u!1 &1413158147 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3720375243153055847, guid: 0b47a893bbdba6948a228c87bd5d567f, type: 3}
+  m_PrefabInstance: {fileID: 1413158146}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1413158148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1413158147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78ba861a214074aa4bdac708dcacc9fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: -1512444514
+  visibility: 1
+  visibleDistanceOverride: 0
+  visibleMinDistanceOverride: 0
+  minDistanceText: 20
+  title: Ou Line
+  titleVisibility: 1
+  canBeVisited: 1
+  visitedDistanceOverride: 0
+  hideWhenVisited: 0
+  isVisited: 1
+  visitedText: 
+  visitedAudioClip: {fileID: 0}
+  radius: 0
+  iconScale: 1
+  iconNonVisited: {fileID: 21300000, guid: e76538d696dda48feb961bad6994f064, type: 3}
+  iconVisited: {fileID: 21300000, guid: e76538d696dda48feb961bad6994f064, type: 3}
+  tintColor: {r: 1, g: 1, b: 1, a: 1}
+  showPlayModeGizmo: 0
+  clampPosition: 0
+  beaconAudioClip: {fileID: 0}
+  dontDestroyOnLoad: 0
+  heartbeatEnabled: 0
+  heartbeatAudioClip: {fileID: 0}
+  heartbeatDistance: 20
+  heartbeatInterval:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.25
+      inSlope: 0
+      outSlope: 2.75
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 3
+      inSlope: 2.75
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  miniMapVisibility: 0
+  miniMapClampPosition: 0
+  distanceToCameraSQR: 10001.289
+  computedIconScale: {x: 0.059958525, y: 0.059958525, z: 0.06666666}
+  iconAlpha: 0
+  miniMapIconScale: {x: 0.5, y: 0.5, z: 0.5}
 --- !u!114 &1441787166 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2758068826568781185, guid: ea9311ff0b526a4458b5cfba3adfcaab, type: 3}
