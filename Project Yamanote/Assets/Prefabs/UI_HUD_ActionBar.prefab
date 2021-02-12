@@ -90,7 +90,6 @@ GameObject:
   - component: {fileID: 3133917544885541698}
   - component: {fileID: 3133917544885541696}
   - component: {fileID: 3133917544885541699}
-  - component: {fileID: -1500950473753083081}
   m_Layer: 5
   m_Name: UI_HUD_ActionBar_Money
   m_TagString: Untagged
@@ -214,21 +213,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &-1500950473753083081
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3133917544885541701}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9cfcc9ceea0bf419cb3bcaf548c2600d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  saveChildren: 0
-  componentsToSave:
-  - {fileID: 3133917544885541699}
 --- !u!1 &3133917544946617106
 GameObject:
   m_ObjectHideFlags: 0
@@ -395,7 +379,6 @@ GameObject:
   - component: {fileID: 3133917545195189751}
   - component: {fileID: 3133917545195189749}
   - component: {fileID: 3133917545195189748}
-  - component: {fileID: -5944409060471185234}
   m_Layer: 5
   m_Name: UI_HUD_ActionBar_Date
   m_TagString: Untagged
@@ -519,21 +502,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &-5944409060471185234
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3133917545195189750}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9cfcc9ceea0bf419cb3bcaf548c2600d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  saveChildren: 0
-  componentsToSave:
-  - {fileID: 3133917545195189748}
 --- !u!1 &3133917545340176887
 GameObject:
   m_ObjectHideFlags: 0
@@ -545,7 +513,6 @@ GameObject:
   - component: {fileID: 3133917545340176884}
   - component: {fileID: 3133917545340176882}
   - component: {fileID: 3133917545340176885}
-  - component: {fileID: 7564716577025292732}
   m_Layer: 5
   m_Name: UI_HUD_ActionBar_Time
   m_TagString: Untagged
@@ -669,21 +636,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &7564716577025292732
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3133917545340176887}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9cfcc9ceea0bf419cb3bcaf548c2600d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  saveChildren: 0
-  componentsToSave:
-  - {fileID: 3133917545340176885}
 --- !u!1 &3133917545638159424
 GameObject:
   m_ObjectHideFlags: 0

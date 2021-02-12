@@ -745,6 +745,7 @@ GameObject:
   - component: {fileID: 8997257668354642642}
   - component: {fileID: 5211066759106021683}
   - component: {fileID: 2702893325008436586}
+  - component: {fileID: 2686699170251006984}
   m_Layer: 8
   m_Name: Art_Door_Exterior
   m_TagString: Untagged
@@ -837,6 +838,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2686699170251006984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4922079133571066773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f63bd3198a71a244d8dc6d21e0e91585, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_key: Art_OuLine_Exterior_838038
+  m_appendSaverTypeToKey: 0
+  m_saveAcrossSceneChanges: 1
+  m_restoreStateOnStart: 0
 --- !u!1 &4995515643756191768
 GameObject:
   m_ObjectHideFlags: 0
@@ -1534,6 +1551,8 @@ GameObject:
   - component: {fileID: 1291182379338361920}
   - component: {fileID: 259009929820144069}
   - component: {fileID: -6225767903759080951}
+  - component: {fileID: 1878140873}
+  - component: {fileID: 1878140870}
   m_Layer: 8
   m_Name: OuLine_Exterior
   m_TagString: Ou Line
@@ -1624,3 +1643,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cfdc9ac5c531874987c4ce827ac5ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1878140873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8561397282198301730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1af33a602e20a3d4ca46c8a6ef942618, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_key: Art_OuLine_Exterior_770698
+  m_appendSaverTypeToKey: 0
+  m_saveAcrossSceneChanges: 1
+  m_restoreStateOnStart: 0
+  m_usePlayerSpawnpoint: 0
+  m_multiscene: 0
+--- !u!114 &1878140870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8561397282198301730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 269287c8890007d4daa8bb12252f11ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_key: Art_OuLine_Exterior_870344
+  m_appendSaverTypeToKey: 0
+  m_saveAcrossSceneChanges: 1
+  m_restoreStateOnStart: 0
+  m_componentToWatch: {fileID: 2946694421477531259}

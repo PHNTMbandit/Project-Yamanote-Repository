@@ -116,3 +116,4 @@ MonoBehaviour:
     m_NumColorKeys: 8
     m_NumAlphaKeys: 2
   gameCamera: {fileID: 0}
+  mapLights: []
