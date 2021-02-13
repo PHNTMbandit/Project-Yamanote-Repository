@@ -7,7 +7,7 @@ using TMPro;
 public class MapButton : MonoBehaviour
 {
     [Header("Declarables")]
-    public TextMeshProUGUI stationNameText;
+    public TMP_Dropdown stationNameDD;
     public TextMeshProUGUI stationTypeText;
     public TextMeshProUGUI stationLocText;
     public Stations.StationDB stationDB;
@@ -27,7 +27,7 @@ public class MapButton : MonoBehaviour
                 // Change button colour
                 stationDB.stationDatabase[i].mapIcon.GetComponent<Image>().color = selected;
                 // Change station text name
-                stationNameText.text = stationDB.stationDatabase[val].name;
+                stationNameDD.value = stationDB.stationDatabase[val].id;
                 // Change station text type
                 stationTypeText.text = stationDB.stationDatabase[val].type;
                 // Change station location text

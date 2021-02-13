@@ -31,7 +31,7 @@ public class ButtonController : MonoBehaviour, IPointerEnterHandler, IPointerExi
 
     public void ClickButton()
     {
-        FindObjectOfType<AudioManager>().Play("ClickButton(Menu)");
+        FindObjectOfType<AudioManager>().Play("ClickButton");
     }
 
     public void Toggle()

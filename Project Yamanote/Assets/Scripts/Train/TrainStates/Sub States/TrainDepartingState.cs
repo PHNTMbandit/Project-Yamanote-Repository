@@ -17,6 +17,8 @@ public class TrainDepartingState : TrainInsideState
     public override void Enter()
     {
         base.Enter();
+
+        train.TrainDepartingSFX();
     }
 
     public override void Exit()

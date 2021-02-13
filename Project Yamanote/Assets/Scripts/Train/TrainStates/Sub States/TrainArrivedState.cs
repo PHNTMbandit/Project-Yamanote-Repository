@@ -20,6 +20,8 @@ public class TrainArrivedState : TrainInsideState
         train.isArrived = true;
         train.StartCoroutine(train.TrainArrivedCouroutine());
         train.trainStation.transform.position = train.arrivedTransfrom.position;
+
+        train.TrainArrivedSFX();
     }
 
     public override void Exit()

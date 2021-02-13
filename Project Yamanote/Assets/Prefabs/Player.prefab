@@ -248,6 +248,7 @@ GameObject:
   - component: {fileID: 637824154574939743}
   - component: {fileID: 637824154574939742}
   - component: {fileID: 3049614041797014366}
+  - component: {fileID: 2000074991123423475}
   - component: {fileID: 7847047156534390743}
   - component: {fileID: 186424547}
   - component: {fileID: 637824154574939735}
@@ -527,6 +528,18 @@ MonoBehaviour:
   actionText: {fileID: 637824153850452353}
   playerCollider: {fileID: 637824154574939732}
   phone: {fileID: 0}
+--- !u!114 &2000074991123423475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 637824154574939746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51ea5981f38a94240a5345542cbe3358, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &7847047156534390743
 MonoBehaviour:
   m_ObjectHideFlags: 0

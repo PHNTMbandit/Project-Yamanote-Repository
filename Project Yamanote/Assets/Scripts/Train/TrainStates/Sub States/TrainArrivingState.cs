@@ -20,6 +20,8 @@ public class TrainArrivingState : TrainInsideState
 
         train.SpeedDown();
 
+        train.TrainArrivingSFX();
+
     }
 
     public override void Exit()

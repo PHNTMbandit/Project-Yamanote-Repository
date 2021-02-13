@@ -15,8 +15,8 @@ public class GameClock : MonoBehaviour
     public static int day = 04;
 
     [Header("Time")]
-    public static int hour = 20;
-    public static int minute = 30;
+    public static int hour = 17;
+    public static int minute = 29;
     public static int second = 30;
 
     // In-game calendar and time

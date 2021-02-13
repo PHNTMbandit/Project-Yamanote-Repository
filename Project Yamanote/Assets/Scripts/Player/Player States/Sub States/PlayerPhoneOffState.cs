@@ -18,6 +18,7 @@ public class PlayerPhoneOffState : PlayerGroundedState
         base.Enter();
 
         playerController.PhoneAnimator.SetBool("phoneOn", false);
+        playerController.PhoneOffSFX();
     }
 
     public override void Exit()

@@ -125,4 +125,16 @@ public class PlayerController : MonoBehaviour
         actionText.transform.Rotate(0.0f, 180.0f, 0.0f);
     }
     #endregion
+
+    #region SFX Functions
+    public void PhoneOnSFX()
+    {
+        FindObjectOfType<AudioManager>().Play("PhoneOn");
+    }
+
+    public void PhoneOffSFX()
+    {
+        FindObjectOfType<AudioManager>().Play("PhoneOff");
+    }
+    #endregion
 }

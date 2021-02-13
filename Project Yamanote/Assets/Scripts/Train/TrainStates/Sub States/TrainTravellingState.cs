@@ -17,6 +17,8 @@ public class TrainTravellingState : TrainInsideState
     public override void Enter()
     {
         base.Enter();
+
+        train.TrainTravellingSFX();
     }
 
     public override void Exit()

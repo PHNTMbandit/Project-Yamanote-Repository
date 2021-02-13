@@ -23,6 +23,7 @@ public class Train : MonoBehaviour
 
     #region Other Variables
     [SerializeField] private GameObject[] _parallaxBackground;
+    [SerializeField] private AudioManager audioManager;
     public Transform departTransform;
     public Transform arrivedTransfrom;
     public Transform arrivingTransform;
@@ -121,6 +122,33 @@ public class Train : MonoBehaviour
         yield return new WaitForSeconds(10);
 
         isDeparted = true;
+    }
+    #endregion
+
+    #region SFX Functions
+    public void TrainArrivingSFX()
+    {
+        StartCoroutine(audioManager.FadeIn("Music", 1f));
+        StartCoroutine(audioManager.FadeOut("TrainTravelling", 0.5f));
+        audioManager.Play("TrainArriving");
+    }
+
+    public void TrainArrivedSFX()
+    {
+        StartCoroutine(audioManager.FadeOut("TrainArriving", 0.5f));
+        audioManager.Play("StationAmbiance");
+    }
+
+    public void TrainDepartingSFX()
+    {
+        StartCoroutine(audioManager.FadeOut("StationAmbiance", 0.5f));
+        audioManager.Play("TrainDeparting");
+    }
+
+    public void TrainTravellingSFX()
+    {
+        audioManager.Play("TrainTravelling");
+        StartCoroutine(audioManager.FadeIn("Music", 1f));
     }
     #endregion
 }
