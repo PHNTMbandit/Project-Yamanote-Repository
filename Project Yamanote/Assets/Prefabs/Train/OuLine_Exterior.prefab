@@ -406,7 +406,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2946694421477531259}
-  - component: {fileID: 3293244704126697897}
+  - component: {fileID: 1413158148}
   m_Layer: 8
   m_Name: Doors
   m_TagString: Untagged
@@ -434,7 +434,7 @@ Transform:
   m_Father: {fileID: 8997257668354642642}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3293244704126697897
+--- !u!114 &1413158148
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -446,7 +446,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78ba861a214074aa4bdac708dcacc9fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: -1112883077
+  id: -1512444514
   visibility: 1
   visibleDistanceOverride: 0
   visibleMinDistanceOverride: 0
@@ -456,7 +456,7 @@ MonoBehaviour:
   canBeVisited: 1
   visitedDistanceOverride: 0
   hideWhenVisited: 0
-  isVisited: 0
+  isVisited: 1
   visitedText: 
   visitedAudioClip: {fileID: 0}
   radius: 0
@@ -497,8 +497,8 @@ MonoBehaviour:
     m_RotationOrder: 4
   miniMapVisibility: 0
   miniMapClampPosition: 0
-  distanceToCameraSQR: 1328.7927
-  computedIconScale: {x: 0.9874423, y: 0.9874423, z: 1}
+  distanceToCameraSQR: 10001.289
+  computedIconScale: {x: 0.059958525, y: 0.059958525, z: 0.06666666}
   iconAlpha: 0
   miniMapIconScale: {x: 0.5, y: 0.5, z: 0.5}
 --- !u!1 &3952367834891626809
