@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class Train : MonoBehaviour
 {
@@ -24,6 +25,7 @@ public class Train : MonoBehaviour
     #region Other Variables
     [SerializeField] private GameObject[] _parallaxBackground;
     [SerializeField] private AudioManager audioManager;
+    [SerializeField] private AudioMixer audioMixer;
     public Transform departTransform;
     public Transform arrivedTransfrom;
     public Transform arrivingTransform;
@@ -94,7 +96,7 @@ public class Train : MonoBehaviour
             StartCoroutine(background.GetComponent<EasyParallax.SpriteMovement>().SpeedDownParallax());
         }
 
-        iTween.MoveTo(trainStation, iTween.Hash("position", arrivedTransfrom.position, "time", 10, "delay", 10, "easetype", iTween.EaseType.easeOutCubic, 
+        iTween.MoveTo(trainStation, iTween.Hash("position", arrivedTransfrom.position, "time", 6, "delay", 10, "easetype", iTween.EaseType.easeOutCubic, 
             "oncomplete", "TrainArrived", "oncompletetarget", gameObject));
     }
 
@@ -128,27 +130,40 @@ public class Train : MonoBehaviour
     #region SFX Functions
     public void TrainArrivingSFX()
     {
-        StartCoroutine(audioManager.FadeIn("Music", 1f));
-        StartCoroutine(audioManager.FadeOut("TrainTravelling", 0.5f));
         audioManager.Play("TrainArriving");
+        StartCoroutine(FadeMixerGroup.StartFade(audioMixer, "TrainArriving", 2f, 1f));
+
+        StartCoroutine(FadeMixerGroup.StartFade(audioMixer, "TrainTravelling", 2f, 0f));
+        StartCoroutine(FadeMixerGroup.StartFade(audioMixer, "Music", 5f, 0f));
     }
 
     public void TrainArrivedSFX()
     {
-        StartCoroutine(audioManager.FadeOut("TrainArriving", 0.5f));
-        audioManager.Play("StationAmbiance");
+        audioManager.Play("TrainArrived");
+        StartCoroutine(FadeMixerGroup.StartFade(audioMixer, "TrainArrived", 2f, 1f));
+        StartCoroutine(FadeMixerGroup.StartFade(audioMixer, "StationAmbiance", 3f, 1f));
+
+        StartCoroutine(FadeMixerGroup.StartFade(audioMixer, "TrainArriving", 2f, 0f));
+        StartCoroutine(FadeMixerGroup.StartFade(audioMixer, "Music", 1f, 0f));
     }
 
     public void TrainDepartingSFX()
     {
-        StartCoroutine(audioManager.FadeOut("StationAmbiance", 0.5f));
         audioManager.Play("TrainDeparting");
+        StartCoroutine(FadeMixerGroup.StartFade(audioMixer, "TrainDeparting", 2f, 1f));
+
+        StartCoroutine(FadeMixerGroup.StartFade(audioMixer, "TrainArrived", 2f, 0f));
+        StartCoroutine(FadeMixerGroup.StartFade(audioMixer, "StationAmbiance", 2f, 0f)); 
     }
 
     public void TrainTravellingSFX()
     {
         audioManager.Play("TrainTravelling");
-        StartCoroutine(audioManager.FadeIn("Music", 1f));
+        audioManager.Play("Music");
+        StartCoroutine(FadeMixerGroup.StartFade(audioMixer, "TrainTravelling", 2f, 1f));
+        StartCoroutine(FadeMixerGroup.StartFade(audioMixer, "Music", 5f, 1f));
+
+        StartCoroutine(FadeMixerGroup.StartFade(audioMixer, "TrainDeparting", 2f, 0f));
     }
     #endregion
 }

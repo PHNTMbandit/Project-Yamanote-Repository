@@ -43,38 +43,4 @@ public class AudioManager : MonoBehaviour
         }
         s.source.Stop();
     }
-
-    public IEnumerator FadeOut(string name, float FadeTime)
-    {
-        Sound s = Array.Find(instance.sounds, sound => sound.name == name);
-        float startVolume = s.volume;
-
-        while (s.volume > 0)
-        {
-            s.volume -= startVolume * Time.deltaTime / FadeTime;
-
-            yield return null;
-        }
-
-        s.source.Stop();
-        s.volume = startVolume;
-    }
-
-    public IEnumerator FadeIn(string name, float FadeTime)
-    {
-        Sound s = Array.Find(instance.sounds, sound => sound.name == name);
-        float startVolume = 0.2f;
-
-        s.volume = 0;
-        s.source.Play();
-
-        while (s.volume < 1.0f)
-        {
-            s.volume += startVolume * Time.deltaTime / FadeTime;
-
-            yield return null;
-        }
-
-        s.volume = 1f;
-    }
 }
