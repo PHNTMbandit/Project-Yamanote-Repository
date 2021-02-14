@@ -140,7 +140,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
-  m_SortingLayerID: 0
+  m_SortingLayerID: -1487325571
   m_SortingOrder: 100
   m_TargetDisplay: 0
 --- !u!114 &637824153850452353
@@ -266,7 +266,6 @@ GameObject:
   - component: {fileID: 793508110}
   - component: {fileID: 793508111}
   - component: {fileID: 793508126}
-  - component: {fileID: 1301690020225166891}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -1001,22 +1000,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e82ccbd1fc144d9e8e6ff5d06c99a412, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1301690020225166891
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 637824154574939746}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f63bd3198a71a244d8dc6d21e0e91585, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_key: Player_454338
-  m_appendSaverTypeToKey: 1
-  m_saveAcrossSceneChanges: 1
-  m_restoreStateOnStart: 0
 --- !u!1001 &637824152816126341
 PrefabInstance:
   m_ObjectHideFlags: 0

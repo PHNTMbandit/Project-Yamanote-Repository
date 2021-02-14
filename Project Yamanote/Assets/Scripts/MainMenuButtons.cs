@@ -15,7 +15,13 @@ public class MainMenuButtons : MonoBehaviour
         if (!(SaveSystem.HasSavedGameInSlot(0)))
         {
             startButton.interactable = false;
+            startText.color = new Color32(255, 255, 255, 100);
         }
+    }
+
+    public void New()
+    {
+        ES3.DeleteDirectory("SaveFile.es3");
     }
 
     public void Quit()
