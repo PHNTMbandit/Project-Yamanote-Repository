@@ -12,10 +12,9 @@ public class MainMenuButtons : MonoBehaviour
 
     public void Awake()
     {
-        if (SaveSystem.HasSavedGameInSlot(0))
+        if (!(SaveSystem.HasSavedGameInSlot(0)))
         {
-            startButton.enabled = false;
-            //startText.color.a = 0.5f;
+            startButton.interactable = false;
         }
     }
 
