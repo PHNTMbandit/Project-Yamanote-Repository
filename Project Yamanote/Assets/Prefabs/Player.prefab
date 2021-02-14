@@ -505,6 +505,46 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 5017ead7-4316-4c3a-b595-e370344fe69c
     m_ActionName: Player/Phone[/Keyboard/tab]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: aca6a08b-56d2-4c07-aab9-c802c0d4643b
+    m_ActionName: UI/Navigate[/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 8ab506bd-5592-4bd8-ba63-6788669807d1
+    m_ActionName: UI/Submit[/Keyboard/enter]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: bb02a23a-7333-47cd-adc0-2074abca6eab
+    m_ActionName: UI/Cancel[/Keyboard/escape]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: f3885142-69bf-4b41-8898-210d4f5eb276
+    m_ActionName: UI/Point[/Mouse/position]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 1d5e679a-012b-48db-9b7d-af28495da556
+    m_ActionName: UI/Click[/Mouse/leftButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: b61e07f7-ff1f-478a-9529-79cef19aa28d
+    m_ActionName: UI/ScrollWheel[/Mouse/scroll]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 7ad2b7c6-9c06-4ee7-8f44-a992d73f8d2e
+    m_ActionName: UI/MiddleClick[/Mouse/middleButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: bd73a9d2-649d-4597-bf8d-e296856cf466
+    m_ActionName: UI/RightClick[/Mouse/rightButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 72cf60dc-d447-4c50-a484-19483699389d
+    m_ActionName: UI/TrackedDevicePosition
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: d16752ed-b27b-4566-9701-5c2ba842caaf
+    m_ActionName: UI/TrackedDeviceOrientation
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -712,15 +752,6 @@ MonoBehaviour:
       lastEvaluationValue: 0
     target: {fileID: 3049614041797014366}
     state: 1
-  - condition:
-      luaConditions: []
-      questConditions: []
-      acceptedTags: []
-      acceptedGameObjects: []
-      luaWizardIndex: -1
-      lastEvaluationValue: 0
-    target: {fileID: 0}
-    state: 1
   waitOneFrameOnStart: 0
   onEnd:
   - condition:
@@ -740,15 +771,6 @@ MonoBehaviour:
       luaWizardIndex: -1
       lastEvaluationValue: 0
     target: {fileID: 3049614041797014366}
-    state: 0
-  - condition:
-      luaConditions: []
-      questConditions: []
-      acceptedTags: []
-      acceptedGameObjects: []
-      luaWizardIndex: -1
-      lastEvaluationValue: 0
-    target: {fileID: 0}
     state: 0
   waitOneFrameOnEnd: 0
 --- !u!114 &8407540791657628251
@@ -778,7 +800,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fb4bf8482eb7ce46b52ccb09e7bea9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Key: yeahnah
+  m_Key: 
   m_SaveOnApplicationQuit: 1
   m_SaveOnDestroy: 1
   m_LoadOnStart: 0
@@ -796,7 +818,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64aad295103c33b428b4540f579aca10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Key: ahnah
+  m_Key: 
   m_SaveOnApplicationQuit: 1
   m_SaveOnDestroy: 1
   m_LoadOnStart: 0
@@ -814,7 +836,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26ca2b4fcf8a4993b85339717e172c22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Inventory: {fileID: 793508110}
+  m_Inventory: {fileID: 0}
   m_InteractableIndicator: {fileID: 0}
   m_AutoInteract: 0
 --- !u!114 &793508107

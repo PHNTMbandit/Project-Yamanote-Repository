@@ -19,11 +19,6 @@ public class MainMenuButtons : MonoBehaviour
         }
     }
 
-    public void New()
-    {
-        ES3.DeleteDirectory("SaveFile.es3");
-    }
-
     public void Quit()
     {
         Application.Quit();
