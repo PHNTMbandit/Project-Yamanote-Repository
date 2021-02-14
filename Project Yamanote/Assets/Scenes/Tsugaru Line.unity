@@ -5170,7 +5170,7 @@ GameObject:
   m_Layer: 8
   m_Name: Audio_Door
   m_TagString: Door
-  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -27578,7 +27578,7 @@ GameObject:
   m_Layer: 0
   m_Name: Manager_DialogueSystemSceneEvents
   m_TagString: EditorOnly
-  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -28227,7 +28227,7 @@ GameObject:
   m_Layer: 8
   m_Name: Audio_Door
   m_TagString: Door
-  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -89246,7 +89246,7 @@ MonoBehaviour:
   miniMapVisibility: 0
   miniMapClampPosition: 0
   distanceToCameraSQR: 10001.289
-  computedIconScale: {x: 0.059958525, y: 0.059958525, z: 0.06666666}
+  computedIconScale: {x: 0.89937794, y: 0.89937794, z: 1}
   iconAlpha: 0
   miniMapIconScale: {x: 0.5, y: 0.5, z: 0.5}
 --- !u!114 &1853363694
@@ -91355,7 +91355,7 @@ GameObject:
   m_Layer: 0
   m_Name: Manager_EventSystem
   m_TagString: EditorOnly
-  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -92381,7 +92381,7 @@ GameObject:
   m_Layer: 8
   m_Name: Audio_Door
   m_TagString: Door
-  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -100364,7 +100364,7 @@ MonoBehaviour:
   miniMapVisibility: 0
   miniMapClampPosition: 0
   distanceToCameraSQR: 10014.074
-  computedIconScale: {x: 0.059958525, y: 0.059958525, z: 0.06666666}
+  computedIconScale: {x: 0.89937794, y: 0.89937794, z: 1}
   iconAlpha: 0
   miniMapIconScale: {x: 0.5, y: 0.5, z: 0.5}
 --- !u!212 &8965430609606519448
