@@ -8,7 +8,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <ProjectGuid>{CC227657-5C1A-F2F7-FB30-53E142CACF5B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -133,7 +134,7 @@
     <Compile Include="Assets\Scripts\Player\PlayerSFX.cs" />
   </ItemGroup>
   <ItemGroup>
-     <None Include="Assets\Physics\Characters\Daisuke\Daisuke_walk.xml" />
+    <None Include="Assets\Physics\Characters\Daisuke\Daisuke_walk.xml" />
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\2020.2.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
