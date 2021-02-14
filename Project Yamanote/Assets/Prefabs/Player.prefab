@@ -675,7 +675,7 @@ MonoBehaviour:
   m_key: Player_3358
   m_appendSaverTypeToKey: 1
   m_saveAcrossSceneChanges: 1
-  m_restoreStateOnStart: 1
+  m_restoreStateOnStart: 0
   m_usePlayerSpawnpoint: 1
   m_multiscene: 1
 --- !u!114 &186424553
@@ -780,8 +780,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Key: 
   m_SaveOnApplicationQuit: 1
-  m_SaveOnDestroy: 0
-  m_LoadOnStart: 1
+  m_SaveOnDestroy: 1
+  m_LoadOnStart: 0
   m_CurrencyOwner: {fileID: 793508107}
   m_Additive: 0
 --- !u!114 &793508104
@@ -798,8 +798,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Key: 
   m_SaveOnApplicationQuit: 1
-  m_SaveOnDestroy: 0
-  m_LoadOnStart: 1
+  m_SaveOnDestroy: 1
+  m_LoadOnStart: 0
   m_Inventory: {fileID: 793508110}
   m_Additive: 0
 --- !u!114 &793508106
