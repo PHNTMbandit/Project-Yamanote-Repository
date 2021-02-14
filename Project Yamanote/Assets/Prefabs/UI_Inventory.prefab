@@ -5360,7 +5360,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 101
+  m_SortingOrder: 102
   m_TargetDisplay: 0
 --- !u!114 &1166335309052656222
 MonoBehaviour:
@@ -7669,6 +7669,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _text: {fileID: 1166335309130669513}
   toggleGameObject: {fileID: 0}
+  audioManager: {fileID: 0}
 --- !u!1 &1166335309513263333
 GameObject:
   m_ObjectHideFlags: 0

@@ -18,6 +18,7 @@ public class StationDepartingState : StationTrainState
         base.Enter();
 
         station.StartCoroutine(station.TrainDepartingCouroutine());
+        station.TrainDepartingSFX();
     }
 
     public override void Exit()

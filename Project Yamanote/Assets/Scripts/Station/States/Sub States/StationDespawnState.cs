@@ -18,6 +18,7 @@ public class StationDespawnState : StationTrainState
         base.Enter();
 
         station.TrainReset();
+        station.TrainDespawnSFX();
     }
 
     public override void Exit()

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class Station : MonoBehaviour
 {
@@ -27,6 +28,8 @@ public class Station : MonoBehaviour
     [SerializeField] private Transform _instantiatePosition;
     [SerializeField] private Transform _despawnPosition;
     [SerializeField] private GameObject _train;
+    [SerializeField] private AudioManager _audioManager;
+    [SerializeField] private AudioMixer _audioMixer;
     #endregion
 
     #region Unity Callback Functions
@@ -120,6 +123,41 @@ public class Station : MonoBehaviour
     public void TrainReset()
     {
         _train.transform.position = _instantiatePosition.position;
+    }
+    #endregion
+
+    #region SFX Functions
+    public void TrainArrivingSFX()
+    {
+        _audioManager.Play("TrainArriving");
+        StartCoroutine(FadeMixerGroup.StartFade(_audioMixer, "TrainArriving", 2f, 1f));
+
+        StartCoroutine(FadeMixerGroup.StartFade(_audioMixer, "TrainDespawn", 2f, 0f));
+    }
+
+    public void TrainArrivedSFX()
+    {
+        _audioManager.Play("TrainArrived");
+        StartCoroutine(FadeMixerGroup.StartFade(_audioMixer, "TrainArrived", 2f, 1f));
+
+        StartCoroutine(FadeMixerGroup.StartFade(_audioMixer, "TrainArriving", 2f, 0f));
+    }
+
+    public void TrainDepartingSFX()
+    {
+        _audioManager.Play("TrainDeparting");
+        _audioManager.Play("DoorsClosing");
+        StartCoroutine(FadeMixerGroup.StartFade(_audioMixer, "TrainDeparting", 2f, 1f));
+
+        StartCoroutine(FadeMixerGroup.StartFade(_audioMixer, "TrainArrived", 2f, 0f));
+    }
+
+    public void TrainDespawnSFX()
+    {
+        _audioManager.Play("TrainDespawn");
+        StartCoroutine(FadeMixerGroup.StartFade(_audioMixer, "TrainDespawn", 2f, 1f));
+
+        StartCoroutine(FadeMixerGroup.StartFade(_audioMixer, "TrainDeparting", 2f, 0f));
     }
     #endregion
 }

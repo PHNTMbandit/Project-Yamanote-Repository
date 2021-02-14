@@ -523,6 +523,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerData: {fileID: 11400000, guid: adba6c4b302d28f4ea3e69b42db3d635, type: 2}
+  audioManager: {fileID: 0}
   isSeated: 0
   actionTextBox: {fileID: 637824153264102747}
   actionText: {fileID: 637824153850452353}
@@ -540,6 +541,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51ea5981f38a94240a5345542cbe3358, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioManager: {fileID: 0}
 --- !u!114 &7847047156534390743
 MonoBehaviour:
   m_ObjectHideFlags: 0

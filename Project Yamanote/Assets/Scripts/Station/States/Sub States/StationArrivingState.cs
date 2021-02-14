@@ -18,6 +18,7 @@ public class StationArrivingState : StationTrainState
         base.Enter();
         station.isDeparting = false;
         station.TrainArriving();
+        station.TrainArrivingSFX();
     }
 
     public override void Exit()

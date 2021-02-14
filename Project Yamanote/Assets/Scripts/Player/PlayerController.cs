@@ -17,8 +17,11 @@ public class PlayerController : MonoBehaviour
     public PlayerSitUpState SitUpState { get; private set; }
     public PlayerPhoneOnState PhoneOnState { get; private set; }
     public PlayerPhoneOffState PhoneOffState { get; private set; }
+    #endregion
 
+    #region Other Variables
     [SerializeField] private PlayerData playerData;
+    [SerializeField] private AudioManager audioManager;
     #endregion
 
     #region Components
@@ -129,12 +132,12 @@ public class PlayerController : MonoBehaviour
     #region SFX Functions
     public void PhoneOnSFX()
     {
-        FindObjectOfType<AudioManager>().Play("PhoneOn");
+        audioManager.Play("PhoneOn");
     }
 
     public void PhoneOffSFX()
     {
-        FindObjectOfType<AudioManager>().Play("PhoneOff");
+        audioManager.Play("PhoneOff");
     }
     #endregion
 }

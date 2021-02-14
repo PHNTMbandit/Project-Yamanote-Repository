@@ -10,9 +10,10 @@ public class ButtonController : MonoBehaviour, IPointerEnterHandler, IPointerExi
     [SerializeField] private TextMeshProUGUI _text;
     private bool toggle = false;
     [SerializeField] private GameObject toggleGameObject;
+    [SerializeField] private AudioManager audioManager;
 
     // Turn off at awake
-    private void Awake()
+    private void Start()
     {
         _text.enabled = false;
     }
@@ -31,7 +32,7 @@ public class ButtonController : MonoBehaviour, IPointerEnterHandler, IPointerExi
 
     public void ClickButton()
     {
-        FindObjectOfType<AudioManager>().Play("ClickButton");
+        audioManager.Play("ClickButton");
     }
 
     public void Toggle()
