@@ -68,8 +68,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabId: 234839643298236380
   localRefs:
-    _Keys: []
-    _Values: 
+    _Keys:
+    - {fileID: 3506197423623609754}
+    - {fileID: 3506197423623609756}
+    - {fileID: 3506197423623609755}
+    - {fileID: 11500000, guid: 11488f194fa895042907b505d084cc7a, type: 3}
+    - {fileID: 7897318392450037742}
+    _Values: 5e8ef3965465e62cf27ca38565647f76b76be1d22e73f6353fcb65aa3f422400d8d2f36c6e13a547
 --- !u!114 &5351776346204843377
 MonoBehaviour:
   m_ObjectHideFlags: 0
