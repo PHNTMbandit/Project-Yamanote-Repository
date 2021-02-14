@@ -12,9 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Tsugaru Line.unity
     guid: 29d2a9b201a74274e8b7669c1921102c
   - enabled: 1
-    path: Assets/Scenes/Ou Line.unity
-    guid: f4c771cdfabca7546b24ac886857c158
-  - enabled: 1
     path: Assets/Scenes/Shin-Aomori Station_Platform.unity
     guid: f276ec6e5584b2244a52a45a900d5146
   - enabled: 1
@@ -23,5 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Aomori_City.unity
     guid: 234e05a33850e84409d247c55d7c48a5
-  m_configObjects:
-    com.unity.input.settings: {fileID: 11400000, guid: 5b44bfb62ec284f4ea597d1277ebe2a3, type: 2}
+  - enabled: 1
+    path: Assets/Scenes/Ou Line.unity
+    guid: f4c771cdfabca7546b24ac886857c158
+  m_configObjects: {}

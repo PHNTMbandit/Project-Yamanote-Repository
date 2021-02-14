@@ -4,37 +4,27 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - NPC
-  - Seat
-  - Ground
+  - Parallax
+  - Light
   - UI
   - FX
-  - PE
-  - Parallax
-  - Collider
-  - Tsugaru Line
-  - Door
-  - Ou Line
-  - Light
-  - Persistent_Light
-  - EnterDoor
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Player
+  - 
   - Water
   - UI
-  - NPC
-  - Seat
-  - Door
-  - Ground
-  - Background 2
-  - Background 3
-  - Background 4
-  - Background 5
-  - Background 6
-  - Background 7
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
   - 
   - 
   - 
@@ -52,39 +42,42 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Bcakground 7
-    uniqueID: 503716327
-    locked: 0
-  - name: Background 6
-    uniqueID: 3501543751
-    locked: 0
-  - name: Background 5
-    uniqueID: 1582701049
-    locked: 0
-  - name: Background 4
-    uniqueID: 4289935591
-    locked: 0
-  - name: Background 3
-    uniqueID: 4252611281
-    locked: 0
-  - name: Background 2
-    uniqueID: 1738724767
-    locked: 0
-  - name: Arriving_Station
-    uniqueID: 4042506723
-    locked: 0
-  - name: Background 1
-    uniqueID: 1751843261
-    locked: 0
-  - name: Player & NPCs
-    uniqueID: 3549058061
-    locked: 0
-  - name: Foreground 2
-    uniqueID: 1033332833
-    locked: 0
-  - name: Foreground 1
-    uniqueID: 976748613
-    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background 8
+    uniqueID: 1416807907
+    locked: 0
+  - name: Background 7
+    uniqueID: 4123838355
+    locked: 0
+  - name: Background 6
+    uniqueID: 1025991401
+    locked: 0
+  - name: Background 5
+    uniqueID: 659769829
+    locked: 0
+  - name: Background 4
+    uniqueID: 4024939503
+    locked: 0
+  - name: Background 3
+    uniqueID: 1511123709
+    locked: 0
+  - name: Background 2
+    uniqueID: 187251861
+    locked: 0
+  - name: Background 1
+    uniqueID: 3384563367
+    locked: 0
+  - name: Player
+    uniqueID: 2807641725
+    locked: 0
+  - name: Foreground 1
+    uniqueID: 2998462319
+    locked: 0
+  - name: Foreground 2
+    uniqueID: 3835395389
+    locked: 0
+  - name: Foreground 3
+    uniqueID: 2957637483
     locked: 0
