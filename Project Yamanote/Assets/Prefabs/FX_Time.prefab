@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11488f194fa895042907b505d084cc7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  uiClock: {fileID: 0}
   DNC: {fileID: 0}
   energyBar: {fileID: 0}
   hungerBar: {fileID: 0}

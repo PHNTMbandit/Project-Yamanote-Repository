@@ -47,7 +47,7 @@ public class Station : MonoBehaviour
     {
         Animator = _train.GetComponentInChildren<Animator>();
 
-        StateMachine.Initialise(DespawnState);
+        StateMachine.Initialise(ArrivedState);
     }
 
     private void Update()

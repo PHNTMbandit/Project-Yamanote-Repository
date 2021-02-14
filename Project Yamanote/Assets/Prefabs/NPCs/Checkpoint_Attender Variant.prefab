@@ -257,7 +257,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8811306478530973458, guid: 19ca51eeddcd2e64ca63b2214b4b634f, type: 3}
       propertyPath: id
-      value: -908453498
+      value: -1169477003
       objectReference: {fileID: 0}
     - target: {fileID: 8811306478530973458, guid: 19ca51eeddcd2e64ca63b2214b4b634f, type: 3}
       propertyPath: title
@@ -265,15 +265,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8811306478530973458, guid: 19ca51eeddcd2e64ca63b2214b4b634f, type: 3}
       propertyPath: computedIconScale.x
-      value: 0.49916196
+      value: 0.89937794
       objectReference: {fileID: 0}
     - target: {fileID: 8811306478530973458, guid: 19ca51eeddcd2e64ca63b2214b4b634f, type: 3}
       propertyPath: computedIconScale.y
-      value: 0.49916196
+      value: 0.89937794
       objectReference: {fileID: 0}
     - target: {fileID: 8811306478530973458, guid: 19ca51eeddcd2e64ca63b2214b4b634f, type: 3}
       propertyPath: distanceToCameraSQR
-      value: 10024.845
+      value: 10485.682
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19ca51eeddcd2e64ca63b2214b4b634f, type: 3}

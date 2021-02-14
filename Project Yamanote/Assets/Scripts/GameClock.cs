@@ -23,6 +23,7 @@ public class GameClock : MonoBehaviour
     public static DateTime dateTime = new DateTime(year, month, day, hour, minute, second);
 
     [Header("Declarables")]
+    public UI_Clock uiClock;
     public DayNightCycle DNC;
     public EnergyBar energyBar;
     public HungerBar hungerBar;
@@ -56,6 +57,7 @@ public class GameClock : MonoBehaviour
         // Update DayNightCycle and lights
         DNC.ChangeColour((float)dateTime.TimeOfDay.TotalMinutes);
         DNC.TimeBetween();
+        uiClock.UpdateTime();
 
         // Update clock texts
         phoneTime.text = dateTime.ToString("t");
