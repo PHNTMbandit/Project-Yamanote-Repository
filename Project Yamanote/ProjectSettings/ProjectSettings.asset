@@ -12,7 +12,7 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
+  companyName: Domenic Pittari
   productName: Project Yamanote
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
@@ -70,8 +70,8 @@ PlayerSettings:
   androidBlitType: 0
   defaultIsNativeResolution: 1
   macRetinaSupport: 1
-  runInBackground: 0
-  captureSingleScreen: 0
+  runInBackground: 1
+  captureSingleScreen: 1
   muteOtherAudioSources: 0
   Prepare IOS For Recording: 0
   Force IOS Speakers When Recording: 0
@@ -127,7 +127,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 1.0
+  bundleVersion: 0.3.2
   preloadedAssets:
   - {fileID: 0}
   - {fileID: 0}
@@ -172,7 +172,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Standalone: com.DefaultCompany.ProjectYamanote
+    Standalone: com.DomenicPittari.ProjectYamanote
   buildNumber:
     Standalone: 0
     iPhone: 0
@@ -283,7 +283,14 @@ PlayerSettings:
   AndroidMinifyDebug: 0
   AndroidValidateAppBundleSize: 1
   AndroidAppBundleSizeToValidate: 150
-  m_BuildTargetIcons: []
+  m_BuildTargetIcons:
+  - m_BuildTarget: 
+    m_Icons:
+    - serializedVersion: 2
+      m_Icon: {fileID: 2800000, guid: 49a19ce8d6695f1468d5b0ee442b20e0, type: 3}
+      m_Width: 128
+      m_Height: 128
+      m_Kind: 0
   m_BuildTargetPlatformIcons: []
   m_BuildTargetBatching: []
   m_BuildTargetGraphicsJobs: []
@@ -538,7 +545,7 @@ PlayerSettings:
   webGLThreadsSupport: 0
   webGLDecompressionFallback: 0
   scriptingDefineSymbols:
-    1: UNITY_POST_PROCESSING_STACK_V2;TEXTMESH_PRO_PRESENT;USE_PHYSICS2D;USE_NEW_INPUT;TMP_PRESENT;USE_CINEMACHINE;USE_PIXELCRUSHERS
+    1: UNITY_POST_PROCESSING_STACK_V2;TEXTMESH_PRO_PRESENT;USE_PHYSICS2D;USE_NEW_INPUT;USE_CINEMACHINE;USE_PIXELCRUSHERS
     4: UNITY_POST_PROCESSING_STACK_V2
     7: UNITY_POST_PROCESSING_STACK_V2
     13: UNITY_POST_PROCESSING_STACK_V2
@@ -552,6 +559,7 @@ PlayerSettings:
     30: UNITY_POST_PROCESSING_STACK_V2
     31: UNITY_POST_PROCESSING_STACK_V2
     32: UNITY_POST_PROCESSING_STACK_V2
+    33: UNITY_POST_PROCESSING_STACK_V2
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}

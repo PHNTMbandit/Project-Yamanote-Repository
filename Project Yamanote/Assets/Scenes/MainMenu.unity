@@ -336,7 +336,7 @@ GameObject:
   - component: {fileID: 180383595}
   m_Layer: 0
   m_Name: Manager_AudioManager
-  m_TagString: EditorOnly
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -362,7 +362,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 180383592}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -1.402, z: 1.74}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -377,7 +377,7 @@ AudioSource:
   m_GameObject: {fileID: 180383592}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: e85ad7a30db4bec4781dc2acc04780d0, type: 2}
   m_audioClip: {fileID: 8300000, guid: fc291926eab58b1458b2a85d1f2c9cec, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -6886,10 +6886,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8890085951652459865, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
-      propertyPath: m_saveCurrentScene
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
 --- !u!1 &830678751
@@ -9082,7 +9078,7 @@ GameObject:
   - component: {fileID: 2071026575}
   m_Layer: 0
   m_Name: Manager_EventSystem
-  m_TagString: EditorOnly
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
