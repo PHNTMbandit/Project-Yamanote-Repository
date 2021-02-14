@@ -534,7 +534,7 @@ GameObject:
   - component: {fileID: 133281869}
   m_Layer: 0
   m_Name: Manager_EventSystem
-  m_TagString: EditorOnly
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -963,7 +963,7 @@ GameObject:
   - component: {fileID: 203267172}
   m_Layer: 0
   m_Name: Manager_Parallax
-  m_TagString: EditorOnly
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1495,7 +1495,7 @@ GameObject:
   - component: {fileID: 417237838}
   m_Layer: 0
   m_Name: Manager_AudioManager
-  m_TagString: EditorOnly
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2375,7 +2375,7 @@ PrefabInstance:
     - target: {fileID: 637824154574939742, guid: 75306490556f0a94ea793bbed97be06c, type: 3}
       propertyPath: m_UIInputModule
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 133281869}
     - target: {fileID: 637824154574939744, guid: 75306490556f0a94ea793bbed97be06c, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -6315,7 +6315,7 @@ GameObject:
   - component: {fileID: 2140444650}
   m_Layer: 0
   m_Name: Manager_Spawn
-  m_TagString: EditorOnly
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

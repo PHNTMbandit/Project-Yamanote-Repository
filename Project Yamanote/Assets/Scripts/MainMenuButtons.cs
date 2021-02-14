@@ -19,6 +19,11 @@ public class MainMenuButtons : MonoBehaviour
         }
     }
 
+    public void New()
+    { 
+        PlayerPrefs.DeleteAll();
+    }
+
     public void Quit()
     {
         Application.Quit();
