@@ -103,7 +103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40123f38ebe24d1db0ba048e9639f0d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Key: 
+  m_Key: dick
   m_SaveOnApplicationQuit: 1
   m_SaveOnDestroy: 1
   m_LoadOnStart: 0
