@@ -778,7 +778,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fb4bf8482eb7ce46b52ccb09e7bea9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Key: 
+  m_Key: yeahnah
   m_SaveOnApplicationQuit: 1
   m_SaveOnDestroy: 1
   m_LoadOnStart: 0
@@ -796,7 +796,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64aad295103c33b428b4540f579aca10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Key: 
+  m_Key: ahnah
   m_SaveOnApplicationQuit: 1
   m_SaveOnDestroy: 1
   m_LoadOnStart: 0
@@ -814,7 +814,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26ca2b4fcf8a4993b85339717e172c22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Inventory: {fileID: 0}
+  m_Inventory: {fileID: 793508110}
   m_InteractableIndicator: {fileID: 0}
   m_AutoInteract: 0
 --- !u!114 &793508107
