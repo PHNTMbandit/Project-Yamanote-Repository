@@ -27,7 +27,7 @@ namespace ProjectYamanote.Station.States
             DoChecks();
             station.Animator.SetBool(animBoolName, true);
 
-            startTime = Time.time;
+            startTime = UnityEngine.Time.time;
             Debug.Log(animBoolName);
             isAnimationFinished = false;
         }

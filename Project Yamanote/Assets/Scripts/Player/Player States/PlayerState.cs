@@ -28,7 +28,7 @@ namespace ProjectYamanote.Player.PlayerStates
         {
             DoChecks();
             player.PlayerAnimator.SetBool(animBoolName, true);
-            startTime = Time.time;
+            startTime = UnityEngine.Time.time;
             Debug.Log(animBoolName);
             isAnimationFinished = false;
         }

@@ -25,7 +25,7 @@ namespace ProjectYamanote.Train.States
         public virtual void Enter()
         {
             DoChecks();
-            startTime = Time.time;
+            startTime = UnityEngine.Time.time;
             train.Animator.SetBool(animBoolName, true);
             Debug.Log(animBoolName);
             isAnimationFinished = false;
