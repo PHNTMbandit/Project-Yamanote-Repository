@@ -19,16 +19,13 @@ namespace ProjectYamanote.Player
         public PlayerPhoneOffState PhoneOffState { get; private set; }
         #endregion
 
-        #region Other Variables
-        [SerializeField] private PlayerData playerData;
-        [SerializeField] private AudioManager audioManager;
-        #endregion
-
         #region Components
         public Animator PlayerAnimator { get; private set; }
         public PlayerInputHandler InputHandler { get; private set; }
         public Rigidbody2D RB { get; private set; }
         public string PlayerCollision { get; private set; }
+        public int FacingDirection { get; private set; }
+        public Vector2 CurrentVelocity { get; private set; }
         #endregion
 
         #region Check Variables
@@ -37,13 +34,14 @@ namespace ProjectYamanote.Player
         #endregion
 
         #region Other Variables
-        public int FacingDirection { get; private set; }
-        public Vector2 CurrentVelocity { get; private set; }
-        private Vector2 _workspace;
-        [SerializeField] private GameObject actionTextBox;
+        public GameObject actionTextBox;
+        public GameObject menu;
         public TextMeshProUGUI actionText;
+        public PlayerData playerData;
+        public AudioManager audioManager;
         public Collider2D playerCollider;
-        public GameObject phone;
+        
+        private Vector2 _workspace;
         public Animator PhoneAnimator { get; private set; }
         #endregion
 
@@ -63,7 +61,7 @@ namespace ProjectYamanote.Player
         private void Start()
         {
             PlayerAnimator = GetComponent<Animator>();
-            PhoneAnimator = phone.GetComponent<Animator>();
+            PhoneAnimator = menu.GetComponent<Animator>();
             InputHandler = GetComponent<PlayerInputHandler>();
             RB = GetComponent<Rigidbody2D>();
 

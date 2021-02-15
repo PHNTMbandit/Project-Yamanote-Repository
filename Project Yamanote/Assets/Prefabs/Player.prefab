@@ -562,13 +562,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 119ba31d12c397c4e9490ea8d84d8c51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerData: {fileID: 11400000, guid: adba6c4b302d28f4ea3e69b42db3d635, type: 2}
-  audioManager: {fileID: 0}
   isSeated: 0
   actionTextBox: {fileID: 637824153264102747}
+  menu: {fileID: 0}
   actionText: {fileID: 637824153850452353}
+  playerData: {fileID: 11400000, guid: adba6c4b302d28f4ea3e69b42db3d635, type: 2}
+  audioManager: {fileID: 0}
   playerCollider: {fileID: 637824154574939732}
-  phone: {fileID: 0}
 --- !u!114 &2000074991123423475
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -594,7 +594,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adfab0f836adcbe4889b7ae20ef5525f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerController: {fileID: 3049614041797014366}
+  player: {fileID: 3049614041797014366}
 --- !u!114 &186424547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -700,6 +700,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   unregisterOnDisable: 0
+  time: {fileID: 11400000, guid: 5d2494b782f3d9f4abef9325a48b5a59, type: 2}
 --- !u!114 &186424542
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -437,42 +437,35 @@ MonoBehaviour:
   m_GameObject: {fileID: 2948091652961424757}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eac4e7d8982e3e449bc35129509cf8fc, type: 3}
+  m_Script: {fileID: 11500000, guid: 8040c2fef82432f43b49100f78504770, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - name: TrainDespawn
-    clip: {fileID: 0}
-    outputAudioMixerGroup: {fileID: 6268820453000487876, guid: e85ad7a30db4bec4781dc2acc04780d0, type: 2}
-    volume: 0.85
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
   - name: TrainArriving
     clip: {fileID: 8300000, guid: f9863efd597d6e24e866ab5ca7f7e8c1, type: 3}
     outputAudioMixerGroup: {fileID: 4955779929200416416, guid: e85ad7a30db4bec4781dc2acc04780d0, type: 2}
-    volume: 0.85
+    volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: TrainArrived
     clip: {fileID: 8300000, guid: 72164c9023644fd41afff365ef21bb73, type: 3}
     outputAudioMixerGroup: {fileID: 6562459987565434031, guid: e85ad7a30db4bec4781dc2acc04780d0, type: 2}
-    volume: 0.85
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: TrainDeparting
-    clip: {fileID: 8300000, guid: 69bda7df93e7e8b4b87a29371952a435, type: 3}
-    outputAudioMixerGroup: {fileID: -2011101178747297446, guid: e85ad7a30db4bec4781dc2acc04780d0, type: 2}
-    volume: 0.85
+    volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: DoorsClosing
     clip: {fileID: 8300000, guid: 67ab339ecd315b34291a35254b8595b1, type: 3}
     outputAudioMixerGroup: {fileID: -2011101178747297446, guid: e85ad7a30db4bec4781dc2acc04780d0, type: 2}
-    volume: 0.85
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: TrainDeparting
+    clip: {fileID: 8300000, guid: 69bda7df93e7e8b4b87a29371952a435, type: 3}
+    outputAudioMixerGroup: {fileID: -2011101178747297446, guid: e85ad7a30db4bec4781dc2acc04780d0, type: 2}
+    volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
@@ -1768,9 +1761,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 8561397282198301730}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9cfcc9ceea0bf419cb3bcaf548c2600d, type: 3}
+  m_Script: {fileID: 11500000, guid: 4cfdc9ac5c531874987c4ce827ac5ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  saveChildren: 0
-  componentsToSave:
-  - {fileID: 1291182379338361920}

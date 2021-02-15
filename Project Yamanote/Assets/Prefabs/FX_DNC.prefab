@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4228154702575912060
+--- !u!1 &6518989275067052864
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,23 +8,23 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4228154702575912063}
-  - component: {fileID: 4228154702575912062}
-  - component: {fileID: 4228154702575912061}
+  - component: {fileID: 6518989275067052870}
+  - component: {fileID: 2427665872075175774}
+  - component: {fileID: 1577096956682879470}
   m_Layer: 1
-  m_Name: FX_WorldLighting
+  m_Name: FX_DNC
   m_TagString: FX
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4228154702575912063
+--- !u!4 &6518989275067052870
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4228154702575912060}
+  m_GameObject: {fileID: 6518989275067052864}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 607.44055, y: 568.79425, z: -88.686356}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -32,13 +32,58 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4228154702575912062
+--- !u!114 &2427665872075175774
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4228154702575912060}
+  m_GameObject: {fileID: 6518989275067052864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e77878dbc0407854b949fbc2fe22941a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  worldLight: {fileID: 1577096956682879470}
+  gradient:
+    serializedVersion: 2
+    key0: {r: 0.08235294, g: 0.105882354, b: 0.32941177, a: 1}
+    key1: {r: 1, g: 0.7921569, b: 0.4862745, a: 1}
+    key2: {r: 0.7882353, g: 0.8862745, b: 1, a: 0}
+    key3: {r: 0.7882353, g: 0.8862745, b: 1, a: 0}
+    key4: {r: 0.99215686, g: 0.36862746, b: 0.3254902, a: 0}
+    key5: {r: 0.11372549, g: 0.12156863, b: 0.18431373, a: 0}
+    key6: {r: 0.11372549, g: 0.12156863, b: 0.18431373, a: 0}
+    key7: {r: 0.08235294, g: 0.105882354, b: 0.32941177, a: 0}
+    ctime0: 9830
+    ctime1: 16384
+    ctime2: 22937
+    ctime3: 47609
+    ctime4: 52428
+    ctime5: 55705
+    ctime6: 60909
+    ctime7: 65535
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_NumColorKeys: 8
+    m_NumAlphaKeys: 2
+  gameCamera: {fileID: 0}
+  mapLights: []
+  gameTime: {fileID: 11400000, guid: 5d2494b782f3d9f4abef9325a48b5a59, type: 2}
+--- !u!114 &1577096956682879470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6518989275067052864}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
@@ -73,47 +118,3 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
---- !u!114 &4228154702575912061
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4228154702575912060}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88277cab58f31c04fab345bd002d3c69, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  worldLight: {fileID: 4228154702575912062}
-  gradient:
-    serializedVersion: 2
-    key0: {r: 0.16078432, g: 0.16078432, b: 0.39607844, a: 1}
-    key1: {r: 0.49411765, g: 0.29411766, b: 0.40784314, a: 1}
-    key2: {r: 0.8862745, g: 0.8901961, b: 0.54509807, a: 0}
-    key3: {r: 0.7882353, g: 0.8862745, b: 1, a: 0}
-    key4: {r: 0.7882353, g: 0.8862745, b: 1, a: 0}
-    key5: {r: 0.90588236, g: 0.64705884, b: 0.3254902, a: 0}
-    key6: {r: 0.49411765, g: 0.29411766, b: 0.40784314, a: 0}
-    key7: {r: 0.16078432, g: 0.16078432, b: 0.39607844, a: 0}
-    ctime0: 3277
-    ctime1: 9830
-    ctime2: 16384
-    ctime3: 22937
-    ctime4: 47609
-    ctime5: 52428
-    ctime6: 55705
-    ctime7: 61680
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_NumColorKeys: 8
-    m_NumAlphaKeys: 2
-  gameCamera: {fileID: 0}
-  mapLights: []

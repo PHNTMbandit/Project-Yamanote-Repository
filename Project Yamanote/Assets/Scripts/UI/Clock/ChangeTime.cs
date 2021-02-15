@@ -9,21 +9,22 @@ namespace ProjectYamanote.UI.Clock
     {
         [SerializeField] private TextMeshProUGUI uiClockTime;
         [SerializeField] private DayNightCycle DNC;
+        [SerializeField] private GameTime gameTime;
 
         public void UpdateTime()
         {
-            uiClockTime.text = GameClock.dateTime.ToString("t");
+            uiClockTime.text = gameTime.dateTime.ToString("t");
         }
 
         public void Subtract()
         {
-            GameClock.dateTime = GameClock.dateTime.AddHours(-1);
+            gameTime.dateTime = gameTime.dateTime.AddHours(-1);
             DNC.CheckTime();
         }
 
         public void Add()
         {
-            GameClock.dateTime = GameClock.dateTime.AddHours(1);
+            gameTime.dateTime = gameTime.dateTime.AddHours(1);
             DNC.CheckTime();
         }
     }

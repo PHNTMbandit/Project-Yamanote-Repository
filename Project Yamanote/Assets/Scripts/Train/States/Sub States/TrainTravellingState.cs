@@ -30,7 +30,7 @@ namespace ProjectYamanote.Train.States.SubStates
         {
             base.LogicUpdate();
 
-            if (GameClock.dateTime.TimeOfDay.Equals(TrainData.timeArriveDestinationDT.TimeOfDay))
+            if (train.gameTime.dateTime.TimeOfDay.Equals(TrainData.timeArriveDestinationDT.TimeOfDay))
             {
                 stateMachine.ChangeState(train.ArrivingState);
             }

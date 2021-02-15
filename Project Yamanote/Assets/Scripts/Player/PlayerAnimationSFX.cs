@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace ProjectYamanote.Player
 {
-    public class PlayerSFX : MonoBehaviour
+    public class PlayerAnimationSFX : MonoBehaviour
     {
         [SerializeField] private AudioManager audioManager;
 

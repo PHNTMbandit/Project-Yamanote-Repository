@@ -33,7 +33,7 @@ namespace ProjectYamanote.Station.States.SubStates
 
             foreach (var i in stationData.trainSchedule)
             {
-                if (GameClock.dateTime.TimeOfDay.Equals(i.timeArriveOriginDT.TimeOfDay))
+                if (station.gameTime.dateTime.TimeOfDay.Equals(i.timeArriveOriginDT.TimeOfDay))
                 {
                     stateMachine.ChangeState(station.ArrivingState);
                 }

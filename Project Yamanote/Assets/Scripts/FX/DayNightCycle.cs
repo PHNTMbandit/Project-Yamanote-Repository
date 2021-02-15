@@ -10,6 +10,7 @@ namespace ProjectYamanote.FX
         public Gradient gradient;
         public Camera gameCamera;
         public GameObject[] mapLights;
+        public GameTime gameTime;
 
         public void ChangeColour(float TimeInMinutes)
         {
@@ -20,7 +21,7 @@ namespace ProjectYamanote.FX
 
         public void CheckTime()
         {
-            if (GameClock.dateTime.Hour >= 20 || GameClock.dateTime.Hour < 6)
+            if (gameTime.dateTime.Hour >= 20 || gameTime.dateTime.Hour < 6)
                 ControlLightMaps(true);
             else
                 ControlLightMaps(false);
