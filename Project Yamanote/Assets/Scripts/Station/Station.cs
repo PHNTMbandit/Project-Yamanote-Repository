@@ -1,4 +1,5 @@
 using ProjectYamanote.Audio;
+using ProjectYamanote.ScriptableObjects;
 using ProjectYamanote.Station.States;
 using ProjectYamanote.Station.States.SubStates;
 using ProjectYamanote.Train;
@@ -28,6 +29,8 @@ namespace ProjectYamanote.Station
         #endregion
 
         #region Other Variables
+        public GameTime gameTime;
+
         [SerializeField] private StationData _stationData;
         [SerializeField] private Transform _arrivalPosition;
         [SerializeField] private Transform _instantiatePosition;

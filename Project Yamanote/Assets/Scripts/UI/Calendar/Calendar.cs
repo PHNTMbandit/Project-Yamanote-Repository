@@ -49,21 +49,20 @@ namespace ProjectYamanote.UI.Calendar
 
         public TextMeshProUGUI Month;
         public TextMeshProUGUI Year;
-
-        public DateTime currDate = GameClock.dateTime.Date;
+        public GameTime gameTime;
 
         public Color enabledColour;
         public Color todayColour;
 
         private void Start()
         {
-            UpdateCalendar(GameClock.dateTime.Year, GameClock.dateTime.Month);
+            UpdateCalendar(gameTime.dateTime.Year, gameTime.dateTime.Month);
         }
 
         void UpdateCalendar(int year, int month)
         {
             DateTime temp = new DateTime(year, month, 1);
-            currDate = temp;
+            gameTime.dateTime = temp;
             Month.text = temp.ToString("MMMM");
             Year.text = temp.Year.ToString();
             int startDay = GetMonthStartDay(year, month);
@@ -106,9 +105,9 @@ namespace ProjectYamanote.UI.Calendar
                 }
             }
 
-            if (GameClock.dateTime.Year == year && GameClock.dateTime.Month == month)
+            if (gameTime.dateTime.Year == year && gameTime.dateTime.Month == month)
             {
-                days[(GameClock.dateTime.Day - 1) + startDay].UpdateColor(Color.red);
+                days[(gameTime.dateTime.Day - 1) + startDay].UpdateColor(Color.red);
             }
 
         }
@@ -129,14 +128,14 @@ namespace ProjectYamanote.UI.Calendar
         {
             if (direction < 0)
             {
-                currDate = currDate.AddMonths(-1);
+                gameTime.dateTime = gameTime.dateTime.AddMonths(-1);
             }
             else
             {
-                currDate = currDate.AddMonths(1);
+                gameTime.dateTime = gameTime.dateTime.AddMonths(1);
             }
 
-            UpdateCalendar(currDate.Year, currDate.Month);
+            UpdateCalendar(gameTime.dateTime.Year, gameTime.dateTime.Month);
         }
     }
 }

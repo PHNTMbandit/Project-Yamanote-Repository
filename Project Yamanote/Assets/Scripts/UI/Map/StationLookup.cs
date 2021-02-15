@@ -6,7 +6,6 @@ using ProjectYamanote.Station.Database;
 public class StationLookup : MonoBehaviour
 {
     public TMP_Dropdown stationDropdown;
-    public TextMeshProUGUI stationNameText;
     public TextMeshProUGUI stationTypeText;
     public TextMeshProUGUI stationLocText;
     public StationDB stationDB;

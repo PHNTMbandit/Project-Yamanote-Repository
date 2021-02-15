@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3506197423623609756}
-  - component: {fileID: 3506197423623609755}
+  - component: {fileID: 5431434547288562052}
   m_Layer: 1
   m_Name: FX_Time
   m_TagString: FX
@@ -31,7 +31,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3506197423623609755
+--- !u!114 &5431434547288562052
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -40,15 +40,39 @@ MonoBehaviour:
   m_GameObject: {fileID: 3506197423623609754}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 11488f194fa895042907b505d084cc7a, type: 3}
+  m_Script: {fileID: 11500000, guid: e77878dbc0407854b949fbc2fe22941a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uiClock: {fileID: 0}
-  DNC: {fileID: 0}
-  energyBar: {fileID: 0}
-  hungerBar: {fileID: 0}
-  playerData: {fileID: 11400000, guid: adba6c4b302d28f4ea3e69b42db3d635, type: 2}
-  phoneTime: {fileID: 0}
-  phoneDate: {fileID: 0}
-  actionBarTime: {fileID: 0}
-  actionBarDate: {fileID: 0}
+  worldLight: {fileID: 0}
+  gradient:
+    serializedVersion: 2
+    key0: {r: 0.08235294, g: 0.105882354, b: 0.32941177, a: 1}
+    key1: {r: 1, g: 0.7921569, b: 0.4862745, a: 1}
+    key2: {r: 0.7882353, g: 0.8862745, b: 1, a: 0}
+    key3: {r: 0.7882353, g: 0.8862745, b: 1, a: 0}
+    key4: {r: 0.99215686, g: 0.36862746, b: 0.3254902, a: 0}
+    key5: {r: 0.11372549, g: 0.12156863, b: 0.18431373, a: 0}
+    key6: {r: 0.11372549, g: 0.12156863, b: 0.18431373, a: 0}
+    key7: {r: 0.08235294, g: 0.105882354, b: 0.32941177, a: 0}
+    ctime0: 9830
+    ctime1: 16384
+    ctime2: 22937
+    ctime3: 47609
+    ctime4: 52428
+    ctime5: 55705
+    ctime6: 60909
+    ctime7: 65535
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_NumColorKeys: 8
+    m_NumAlphaKeys: 2
+  gameCamera: {fileID: 0}
+  mapLights: []
+  gameTime: {fileID: 11400000, guid: 5d2494b782f3d9f4abef9325a48b5a59, type: 2}

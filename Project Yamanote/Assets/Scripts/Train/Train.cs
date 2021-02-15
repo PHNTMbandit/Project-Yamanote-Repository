@@ -1,4 +1,5 @@
 using ProjectYamanote.Audio;
+using ProjectYamanote.ScriptableObjects;
 using ProjectYamanote.Train.States;
 using ProjectYamanote.Train.States.SubStates;
 using System.Collections;
@@ -33,7 +34,7 @@ namespace ProjectYamanote.Train
         public Transform departTransform;
         public Transform arrivedTransfrom;
         public Transform arrivingTransform;
-
+        public GameTime gameTime;
         public TrainData trainData;
         public GameObject trainStation;
         #endregion

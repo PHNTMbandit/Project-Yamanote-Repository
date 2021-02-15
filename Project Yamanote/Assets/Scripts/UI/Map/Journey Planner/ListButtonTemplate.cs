@@ -8,7 +8,7 @@ namespace ProjectYamanote.UI.Map.JourneyPlanner
     public class ListButtonTemplate : MonoBehaviour
     {
         #region Variables
-        [SerializeField] private GameObject _trainStations;
+        [SerializeField] private GameTime _gameTime;
         [SerializeField] private TextMeshProUGUI _textCost;
         [SerializeField] private TextMeshProUGUI _textArriveTime;
         [SerializeField] private TextMeshProUGUI _textDepartTime;
@@ -63,7 +63,7 @@ namespace ProjectYamanote.UI.Map.JourneyPlanner
 
         public void SetInTime(DateTime departTime)
         {
-            TimeSpan inTime = departTime.TimeOfDay - GameClock.dateTime.TimeOfDay;
+            TimeSpan inTime = departTime.TimeOfDay - _gameTime.dateTime.TimeOfDay;
 
             _textInTime.text = "in " + inTime.TotalMinutes.ToString() + " mins";
 

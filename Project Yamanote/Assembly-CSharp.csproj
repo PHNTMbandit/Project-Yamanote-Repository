@@ -67,7 +67,7 @@
     <Compile Include="Assets\Scripts\Player\Player States\Sub States\PlayerMoveState.cs" />
     <Compile Include="Assets\Scripts\Train\States\Sub States\TrainArrivedState.cs" />
     <Compile Include="Assets\Scripts\Train\States\Sub States\TrainDepartingState.cs" />
-    <Compile Include="Assets\Scripts\Scriptable Objects\GameClock.cs" />
+    <Compile Include="Assets\Scripts\UI\Menu\MenuDisplay.cs" />
     <Compile Include="Assets\Scripts\UI\Map\MapButton.cs" />
     <Compile Include="Assets\Scripts\Audio\FadeMixerGroup.cs" />
     <Compile Include="Assets\Scripts\Player\Player States\Sub States\PlayerSitDownState.cs" />
@@ -120,11 +120,11 @@
     <Compile Include="Assets\Pixel Crushers\Common\Third Party Support\Opsive UIS Support\Scripts\UISSaver.cs" />
     <Compile Include="Assets\Scripts\Station\States\Sub States\StationArrivedState.cs" />
     <Compile Include="Assets\Scripts\Player\Player States\Sub States\PlayerPhoneOffState.cs" />
-    <Compile Include="Assets\Scripts\Player\PlayerSFX.cs" />
-    <Compile Include="Assets\Scripts\Scriptable Objects\Time.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerAnimationSFX.cs" />
+    <Compile Include="Assets\Scripts\Scriptable Objects\GameTime.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Physics\Characters\Daisuke\Daisuke_walk.xml" />
+     <None Include="Assets\Physics\Characters\Daisuke\Daisuke_walk.xml" />
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\2020.2.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>

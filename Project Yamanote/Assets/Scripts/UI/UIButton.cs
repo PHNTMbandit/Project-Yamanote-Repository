@@ -7,11 +7,18 @@ namespace ProjectYamanote.UI
 {
     public class UIButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     {
-        [SerializeField] private TextMeshProUGUI _text;
+        private TextMeshProUGUI _text;
+        
+        private bool _toggle = false;
+        
         [SerializeField] private GameObject _toggleGameObject;
         [SerializeField] private AudioManager _audioManager;
         
-        private bool _toggle = false;
+
+        private void Awake()
+        {
+            _text = this.GetComponentInChildren<TextMeshProUGUI>();
+        }
 
         private void Start()
         {

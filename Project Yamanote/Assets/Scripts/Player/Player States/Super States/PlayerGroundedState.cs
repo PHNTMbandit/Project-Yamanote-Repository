@@ -55,7 +55,7 @@ namespace ProjectYamanote.Player.PlayerStates.SuperStates
             {
                 player.InputHandler.UsePhoneInput();
                 stateMachine.ChangeState(player.PhoneOnState);
-                player.phone.SetActive(true);
+                player.menu.SetActive(true);
             }
         }
 
