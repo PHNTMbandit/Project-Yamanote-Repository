@@ -1,41 +1,42 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+using ProjectYamanote.Station.States.SuperStates;
 
-public class StationArrivedState : StationTrainState
+namespace ProjectYamanote.Station.States.SubStates
 {
-    public StationArrivedState(Station station, StationStateMachine stateMachine, StationData stationData, string animBoolName) : base(station, stateMachine, stationData, animBoolName)
+    public class StationArrivedState : StationTrainState
     {
-    }
+        public StationArrivedState(Station station, StationStateMachine stateMachine, StationData stationData, string animBoolName) : base(station, stateMachine, stationData, animBoolName)
+        {
+        }
 
-    public override void DoChecks()
-    {
-        base.DoChecks();
-    }
+        public override void DoChecks()
+        {
+            base.DoChecks();
+        }
 
-    public override void Enter()
-    {
-        base.Enter();
+        public override void Enter()
+        {
+            base.Enter();
 
-        station.StartCoroutine(station.TrainArrivedCouroutine());
-        station.TrainArrivedSFX();
-    }
+            station.StartCoroutine(station.TrainArrivedCouroutine());
+            station.TrainArrivedSFX();
+        }
 
-    public override void Exit()
-    {
-        base.Exit();
-    }
+        public override void Exit()
+        {
+            base.Exit();
+        }
 
-    public override void LogicUpdate()
-    {
-        base.LogicUpdate();
+        public override void LogicUpdate()
+        {
+            base.LogicUpdate();
 
-        if (station.isDeparting == true)
-            stateMachine.ChangeState(station.DepartingState);
-    }
+            if (station.isDeparting == true)
+                stateMachine.ChangeState(station.DepartingState);
+        }
 
-    public override void PhysicsUpdate()
-    {
-        base.PhysicsUpdate();
+        public override void PhysicsUpdate()
+        {
+            base.PhysicsUpdate();
+        }
     }
 }

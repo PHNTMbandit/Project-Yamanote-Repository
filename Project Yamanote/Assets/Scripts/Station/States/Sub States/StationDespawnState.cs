@@ -1,45 +1,48 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+using ProjectYamanote.ScriptableObjects;
+using ProjectYamanote.Station.States.SuperStates;
 
-public class StationDespawnState : StationTrainState
+namespace ProjectYamanote.Station.States.SubStates
 {
-    public StationDespawnState(Station station, StationStateMachine stateMachine, StationData stationData, string animBoolName) : base(station, stateMachine, stationData, animBoolName)
+    public class StationDespawnState : StationTrainState
     {
-    }
-
-    public override void DoChecks()
-    {
-        base.DoChecks();
-    }
-
-    public override void Enter()
-    {
-        base.Enter();
-
-        station.TrainReset();
-        station.TrainDespawnSFX();
-    }
-
-    public override void Exit()
-    {
-        base.Exit();
-    }
-
-    public override void LogicUpdate()
-    {
-        base.LogicUpdate();
-
-        foreach (var i in stationData.trainSchedule)
+        public StationDespawnState(Station station, StationStateMachine stateMachine, StationData stationData, string animBoolName) : base(station, stateMachine, stationData, animBoolName)
         {
-            if (GameClock.dateTime.TimeOfDay.Equals(i.timeArriveOriginDT.TimeOfDay))
+        }
+
+        public override void DoChecks()
+        {
+            base.DoChecks();
+        }
+
+        public override void Enter()
+        {
+            base.Enter();
+
+            station.TrainReset();
+            station.TrainDespawnSFX();
+        }
+
+        public override void Exit()
+        {
+            base.Exit();
+        }
+
+        public override void LogicUpdate()
+        {
+            base.LogicUpdate();
+
+            foreach (var i in stationData.trainSchedule)
             {
-                stateMachine.ChangeState(station.ArrivingState);
+                if (GameClock.dateTime.TimeOfDay.Equals(i.timeArriveOriginDT.TimeOfDay))
+                {
+                    stateMachine.ChangeState(station.ArrivingState);
+                }
             }
         }
-    }
-    public override void PhysicsUpdate()
-    {
-        base.PhysicsUpdate();
+        public override void PhysicsUpdate()
+        {
+            base.PhysicsUpdate();
+        }
     }
 }
+

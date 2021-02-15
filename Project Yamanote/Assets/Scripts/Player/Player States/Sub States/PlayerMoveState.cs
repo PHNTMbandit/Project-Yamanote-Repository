@@ -1,44 +1,45 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+using ProjectYamanote.Player.PlayerStates.SuperStates;
 
-public class PlayerMoveState : PlayerGroundedState
+namespace ProjectYamanote.Player.PlayerStates.SubStates
 {
-    public PlayerMoveState(PlayerController playerController, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName) : base(playerController, stateMachine, playerData, animBoolName)
+    public class PlayerMoveState : PlayerGroundedState
     {
-    }
-
-    public override void DoChecks()
-    {
-        base.DoChecks();
-    }
-
-    public override void Enter()
-    {
-        base.Enter();
-    }
-
-    public override void Exit()
-    {
-        base.Exit();
-    }
-
-    public override void LogicUpdate()
-    {
-        base.LogicUpdate();
-
-        playerController.CheckIfShouldFlip(xInput);
-
-        playerController.SetVelocityX(playerData.movementVelocity * xInput);
-
-        if(xInput == 0)
+        public PlayerMoveState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName) : base(player, stateMachine, playerData, animBoolName)
         {
-            stateMachine.ChangeState(playerController.IdleState);
         }
-    }
 
-    public override void PhysicsUpdate()
-    {
-        base.PhysicsUpdate();
+        public override void DoChecks()
+        {
+            base.DoChecks();
+        }
+
+        public override void Enter()
+        {
+            base.Enter();
+        }
+
+        public override void Exit()
+        {
+            base.Exit();
+        }
+
+        public override void LogicUpdate()
+        {
+            base.LogicUpdate();
+
+            player.CheckIfShouldFlip(xInput);
+
+            player.SetVelocityX(playerData.movementVelocity * xInput);
+
+            if (xInput == 0)
+            {
+                stateMachine.ChangeState(player.IdleState);
+            }
+        }
+
+        public override void PhysicsUpdate()
+        {
+            base.PhysicsUpdate();
+        }
     }
 }

@@ -1,44 +1,45 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+using ProjectYamanote.Player.PlayerStates.SuperStates;
 
-public class PlayerPhoneOnState : PlayerGroundedState
+namespace ProjectYamanote.Player.PlayerStates.SubStates
 {
-    public PlayerPhoneOnState(PlayerController playerController, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName) : base(playerController, stateMachine, playerData, animBoolName)
+    public class PlayerPhoneOnState : PlayerGroundedState
     {
-    }
-
-    public override void DoChecks()
-    {
-        base.DoChecks();
-    }
-
-    public override void Enter()
-    {
-        base.Enter();
-
-        playerController.PhoneAnimator.SetBool("phoneOn", true);
-        playerController.PhoneOnSFX();
-    }
-
-    public override void Exit()
-    {
-        base.Exit();
-    }
-
-    public override void LogicUpdate()
-    {
-        base.LogicUpdate();
-
-        if(PhoneInput)
+        public PlayerPhoneOnState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName) : base(player, stateMachine, playerData, animBoolName)
         {
-            playerController.InputHandler.UsePhoneInput();
-            stateMachine.ChangeState(playerController.PhoneOffState);
         }
-    }
 
-    public override void PhysicsUpdate()
-    {
-        base.PhysicsUpdate();
+        public override void DoChecks()
+        {
+            base.DoChecks();
+        }
+
+        public override void Enter()
+        {
+            base.Enter();
+
+            player.PhoneAnimator.SetBool("phoneOn", true);
+            player.PhoneOnSFX();
+        }
+
+        public override void Exit()
+        {
+            base.Exit();
+        }
+
+        public override void LogicUpdate()
+        {
+            base.LogicUpdate();
+
+            if (PhoneInput)
+            {
+                player.InputHandler.UsePhoneInput();
+                stateMachine.ChangeState(player.PhoneOffState);
+            }
+        }
+
+        public override void PhysicsUpdate()
+        {
+            base.PhysicsUpdate();
+        }
     }
 }

@@ -1,5 +1,6 @@
 using UnityEngine;
 using PixelCrushers.DialogueSystem;
+using ProjectYamanote.ScriptableObjects;
 
 public class GameClockLua : MonoBehaviour
 {

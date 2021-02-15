@@ -1,13 +1,15 @@
-using System.Collections;
-using System.Collections.Generic;
+using ProjectYamanote.Audio;
 using UnityEngine;
 
-public class PlayerSFX : MonoBehaviour
+namespace ProjectYamanote.Player
 {
-    [SerializeField] private AudioManager audioManager;
-    [SerializeField] private PlayerStateMachine playerController;
-    public void Walk()
+    public class PlayerSFX : MonoBehaviour
     {
-        audioManager.Play("Walk");
+        [SerializeField] private AudioManager audioManager;
+
+        public void Walk()
+        {
+            audioManager.Play("Walk");
+        }
     }
 }

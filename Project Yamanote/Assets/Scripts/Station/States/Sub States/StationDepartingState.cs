@@ -1,41 +1,44 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 
-public class StationDepartingState : StationTrainState
+using ProjectYamanote.Station.States.SuperStates;
+
+namespace ProjectYamanote.Station.States.SubStates
 {
-    public StationDepartingState(Station station, StationStateMachine stateMachine, StationData stationData, string animBoolName) : base(station, stateMachine, stationData, animBoolName)
+    public class StationDepartingState : StationTrainState
     {
-    }
+        public StationDepartingState(Station station, StationStateMachine stateMachine, StationData stationData, string animBoolName) : base(station, stateMachine, stationData, animBoolName)
+        {
+        }
 
-    public override void DoChecks()
-    {
-        base.DoChecks();
-    }
+        public override void DoChecks()
+        {
+            base.DoChecks();
+        }
 
-    public override void Enter()
-    {
-        base.Enter();
+        public override void Enter()
+        {
+            base.Enter();
 
-        station.StartCoroutine(station.TrainDepartingCouroutine());
-        station.TrainDepartingSFX();
-    }
+            station.StartCoroutine(station.TrainDepartingCouroutine());
+            station.TrainDepartingSFX();
+        }
 
-    public override void Exit()
-    {
-        base.Exit();
-    }
+        public override void Exit()
+        {
+            base.Exit();
+        }
 
-    public override void LogicUpdate()
-    {
-        base.LogicUpdate();
+        public override void LogicUpdate()
+        {
+            base.LogicUpdate();
 
-        if (station.isDeparting == false)
-            stateMachine.ChangeState(station.DespawnState);
-    }
+            if (station.isDeparting == false)
+                stateMachine.ChangeState(station.DespawnState);
+        }
 
-    public override void PhysicsUpdate()
-    {
-        base.PhysicsUpdate();
+        public override void PhysicsUpdate()
+        {
+            base.PhysicsUpdate();
+        }
     }
 }
+

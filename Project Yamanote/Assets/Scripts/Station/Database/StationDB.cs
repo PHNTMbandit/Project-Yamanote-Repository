@@ -1,8 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-namespace Stations
+namespace ProjectYamanote.Station.Database
 {
     [System.Serializable]
     public class StationVariables
@@ -19,4 +17,3 @@ namespace Stations
         public StationVariables[] stationDatabase;
     }
 }
-

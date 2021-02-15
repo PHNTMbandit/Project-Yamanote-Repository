@@ -3,39 +3,42 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerInputHandler : MonoBehaviour
+namespace ProjectYamanote.Player
 {
-    public Vector2 RawMovementInput { get; private set; }
-    public int NormInputX { get; private set; }
-    public int NormInputY { get; private set; }
-    public bool ActionInput { get; private set; }
-    public bool PhoneInput { get; private set; }
-
-    public PlayerController playerController;
-
-    public void OnMoveInput(InputAction.CallbackContext context)
+    public class PlayerInputHandler : MonoBehaviour
     {
-        RawMovementInput = context.ReadValue<Vector2>();
-        NormInputX = (int)(RawMovementInput * Vector2.right).normalized.x;
-        NormInputY = (int)(RawMovementInput * Vector2.up).normalized.y;
-    }
+        public Vector2 RawMovementInput { get; private set; }
+        public int NormInputX { get; private set; }
+        public int NormInputY { get; private set; }
+        public bool ActionInput { get; private set; }
+        public bool PhoneInput { get; private set; }
 
-    public void OnActionInput(InputAction.CallbackContext context)
-    {
-        if(context.started)
+        public Player player;
+
+        public void OnMoveInput(InputAction.CallbackContext context)
         {
-            ActionInput = true;
+            RawMovementInput = context.ReadValue<Vector2>();
+            NormInputX = (int)(RawMovementInput * Vector2.right).normalized.x;
+            NormInputY = (int)(RawMovementInput * Vector2.up).normalized.y;
         }
-    }
 
-    public void OnPhoneInput(InputAction.CallbackContext context)
-    {
-        if (context.started)
+        public void OnActionInput(InputAction.CallbackContext context)
         {
-            PhoneInput = true;
+            if (context.started)
+            {
+                ActionInput = true;
+            }
         }
-    }
 
-    public void UseActionInput() => ActionInput = false;
-    public void UsePhoneInput() => PhoneInput = false;
+        public void OnPhoneInput(InputAction.CallbackContext context)
+        {
+            if (context.started)
+            {
+                PhoneInput = true;
+            }
+        }
+
+        public void UseActionInput() => ActionInput = false;
+        public void UsePhoneInput() => PhoneInput = false;
+    }
 }
