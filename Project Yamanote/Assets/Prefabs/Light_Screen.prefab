@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4767001310892213171}
   - component: {fileID: 6913986743994316164}
-  m_Layer: 8
+  m_Layer: 1
   m_Name: Light_Screen
-  m_TagString: Persistent_Light
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

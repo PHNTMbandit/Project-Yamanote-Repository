@@ -11,24 +11,15 @@ namespace ProjectYamanote.UI.Menu
         [SerializeField] private PlayerData _playerData;
         [SerializeField] private TextMeshProUGUI _menuTime;
         [SerializeField] private TextMeshProUGUI _menuDate;
-        [SerializeField] private EnergyBar _energyBar;
-        [SerializeField] private HungerBar _hungerBar;
         [SerializeField] private TextMeshProUGUI _actionBarTime;
         [SerializeField] private TextMeshProUGUI _actionBarDate;
 
         private void Update()
         {
-            GameClock.dateTime.AddSeconds(1);
             _menuTime.text = GameClock.dateTime.ToString("t");
-            _actionBarTime.text = GameClock.dateTime.ToString("t");
             _menuDate.text = GameClock.dateTime.ToString("dddd, dd MMM yyyy");
+            _actionBarTime.text = GameClock.dateTime.ToString("t");
             _actionBarDate.text = GameClock.dateTime.ToString("dddd, dd MMM yyyy");
-        }
-
-        private void UpdateStats()
-        {
-            _energyBar.RemoveEnergy(_playerData.energyBarSpendRate);
-            _hungerBar.RemoveHunger(_playerData.hungerBarSpendRate);
         }
     }
 }

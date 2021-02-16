@@ -9,9 +9,9 @@ namespace ProjectYamanote.UI
         public static int year = 2021;
         public static int month = 12;
         public static int day = 04;
-        public static int hour = 17;
-        public static int minute = 26;
-        public static int second = 00;
+        public static int hour = 5;
+        public static int minute = 45;
+        public static int second = 50;
 
         public static DateTime dateTime = new DateTime(year, month, day, hour, minute, second);
 
@@ -25,9 +25,14 @@ namespace ProjectYamanote.UI
             while (second < 60)
             {
                 dateTime = dateTime.AddSeconds(1);
-                Debug.Log(dateTime);
+
                 yield return new WaitForSeconds(1);
             }
+        }
+
+        public void OnMinute()
+        {
+
         }
     }
 }

@@ -12,12 +12,11 @@ namespace ProjectYamanote.UI
         private bool _toggle = false;
         
         [SerializeField] private GameObject _toggleGameObject;
-        [SerializeField] private AudioManager _audioManager;
         
 
         private void Awake()
         {
-            _text = this.GetComponentInChildren<TextMeshProUGUI>();
+            _text = GetComponentInChildren<TextMeshProUGUI>();
         }
 
         private void Start()
@@ -37,7 +36,7 @@ namespace ProjectYamanote.UI
 
         public void ClickButton()
         {
-            _audioManager.Play("ClickButton");
+            FindObjectOfType<AudioManager>().Play("ClickButton");
         }
 
         public void Toggle()

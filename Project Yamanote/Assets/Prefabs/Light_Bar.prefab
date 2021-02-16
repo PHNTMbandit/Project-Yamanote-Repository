@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2758068826568781187}
   - component: {fileID: 2758068826568781185}
-  m_Layer: 8
+  m_Layer: 1
   m_Name: Light_Bar
-  m_TagString: Light
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

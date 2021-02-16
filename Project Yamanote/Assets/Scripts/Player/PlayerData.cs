@@ -8,7 +8,7 @@ namespace ProjectYamanote.Player
         [Header("Move State")]
         public float movementVelocity = 1.7f;
 
-        [Header("Energy and Health")]
+        [Header("Energy and Hunger")]
         public float energyBarSpendRate = 0.1f;
         public float hungerBarSpendRate = 0.5f;
     }

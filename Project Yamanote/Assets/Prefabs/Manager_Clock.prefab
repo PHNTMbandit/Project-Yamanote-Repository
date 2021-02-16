@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6610735981121359839}
   m_Layer: 0
   m_Name: Manager_Clock
-  m_TagString: Clock
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43,9 +43,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a749810459a92b46ae55bde7b1f7e2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  year: 2021
-  month: 12
-  day: 4
-  hour: 15
-  minute: 50
-  second: 55

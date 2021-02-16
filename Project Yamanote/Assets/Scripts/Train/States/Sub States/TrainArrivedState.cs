@@ -18,8 +18,6 @@ namespace ProjectYamanote.Train.States.SubStates
             base.Enter();
 
             train.isArrived = true;
-            train.StartCoroutine(train.TrainArrivedCouroutine());
-            train.trainStation.transform.position = train.arrivedTransfrom.position;
 
             train.TrainArrivedSFX();
         }
@@ -33,8 +31,8 @@ namespace ProjectYamanote.Train.States.SubStates
         {
             base.LogicUpdate();
 
-            if (train.isDeparted == true)
-                stateMachine.ChangeState(train.DepartingState);
+            if (isAnimationFinished == true)
+                stateMachine.ChangeState(train.IdleState);
         }
 
         public override void PhysicsUpdate()

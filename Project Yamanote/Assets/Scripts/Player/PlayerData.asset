@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: PlayerData
   m_EditorClassIdentifier: 
   movementVelocity: 1.7
-  energyBarSpendRate: 1
+  energyBarSpendRate: 0.1
   hungerBarSpendRate: 0.1

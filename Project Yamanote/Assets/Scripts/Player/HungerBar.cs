@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,6 +9,12 @@ namespace ProjectYamanote.Player
         public Slider slider;
         public Gradient gradient;
         public Image fill;
+        public PlayerData playerData;
+
+        private void Start()
+        {
+            StartCoroutine(SpendHunger());
+        }
 
         public void SetMaxHunger(float hunger)
         {
@@ -30,6 +37,17 @@ namespace ProjectYamanote.Player
 
             fill.color = gradient.Evaluate(slider.normalizedValue);
         }
+
+        public IEnumerator SpendHunger()
+        {
+            while (slider.value > 0)
+            {
+                RemoveHunger(playerData.hungerBarSpendRate);
+
+                yield return new WaitForSeconds(1);
+            }
+
+            Debug.Log("Game Over");
+        }
     }
 }
-

@@ -1,10 +1,10 @@
-using ProjectYamanote.Station.States.SuperStates;
+﻿using ProjectYamanote.Station.States.SuperStates;
 
 namespace ProjectYamanote.Station.States.SubStates
 {
-    public class StationArrivedState : StationTrainState
+    public class StationIdleState : StationTrainState
     {
-        public StationArrivedState(Station station, StationStateMachine stateMachine, StationData stationData, string animBoolName) : base(station, stateMachine, stationData, animBoolName)
+        public StationIdleState(ProjectYamanote.Station.Station station, StationStateMachine stateMachine, StationData stationData, string animBoolName) : base(station, stateMachine, stationData, animBoolName)
         {
         }
 
@@ -17,7 +17,7 @@ namespace ProjectYamanote.Station.States.SubStates
         {
             base.Enter();
 
-            station.TrainArrivedSFX();
+            station.StartCoroutine(station.TrainArrivedCouroutine());
         }
 
         public override void Exit()
@@ -29,8 +29,8 @@ namespace ProjectYamanote.Station.States.SubStates
         {
             base.LogicUpdate();
 
-            if(isAnimationFinished == true)
-                stateMachine.ChangeState(station.IdleState);
+            if (station.isDeparting == true)
+                stateMachine.ChangeState(station.DepartingState);
         }
 
         public override void PhysicsUpdate()

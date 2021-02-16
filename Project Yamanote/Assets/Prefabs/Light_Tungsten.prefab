@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 305991571101781844}
   - component: {fileID: 2569109246957709417}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Light_Tungsten
-  m_TagString: Light
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -49,7 +49,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 0.94509804, b: 0.8784314, a: 1}
   m_Intensity: 1
   m_LightVolumeOpacity: 0
-  m_ApplyToSortingLayers: 00000000bd016b680d548ad3
+  m_ApplyToSortingLayers: 00000000e3c5725493c7ccf5e962273de5495327efb3e7effdea115a953c290ba756bcc97d3659a76fe7b8b23d7d9be46bf749b0
   m_LightCookieSprite: {fileID: 0}
   m_UseNormalMap: 1
   m_LightOrder: 0

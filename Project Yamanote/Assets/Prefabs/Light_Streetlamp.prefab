@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9186270369759633113}
   - component: {fileID: 9186270369759633114}
-  m_Layer: 7
+  m_Layer: 1
   m_Name: Light_Streetlamp
   m_TagString: Untagged
   m_Icon: {fileID: 0}

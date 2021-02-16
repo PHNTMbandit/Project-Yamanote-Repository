@@ -14,13 +14,13 @@ namespace ProjectYamanote.Train
         #region State Variables
         public TrainStateMachine StateMachine { get; private set; }
         public TrainArrivedState ArrivedState { get; private set; }
+        public TrainIdleState IdleState { get; private set; }
         public TrainArrivingState ArrivingState { get; private set; }
         public TrainDepartingState DepartingState { get; private set; }
         public TrainTravellingState TravellingState { get; private set; }
         #endregion
 
         #region Components
-        
         public Animator Animator { get; private set; }
         #endregion
 
@@ -39,7 +39,7 @@ namespace ProjectYamanote.Train
         [SerializeField] private GameObject[] _parallaxBackground;
         [SerializeField] private AudioManager audioManager;
         [SerializeField] private AudioMixer audioMixer;
-                #endregion
+        #endregion
 
         #region Unity Callback Functions
         private void Awake()
@@ -47,6 +47,7 @@ namespace ProjectYamanote.Train
             StateMachine = new TrainStateMachine();
 
             ArrivedState = new TrainArrivedState(this, StateMachine, trainData, "arrived");
+            IdleState = new TrainIdleState(this, StateMachine, trainData, "idle");
             ArrivingState = new TrainArrivingState(this, StateMachine, trainData, "arriving");
             DepartingState = new TrainDepartingState(this, StateMachine, trainData, "departing");
             TravellingState = new TrainTravellingState(this, StateMachine, trainData, "travelling");
@@ -55,10 +56,8 @@ namespace ProjectYamanote.Train
         private void Start()
         {
             Animator = GetComponent<Animator>();
-            gameClock = FindObjectOfType<GameClock>();
-            StateMachine.Intialise(ArrivedState);
-
-            print(TrainData.timeArriveDestinationDT.TimeOfDay);
+            
+            StateMachine.Intialise(IdleState);
         }
 
         private void Update()
@@ -148,10 +147,14 @@ namespace ProjectYamanote.Train
         {
             audioManager.Play("TrainArrived");
             StartCoroutine(FadeMixerGroup.StartFade(audioMixer, "TrainArrived", 2f, 1f));
-            StartCoroutine(FadeMixerGroup.StartFade(audioMixer, "StationAmbiance", 3f, 1f));
 
             StartCoroutine(FadeMixerGroup.StartFade(audioMixer, "TrainArriving", 2f, 0f));
             StartCoroutine(FadeMixerGroup.StartFade(audioMixer, "Music", 1f, 0f));
+        }
+
+        public void TrainIdleSFX()
+        {
+            StartCoroutine(FadeMixerGroup.StartFade(audioMixer, "StationAmbiance", 3f, 1f));
         }
 
         public void TrainDepartingSFX()

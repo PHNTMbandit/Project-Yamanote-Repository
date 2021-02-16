@@ -122,6 +122,8 @@
     <Compile Include="Assets\Scripts\Station\States\Sub States\StationArrivedState.cs" />
     <Compile Include="Assets\Scripts\Player\Player States\Sub States\PlayerPhoneOffState.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerAnimationSFX.cs" />
+    <Compile Include="Assets\Scripts\Station\States\Sub States\StationIdleState.cs" />
+    <Compile Include="Assets\Scripts\Train\States\Sub States\TrainIdleState.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Physics\Characters\Daisuke\Daisuke_walk.xml" />

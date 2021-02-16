@@ -2,8 +2,6 @@ using ProjectYamanote.Audio;
 using ProjectYamanote.Station.States;
 using ProjectYamanote.Station.States.SubStates;
 using ProjectYamanote.Train;
-using ProjectYamanote.UI;
-using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Audio;
@@ -18,6 +16,7 @@ namespace ProjectYamanote.Station
         public StationArrivedState ArrivedState { get; private set; }
         public StationDepartingState DepartingState { get; private set; }
         public StationDespawnState DespawnState { get; private set; }
+        public StationIdleState IdleState { get; private set; }
         #endregion
 
         #region Components
@@ -46,6 +45,7 @@ namespace ProjectYamanote.Station
 
             ArrivingState = new StationArrivingState(this, StateMachine, _stationData, "arriving");
             ArrivedState = new StationArrivedState(this, StateMachine, _stationData, "arrived");
+            IdleState = new StationIdleState(this, StateMachine, _stationData, "idle");
             DepartingState = new StationDepartingState(this, StateMachine, _stationData, "departing");
             DespawnState = new StationDespawnState(this, StateMachine, _stationData, "despawn");
         }
@@ -53,7 +53,7 @@ namespace ProjectYamanote.Station
         private void Start()
         {
             Animator = _train.GetComponentInChildren<Animator>();
-            StateMachine.Initialise(ArrivedState);
+            StateMachine.Initialise(DespawnState);
         }
 
         private void Update()

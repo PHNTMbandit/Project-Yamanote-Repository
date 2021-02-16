@@ -45,4 +45,3 @@ namespace ProjectYamanote.Station.States.SubStates
         }
     }
 }
-
