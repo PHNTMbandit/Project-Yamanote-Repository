@@ -35,7 +35,6 @@ namespace ProjectYamanote.Train.States.SubStates
                 train.isArrived = false;
                 train.SpeedUp();
                 stateMachine.ChangeState(train.TravellingState);
-                Debug.Log("animation finished");
             }
         }
 

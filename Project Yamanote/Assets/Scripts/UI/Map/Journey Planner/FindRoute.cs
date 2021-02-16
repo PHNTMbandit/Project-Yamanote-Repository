@@ -6,7 +6,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using ProjectYamanote.Station.Database;
 using ProjectYamanote.Routes;
-using ProjectYamanote.ScriptableObjects;
 
 namespace ProjectYamanote.UI.Map.JourneyPlanner
 {
@@ -20,9 +19,9 @@ namespace ProjectYamanote.UI.Map.JourneyPlanner
         public Toggle rapidToggle;
         public StationDB stationDB;
         public RouteDB routeDB;
-        public GameTime gameTime;
         public GameObject buttonTemplate;
 
+        private GameClock _gameClock;
         private GameObject _button;
 
         public static List<GameObject> buttons = new List<GameObject>();
@@ -30,6 +29,7 @@ namespace ProjectYamanote.UI.Map.JourneyPlanner
         private void Start()
         {
             buttons = new List<GameObject>();
+            _gameClock = FindObjectOfType<GameClock>();
         }
 
         public void GenerateList()
@@ -54,7 +54,7 @@ namespace ProjectYamanote.UI.Map.JourneyPlanner
                 DateTime.TryParseExact(i.timeDepart, "H:mm", CultureInfo.InvariantCulture, DateTimeStyles.None, out i.timeDepartDT);
             }
 
-            var sortedResult = result.OrderBy(i => i.timeDepartDT.TimeOfDay <= gameTime.dateTime.TimeOfDay).ThenBy(i => i.timeDepartDT).ToList();
+            var sortedResult = result.OrderBy(i => i.timeDepartDT.TimeOfDay <= _gameClock.dateTime.TimeOfDay).ThenBy(i => i.timeDepartDT).ToList();
 
             switch (sortDropdown.value)
             {
@@ -75,7 +75,7 @@ namespace ProjectYamanote.UI.Map.JourneyPlanner
 
                 // Default
                 default:
-                    sortedResult = sortedResult.OrderBy(i => i.timeDepartDT.TimeOfDay <= gameTime.dateTime.TimeOfDay).ThenBy(i => i.timeDepartDT).ToList(); ;
+                    sortedResult = sortedResult.OrderBy(i => i.timeDepartDT.TimeOfDay <= _gameClock.dateTime.TimeOfDay).ThenBy(i => i.timeDepartDT).ToList(); ;
                     break;
             }
 

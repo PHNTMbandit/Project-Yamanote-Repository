@@ -1,37 +1,42 @@
 using UnityEngine;
 using PixelCrushers.DialogueSystem;
-using GameTime = ProjectYamanote.ScriptableObjects.GameTime;
+using ProjectYamanote.UI;
 
 public class GameClockLua : MonoBehaviour
 {
     [Tooltip("Typically leave unticked so temporary Dialogue Managers don't unregister your functions.")]
     public bool unregisterOnDisable = false;
 
-    [SerializeField] private GameTime time;
+    private GameClock _gameClock;
+
+    private void Start()
+    {
+        _gameClock = FindObjectOfType<GameClock>();
+    }
 
     public bool Year(double year)
     {
-        return time.dateTime.Year == year;
+        return _gameClock.dateTime.Year == year;
     }
 
     public bool Month(double month)
     {
-        return time.dateTime.Month== month;
+        return _gameClock.dateTime.Month== month;
     }
 
     public bool Day(double day)
     {
-        return time.dateTime.Day == day;
+        return _gameClock.dateTime.Day == day;
     }
 
     public bool Hour(double hour)
     {
-        return time.dateTime.Hour == hour;
+        return _gameClock.dateTime.Hour == hour;
     }
 
     public bool Minute(double minute)
     {
-        return time.dateTime.Minute == minute;
+        return _gameClock.dateTime.Minute == minute;
     }
 
     # region Register with Lua

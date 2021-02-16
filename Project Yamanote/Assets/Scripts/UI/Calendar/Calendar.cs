@@ -2,7 +2,6 @@
 using UnityEngine;
 using System;
 using TMPro;
-using ProjectYamanote.ScriptableObjects;
 
 namespace ProjectYamanote.UI.Calendar
 {
@@ -49,7 +48,7 @@ namespace ProjectYamanote.UI.Calendar
 
         public TextMeshProUGUI Month;
         public TextMeshProUGUI Year;
-        public GameTime gameTime;
+        public GameClock gameTime;
 
         public Color enabledColour;
         public Color todayColour;

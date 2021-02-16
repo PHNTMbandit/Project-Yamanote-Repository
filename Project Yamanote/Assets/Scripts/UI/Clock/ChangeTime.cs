@@ -1,7 +1,6 @@
 using UnityEngine;
 using TMPro;
 using ProjectYamanote.FX;
-using ProjectYamanote.ScriptableObjects;
 
 namespace ProjectYamanote.UI.Clock
 {
@@ -9,7 +8,7 @@ namespace ProjectYamanote.UI.Clock
     {
         [SerializeField] private TextMeshProUGUI uiClockTime;
         [SerializeField] private DayNightCycle DNC;
-        [SerializeField] private GameTime gameTime;
+        [SerializeField] private GameClock gameTime;
 
         public void UpdateTime()
         {

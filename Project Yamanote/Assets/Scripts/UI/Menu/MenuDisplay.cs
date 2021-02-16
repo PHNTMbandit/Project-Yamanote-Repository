@@ -1,13 +1,13 @@
 ﻿using UnityEngine;
 using TMPro;
 using ProjectYamanote.Player;
-using ProjectYamanote.ScriptableObjects;
+using System.Collections;
+using System;
 
 namespace ProjectYamanote.UI.Menu
 {
     public class MenuDisplay : MonoBehaviour
     {
-        [SerializeField] private GameTime _gameTime;
         [SerializeField] private PlayerData _playerData;
         [SerializeField] private TextMeshProUGUI _menuTime;
         [SerializeField] private TextMeshProUGUI _menuDate;
@@ -16,12 +16,20 @@ namespace ProjectYamanote.UI.Menu
         [SerializeField] private TextMeshProUGUI _actionBarTime;
         [SerializeField] private TextMeshProUGUI _actionBarDate;
 
+        private GameClock _gameClock;
+
+        private void Start()
+        {
+            _gameClock = FindObjectOfType<GameClock>();
+        }
+
         private void Update()
         {
-            _menuTime.text = _gameTime.dateTime.ToString("t");
-            _actionBarTime.text = _gameTime.dateTime.ToString("t");
-            _menuDate.text = _gameTime.dateTime.ToString("dddd, dd MMM yyyy");
-            _actionBarDate.text = _gameTime.dateTime.ToString("dddd, dd MMM yyyy");
+            _gameClock.dateTime.AddSeconds(1);
+            _menuTime.text = _gameClock.dateTime.ToString("t");
+            _actionBarTime.text = _gameClock.dateTime.ToString("t");
+            _menuDate.text = _gameClock.dateTime.ToString("dddd, dd MMM yyyy");
+            _actionBarDate.text = _gameClock.dateTime.ToString("dddd, dd MMM yyyy");
         }
 
         private void UpdateStats()

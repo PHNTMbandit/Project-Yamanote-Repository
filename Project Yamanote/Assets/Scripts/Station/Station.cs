@@ -1,8 +1,9 @@
 using ProjectYamanote.Audio;
-using ProjectYamanote.ScriptableObjects;
 using ProjectYamanote.Station.States;
 using ProjectYamanote.Station.States.SubStates;
 using ProjectYamanote.Train;
+using ProjectYamanote.UI;
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Audio;
@@ -29,7 +30,7 @@ namespace ProjectYamanote.Station
         #endregion
 
         #region Other Variables
-        public GameTime gameTime;
+        [NonSerialized] public GameClock gameClock;
 
         [SerializeField] private StationData _stationData;
         [SerializeField] private Transform _arrivalPosition;
@@ -54,7 +55,7 @@ namespace ProjectYamanote.Station
         private void Start()
         {
             Animator = _train.GetComponentInChildren<Animator>();
-
+            gameClock = FindObjectOfType<GameClock>();
             StateMachine.Initialise(ArrivedState);
         }
 

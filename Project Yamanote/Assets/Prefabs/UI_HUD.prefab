@@ -489,7 +489,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uiClockTime: {fileID: 487688706}
   DNC: {fileID: 0}
-  gameTime: {fileID: 11400000, guid: 5d2494b782f3d9f4abef9325a48b5a59, type: 2}
+  gameTime: {fileID: 0}
 --- !u!1 &261534222915015278
 GameObject:
   m_ObjectHideFlags: 0
@@ -5000,7 +5000,7 @@ MonoBehaviour:
   - {fileID: 4477410241019235017}
   Month: {fileID: 4477410241212398143}
   Year: {fileID: 4477410239950510508}
-  gameTime: {fileID: 11400000, guid: 5d2494b782f3d9f4abef9325a48b5a59, type: 2}
+  gameTime: {fileID: 0}
   enabledColour: {r: 0.92156863, g: 0.9372549, b: 0.9529412, a: 1}
   todayColour: {r: 0.9450981, g: 0.19607845, b: 0.25882354, a: 1}
 --- !u!1 &4477410239861286358
@@ -34025,7 +34025,6 @@ MonoBehaviour:
   rapidToggle: {fileID: 2846762529029851963}
   stationDB: {fileID: 6287947793768731835}
   routeDB: {fileID: 6287947793768731834}
-  gameTime: {fileID: 11400000, guid: 5d2494b782f3d9f4abef9325a48b5a59, type: 2}
   buttonTemplate: {fileID: 6287947794262656450}
 --- !u!114 &7048957754383869471
 MonoBehaviour:
@@ -34039,7 +34038,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31c1ca5bbd9a1ca44a3b0559d3f092a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameTime: {fileID: 11400000, guid: 5d2494b782f3d9f4abef9325a48b5a59, type: 2}
   _textCost: {fileID: 4533320417309930258}
   _textArriveTime: {fileID: 8455899921386848109}
   _textDepartTime: {fileID: 6987942895973530489}
@@ -35860,7 +35858,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 214.50293, y: -141.11304}
+  m_AnchoredPosition: {x: 214.50293, y: -141.1128}
   m_SizeDelta: {x: 419.00537, y: 84.07541}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6706647757239122765
@@ -39293,7 +39291,6 @@ GameObject:
   - component: {fileID: 7886024726471230179}
   - component: {fileID: 7886024726471230177}
   - component: {fileID: 3218523506662973030}
-  - component: {fileID: 1779919915}
   m_Layer: 5
   m_Name: UI_HUD_Menu
   m_TagString: Untagged
@@ -39395,27 +39392,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11488f194fa895042907b505d084cc7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameTime: {fileID: 11400000, guid: 5d2494b782f3d9f4abef9325a48b5a59, type: 2}
-  _playerData: {fileID: 11400000, guid: adba6c4b302d28f4ea3e69b42db3d635, type: 2}
-  _menuTime: {fileID: 7886024724676019881}
-  _menuDate: {fileID: 7886024726558153739}
-  _energyBar: {fileID: 6777558218994501320}
-  _hungerBar: {fileID: 8689672165564075153}
-  _actionBarTime: {fileID: 8731630312626627970}
-  _actionBarDate: {fileID: 8731630312787810691}
---- !u!114 &1779919915
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7886024726471230189}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 11488f194fa895042907b505d084cc7a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _gameTime: {fileID: 11400000, guid: 5d2494b782f3d9f4abef9325a48b5a59, type: 2}
   _playerData: {fileID: 11400000, guid: adba6c4b302d28f4ea3e69b42db3d635, type: 2}
   _menuTime: {fileID: 7886024724676019881}
   _menuDate: {fileID: 7886024726558153739}

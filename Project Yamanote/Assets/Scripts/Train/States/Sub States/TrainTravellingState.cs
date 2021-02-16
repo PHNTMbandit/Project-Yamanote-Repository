@@ -1,4 +1,3 @@
-using ProjectYamanote.ScriptableObjects;
 using ProjectYamanote.Train.States.SuperStates;
 
 namespace ProjectYamanote.Train.States.SubStates
@@ -30,7 +29,7 @@ namespace ProjectYamanote.Train.States.SubStates
         {
             base.LogicUpdate();
 
-            if (train.gameTime.dateTime.TimeOfDay.Equals(TrainData.timeArriveDestinationDT.TimeOfDay))
+            if (train.gameClock.dateTime.TimeOfDay.Equals(TrainData.timeArriveDestinationDT.TimeOfDay))
             {
                 stateMachine.ChangeState(train.ArrivingState);
             }

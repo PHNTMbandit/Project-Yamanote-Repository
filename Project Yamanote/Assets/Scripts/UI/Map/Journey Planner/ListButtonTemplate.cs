@@ -1,14 +1,14 @@
 ﻿using System;
 using UnityEngine;
 using TMPro;
-using ProjectYamanote.ScriptableObjects;
 
 namespace ProjectYamanote.UI.Map.JourneyPlanner
 {
     public class ListButtonTemplate : MonoBehaviour
     {
         #region Variables
-        [SerializeField] private GameTime _gameTime;
+        private GameClock _gameClock;
+        
         [SerializeField] private TextMeshProUGUI _textCost;
         [SerializeField] private TextMeshProUGUI _textArriveTime;
         [SerializeField] private TextMeshProUGUI _textDepartTime;
@@ -21,6 +21,11 @@ namespace ProjectYamanote.UI.Map.JourneyPlanner
         [SerializeField] private Color redColor;
         [SerializeField] private Color greenColor;
         #endregion
+
+        private void Start()
+        {
+            _gameClock = FindObjectOfType<GameClock>();
+        }
 
         #region Button Setters
         public void SetCost(int cost)
@@ -63,7 +68,7 @@ namespace ProjectYamanote.UI.Map.JourneyPlanner
 
         public void SetInTime(DateTime departTime)
         {
-            TimeSpan inTime = departTime.TimeOfDay - _gameTime.dateTime.TimeOfDay;
+            TimeSpan inTime = departTime.TimeOfDay - _gameClock.dateTime.TimeOfDay;
 
             _textInTime.text = "in " + inTime.TotalMinutes.ToString() + " mins";
 

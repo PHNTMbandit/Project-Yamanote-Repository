@@ -1,7 +1,8 @@
 using ProjectYamanote.Audio;
-using ProjectYamanote.ScriptableObjects;
 using ProjectYamanote.Train.States;
 using ProjectYamanote.Train.States.SubStates;
+using ProjectYamanote.UI;
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Audio;
@@ -19,6 +20,7 @@ namespace ProjectYamanote.Train
         #endregion
 
         #region Components
+        
         public Animator Animator { get; private set; }
         #endregion
 
@@ -28,16 +30,16 @@ namespace ProjectYamanote.Train
         #endregion
 
         #region Other Variables
-        [SerializeField] private GameObject[] _parallaxBackground;
-        [SerializeField] private AudioManager audioManager;
-        [SerializeField] private AudioMixer audioMixer;
         public Transform departTransform;
         public Transform arrivedTransfrom;
         public Transform arrivingTransform;
-        public GameTime gameTime;
         public TrainData trainData;
         public GameObject trainStation;
-        #endregion
+        [NonSerialized] public GameClock gameClock;
+        [SerializeField] private GameObject[] _parallaxBackground;
+        [SerializeField] private AudioManager audioManager;
+        [SerializeField] private AudioMixer audioMixer;
+                #endregion
 
         #region Unity Callback Functions
         private void Awake()
@@ -53,7 +55,7 @@ namespace ProjectYamanote.Train
         private void Start()
         {
             Animator = GetComponent<Animator>();
-
+            gameClock = FindObjectOfType<GameClock>();
             StateMachine.Intialise(ArrivedState);
 
             print(TrainData.timeArriveDestinationDT.TimeOfDay);

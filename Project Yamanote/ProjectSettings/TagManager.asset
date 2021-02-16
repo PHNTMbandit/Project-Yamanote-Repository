@@ -8,6 +8,10 @@ TagManager:
   - Light
   - UI
   - FX
+  - Collider
+  - Door
+  - PE
+  - Clock
   layers:
   - Default
   - TransparentFX
