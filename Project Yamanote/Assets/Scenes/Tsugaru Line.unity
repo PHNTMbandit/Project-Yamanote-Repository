@@ -3126,8 +3126,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _trainData: {fileID: 528229605}
-  _timeArriveOrigin: 15:10
-  _timeArriveDestination: 17:10
+  _timeArriveOrigin: 17:26
+  _timeArriveDestination: 17:31
 --- !u!1 &528298017
 GameObject:
   m_ObjectHideFlags: 0
@@ -9050,7 +9050,7 @@ MonoBehaviour:
   miniMapVisibility: 0
   miniMapClampPosition: 0
   distanceToCameraSQR: 10001.289
-  computedIconScale: {x: 0.89937794, y: 0.89937794, z: 1}
+  computedIconScale: {x: 0, y: 0, z: 0}
   iconAlpha: 0
   miniMapIconScale: {x: 0.5, y: 0.5, z: 0.5}
 --- !u!114 &1853363694
@@ -16582,7 +16582,7 @@ MonoBehaviour:
   miniMapVisibility: 0
   miniMapClampPosition: 0
   distanceToCameraSQR: 10014.074
-  computedIconScale: {x: 0.89937794, y: 0.89937794, z: 1}
+  computedIconScale: {x: 0, y: 0, z: 0}
   iconAlpha: 0
   miniMapIconScale: {x: 0.5, y: 0.5, z: 0.5}
 --- !u!212 &8965430609606519448

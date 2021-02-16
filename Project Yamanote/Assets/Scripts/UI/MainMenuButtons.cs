@@ -2,6 +2,7 @@ using UnityEngine;
 using PixelCrushers;
 using UnityEngine.UI;
 using TMPro;
+using System;
 
 namespace ProjectYamanote.UI
 {
@@ -22,6 +23,7 @@ namespace ProjectYamanote.UI
         public void New()
         {
             PlayerPrefs.DeleteAll();
+            GameClock.dateTime = new DateTime(2021, 12, 04, 17, 26, 00);
         }
 
         public void Quit()

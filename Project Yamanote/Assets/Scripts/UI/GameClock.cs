@@ -6,18 +6,17 @@ namespace ProjectYamanote.UI
 {
     public class GameClock : MonoBehaviour
     {
-        public int year;
-        public int month;
-        public int day;
-        public int hour;
-        public int minute;
-        public int second;
+        public static int year = 2021;
+        public static int month = 12;
+        public static int day = 04;
+        public static int hour = 17;
+        public static int minute = 26;
+        public static int second = 00;
 
-        public static DateTime dateTime;
+        public static DateTime dateTime = new DateTime(year, month, day, hour, minute, second);
 
         private void Start()
         {
-            dateTime = new DateTime(year, month, day, hour, minute, second);
             StartCoroutine(ClockCounter());
         }
 

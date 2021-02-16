@@ -10,25 +10,17 @@ namespace ProjectYamanote.FX
         public Gradient gradient;
         public Camera gameCamera;
         public GameObject[] mapLights;
-        public GameClock gameTime;
-
-        private GameClock _gameClock;
-
-        private void Start()
-        {
-            _gameClock = FindObjectOfType<GameClock>();
-        }
 
         public void ChangeColour(float TimeInMinutes)
         {
-            float t = Mathf.InverseLerp(0.0f, 1440.0f, (float)_gameClock.dateTime.TimeOfDay.TotalMinutes);
+            float t = Mathf.InverseLerp(0.0f, 1440.0f, (float)GameClock.dateTime.TimeOfDay.TotalMinutes);
             worldLight.color = gradient.Evaluate(t);
             gameCamera.backgroundColor = gradient.Evaluate(t);
         }
 
         public void CheckTime()
         {
-            if (_gameClock.dateTime.Hour >= 20 || _gameClock.dateTime.Hour < 6)
+            if (GameClock.dateTime.Hour >= 20 || GameClock.dateTime.Hour < 6)
                 ControlLightMaps(true);
             else
                 ControlLightMaps(false);

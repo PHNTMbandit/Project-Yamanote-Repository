@@ -7,36 +7,29 @@ public class GameClockLua : MonoBehaviour
     [Tooltip("Typically leave unticked so temporary Dialogue Managers don't unregister your functions.")]
     public bool unregisterOnDisable = false;
 
-    private GameClock _gameClock;
-
-    private void Start()
-    {
-        _gameClock = FindObjectOfType<GameClock>();
-    }
-
     public bool Year(double year)
     {
-        return _gameClock.dateTime.Year == year;
+        return GameClock.dateTime.Year == year;
     }
 
     public bool Month(double month)
     {
-        return _gameClock.dateTime.Month== month;
+        return GameClock.dateTime.Month== month;
     }
 
     public bool Day(double day)
     {
-        return _gameClock.dateTime.Day == day;
+        return GameClock.dateTime.Day == day;
     }
 
     public bool Hour(double hour)
     {
-        return _gameClock.dateTime.Hour == hour;
+        return GameClock.dateTime.Hour == hour;
     }
 
     public bool Minute(double minute)
     {
-        return _gameClock.dateTime.Minute == minute;
+        return GameClock.dateTime.Minute == minute;
     }
 
     # region Register with Lua

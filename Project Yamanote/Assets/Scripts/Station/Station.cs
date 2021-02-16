@@ -30,8 +30,6 @@ namespace ProjectYamanote.Station
         #endregion
 
         #region Other Variables
-        [NonSerialized] public GameClock gameClock;
-
         [SerializeField] private StationData _stationData;
         [SerializeField] private Transform _arrivalPosition;
         [SerializeField] private Transform _instantiatePosition;
@@ -55,7 +53,6 @@ namespace ProjectYamanote.Station
         private void Start()
         {
             Animator = _train.GetComponentInChildren<Animator>();
-            gameClock = FindObjectOfType<GameClock>();
             StateMachine.Initialise(ArrivedState);
         }
 

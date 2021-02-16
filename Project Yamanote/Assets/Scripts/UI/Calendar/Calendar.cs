@@ -55,13 +55,13 @@ namespace ProjectYamanote.UI.Calendar
 
         private void Start()
         {
-            UpdateCalendar(gameTime.dateTime.Year, gameTime.dateTime.Month);
+            UpdateCalendar(GameClock.dateTime.Year, GameClock.dateTime.Month);
         }
 
         void UpdateCalendar(int year, int month)
         {
             DateTime temp = new DateTime(year, month, 1);
-            gameTime.dateTime = temp;
+            GameClock.dateTime = temp;
             Month.text = temp.ToString("MMMM");
             Year.text = temp.Year.ToString();
             int startDay = GetMonthStartDay(year, month);
@@ -104,9 +104,9 @@ namespace ProjectYamanote.UI.Calendar
                 }
             }
 
-            if (gameTime.dateTime.Year == year && gameTime.dateTime.Month == month)
+            if (GameClock.dateTime.Year == year && GameClock.dateTime.Month == month)
             {
-                days[(gameTime.dateTime.Day - 1) + startDay].UpdateColor(Color.red);
+                days[(GameClock.dateTime.Day - 1) + startDay].UpdateColor(Color.red);
             }
 
         }
@@ -127,14 +127,14 @@ namespace ProjectYamanote.UI.Calendar
         {
             if (direction < 0)
             {
-                gameTime.dateTime = gameTime.dateTime.AddMonths(-1);
+                GameClock.dateTime = GameClock.dateTime.AddMonths(-1);
             }
             else
             {
-                gameTime.dateTime = gameTime.dateTime.AddMonths(1);
+                GameClock.dateTime = GameClock.dateTime.AddMonths(1);
             }
 
-            UpdateCalendar(gameTime.dateTime.Year, gameTime.dateTime.Month);
+            UpdateCalendar(GameClock.dateTime.Year, GameClock.dateTime.Month);
         }
     }
 }
