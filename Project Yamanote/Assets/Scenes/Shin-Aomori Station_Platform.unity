@@ -1864,7 +1864,7 @@ MonoBehaviour:
   miniMapVisibility: 0
   miniMapClampPosition: 0
   distanceToCameraSQR: 10012.629
-  computedIconScale: {x: 0.89937794, y: 0.89937794, z: 1}
+  computedIconScale: {x: 0, y: 0, z: 0}
   iconAlpha: 0
   miniMapIconScale: {x: 0.5, y: 0.5, z: 0.5}
 --- !u!95 &316473381
@@ -3320,6 +3320,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 186424542, guid: 75306490556f0a94ea793bbed97be06c, type: 3}
+      propertyPath: m_restoreStateOnStart
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 637824153850452352, guid: 75306490556f0a94ea793bbed97be06c, type: 3}
       propertyPath: m_Camera
       value: 
@@ -3404,6 +3408,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1541564603984969825, guid: 75306490556f0a94ea793bbed97be06c, type: 3}
+      propertyPath: m_restoreStateOnStart
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2000074991123423475, guid: 75306490556f0a94ea793bbed97be06c, type: 3}
       propertyPath: audioManager
       value: 
@@ -3466,10 +3474,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3049614041797014366, guid: 75306490556f0a94ea793bbed97be06c, type: 3}
       propertyPath: menu
-      value: 
-      objectReference: {fileID: 2060665816}
-    - target: {fileID: 3049614041797014366, guid: 75306490556f0a94ea793bbed97be06c, type: 3}
-      propertyPath: phone
       value: 
       objectReference: {fileID: 2060665816}
     - target: {fileID: 3049614041797014366, guid: 75306490556f0a94ea793bbed97be06c, type: 3}

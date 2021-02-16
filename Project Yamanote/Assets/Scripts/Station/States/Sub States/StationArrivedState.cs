@@ -29,7 +29,7 @@ namespace ProjectYamanote.Station.States.SubStates
         {
             base.LogicUpdate();
 
-            if(isAnimationFinished == true)
+            if(station.isArrived == true)
                 stateMachine.ChangeState(station.IdleState);
         }
 

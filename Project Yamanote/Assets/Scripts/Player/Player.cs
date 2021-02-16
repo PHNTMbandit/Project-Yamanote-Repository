@@ -24,7 +24,7 @@ namespace ProjectYamanote.Player
         public PlayerInputHandler InputHandler { get; private set; }
         public Rigidbody2D RB { get; private set; }
         public string PlayerCollision { get; private set; }
-        public int FacingDirection { get; private set; }
+        public int FacingDirection { get; set; }
         public Vector2 CurrentVelocity { get; private set; }
         #endregion
 
