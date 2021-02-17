@@ -14,40 +14,27 @@ namespace PixelCrushers
         }
 
         private TrainData m_data = new TrainData();
-        
-        private TrainStateMachine m_train;
+        protected Train m_train;
 
         public override void Awake()
         {
-            m_train = GetComponent<Train>().StateMachine;
+            m_train = GetComponent<Train>();
         }
 
         public override string RecordData()
         {
-            var currentState = m_train.CurrentState;
-            m_data.trainState = currentState;
+            m_data.trainState = m_train.StateMachine.CurrentState;
             Debug.Log(m_data.trainState);
             return SaveSystem.Serialize(m_data);
         }
 
         public override void ApplyData(string s)
         {
-            if (string.IsNullOrEmpty(s)) return;
-            var data = SaveSystem.Deserialize<TrainData>(s, m_data);
-            if (data == null) return;
+            var data = SaveSystem.Deserialize(s, m_data);
+            if (data.trainState == null) return;
             m_data = data;
-            Debug.Log(m_data.trainState);
-            m_train.Intialise(data.trainState);
-        }
-
-        public override void ApplyDataImmediate()
-        {
-            base.ApplyDataImmediate();
-        }
-
-        public override void OnRestartGame()
-        {
-            base.OnRestartGame();
+            Debug.Log(data.trainState);
+            m_train.StateMachine.ChangeState(data.trainState);
         }
     }
 }

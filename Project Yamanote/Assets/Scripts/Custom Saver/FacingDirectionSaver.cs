@@ -1,6 +1,5 @@
 using ProjectYamanote.Player;
 using System;
-using UnityEngine;
 
 namespace PixelCrushers
 {
@@ -13,10 +12,16 @@ namespace PixelCrushers
         }
 
         private Data m_data = new Data();
+        protected Player player;
+
+        public override void Awake()
+        {
+            player = GetComponent<Player>();
+        }
 
         public override string RecordData()
         {
-            m_data.FacingDirection = GetComponent<Player>().FacingDirection;
+            m_data.FacingDirection = player.FacingDirection;
             return SaveSystem.Serialize(m_data);
         }
 
@@ -25,12 +30,17 @@ namespace PixelCrushers
             var data = SaveSystem.Deserialize<Data>(s, m_data);
             if (data == null) return;
             m_data = data;
-            GetComponent<Player>().FacingDirection = m_data.FacingDirection;
+            player.FacingDirection = data.FacingDirection;
         }
 
         public override void ApplyDataImmediate()
         {
             base.ApplyDataImmediate();
+        }
+
+        public override void OnBeforeSceneChange()
+        {
+            base.OnBeforeSceneChange();
         }
     }
 }
