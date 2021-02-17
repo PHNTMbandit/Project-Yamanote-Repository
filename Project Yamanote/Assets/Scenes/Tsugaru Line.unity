@@ -2708,6 +2708,7 @@ GameObject:
   - component: {fileID: 528229608}
   - component: {fileID: 528229605}
   - component: {fileID: 528229609}
+  - component: {fileID: 528229610}
   m_Layer: 8
   m_Name: Art_Train
   m_TagString: Untagged
@@ -3181,6 +3182,22 @@ MonoBehaviour:
   _trainData: {fileID: 528229605}
   _timeArriveOrigin: 17:26
   _timeArriveDestination: 17:31
+--- !u!114 &528229610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 528229601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e1e221b16aa7ed4c9db2bed433b9adf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_key: Art_Train_1196096
+  m_appendSaverTypeToKey: 1
+  m_saveAcrossSceneChanges: 0
+  m_restoreStateOnStart: 0
 --- !u!1 &528298017
 GameObject:
   m_ObjectHideFlags: 0
