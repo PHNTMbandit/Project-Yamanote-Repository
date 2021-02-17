@@ -716,9 +716,9 @@ MonoBehaviour:
   m_key: Player_3358
   m_appendSaverTypeToKey: 1
   m_saveAcrossSceneChanges: 1
-  m_restoreStateOnStart: 1
+  m_restoreStateOnStart: 0
   m_usePlayerSpawnpoint: 1
-  m_multiscene: 1
+  m_multiscene: 0
 --- !u!114 &1541564603984969825
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -734,7 +734,7 @@ MonoBehaviour:
   m_key: Player_1750042
   m_appendSaverTypeToKey: 1
   m_saveAcrossSceneChanges: 1
-  m_restoreStateOnStart: 1
+  m_restoreStateOnStart: 0
 --- !u!114 &186424553
 MonoBehaviour:
   m_ObjectHideFlags: 0

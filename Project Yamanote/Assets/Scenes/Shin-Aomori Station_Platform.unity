@@ -473,18 +473,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2386440883966242388, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
-      propertyPath: m_key
-      value: DialogueManager_526430
-      objectReference: {fileID: 0}
-    - target: {fileID: 3819050772887123237, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
-      propertyPath: m_key
-      value: DialogueManager_523092
-      objectReference: {fileID: 0}
-    - target: {fileID: 3819050772887123237, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
-      propertyPath: m_appendSaverTypeToKey
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
 --- !u!1 &69600418
@@ -1864,7 +1852,7 @@ MonoBehaviour:
   miniMapVisibility: 0
   miniMapClampPosition: 0
   distanceToCameraSQR: 10012.629
-  computedIconScale: {x: 0, y: 0, z: 0}
+  computedIconScale: {x: 0.89937794, y: 0.89937794, z: 1}
   iconAlpha: 0
   miniMapIconScale: {x: 0.5, y: 0.5, z: 0.5}
 --- !u!95 &316473381
@@ -3320,10 +3308,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 186424542, guid: 75306490556f0a94ea793bbed97be06c, type: 3}
-      propertyPath: m_restoreStateOnStart
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 637824153850452352, guid: 75306490556f0a94ea793bbed97be06c, type: 3}
       propertyPath: m_Camera
       value: 
@@ -3406,10 +3390,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 637824154730068856, guid: 75306490556f0a94ea793bbed97be06c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1541564603984969825, guid: 75306490556f0a94ea793bbed97be06c, type: 3}
-      propertyPath: m_restoreStateOnStart
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2000074991123423475, guid: 75306490556f0a94ea793bbed97be06c, type: 3}

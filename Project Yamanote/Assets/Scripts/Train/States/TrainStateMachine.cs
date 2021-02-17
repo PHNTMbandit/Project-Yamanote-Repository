@@ -2,7 +2,7 @@ namespace ProjectYamanote.Train.States
 {
     public class TrainStateMachine
     {
-        public TrainState CurrentState { get; private set; }
+        public TrainState CurrentState { get; set; }
 
         public void Intialise(TrainState startingState)
         {

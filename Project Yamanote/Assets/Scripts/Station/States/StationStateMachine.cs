@@ -2,7 +2,7 @@ namespace ProjectYamanote.Station.States
 {
     public class StationStateMachine
     {
-        public StationState CurrentState { get; private set; }
+        public StationState CurrentState { get; set; }
 
         public void Initialise(StationState startingState)
         {
