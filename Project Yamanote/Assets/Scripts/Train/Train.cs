@@ -12,12 +12,12 @@ namespace ProjectYamanote.Train
     public class Train : MonoBehaviour
     {
         #region State Variables
-        public TrainStateMachine StateMachine { get; private set; }
-        public TrainArrivedState ArrivedState { get; private set; }
-        public TrainIdleState IdleState { get; private set; }
-        public TrainArrivingState ArrivingState { get; private set; }
-        public TrainDepartingState DepartingState { get; private set; }
-        public TrainTravellingState TravellingState { get; private set; }
+        public TrainStateMachine StateMachine { get; set; }
+        public TrainArrivedState ArrivedState { get; set; }
+        public TrainIdleState IdleState { get; set; }
+        public TrainArrivingState ArrivingState { get; set; }
+        public TrainDepartingState DepartingState { get; set; }
+        public TrainTravellingState TravellingState { get; set; }
         #endregion
 
         #region Components
@@ -56,7 +56,7 @@ namespace ProjectYamanote.Train
         private void Start()
         {
             Animator = GetComponent<Animator>();
-            
+
             StateMachine.Intialise(IdleState);
         }
 

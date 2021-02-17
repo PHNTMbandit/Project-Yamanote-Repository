@@ -18,11 +18,13 @@ namespace PixelCrushers
         public override string RecordData()
         {
             m_data.trainStateMachine = GetComponent<Train>().StateMachine;
+            Debug.Log(m_data.trainStateMachine.CurrentState);
             return SaveSystem.Serialize(m_data);
         }
 
         public override void ApplyData(string s)
         {
+            if (string.IsNullOrEmpty(s)) return;
             var data = SaveSystem.Deserialize<Data>(s, m_data);
             if (data == null) return;
             m_data = data;
