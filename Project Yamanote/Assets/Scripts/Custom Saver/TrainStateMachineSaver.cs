@@ -10,7 +10,7 @@ namespace PixelCrushers
         [Serializable]
         public class TrainData
         {
-            public TrainState trainState;
+            public string animBoolName;
         }
 
         private TrainData m_data = new TrainData();
@@ -23,18 +23,22 @@ namespace PixelCrushers
 
         public override string RecordData()
         {
-            m_data.trainState = m_train.StateMachine.CurrentState;
-            Debug.Log(m_data.trainState);
+            m_data.animBoolName = m_train.StateMachine.CurrentState.animBoolName;
             return SaveSystem.Serialize(m_data);
         }
 
         public override void ApplyData(string s)
         {
             var data = SaveSystem.Deserialize(s, m_data);
-            if (data.trainState == null) return;
+            if (data.animBoolName == null) return;
             m_data = data;
-            Debug.Log(data.trainState);
-            m_train.StateMachine.ChangeState(data.trainState);
+            if (data.animBoolName == "travelling")
+                m_train.StateMachine.Intialise(m_train.TravellingState);
+        }
+
+        public override void ApplyDataImmediate()
+        {
+            base.ApplyDataImmediate();
         }
     }
 }
