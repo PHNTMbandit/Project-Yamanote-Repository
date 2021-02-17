@@ -12,7 +12,7 @@ namespace ProjectYamanote.Station.States
 
         protected float startTime;
 
-        private string animBoolName;
+        public string animBoolName;
 
         public StationState(Station station, StationStateMachine stateMachine, StationData stationData, string animBoolName)
         {

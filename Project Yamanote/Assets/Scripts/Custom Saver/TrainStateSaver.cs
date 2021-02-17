@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace PixelCrushers
 {
-    public class TrainStateMachineSaver : Saver
+    public class TrainStateSaver : Saver
     {
         [Serializable]
         public class TrainData
@@ -32,8 +32,24 @@ namespace PixelCrushers
             var data = SaveSystem.Deserialize(s, m_data);
             if (data.animBoolName == null) return;
             m_data = data;
-            if (data.animBoolName == "travelling")
-                m_train.StateMachine.Intialise(m_train.TravellingState);
+            switch (data.animBoolName)
+            {
+                case "travelling":
+                    m_train.StateMachine.ChangeState(m_train.TravellingState);
+                    break;
+                case "arriving":
+                    m_train.StateMachine.ChangeState(m_train.ArrivingState);
+                    break;
+                case "arrived":
+                    m_train.StateMachine.ChangeState(m_train.ArrivedState);
+                    break;
+                case "idle":
+                    m_train.StateMachine.ChangeState(m_train.IdleState);
+                    break;
+                case "departing":
+                    m_train.StateMachine.ChangeState(m_train.DepartingState);
+                    break;
+            }
         }
 
         public override void ApplyDataImmediate()
