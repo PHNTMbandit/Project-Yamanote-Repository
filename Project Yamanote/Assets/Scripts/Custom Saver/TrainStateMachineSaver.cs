@@ -1,5 +1,5 @@
-using ProjectYamanote.Station;
-using ProjectYamanote.Station.States;
+﻿using ProjectYamanote.Train;
+using ProjectYamanote.Train.States;
 using System;
 using UnityEngine;
 
@@ -10,14 +10,14 @@ namespace PixelCrushers
         [Serializable]
         public class Data
         {
-            public StationState currentState;
+            public TrainStateMachine trainStateMachine;
         }
 
         private Data m_data = new Data();
 
         public override string RecordData()
         {
-
+            m_data.trainStateMachine = GetComponent<Train>().StateMachine;
             return SaveSystem.Serialize(m_data);
         }
 
@@ -26,6 +26,7 @@ namespace PixelCrushers
             var data = SaveSystem.Deserialize<Data>(s, m_data);
             if (data == null) return;
             m_data = data;
+            GetComponent<Train>().StateMachine.Intialise(m_data.trainStateMachine.CurrentState);
         }
     }
 }
