@@ -3196,7 +3196,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_key: Art_Train_1196096
   m_appendSaverTypeToKey: 1
-  m_saveAcrossSceneChanges: 1
+  m_saveAcrossSceneChanges: 0
   m_restoreStateOnStart: 0
 --- !u!1 &528298017
 GameObject:

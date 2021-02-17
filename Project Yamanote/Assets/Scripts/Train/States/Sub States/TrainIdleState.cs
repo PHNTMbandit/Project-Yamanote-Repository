@@ -38,5 +38,10 @@ namespace ProjectYamanote.Train.States.SubStates
         {
             base.PhysicsUpdate();
         }
+
+        public void LoadState(TrainState savedState)
+        {
+            stateMachine.ChangeState(savedState);
+        }
     }
 }

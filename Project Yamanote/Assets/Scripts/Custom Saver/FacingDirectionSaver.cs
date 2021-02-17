@@ -27,5 +27,10 @@ namespace PixelCrushers
             m_data = data;
             GetComponent<Player>().FacingDirection = m_data.FacingDirection;
         }
+
+        public override void ApplyDataImmediate()
+        {
+            base.ApplyDataImmediate();
+        }
     }
 }

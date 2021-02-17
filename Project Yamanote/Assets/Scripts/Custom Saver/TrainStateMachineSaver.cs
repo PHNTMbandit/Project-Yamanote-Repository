@@ -8,27 +8,46 @@ namespace PixelCrushers
     public class TrainStateMachineSaver : Saver
     {
         [Serializable]
-        public class Data
+        public class TrainData
         {
-            public TrainStateMachine trainStateMachine;
+            public TrainState trainState;
         }
 
-        private Data m_data = new Data();
+        private TrainData m_data = new TrainData();
+        
+        private TrainStateMachine m_train;
+
+        public override void Awake()
+        {
+            m_train = GetComponent<Train>().StateMachine;
+        }
 
         public override string RecordData()
         {
-            m_data.trainStateMachine = GetComponent<Train>().StateMachine;
-            Debug.Log(m_data.trainStateMachine.CurrentState);
+            var currentState = m_train.CurrentState;
+            m_data.trainState = currentState;
+            Debug.Log(m_data.trainState);
             return SaveSystem.Serialize(m_data);
         }
 
         public override void ApplyData(string s)
         {
             if (string.IsNullOrEmpty(s)) return;
-            var data = SaveSystem.Deserialize<Data>(s, m_data);
+            var data = SaveSystem.Deserialize<TrainData>(s, m_data);
             if (data == null) return;
             m_data = data;
-            GetComponent<Train>().StateMachine.Intialise(m_data.trainStateMachine.CurrentState);
+            Debug.Log(m_data.trainState);
+            m_train.Intialise(data.trainState);
+        }
+
+        public override void ApplyDataImmediate()
+        {
+            base.ApplyDataImmediate();
+        }
+
+        public override void OnRestartGame()
+        {
+            base.OnRestartGame();
         }
     }
 }
