@@ -1852,7 +1852,7 @@ MonoBehaviour:
   miniMapVisibility: 0
   miniMapClampPosition: 0
   distanceToCameraSQR: 10012.629
-  computedIconScale: {x: 0.89937794, y: 0.89937794, z: 1}
+  computedIconScale: {x: 0.059958525, y: 0.059958525, z: 0.06666666}
   iconAlpha: 0
   miniMapIconScale: {x: 0.5, y: 0.5, z: 0.5}
 --- !u!95 &316473381
@@ -5707,6 +5707,7 @@ GameObject:
   - component: {fileID: 1271177272}
   - component: {fileID: 1271177273}
   - component: {fileID: 1271177271}
+  - component: {fileID: 1271177274}
   m_Layer: 0
   m_Name: Manager_Station
   m_TagString: Untagged
@@ -5885,6 +5886,18 @@ MonoBehaviour:
   _train: {fileID: 1878140869}
   _audioManager: {fileID: 1089762231}
   _audioMixer: {fileID: 24100000, guid: e85ad7a30db4bec4781dc2acc04780d0, type: 2}
+--- !u!114 &1271177274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1271177270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85cffda10b2fc4940b79de29a6235b9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1273937792
 GameObject:
   m_ObjectHideFlags: 0

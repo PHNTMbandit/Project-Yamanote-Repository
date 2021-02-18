@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Player\EnergyBar.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerInputHandler.cs" />
+    <Compile Include="Assets\Scripts\Custom Saver\StationStateSaver.cs" />
     <Compile Include="Assets\Scripts\Station\States\Sub States\StationIdleState.cs" />
     <Compile Include="Assets\Pixel Crushers\Common\Third Party Support\Opsive UIS Support\Scripts\SaveSystemManagerNoDisk.cs" />
     <Compile Include="Assets\Pixel Crushers\Common\Third Party Support\Opsive UIS Support\Scripts\PixelCrushersToUISSaver.cs" />
@@ -67,6 +68,7 @@
     <Compile Include="Assets\Scripts\Player\ActionText.cs" />
     <Compile Include="Assets\Scripts\UI\Map\StationLookup.cs" />
     <Compile Include="Assets\Scripts\Custom Saver\FacingDirectionSaver.cs" />
+    <Compile Include="Assets\Scripts\Custom Saver\ITweenSaver.cs" />
     <Compile Include="Assets\Scripts\Player\Player States\Sub States\PlayerMoveState.cs" />
     <Compile Include="Assets\Scripts\Train\States\Sub States\TrainArrivedState.cs" />
     <Compile Include="Assets\Scripts\Train\States\Sub States\TrainDepartingState.cs" />
@@ -76,6 +78,7 @@
     <Compile Include="Assets\Scripts\Player\Player States\Sub States\PlayerSitDownState.cs" />
     <Compile Include="Assets\Scripts\Station\Station.cs" />
     <Compile Include="Assets\Scripts\Train\States\Super States\TrainInsideState.cs" />
+    <Compile Include="Assets\Scripts\Custom Saver\TimeSaver.cs" />
     <Compile Include="Assets\Scripts\Train\States\TrainStateMachine.cs" />
     <Compile Include="Assets\Scripts\UI\Clock\ChangeTime.cs" />
     <Compile Include="Assets\Scripts\Player\Player States\Sub States\PlayerIdleState.cs" />
@@ -96,6 +99,7 @@
     <Compile Include="Assets\Scripts\Station\States\Super States\StationTrainState.cs" />
     <Compile Include="Assets\Scripts\Player\Player States\Super States\PlayerGroundedState.cs" />
     <Compile Include="Assets\Scripts\Station\States\Sub States\StationDepartingState.cs" />
+    <Compile Include="Assets\Scripts\Train\InstantiateTrain.cs" />
     <Compile Include="Assets\Scripts\Player\Player States\Super States\PlayerAbilityState.cs" />
     <Compile Include="Assets\Scripts\Player\Player States\PlayerState.cs" />
     <Compile Include="Assets\Dialogue\Lua\GameClockLua.cs" />
@@ -110,12 +114,15 @@
     <Compile Include="Assets\Scripts\Audio\AudioManager.cs" />
     <Compile Include="Assets\Pixel Crushers\Dialogue System\Third Party Support\Opsive UIS Support\Scripts\Sequencer Commands\SequencerCommandOpenShop.cs" />
     <Compile Include="Assets\Scripts\Station\States\StationState.cs" />
+    <Compile Include="Assets\Scripts\Custom Saver\ParallaxSaver.cs" />
     <Compile Include="Assets\Scripts\Triggers\AnimationTrigger.cs" />
     <Compile Include="Assets\Scripts\Player\HungerBar.cs" />
     <Compile Include="Assets\Scripts\Station\States\Sub States\StationDespawnState.cs" />
     <Compile Include="Assets\Scripts\Routes\ImabetsuRouteVariables.cs" />
     <Compile Include="Assets\Scripts\UI\Power\PowerButtons.cs" />
+    <Compile Include="Assets\Scripts\UI\GameClock.cs" />
     <Compile Include="Assets\Scripts\Player\Player States\Sub States\PlayerPhoneOnState.cs" />
+    <Compile Include="Assets\Scripts\UI\FreezeTextRotation.cs" />
     <Compile Include="Assets\Scripts\Train\TrainData.cs" />
     <Compile Include="Assets\Dialogue\Dialogue System Examples\Screen Space Bubble Example\UIFollowObject.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerData.cs" />
@@ -125,13 +132,7 @@
     <Compile Include="Assets\Scripts\Station\States\Sub States\StationArrivedState.cs" />
     <Compile Include="Assets\Scripts\Player\Player States\Sub States\PlayerPhoneOffState.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerAnimationSFX.cs" />
-    <Compile Include="Assets\Scripts\Custom Saver\StationStateSaver.cs" />
-    <Compile Include="Assets\Scripts\Custom Saver\TimeSaver.cs" />
-    <Compile Include="Assets\Scripts\UI\GameClock.cs" />
-    <Compile Include="Assets\Scripts\Custom Saver\ParallaxSaver.cs" />
-    <Compile Include="Assets\Scripts\Custom Saver\ITweenSaver.cs" />
-    <Compile Include="Assets\Scripts\UI\FreezeTextRotation.cs" />
-    <Compile Include="Assets\Scripts\Train\InstantiateTrain.cs" />
+    <Compile Include="Assets\Scripts\Station\InstantiateTrain.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Physics\Characters\Daisuke\Daisuke_walk.xml" />

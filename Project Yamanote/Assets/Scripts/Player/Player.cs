@@ -3,6 +3,7 @@ using TMPro;
 using ProjectYamanote.Player.PlayerStates;
 using ProjectYamanote.Player.PlayerStates.SubStates;
 using ProjectYamanote.Audio;
+using PixelCrushers;
 
 namespace ProjectYamanote.Player
 {
@@ -56,7 +57,7 @@ namespace ProjectYamanote.Player
             SitDownState = new PlayerSitDownState(this, StateMachine, playerData, "sitDown");
             SitUpState = new PlayerSitUpState(this, StateMachine, playerData, "sitUp");
             PhoneOnState = new PlayerPhoneOnState(this, StateMachine, playerData, "phoneOn");
-            PhoneOffState = new PlayerPhoneOffState(this, StateMachine, playerData, "phoneOff");
+            PhoneOffState = new PlayerPhoneOffState(this, StateMachine, playerData, "phoneOff");        
         }
 
         private void Start()
@@ -65,6 +66,7 @@ namespace ProjectYamanote.Player
             PhoneAnimator = menu.GetComponent<Animator>();
             InputHandler = GetComponent<PlayerInputHandler>();
             RB = GetComponent<Rigidbody2D>();
+
 
             FacingDirection = 1;
 
@@ -127,7 +129,6 @@ namespace ProjectYamanote.Player
 
         public void Flip()
         {
-            print("flipped");
             FacingDirection *= -1;
             transform.Rotate(0.0f, 180.0f, 0.0f);
         }

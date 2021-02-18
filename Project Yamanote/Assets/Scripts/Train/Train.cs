@@ -1,3 +1,4 @@
+using PixelCrushers;
 using ProjectYamanote.Audio;
 using ProjectYamanote.Train.States;
 using ProjectYamanote.Train.States.SubStates;
@@ -128,6 +129,15 @@ namespace ProjectYamanote.Train
             yield return new WaitForSeconds(10);
 
             isDeparted = true;
+        }
+
+        public void ExitTrain(string scene, string spawn)
+        {
+            string currentScene = SaveSystem.GetCurrentSceneName();
+            PlayerPrefs.SetString("LastScene", currentScene);
+            PlayerPrefs.Save();
+
+            SaveSystem.LoadScene(scene + "@" + spawn);
         }
         #endregion
 
