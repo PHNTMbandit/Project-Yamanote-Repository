@@ -131,6 +131,7 @@
     <Compile Include="Assets\Scripts\Custom Saver\ParallaxSaver.cs" />
     <Compile Include="Assets\Scripts\Custom Saver\ITweenSaver.cs" />
     <Compile Include="Assets\Scripts\UI\FreezeTextRotation.cs" />
+    <Compile Include="Assets\Scripts\Train\InstantiateTrain.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Physics\Characters\Daisuke\Daisuke_walk.xml" />

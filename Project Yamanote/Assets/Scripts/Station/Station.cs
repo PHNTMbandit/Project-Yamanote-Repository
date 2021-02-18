@@ -29,10 +29,10 @@ namespace ProjectYamanote.Station
         #endregion
 
         #region Other Variables
+        public Transform _arrivalPosition;
+        public Transform _instantiatePosition;
+        public Transform _despawnPosition;
         [SerializeField] private StationData _stationData;
-        [SerializeField] private Transform _arrivalPosition;
-        [SerializeField] private Transform _instantiatePosition;
-        [SerializeField] private Transform _despawnPosition;
         [SerializeField] private GameObject _train;
         [SerializeField] private AudioManager _audioManager;
         [SerializeField] private AudioMixer _audioMixer;
@@ -97,7 +97,7 @@ namespace ProjectYamanote.Station
                 iTween.MoveTo(_train, iTween.Hash("position", _arrivalPosition.position, "time", 10, "delay", 10,
                     "easetype", iTween.EaseType.easeOutCubic, "oncomplete", "TrainArrived", "oncompletetarget", gameObject));
 
-                _train.GetComponent<TrainData>().SetVariables(i.origin, i.destination, i.timeArriveOriginDT, i.timeArriveDestinationDT);
+                _train.GetComponent<TrainData>().SetVariables(i.origin, i.destination, i.timeArriveOriginDT, i.timeArriveDestinationDT, i.trainLine);
             }
         }
 
