@@ -133,6 +133,7 @@
     <Compile Include="Assets\Scripts\Player\Player States\Sub States\PlayerPhoneOffState.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerAnimationSFX.cs" />
     <Compile Include="Assets\Scripts\Station\InstantiateTrain.cs" />
+    <Compile Include="Assets\Scripts\Triggers\ChangeScene.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Physics\Characters\Daisuke\Daisuke_walk.xml" />

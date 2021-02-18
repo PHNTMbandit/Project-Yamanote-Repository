@@ -31,11 +31,11 @@ namespace ProjectYamanote.Train
         #endregion
 
         #region Other Variables
-        public Transform departTransform;
-        public Transform arrivedTransfrom;
-        public Transform arrivingTransform;
         public TrainData trainData;
         public GameObject trainStation;
+        [SerializeField] private Transform departTransform;
+        [SerializeField] private Transform arrivedTransfrom;
+        [SerializeField] private Transform arrivingTransform;
         [NonSerialized] public GameClock gameClock;
         [SerializeField] private GameObject[] _parallaxBackground;
         [SerializeField] private AudioManager audioManager;
@@ -129,15 +129,6 @@ namespace ProjectYamanote.Train
             yield return new WaitForSeconds(10);
 
             isDeparted = true;
-        }
-
-        public void ExitTrain(string scene, string spawn)
-        {
-            string currentScene = SaveSystem.GetCurrentSceneName();
-            PlayerPrefs.SetString("LastScene", currentScene);
-            PlayerPrefs.Save();
-
-            SaveSystem.LoadScene(scene + "@" + spawn);
         }
         #endregion
 
