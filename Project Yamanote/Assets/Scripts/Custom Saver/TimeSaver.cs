@@ -1,60 +1,53 @@
-﻿//using ProjectYamanote.Train;
-//using ProjectYamanote.Train.States;
-//using System;
-//using UnityEngine;
+﻿using ProjectYamanote.UI;
+using System;
+using UnityEngine;
 
-//namespace PixelCrushers
-//{
-//    public class TimerSaver : Saver
-//    {
-//        [Serializable]
-//        public class TimeData
-//        {
-//            public string animBoolName;
-//        }
+namespace PixelCrushers
+{
+    public class TimerSaver : Saver
+    {
+        [Serializable]
+        public class TimeData
+        {
+            public int year;
+            public int month;
+            public int day;
+            public int hour;
+            public int minute;
+            public int second;
+        }
 
-//        private TimeData m_data = new TimeData();
-//        protected Train m_time;
+        private TimeData m_data = new TimeData();
+        protected System.DateTime m_time;
 
-//        public override void Awake()
-//        {
-//            m_train = GetComponent<GameTime>();
-//        }
+        public override void Awake()
+        {
+            m_time = GetComponent<ProjectYamanote.UI.GameClock>().dateTime;
+        }
 
-//        public override string RecordData()
-//        {
-//            m_data.animBoolName = m_train.StateMachine.CurrentState.animBoolName;
-//            return SaveSystem.Serialize(m_data);
-//        }
+        public override string RecordData()
+        {
+            m_data.year = m_time.Year;
+            m_data.month = m_time.Month;
+            m_data.day = m_time.Day;
+            m_data.hour = m_time.Hour;
+            m_data.month = m_time.Month;
+            m_data.day = m_time.Day;
 
-//        public override void ApplyData(string s)
-//        {
-//            var data = SaveSystem.Deserialize(s, m_data);
-//            if (data.animBoolName == null) return;
-//            m_data = data;
-//            switch (data.animBoolName)
-//            {
-//                case "travelling":
-//                    m_train.StateMachine.ChangeState(m_train.TravellingState);
-//                    break;
-//                case "arriving":
-//                    m_train.StateMachine.ChangeState(m_train.ArrivingState);
-//                    break;
-//                case "arrived":
-//                    m_train.StateMachine.ChangeState(m_train.ArrivedState);
-//                    break;
-//                case "idle":
-//                    m_train.StateMachine.ChangeState(m_train.IdleState);
-//                    break;
-//                case "departing":
-//                    m_train.StateMachine.ChangeState(m_train.DepartingState);
-//                    break;
-//            }
-//        }
+            return SaveSystem.Serialize(m_data);
+        }
 
-//        public override void ApplyDataImmediate()
-//        {
-//            base.ApplyDataImmediate();
-//        }
-//    }
-//}
+        public override void ApplyData(string s)
+        {
+            var data = SaveSystem.Deserialize(s, m_data);
+            if (data == null) return;
+            m_data = data;
+            m_time = new System.DateTime(data.year, data.month, data.day, data.hour, data.month, data.day);
+        }
+
+        public override void ApplyDataImmediate()
+        {
+            base.ApplyDataImmediate();
+        }
+    }
+}

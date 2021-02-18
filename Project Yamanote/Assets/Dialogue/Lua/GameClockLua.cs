@@ -1,35 +1,45 @@
 using UnityEngine;
 using PixelCrushers.DialogueSystem;
 using ProjectYamanote.UI;
+using System;
 
 public class GameClockLua : MonoBehaviour
 {
     [Tooltip("Typically leave unticked so temporary Dialogue Managers don't unregister your functions.")]
     public bool unregisterOnDisable = false;
 
+    private DateTime _gameClock;
+    private GameObject _gameClockGO;
+
+    private void Awake()
+    {
+        _gameClockGO = GameObject.FindGameObjectWithTag("Clock");
+        _gameClock = _gameClockGO.GetComponent<GameClock>().dateTime;
+    }
+
     public bool Year(double year)
     {
-        return GameClock.dateTime.Year == year;
+        return _gameClock.Year == year;
     }
 
     public bool Month(double month)
     {
-        return GameClock.dateTime.Month== month;
+        return _gameClock.Month== month;
     }
 
     public bool Day(double day)
     {
-        return GameClock.dateTime.Day == day;
+        return _gameClock.Day == day;
     }
 
     public bool Hour(double hour)
     {
-        return GameClock.dateTime.Hour == hour;
+        return _gameClock.Hour == hour;
     }
 
     public bool Minute(double minute)
     {
-        return GameClock.dateTime.Minute == minute;
+        return _gameClock.Minute == minute;
     }
 
     # region Register with Lua

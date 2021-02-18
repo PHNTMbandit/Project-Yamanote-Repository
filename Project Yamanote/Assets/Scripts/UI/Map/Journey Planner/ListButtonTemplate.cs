@@ -20,7 +20,14 @@ namespace ProjectYamanote.UI.Map.JourneyPlanner
         [SerializeField] private GameObject _divider;
         [SerializeField] private Color redColor;
         [SerializeField] private Color greenColor;
+
+        private DateTime gameClock;
         #endregion
+
+        private void Awake()
+        {
+            gameClock = GetComponent<GameClock>().dateTime;
+        }
 
         #region Button Setters
         public void SetCost(int cost)
@@ -63,7 +70,7 @@ namespace ProjectYamanote.UI.Map.JourneyPlanner
 
         public void SetInTime(DateTime departTime)
         {
-            TimeSpan inTime = departTime.TimeOfDay - GameClock.dateTime.TimeOfDay;
+            TimeSpan inTime = departTime.TimeOfDay - gameClock.TimeOfDay;
 
             _textInTime.text = "in " + inTime.TotalMinutes.ToString() + " mins";
 

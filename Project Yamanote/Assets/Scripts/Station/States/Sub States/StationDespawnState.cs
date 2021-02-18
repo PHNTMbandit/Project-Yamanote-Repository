@@ -1,5 +1,5 @@
 using ProjectYamanote.Station.States.SuperStates;
-using ProjectYamanote.UI;
+using ProjectYamanote.Station;
 
 namespace ProjectYamanote.Station.States.SubStates
 {
@@ -33,7 +33,7 @@ namespace ProjectYamanote.Station.States.SubStates
 
             foreach (var i in stationData.trainSchedule)
             {
-                if (GameClock.dateTime.TimeOfDay.Equals(i.timeArriveOriginDT.TimeOfDay))
+                if (station.GameClock.TimeOfDay.Equals(i.timeArriveOriginDT.TimeOfDay))
                 {
                     stateMachine.ChangeState(station.ArrivingState);
                 }

@@ -3,8 +3,10 @@ using ProjectYamanote.Station.States;
 using ProjectYamanote.Station.States.SubStates;
 using ProjectYamanote.Train;
 using System.Collections;
+using System;
 using UnityEngine;
 using UnityEngine.Audio;
+using ProjectYamanote.UI;
 
 namespace ProjectYamanote.Station
 {
@@ -20,6 +22,7 @@ namespace ProjectYamanote.Station
         #endregion
 
         #region Components
+        public DateTime GameClock { get; private set; }
         public Animator Animator { get; private set; }
         #endregion
 
@@ -36,6 +39,7 @@ namespace ProjectYamanote.Station
         [SerializeField] private GameObject _train;
         [SerializeField] private AudioManager _audioManager;
         [SerializeField] private AudioMixer _audioMixer;
+        private GameObject _gameClockGO;
         #endregion
 
         #region Unity Callback Functions
@@ -53,6 +57,9 @@ namespace ProjectYamanote.Station
         private void Start()
         {
             Animator = _train.GetComponentInChildren<Animator>();
+            _gameClockGO = GameObject.FindGameObjectWithTag("Clock");
+            GameClock = _gameClockGO.GetComponent<GameClock>().dateTime;
+
             StateMachine.Initialise(DespawnState);
         }
 

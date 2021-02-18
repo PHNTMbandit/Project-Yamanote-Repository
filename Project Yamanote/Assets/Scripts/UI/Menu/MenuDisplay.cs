@@ -14,12 +14,22 @@ namespace ProjectYamanote.UI.Menu
         [SerializeField] private TextMeshProUGUI _actionBarTime;
         [SerializeField] private TextMeshProUGUI _actionBarDate;
 
+        private GameObject _gameClockGO;
+        private DateTime _gameClock;
+
+        private void Awake()
+        {
+            _gameClockGO = GameObject.FindGameObjectWithTag("Clock");
+            _gameClock = _gameClockGO.GetComponent<GameClock>().dateTime;
+        }
+
         private void Update()
         {
-            _menuTime.text = GameClock.dateTime.ToString("t");
-            _menuDate.text = GameClock.dateTime.ToString("dddd, dd MMM yyyy");
-            _actionBarTime.text = GameClock.dateTime.ToString("t");
-            _actionBarDate.text = GameClock.dateTime.ToString("dddd, dd MMM yyyy");
+            Debug.Log(_gameClock.TimeOfDay);
+            _menuTime.text = _gameClock.ToString("t");
+            _menuDate.text = _gameClock.ToString("dddd, dd MMM yyyy");
+            _actionBarTime.text = _gameClock.ToString("t");
+            _actionBarDate.text = _gameClock.ToString("dddd, dd MMM yyyy");
         }
     }
 }

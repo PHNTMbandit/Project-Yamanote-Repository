@@ -105,7 +105,6 @@
     <Compile Include="Assets\Scripts\Train\States\Sub States\TrainArrivingState.cs" />
     <Compile Include="Assets\Pixelplacement\iTween\iTweenExtensions.cs" />
     <Compile Include="Assets\Pixel Crushers\Dialogue System\Third Party Support\Opsive UIS Support\Scripts\UISLua.cs" />
-    <Compile Include="Assets\Scripts\UI\GameClock.cs" />
     <Compile Include="Assets\Pixel Crushers\Common\Third Party Support\Opsive UIS Support\Scripts\RedirectSaveLoadButtonToTestMenu.cs" />
     <Compile Include="Assets\Scripts\UI\UIButton.cs" />
     <Compile Include="Assets\Scripts\Audio\AudioManager.cs" />
@@ -128,6 +127,7 @@
     <Compile Include="Assets\Scripts\Player\PlayerAnimationSFX.cs" />
     <Compile Include="Assets\Scripts\Custom Saver\StationStateSaver.cs" />
     <Compile Include="Assets\Scripts\Custom Saver\TimeSaver.cs" />
+    <Compile Include="Assets\Scripts\UI\GameClock.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Physics\Characters\Daisuke\Daisuke_walk.xml" />

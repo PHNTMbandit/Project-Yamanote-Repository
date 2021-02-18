@@ -2,10 +2,10 @@ using ProjectYamanote.Audio;
 using ProjectYamanote.Train.States;
 using ProjectYamanote.Train.States.SubStates;
 using ProjectYamanote.UI;
-using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Audio;
+using System;
 
 namespace ProjectYamanote.Train
 {
@@ -22,6 +22,7 @@ namespace ProjectYamanote.Train
 
         #region Components
         public Animator Animator { get; private set; }
+        public DateTime GameClock { get; private set; }
         #endregion
 
         #region Check Variables
@@ -35,7 +36,7 @@ namespace ProjectYamanote.Train
         public Transform arrivingTransform;
         public TrainData trainData;
         public GameObject trainStation;
-        [NonSerialized] public GameClock gameClock;
+        private GameObject _gameClockGO;
         [SerializeField] private GameObject[] _parallaxBackground;
         [SerializeField] private AudioManager audioManager;
         [SerializeField] private AudioMixer audioMixer;
@@ -56,6 +57,8 @@ namespace ProjectYamanote.Train
         private void Start()
         {
             Animator = GetComponent<Animator>();
+            _gameClockGO = GameObject.FindGameObjectWithTag("Clock");
+            GameClock = _gameClockGO.GetComponent<GameClock>().dateTime;
 
             StateMachine.Intialise(IdleState);
         }

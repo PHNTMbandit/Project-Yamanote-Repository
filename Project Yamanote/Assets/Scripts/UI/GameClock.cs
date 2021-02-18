@@ -6,18 +6,19 @@ namespace ProjectYamanote.UI
 {
     public class GameClock : MonoBehaviour
     {
-        public static int year = 2021;
-        public static int month = 12;
-        public static int day = 04;
-        public static int hour = 5;
-        public static int minute = 45;
-        public static int second = 50;
+        public int year = 2021;
+        public int month = 12;
+        public int day = 04;
+        public int hour = 5;
+        public int minute = 45;
+        public int second = 50;
 
-        public static DateTime dateTime = new DateTime(year, month, day, hour, minute, second);
+        public DateTime dateTime;
 
         private void Start()
         {
             StartCoroutine(ClockCounter());
+            dateTime = new DateTime(year, month, day, hour, minute, second);
         }
 
         public IEnumerator ClockCounter()
@@ -28,11 +29,6 @@ namespace ProjectYamanote.UI
 
                 yield return new WaitForSeconds(1);
             }
-        }
-
-        public void OnMinute()
-        {
-
         }
     }
 }

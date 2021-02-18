@@ -11,7 +11,10 @@ TagManager:
   - Collider
   - Door
   - PE
-  - Clock
+  - EnterDoor
+  - Persistent_Light
+  - Seat
+  - NPC
   layers:
   - Default
   - TransparentFX

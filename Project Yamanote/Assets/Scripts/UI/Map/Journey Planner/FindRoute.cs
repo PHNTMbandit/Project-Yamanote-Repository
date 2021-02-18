@@ -22,12 +22,14 @@ namespace ProjectYamanote.UI.Map.JourneyPlanner
         public GameObject buttonTemplate;
 
         private GameObject _button;
+        private DateTime gameClock;
 
         public static List<GameObject> buttons = new List<GameObject>();
 
         private void Start()
         {
             buttons = new List<GameObject>();
+            gameClock = GetComponent<GameClock>().dateTime;
         }
 
         public void GenerateList()
@@ -52,7 +54,7 @@ namespace ProjectYamanote.UI.Map.JourneyPlanner
                 DateTime.TryParseExact(i.timeDepart, "H:mm", CultureInfo.InvariantCulture, DateTimeStyles.None, out i.timeDepartDT);
             }
 
-            var sortedResult = result.OrderBy(i => i.timeDepartDT.TimeOfDay <= GameClock.dateTime.TimeOfDay).ThenBy(i => i.timeDepartDT).ToList();
+            var sortedResult = result.OrderBy(i => i.timeDepartDT.TimeOfDay <= gameClock.TimeOfDay).ThenBy(i => i.timeDepartDT).ToList();
 
             switch (sortDropdown.value)
             {
@@ -73,7 +75,7 @@ namespace ProjectYamanote.UI.Map.JourneyPlanner
 
                 // Default
                 default:
-                    sortedResult = sortedResult.OrderBy(i => i.timeDepartDT.TimeOfDay <= GameClock.dateTime.TimeOfDay).ThenBy(i => i.timeDepartDT).ToList(); ;
+                    sortedResult = sortedResult.OrderBy(i => i.timeDepartDT.TimeOfDay <= gameClock.TimeOfDay).ThenBy(i => i.timeDepartDT).ToList(); ;
                     break;
             }
 
