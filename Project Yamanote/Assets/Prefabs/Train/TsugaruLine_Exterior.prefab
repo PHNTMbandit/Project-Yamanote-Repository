@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 583399625350380887}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.76, y: 0, z: 0}
+  m_LocalPosition: {x: 16.76, y: -1.28, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8352824098567750140}
@@ -66,6 +66,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8352824098567750140}
+  - component: {fileID: 6537964517591471137}
+  - component: {fileID: 627094696}
   m_Layer: 8
   m_Name: Doors
   m_TagString: Untagged
@@ -93,6 +95,41 @@ Transform:
   m_Father: {fileID: 4173833138806284483}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &6537964517591471137
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1804666868633642434}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8042add1cbaface41aa1d9669acbd17c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &627094696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1804666868633642434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f63bd3198a71a244d8dc6d21e0e91585, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_key: Doors_312322
+  m_appendSaverTypeToKey: 1
+  m_saveAcrossSceneChanges: 1
+  m_restoreStateOnStart: 0
 --- !u!1 &3217923034279236040
 GameObject:
   m_ObjectHideFlags: 0
@@ -118,7 +155,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3217923034279236040}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 22.62, y: 0, z: 0}
+  m_LocalPosition: {x: 22.62, y: -1.28, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8352824098567750140}
@@ -160,6 +197,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4173833138806284483}
   - component: {fileID: 4173833138806284540}
+  - component: {fileID: 627094699}
+  - component: {fileID: 627094698}
+  - component: {fileID: 627094697}
   m_Layer: 8
   m_Name: TsugaruLine_Exterior
   m_TagString: Untagged
@@ -174,7 +214,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4173833138806284482}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -20.34, y: -0.032981157, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -219,9 +259,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1751843261
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 1511123709
+  m_SortingLayer: 6
+  m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: 19b3cf3c3a531c745adb7017dd5cd066, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -233,6 +273,53 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &627094699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4173833138806284482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1af33a602e20a3d4ca46c8a6ef942618, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_key: Art_TsugaruLine_301726
+  m_appendSaverTypeToKey: 0
+  m_saveAcrossSceneChanges: 1
+  m_restoreStateOnStart: 1
+  m_usePlayerSpawnpoint: 0
+  m_multiscene: 1
+--- !u!114 &627094698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4173833138806284482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cfdc9ac5c531874987c4ce827ac5ec1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &627094697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4173833138806284482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 269287c8890007d4daa8bb12252f11ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_key: Art_TsugaruLine_304264
+  m_appendSaverTypeToKey: 0
+  m_saveAcrossSceneChanges: 1
+  m_restoreStateOnStart: 0
+  m_componentToWatch: {fileID: 8352824098567750140}
 --- !u!1 &4771226479741987260
 GameObject:
   m_ObjectHideFlags: 0
@@ -258,7 +345,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4771226479741987260}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 28.5, y: 0, z: 0}
+  m_LocalPosition: {x: 28.5, y: -1.28, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8352824098567750140}
@@ -315,7 +402,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4801358592341730220}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.87, y: 0, z: 0}
+  m_LocalPosition: {x: 5.87, y: -1.28, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8352824098567750140}
@@ -372,7 +459,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5873615024009952997}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -1.28, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8352824098567750140}
@@ -429,7 +516,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9185116067854584379}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.76, y: 0, z: 0}
+  m_LocalPosition: {x: 11.76, y: -1.28, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8352824098567750140}

@@ -3144,11 +3144,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isArrived: 0
   isDeparted: 0
+  trainData: {fileID: 528229605}
+  trainStation: {fileID: 606035799}
   departTransform: {fileID: 743932714}
   arrivedTransfrom: {fileID: 1902459088}
   arrivingTransform: {fileID: 645474419}
-  trainData: {fileID: 528229605}
-  trainStation: {fileID: 606035799}
   _parallaxBackground: []
   audioManager: {fileID: 38449183}
   audioMixer: {fileID: 24100000, guid: a430626ead73ca8459fa0a8fa37041f3, type: 2}

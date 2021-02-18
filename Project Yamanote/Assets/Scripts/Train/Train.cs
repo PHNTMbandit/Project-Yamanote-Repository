@@ -33,9 +33,9 @@ namespace ProjectYamanote.Train
         #region Other Variables
         public TrainData trainData;
         public GameObject trainStation;
-        [SerializeField] private Transform departTransform;
-        [SerializeField] private Transform arrivedTransfrom;
-        [SerializeField] private Transform arrivingTransform;
+        public Transform departTransform;
+        public Transform arrivedTransfrom;
+        public Transform arrivingTransform;
         [NonSerialized] public GameClock gameClock;
         [SerializeField] private GameObject[] _parallaxBackground;
         [SerializeField] private AudioManager audioManager;

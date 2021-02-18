@@ -99,7 +99,6 @@
     <Compile Include="Assets\Scripts\Station\States\Super States\StationTrainState.cs" />
     <Compile Include="Assets\Scripts\Player\Player States\Super States\PlayerGroundedState.cs" />
     <Compile Include="Assets\Scripts\Station\States\Sub States\StationDepartingState.cs" />
-    <Compile Include="Assets\Scripts\Train\InstantiateTrain.cs" />
     <Compile Include="Assets\Scripts\Player\Player States\Super States\PlayerAbilityState.cs" />
     <Compile Include="Assets\Scripts\Player\Player States\PlayerState.cs" />
     <Compile Include="Assets\Dialogue\Lua\GameClockLua.cs" />
