@@ -1,33 +1,27 @@
 ﻿using ProjectYamanote.Train;
 using System;
-using UnityEngine;
-using EasyParallax;
 using System.Collections;
 
 namespace PixelCrushers
 {
-    public class ParallaxSaver : Saver
+    public class ITweenSaver : Saver
     {
         [Serializable]
-        public class ParallaxData
+        public class ItweenData
         {
-            public float speed;
-            public IEnumerator speedUp;
+            
         }
 
-        private ParallaxData m_data = new ParallaxData();
+        private ItweenData m_data = new ItweenData();
         public Train train;
-        protected SpriteMovement spriteMovement;
 
         public override void Awake()
         {
-            spriteMovement = GetComponent<SpriteMovement>();
+            train = GetComponent<Train>();
         }
 
         public override string RecordData()
         {
-            m_data.speed = spriteMovement.speed;
-            m_data.speedUp = spriteMovement.SpeedUpParallax();
             
             return SaveSystem.Serialize(m_data);
         }
@@ -37,7 +31,7 @@ namespace PixelCrushers
             var data = SaveSystem.Deserialize(s, m_data);
             if (data == null) return;
             m_data = data;
-            spriteMovement.speed = data.speed;
+
         }
 
         public override void ApplyDataImmediate()

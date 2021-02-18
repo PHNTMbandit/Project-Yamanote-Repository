@@ -87,6 +87,7 @@ GameObject:
   - component: {fileID: 637824153850452479}
   - component: {fileID: 637824153850452352}
   - component: {fileID: 637824153850452353}
+  - component: {fileID: 522265296214776888}
   m_Layer: 5
   m_Name: Action Text
   m_TagString: Untagged
@@ -232,6 +233,18 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &522265296214776888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 637824153850452355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcedad26ceb72864d96c9edcb3f69b02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &637824154574939746
 GameObject:
   m_ObjectHideFlags: 0
@@ -563,6 +576,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 119ba31d12c397c4e9490ea8d84d8c51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsFlipped: 0
   isSeated: 0
   actionTextBox: {fileID: 637824153264102747}
   menu: {fileID: 0}
@@ -718,7 +732,7 @@ MonoBehaviour:
   m_saveAcrossSceneChanges: 1
   m_restoreStateOnStart: 0
   m_usePlayerSpawnpoint: 1
-  m_multiscene: 0
+  m_multiscene: 1
 --- !u!114 &1541564603984969825
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -30,6 +30,7 @@ namespace ProjectYamanote.Player
 
         #region Check Variables
         public bool IsColliding { get; private set; }
+        public bool IsFlipped;
         public bool isSeated;
         #endregion
 
@@ -98,6 +99,11 @@ namespace ProjectYamanote.Player
             if (xInput != 0 && xInput != FacingDirection)
             {
                 Flip();
+                IsFlipped = true;
+            }
+            if (xInput == 1 && xInput == 1)
+            {
+                IsFlipped = false;
             }
         }
 
@@ -119,11 +125,11 @@ namespace ProjectYamanote.Player
 
         private void AnimationFinishTrigger() => StateMachine.CurrentState.AnimationFinishTrigger();
 
-        private void Flip()
+        public void Flip()
         {
+            print("flipped");
             FacingDirection *= -1;
             transform.Rotate(0.0f, 180.0f, 0.0f);
-            actionText.transform.Rotate(0.0f, 180.0f, 0.0f);
         }
         #endregion
 
