@@ -17,8 +17,6 @@ namespace ProjectYamanote.Train.States.SubStates
         {
             base.Enter();
 
-            train.isArrived = true;
-
             train.TrainArrivedSFX();
         }
 

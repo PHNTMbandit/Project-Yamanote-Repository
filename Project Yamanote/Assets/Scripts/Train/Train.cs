@@ -75,8 +75,6 @@ namespace ProjectYamanote.Train
         public void TrainDeparted()
         {
             isDeparted = false;
-
-            trainStation.transform.position = arrivingTransform.position;
         }
 
         public void TrainArrived()
@@ -160,6 +158,7 @@ namespace ProjectYamanote.Train
         public void TrainDepartingSFX()
         {
             audioManager.Play("TrainDeparting");
+            audioManager.Play("DoorsClosing");
             StartCoroutine(FadeMixerGroup.StartFade(audioMixer, "TrainDeparting", 2f, 1f));
 
             StartCoroutine(FadeMixerGroup.StartFade(audioMixer, "TrainArrived", 2f, 0f));

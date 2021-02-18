@@ -29,10 +29,5 @@ namespace ProjectYamanote.UI
                 yield return new WaitForSeconds(1);
             }
         }
-
-        public void OnMinute()
-        {
-
-        }
     }
 }

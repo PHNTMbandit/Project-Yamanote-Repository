@@ -18,7 +18,7 @@ namespace ProjectYamanote.Train.States.SubStates
             base.Enter();
 
             train.SpeedDown();
-
+            train.trainStation.transform.position = train.arrivingTransform.position;
             train.TrainArrivingSFX();
         }
 

@@ -327,9 +327,16 @@ MonoBehaviour:
     loop: 0
     source: {fileID: 0}
   - name: TrainDeparting
-    clip: {fileID: 8300000, guid: e9ebb0217a283bc4bb413a1990bd5052, type: 3}
+    clip: {fileID: 8300000, guid: 5bf4682f0d4b9c04380959f6c502959b, type: 3}
     outputAudioMixerGroup: {fileID: -5607317309580710257, guid: a430626ead73ca8459fa0a8fa37041f3, type: 2}
     volume: 0.8
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: DoorsClosing
+    clip: {fileID: 8300000, guid: e9ebb0217a283bc4bb413a1990bd5052, type: 3}
+    outputAudioMixerGroup: {fileID: -5607317309580710257, guid: a430626ead73ca8459fa0a8fa37041f3, type: 2}
+    volume: 0.05
     pitch: 1
     loop: 0
     source: {fileID: 0}
@@ -1255,6 +1262,7 @@ GameObject:
   - component: {fileID: 176607375}
   - component: {fileID: 176607374}
   - component: {fileID: 176607373}
+  - component: {fileID: 176607376}
   m_Layer: 11
   m_Name: Art_BG_SteelGate
   m_TagString: Parallax
@@ -1356,6 +1364,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &176607376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 176607371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d59ea6b645944614ea92c44ab4bc0a7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_key: Art_BG_SteelGate_295236
+  m_appendSaverTypeToKey: 1
+  m_saveAcrossSceneChanges: 1
+  m_restoreStateOnStart: 0
+  train: {fileID: 528229608}
 --- !u!1 &178052862 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7886024726471230189, guid: 23710ccae55ab36409f920be499aacce, type: 3}
@@ -2709,6 +2734,7 @@ GameObject:
   - component: {fileID: 528229605}
   - component: {fileID: 528229609}
   - component: {fileID: 528229610}
+  - component: {fileID: 528229611}
   m_Layer: 8
   m_Name: Art_Train
   m_TagString: Untagged
@@ -3181,7 +3207,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _trainData: {fileID: 528229605}
   _timeArriveOrigin: 17:26
-  _timeArriveDestination: 17:31
+  _timeArriveDestination: 17:27
 --- !u!114 &528229610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3196,7 +3222,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_key: Art_Train_1196096
   m_appendSaverTypeToKey: 1
-  m_saveAcrossSceneChanges: 0
+  m_saveAcrossSceneChanges: 1
+  m_restoreStateOnStart: 0
+--- !u!114 &528229611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 528229601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f63bd3198a71a244d8dc6d21e0e91585, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_key: Art_Train_559148
+  m_appendSaverTypeToKey: 0
+  m_saveAcrossSceneChanges: 1
   m_restoreStateOnStart: 0
 --- !u!1 &528298017
 GameObject:
@@ -3630,6 +3672,7 @@ GameObject:
   m_Component:
   - component: {fileID: 606035800}
   - component: {fileID: 606035801}
+  - component: {fileID: 606035802}
   m_Layer: 0
   m_Name: Art_ShinAomoriStation
   m_TagString: Untagged
@@ -3702,6 +3745,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &606035802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 606035799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1af33a602e20a3d4ca46c8a6ef942618, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_key: Art_ShinAomoriStation_423638
+  m_appendSaverTypeToKey: 1
+  m_saveAcrossSceneChanges: 1
+  m_restoreStateOnStart: 0
+  m_usePlayerSpawnpoint: 0
+  m_multiscene: 1
 --- !u!1 &618260830
 GameObject:
   m_ObjectHideFlags: 0
@@ -5045,6 +5106,7 @@ GameObject:
   - component: {fileID: 947297110}
   - component: {fileID: 947297109}
   - component: {fileID: 947297108}
+  - component: {fileID: 947297111}
   m_Layer: 12
   m_Name: Art_BG_Houses_1
   m_TagString: Parallax
@@ -5151,6 +5213,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &947297111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 947297106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d59ea6b645944614ea92c44ab4bc0a7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_key: Art_BG_Houses_1_295238
+  m_appendSaverTypeToKey: 1
+  m_saveAcrossSceneChanges: 1
+  m_restoreStateOnStart: 0
+  train: {fileID: 528229608}
 --- !u!1 &947469895
 GameObject:
   m_ObjectHideFlags: 0
@@ -5235,6 +5314,7 @@ GameObject:
   - component: {fileID: 1002719514}
   - component: {fileID: 1002719513}
   - component: {fileID: 1002719512}
+  - component: {fileID: 1002719515}
   m_Layer: 15
   m_Name: Art_BG_Houses_4
   m_TagString: Parallax
@@ -5336,6 +5416,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1002719515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1002719510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d59ea6b645944614ea92c44ab4bc0a7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_key: Art_BG_Houses_4_295240
+  m_appendSaverTypeToKey: 1
+  m_saveAcrossSceneChanges: 1
+  m_restoreStateOnStart: 0
+  train: {fileID: 528229608}
 --- !u!1 &1060404997
 GameObject:
   m_ObjectHideFlags: 0
@@ -8194,6 +8291,7 @@ GameObject:
   - component: {fileID: 1635861994}
   - component: {fileID: 1635861993}
   - component: {fileID: 1635861992}
+  - component: {fileID: 1635861995}
   m_Layer: 13
   m_Name: Art_BG_Houses_2
   m_TagString: Parallax
@@ -8306,6 +8404,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1635861995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635861990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d59ea6b645944614ea92c44ab4bc0a7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_key: Art_BG_Houses_2_295242
+  m_appendSaverTypeToKey: 1
+  m_saveAcrossSceneChanges: 1
+  m_restoreStateOnStart: 0
+  train: {fileID: 528229608}
 --- !u!1 &1645862574
 GameObject:
   m_ObjectHideFlags: 0
@@ -8715,6 +8830,7 @@ GameObject:
   - component: {fileID: 1808984864}
   - component: {fileID: 1808984866}
   - component: {fileID: 1808984865}
+  - component: {fileID: 1808984867}
   m_Layer: 10
   m_Name: Art_BG_ElectricPoles
   m_TagString: Parallax
@@ -8818,6 +8934,23 @@ MonoBehaviour:
   poolSize: 5
   spriteRepositionIndex: 2
   spriteRepositionCorrection: 0.03
+--- !u!114 &1808984867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1808984862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d59ea6b645944614ea92c44ab4bc0a7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_key: Art_BG_ElectricPoles_295244
+  m_appendSaverTypeToKey: 1
+  m_saveAcrossSceneChanges: 1
+  m_restoreStateOnStart: 0
+  train: {fileID: 528229608}
 --- !u!1 &1837767674
 GameObject:
   m_ObjectHideFlags: 0
@@ -9013,6 +9146,7 @@ GameObject:
   - component: {fileID: 1848736325}
   - component: {fileID: 1848736324}
   - component: {fileID: 1848736323}
+  - component: {fileID: 1848736326}
   m_Layer: 14
   m_Name: Art_BG_Houses_3
   m_TagString: Parallax
@@ -9114,6 +9248,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1848736326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848736321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d59ea6b645944614ea92c44ab4bc0a7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_key: Art_BG_Houses_3_295246
+  m_appendSaverTypeToKey: 1
+  m_saveAcrossSceneChanges: 1
+  m_restoreStateOnStart: 0
+  train: {fileID: 528229608}
 --- !u!1 &1853363689
 GameObject:
   m_ObjectHideFlags: 0
@@ -16092,6 +16243,7 @@ GameObject:
   - component: {fileID: 8965430609606519448}
   - component: {fileID: 8965430609606519450}
   - component: {fileID: 8965430609606519451}
+  - component: {fileID: 3129262435423405836}
   m_Layer: 10
   m_Name: PE_Snow
   m_TagString: Parallax
@@ -16099,6 +16251,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &3129262435423405836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3129262435423405835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d59ea6b645944614ea92c44ab4bc0a7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_key: PE_Snow_295248
+  m_appendSaverTypeToKey: 1
+  m_saveAcrossSceneChanges: 1
+  m_restoreStateOnStart: 0
+  train: {fileID: 528229608}
 --- !u!4 &4578085343098804216
 Transform:
   m_ObjectHideFlags: 0
@@ -16710,8 +16879,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1738724767
-  m_SortingLayer: 0
+  m_SortingLayerID: 187251861
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 6ef06eaeb36ca471abd864f0a692538f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0}

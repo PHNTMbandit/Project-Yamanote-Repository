@@ -34,8 +34,10 @@ namespace ProjectYamanote.Train.States.SubStates
             {
                 train.isArrived = false;
                 train.SpeedUp();
-                stateMachine.ChangeState(train.TravellingState);
             }
+
+            if (train.isDeparted == false)
+                stateMachine.ChangeState(train.TravellingState);
         }
 
         public override void PhysicsUpdate()
