@@ -21,7 +21,7 @@ namespace ProjectYamanote.Routes
 
         private void Start()
         {
-            _trainData.SetVariables("Imabetsu Station", "Shin-Aomori Station", _timeArriveOriginDT, _timeArriveDestinationDT);
+            _trainData.SetVariables("Imabetsu Station", "Shin-Aomori Station", _timeArriveOriginDT, _timeArriveDestinationDT, "Tsugaru Line");
         }
     }
 }
