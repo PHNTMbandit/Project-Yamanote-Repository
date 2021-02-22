@@ -6544,7 +6544,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Tsugaru Line
+          m_StringArgument: Ou Line
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1216065833}
@@ -7310,7 +7310,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28d3329b6cd68ab4a99cdab5d7d333c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultStartingSceneName: Tsugaru Line
+  defaultStartingSceneName: Ou Line
 --- !u!1 &1307922922
 GameObject:
   m_ObjectHideFlags: 0

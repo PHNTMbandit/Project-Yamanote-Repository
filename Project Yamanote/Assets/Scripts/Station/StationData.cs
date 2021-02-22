@@ -13,6 +13,7 @@ namespace ProjectYamanote.Station
         public string timeArriveOrigin;
         public string timeArriveDestination;
         public string trainLine;
+        public GameObject trainPrefab;
         public DateTime timeArriveOriginDT;
         public DateTime timeArriveDestinationDT;
     }

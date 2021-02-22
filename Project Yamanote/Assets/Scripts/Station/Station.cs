@@ -29,11 +29,13 @@ namespace ProjectYamanote.Station
         #endregion
 
         #region Other Variables
+        private GameObject _train;
+        
         public Transform _arrivalPosition;
         public Transform _instantiatePosition;
         public Transform _despawnPosition;
+       
         [SerializeField] private StationData _stationData;
-        [SerializeField] private GameObject _train;
         [SerializeField] private AudioManager _audioManager;
         [SerializeField] private AudioMixer _audioMixer;
         #endregion
@@ -52,7 +54,11 @@ namespace ProjectYamanote.Station
 
         private void Start()
         {
+            foreach (Schedule train in _stationData.trainSchedule)
+                _train = train.trainPrefab;
+            
             Animator = _train.GetComponentInChildren<Animator>();
+          
             StateMachine.Initialise(DespawnState);
         }
 
