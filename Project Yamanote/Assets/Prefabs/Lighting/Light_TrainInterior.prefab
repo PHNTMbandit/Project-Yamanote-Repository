@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4136201516779458721}
   - component: {fileID: 4136201516779458720}
   m_Layer: 8
-  m_Name: Train Light
+  m_Name: Light_TrainInterior
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24,7 +24,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4136201516779458734}
-  m_LocalRotation: {x: -0, y: -0, z: -0.9999999, w: 0.00046108657}
+  m_LocalRotation: {x: 0, y: 0, z: -0.99999994, w: 0.00046251615}
   m_LocalPosition: {x: -10.657376, y: 1.5403569, z: 0.4507383}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -49,7 +49,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_LightVolumeOpacity: 0
-  m_ApplyToSortingLayers: 7d3659a7
+  m_ApplyToSortingLayers: 7d3659a7a756bcc9
   m_LightCookieSprite: {fileID: 0}
   m_UseNormalMap: 1
   m_LightOrder: 0
