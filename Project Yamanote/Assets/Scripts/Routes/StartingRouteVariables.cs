@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace ProjectYamanote.Routes
 {
-    public class ImabetsuRouteVariables : MonoBehaviour
+    public class StartingRouteVariables : MonoBehaviour
     {
         [SerializeField] private TrainData _trainData;
         [SerializeField] private string _timeArriveOrigin;

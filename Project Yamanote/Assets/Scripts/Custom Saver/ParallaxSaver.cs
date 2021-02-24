@@ -1,7 +1,6 @@
-﻿using ProjectYamanote.Train;
+﻿using EasyParallax;
+using ProjectYamanote.Train;
 using System;
-using UnityEngine;
-using EasyParallax;
 using System.Collections;
 
 namespace PixelCrushers
@@ -28,7 +27,7 @@ namespace PixelCrushers
         {
             m_data.speed = spriteMovement.speed;
             m_data.speedUp = spriteMovement.SpeedUpParallax();
-            
+
             return SaveSystem.Serialize(m_data);
         }
 

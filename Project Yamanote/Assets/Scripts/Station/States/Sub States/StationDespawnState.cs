@@ -39,6 +39,7 @@ namespace ProjectYamanote.Station.States.SubStates
                 }
             }
         }
+
         public override void PhysicsUpdate()
         {
             base.PhysicsUpdate();

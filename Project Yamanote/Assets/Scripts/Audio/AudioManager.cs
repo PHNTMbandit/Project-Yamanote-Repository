@@ -1,5 +1,5 @@
-using UnityEngine;
 using System;
+using UnityEngine;
 
 namespace ProjectYamanote.Audio
 {
@@ -9,7 +9,7 @@ namespace ProjectYamanote.Audio
 
         public static AudioManager instance;
 
-        void Awake()
+        private void Awake()
         {
             foreach (Sound s in sounds)
             {
@@ -44,5 +44,4 @@ namespace ProjectYamanote.Audio
             s.source.Stop();
         }
     }
-
 }
