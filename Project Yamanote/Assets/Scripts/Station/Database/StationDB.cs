@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace ProjectYamanote.Station.Database
+namespace ProjectYamanote.Station
 {
     [System.Serializable]
     public class StationVariables

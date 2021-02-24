@@ -50,7 +50,6 @@ namespace PixelCrushers
                     break;
             }
         }
-
         public override void ApplyDataImmediate()
         {
             base.ApplyDataImmediate();

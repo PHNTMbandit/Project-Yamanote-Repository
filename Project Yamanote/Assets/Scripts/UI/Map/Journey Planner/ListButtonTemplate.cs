@@ -2,7 +2,7 @@
 using UnityEngine;
 using TMPro;
 
-namespace ProjectYamanote.UI.Map.JourneyPlanner
+namespace ProjectYamanote.UI
 {
     public class ListButtonTemplate : MonoBehaviour
     {

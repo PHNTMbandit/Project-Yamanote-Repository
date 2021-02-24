@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace ProjectYamanote.Station
 {
-    [System.Serializable]
+    [Serializable]
     public class Schedule
     {
         public string origin;
@@ -13,6 +13,7 @@ namespace ProjectYamanote.Station
         public string timeArriveOrigin;
         public string timeArriveDestination;
         public string trainLine;
+        public GameObject trainPrefab;
         public DateTime timeArriveOriginDT;
         public DateTime timeArriveDestinationDT;
     }
@@ -32,4 +33,3 @@ namespace ProjectYamanote.Station
         }
     }
 }
-

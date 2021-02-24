@@ -3,7 +3,7 @@ using UnityEngine;
 using System;
 using TMPro;
 
-namespace ProjectYamanote.UI.Calendar
+namespace ProjectYamanote.UI
 {
     public class Calendar : MonoBehaviour
     {

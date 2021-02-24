@@ -1,9 +1,9 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using ProjectYamanote.Station.Database;
+using ProjectYamanote.Station;
 
-namespace ProjectYamanote.UI.Map
+namespace ProjectYamanote.UI
 {
     public class MapButton : MonoBehaviour
     {

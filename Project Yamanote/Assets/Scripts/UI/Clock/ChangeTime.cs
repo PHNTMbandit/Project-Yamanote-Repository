@@ -1,7 +1,7 @@
 using UnityEngine;
 using TMPro;
 
-namespace ProjectYamanote.UI.Clock
+namespace ProjectYamanote.UI
 {
     public class ChangeTime : MonoBehaviour
     {

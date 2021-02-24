@@ -1,6 +1,5 @@
 ﻿using ProjectYamanote.Train;
 using System;
-using System.Collections;
 
 namespace PixelCrushers
 {
@@ -9,7 +8,6 @@ namespace PixelCrushers
         [Serializable]
         public class ItweenData
         {
-            
         }
 
         private ItweenData m_data = new ItweenData();
@@ -22,7 +20,6 @@ namespace PixelCrushers
 
         public override string RecordData()
         {
-            
             return SaveSystem.Serialize(m_data);
         }
 
@@ -31,7 +28,6 @@ namespace PixelCrushers
             var data = SaveSystem.Deserialize(s, m_data);
             if (data == null) return;
             m_data = data;
-
         }
 
         public override void ApplyDataImmediate()

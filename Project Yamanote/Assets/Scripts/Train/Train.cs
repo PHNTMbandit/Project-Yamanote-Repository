@@ -1,4 +1,3 @@
-using PixelCrushers;
 using ProjectYamanote.Audio;
 using ProjectYamanote.Train.States;
 using ProjectYamanote.Train.States.SubStates;
@@ -13,24 +12,31 @@ namespace ProjectYamanote.Train
     public class Train : MonoBehaviour
     {
         #region State Variables
+
         public TrainStateMachine StateMachine { get; set; }
         public TrainArrivedState ArrivedState { get; set; }
         public TrainIdleState IdleState { get; set; }
         public TrainArrivingState ArrivingState { get; set; }
         public TrainDepartingState DepartingState { get; set; }
         public TrainTravellingState TravellingState { get; set; }
-        #endregion
+
+        #endregion State Variables
 
         #region Components
+
         public Animator Animator { get; private set; }
-        #endregion
+
+        #endregion Components
 
         #region Check Variables
+
         public bool isArrived;
         public bool isDeparted;
-        #endregion
+
+        #endregion Check Variables
 
         #region Other Variables
+
         public TrainData trainData;
         public GameObject trainStation;
         public Transform departTransform;
@@ -40,9 +46,11 @@ namespace ProjectYamanote.Train
         [SerializeField] private GameObject[] _parallaxBackground;
         [SerializeField] private AudioManager audioManager;
         [SerializeField] private AudioMixer audioMixer;
-        #endregion
+
+        #endregion Other Variables
 
         #region Unity Callback Functions
+
         private void Awake()
         {
             StateMachine = new TrainStateMachine();
@@ -70,9 +78,11 @@ namespace ProjectYamanote.Train
         {
             StateMachine.CurrentState.PhysicsUpdate();
         }
-        #endregion
+
+        #endregion Unity Callback Functions
 
         #region Set Functions
+
         public void TrainDeparted()
         {
             isDeparted = false;
@@ -82,12 +92,11 @@ namespace ProjectYamanote.Train
         {
             isArrived = true;
         }
-        #endregion
 
-        #region Check Functions
-        #endregion
+        #endregion Set Functions
 
         #region Other Functions
+
         private void AnimationTrigger() => StateMachine.CurrentState.AnimationTrigger();
 
         private void AnimationFinishTrigger() => StateMachine.CurrentState.AnimationFinishTrigger();
@@ -130,9 +139,11 @@ namespace ProjectYamanote.Train
 
             isDeparted = true;
         }
-        #endregion
+
+        #endregion Other Functions
 
         #region SFX Functions
+
         public void TrainArrivingSFX()
         {
             audioManager.Play("TrainArriving");
@@ -175,6 +186,7 @@ namespace ProjectYamanote.Train
 
             StartCoroutine(FadeMixerGroup.StartFade(audioMixer, "TrainDeparting", 2f, 0f));
         }
-        #endregion
+
+        #endregion SFX Functions
     }
 }

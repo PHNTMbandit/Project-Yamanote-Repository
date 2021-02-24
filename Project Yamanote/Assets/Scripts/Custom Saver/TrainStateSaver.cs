@@ -1,7 +1,5 @@
 ﻿using ProjectYamanote.Train;
-using ProjectYamanote.Train.States;
 using System;
-using UnityEngine;
 
 namespace PixelCrushers
 {
@@ -43,15 +41,19 @@ namespace PixelCrushers
                 case "travelling":
                     m_train.StateMachine.ChangeState(m_train.TravellingState);
                     break;
+
                 case "arriving":
                     m_train.StateMachine.ChangeState(m_train.ArrivingState);
                     break;
+
                 case "arrived":
                     m_train.StateMachine.ChangeState(m_train.ArrivedState);
                     break;
+
                 case "idle":
                     m_train.StateMachine.ChangeState(m_train.IdleState);
                     break;
+
                 case "departing":
                     m_train.StateMachine.ChangeState(m_train.DepartingState);
                     break;

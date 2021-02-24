@@ -4,10 +4,10 @@ using System;
 using System.Globalization;
 using UnityEngine;
 using UnityEngine.UI;
-using ProjectYamanote.Station.Database;
+using ProjectYamanote.Station;
 using ProjectYamanote.Routes;
 
-namespace ProjectYamanote.UI.Map.JourneyPlanner
+namespace ProjectYamanote.UI
 {
     public class FindRoute : MonoBehaviour
     {

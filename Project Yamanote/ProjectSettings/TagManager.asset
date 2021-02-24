@@ -5,13 +5,13 @@ TagManager:
   serializedVersion: 2
   tags:
   - Parallax
-  - Light
   - UI
-  - FX
   - Collider
   - Door
-  - PE
   - Clock
+  - Seat
+  - NPC
+  - Ground
   layers:
   - Default
   - TransparentFX

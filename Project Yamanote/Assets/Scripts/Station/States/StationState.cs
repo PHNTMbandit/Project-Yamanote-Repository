@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace ProjectYamanote.Station.States
+namespace ProjectYamanote.Station
 {
     public class StationState
     {
@@ -37,16 +37,22 @@ namespace ProjectYamanote.Station.States
             station.Animator.SetBool(animBoolName, false);
         }
 
-        public virtual void LogicUpdate() { }
+        public virtual void LogicUpdate()
+        {
+        }
 
         public virtual void PhysicsUpdate()
         {
             DoChecks();
         }
 
-        public virtual void DoChecks() { }
+        public virtual void DoChecks()
+        {
+        }
 
-        public virtual void AnimationTrigger() { }
+        public virtual void AnimationTrigger()
+        {
+        }
 
         public virtual void AnimationFinishTrigger() => isAnimationFinished = true;
     }

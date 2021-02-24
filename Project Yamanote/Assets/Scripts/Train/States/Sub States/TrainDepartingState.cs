@@ -1,5 +1,4 @@
 using ProjectYamanote.Train.States.SuperStates;
-using UnityEngine;
 
 namespace ProjectYamanote.Train.States.SubStates
 {
@@ -46,4 +45,3 @@ namespace ProjectYamanote.Train.States.SubStates
         }
     }
 }
-

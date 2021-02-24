@@ -36,16 +36,22 @@ namespace ProjectYamanote.Train.States
             train.Animator.SetBool(animBoolName, false);
         }
 
-        public virtual void LogicUpdate() { }
+        public virtual void LogicUpdate()
+        {
+        }
 
         public virtual void PhysicsUpdate()
         {
             DoChecks();
         }
 
-        public virtual void DoChecks() { }
+        public virtual void DoChecks()
+        {
+        }
 
-        public virtual void AnimationTrigger() { }
+        public virtual void AnimationTrigger()
+        {
+        }
 
         public virtual void AnimationFinishTrigger() => isAnimationFinished = true;
     }

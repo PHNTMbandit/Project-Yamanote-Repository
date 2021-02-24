@@ -1,8 +1,8 @@
-using UnityEngine;
 using PixelCrushers;
-using UnityEngine.UI;
-using TMPro;
 using System;
+using TMPro;
+using UnityEngine;
+using UnityEngine.UI;
 
 namespace ProjectYamanote.UI
 {
