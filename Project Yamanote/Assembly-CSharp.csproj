@@ -127,7 +127,7 @@
     <Compile Include="Assets\Scripts\Player\PlayerAnimationSFX.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Physics\Characters\Daisuke\Daisuke_walk.xml" />
+     <None Include="Assets\Physics\Characters\Daisuke\Daisuke_walk.xml" />
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\2020.2.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -359,6 +359,9 @@
     <Reference Include="Opsive.Shared.Inventory">
       <HintPath>Assets\Plugins\Opsive\Shared\Inventory\Opsive.Shared.Inventory.dll</HintPath>
     </Reference>
+    <Reference Include="RainbowCore">
+      <HintPath>Assets\Plugins\RainbowAssets\!Core\Assemblies\RainbowCore.dll</HintPath>
+    </Reference>
     <Reference Include="Opsive.Shared.Utility">
       <HintPath>Assets\Plugins\Opsive\Shared\Utility\Opsive.Shared.Utility.dll</HintPath>
     </Reference>
@@ -376,9 +379,6 @@
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
       <HintPath>Library\PackageCache\com.unity.analytics@3.5.3\Unity.Analytics.Tracker.dll</HintPath>
-    </Reference>
-    <Reference Include="RainbowCore">
-      <HintPath>Assets\Plugins\RainbowAssets\!Core\Assemblies\RainbowCore.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files\Unity\2020.2.5f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
