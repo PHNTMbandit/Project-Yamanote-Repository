@@ -1,9 +1,4 @@
-﻿using UnityEditor;
-using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
-
-namespace ProjectYamanote.Player.PlayerStates
+﻿namespace ProjectYamanote.Player
 {
     public class PlayerStateMachine
     {

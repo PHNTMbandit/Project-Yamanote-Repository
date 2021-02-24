@@ -1,6 +1,4 @@
 using ProjectYamanote.Audio;
-using ProjectYamanote.Station.States;
-using ProjectYamanote.Station.States.SubStates;
 using ProjectYamanote.Train;
 using System.Collections;
 using UnityEngine;
@@ -153,8 +151,6 @@ namespace ProjectYamanote.Station
         {
             _audioManager.Play("TrainArriving");
             StartCoroutine(FadeMixerGroup.StartFade(_audioMixer, "TrainArriving", 2f, 1f));
-
-            StartCoroutine(FadeMixerGroup.StartFade(_audioMixer, "TrainDespawn", 2f, 0f));
         }
 
         public void TrainArrivedSFX()
@@ -176,9 +172,6 @@ namespace ProjectYamanote.Station
 
         public void TrainDespawnSFX()
         {
-            _audioManager.Play("TrainDespawn");
-            StartCoroutine(FadeMixerGroup.StartFade(_audioMixer, "TrainDespawn", 2f, 1f));
-
             StartCoroutine(FadeMixerGroup.StartFade(_audioMixer, "TrainDeparting", 2f, 0f));
         }
 

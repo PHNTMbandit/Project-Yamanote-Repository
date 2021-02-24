@@ -1,8 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-namespace ProjectYamanote.Player.PlayerStates
+namespace ProjectYamanote.Player
 {
     public class PlayerState
     {
@@ -38,16 +36,22 @@ namespace ProjectYamanote.Player.PlayerStates
             player.PlayerAnimator.SetBool(animBoolName, false);
         }
 
-        public virtual void LogicUpdate() { }
+        public virtual void LogicUpdate()
+        {
+        }
 
         public virtual void PhysicsUpdate()
         {
             DoChecks();
         }
 
-        public virtual void DoChecks() { }
+        public virtual void DoChecks()
+        {
+        }
 
-        public virtual void AnimationTrigger() { }
+        public virtual void AnimationTrigger()
+        {
+        }
 
         public virtual void AnimationFinishTrigger() => isAnimationFinished = true;
     }

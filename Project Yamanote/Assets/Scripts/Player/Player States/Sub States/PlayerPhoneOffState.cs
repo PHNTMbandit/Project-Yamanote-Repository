@@ -1,6 +1,4 @@
-using ProjectYamanote.Player.PlayerStates.SuperStates;
-
-namespace ProjectYamanote.Player.PlayerStates.SubStates
+namespace ProjectYamanote.Player
 {
     public class PlayerPhoneOffState : PlayerGroundedState
     {

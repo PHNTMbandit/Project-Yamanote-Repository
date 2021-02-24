@@ -1,5 +1,5 @@
-using UnityEngine;
 using TMPro;
+using UnityEngine;
 
 namespace ProjectYamanote.Player
 {
@@ -9,7 +9,7 @@ namespace ProjectYamanote.Player
         [SerializeField] private TextMeshProUGUI actionText;
         [SerializeField] private Player playerController;
 
-        void Awake()
+        private void Awake()
         {
             actionText.enabled = false;
             actionTextBox.SetActive(false);
@@ -25,14 +25,17 @@ namespace ProjectYamanote.Player
                         actionText.enabled = true;
                         actionText.text = "Sit";
                         break;
+
                     case "NPC":
                         actionText.enabled = true;
                         actionText.text = "Talk";
                         break;
+
                     case "Door":
                         actionText.enabled = true;
                         actionText.text = "Enter";
                         break;
+
                     default:
                         actionText.enabled = false;
                         break;

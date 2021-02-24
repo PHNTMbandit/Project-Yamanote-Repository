@@ -1,17 +1,20 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using ProjectYamanote.Station.Database;
+using ProjectYamanote.Station;
 
-public class StationLookup : MonoBehaviour
+namespace ProjectYamanote.UI
 {
-    public TMP_Dropdown stationDropdown;
-    public TextMeshProUGUI stationTypeText;
-    public TextMeshProUGUI stationLocText;
-    public StationDB stationDB;
-
-    public void OnValueChanage(int val)
+    public class StationLookup : MonoBehaviour
     {
-        stationDB.stationDatabase[val].mapIcon.GetComponent<Button>().onClick.Invoke();
+        public TMP_Dropdown stationDropdown;
+        public TextMeshProUGUI stationTypeText;
+        public TextMeshProUGUI stationLocText;
+        public StationDB stationDB;
+
+        public void OnValueChanage(int val)
+        {
+            stationDB.stationDatabase[val].mapIcon.GetComponent<Button>().onClick.Invoke();
+        }
     }
 }

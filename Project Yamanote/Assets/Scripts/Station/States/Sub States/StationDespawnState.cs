@@ -1,7 +1,6 @@
-using ProjectYamanote.Station.States.SuperStates;
 using ProjectYamanote.UI;
 
-namespace ProjectYamanote.Station.States.SubStates
+namespace ProjectYamanote.Station
 {
     public class StationDespawnState : StationTrainState
     {

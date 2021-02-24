@@ -95,8 +95,6 @@ namespace ProjectYamanote.Train
 
         #endregion Set Functions
 
-
-
         #region Other Functions
 
         private void AnimationTrigger() => StateMachine.CurrentState.AnimationTrigger();

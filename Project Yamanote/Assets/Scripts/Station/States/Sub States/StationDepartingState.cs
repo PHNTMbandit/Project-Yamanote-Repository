@@ -1,7 +1,4 @@
-
-using ProjectYamanote.Station.States.SuperStates;
-
-namespace ProjectYamanote.Station.States.SubStates
+namespace ProjectYamanote.Station
 {
     public class StationDepartingState : StationTrainState
     {
@@ -41,4 +38,3 @@ namespace ProjectYamanote.Station.States.SubStates
         }
     }
 }
-

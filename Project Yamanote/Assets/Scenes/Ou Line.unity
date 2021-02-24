@@ -753,7 +753,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1192348930}
           m_TargetAssemblyTypeName: ProjectYamanote.Triggers.ChangeScene, Assembly-CSharp
-          m_MethodName: ExitTrain
+          m_MethodName: Exit
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -989,7 +989,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 120394569}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 15.84, y: -9.99749, z: -95.914185}
+  m_LocalPosition: {x: 40.260002, y: -9.99749, z: -95.914185}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 869549614}
@@ -1405,7 +1405,7 @@ GameObject:
   - component: {fileID: 186111575}
   m_Layer: 0
   m_Name: Seat
-  m_TagString: Untagged
+  m_TagString: Seat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1467,7 +1467,7 @@ GameObject:
   - component: {fileID: 191102739}
   m_Layer: 0
   m_Name: Seat (6)
-  m_TagString: Untagged
+  m_TagString: Seat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1982,8 +1982,15 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
-  - name: TrainDeparting
+  - name: DoorsClosing
     clip: {fileID: 8300000, guid: e9ebb0217a283bc4bb413a1990bd5052, type: 3}
+    outputAudioMixerGroup: {fileID: -6256716954754227037, guid: a430626ead73ca8459fa0a8fa37041f3, type: 2}
+    volume: 0.8
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: TrainDeparting
+    clip: {fileID: 8300000, guid: 69bda7df93e7e8b4b87a29371952a435, type: 3}
     outputAudioMixerGroup: {fileID: -5607317309580710257, guid: a430626ead73ca8459fa0a8fa37041f3, type: 2}
     volume: 0.8
     pitch: 1
@@ -2057,7 +2064,7 @@ GameObject:
   - component: {fileID: 399299222}
   m_Layer: 0
   m_Name: Seat (5)
-  m_TagString: Untagged
+  m_TagString: Seat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3467,7 +3474,7 @@ GameObject:
   - component: {fileID: 684066019}
   m_Layer: 0
   m_Name: Seat (7)
-  m_TagString: Untagged
+  m_TagString: Seat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3612,7 +3619,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1192348930}
           m_TargetAssemblyTypeName: ProjectYamanote.Triggers.ChangeScene, Assembly-CSharp
-          m_MethodName: ExitTrain
+          m_MethodName: Exit
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -4569,7 +4576,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1192348930}
           m_TargetAssemblyTypeName: ProjectYamanote.Triggers.ChangeScene, Assembly-CSharp
-          m_MethodName: ExitTrain
+          m_MethodName: Exit
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -4799,7 +4806,7 @@ GameObject:
   - component: {fileID: 966117226}
   m_Layer: 0
   m_Name: Seat (3)
-  m_TagString: Untagged
+  m_TagString: Seat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5425,7 +5432,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1192348930}
           m_TargetAssemblyTypeName: ProjectYamanote.Triggers.ChangeScene, Assembly-CSharp
-          m_MethodName: ExitTrain
+          m_MethodName: Exit
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -5622,7 +5629,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1192348930}
           m_TargetAssemblyTypeName: ProjectYamanote.Triggers.ChangeScene, Assembly-CSharp
-          m_MethodName: ExitTrain
+          m_MethodName: Exit
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -6414,7 +6421,7 @@ GameObject:
   - component: {fileID: 1390954909}
   m_Layer: 0
   m_Name: Seat (2)
-  m_TagString: Untagged
+  m_TagString: Seat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8621,7 +8628,7 @@ GameObject:
   - component: {fileID: 1793507625}
   m_Layer: 0
   m_Name: Seat (1)
-  m_TagString: Untagged
+  m_TagString: Seat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9230,7 +9237,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   miniMapVisibility: 0
   miniMapClampPosition: 0
-  distanceToCameraSQR: 10120.572
+  distanceToCameraSQR: 11251.668
   computedIconScale: {x: 0.89937794, y: 0.89937794, z: 1}
   iconAlpha: 0
   miniMapIconScale: {x: 0.5, y: 0.5, z: 0.5}
@@ -9566,7 +9573,7 @@ GameObject:
   - component: {fileID: 1859911197}
   m_Layer: 0
   m_Name: Seat (4)
-  m_TagString: Untagged
+  m_TagString: Seat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10544,7 +10551,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1192348930}
           m_TargetAssemblyTypeName: ProjectYamanote.Triggers.ChangeScene, Assembly-CSharp
-          m_MethodName: ExitTrain
+          m_MethodName: Exit
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -10798,7 +10805,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 637824154574939744, guid: 75306490556f0a94ea793bbed97be06c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3
+      value: 27.42
       objectReference: {fileID: 0}
     - target: {fileID: 637824154574939744, guid: 75306490556f0a94ea793bbed97be06c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -15933,11 +15940,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4734194444030553872, guid: c4934e0a76e40d547b911caae48581bd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 15.8399935
+      value: 40.248215
       objectReference: {fileID: 0}
     - target: {fileID: 4734194444030553872, guid: c4934e0a76e40d547b911caae48581bd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -9.475011
+      value: -9.474653
       objectReference: {fileID: 0}
     - target: {fileID: 4734194444030553872, guid: c4934e0a76e40d547b911caae48581bd, type: 3}
       propertyPath: m_LocalPosition.z
@@ -16651,7 +16658,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   miniMapVisibility: 0
   miniMapClampPosition: 0
-  distanceToCameraSQR: 10011.983
+  distanceToCameraSQR: 10775.784
   computedIconScale: {x: 0.89937794, y: 0.89937794, z: 1}
   iconAlpha: 0
   miniMapIconScale: {x: 0.5, y: 0.5, z: 0.5}

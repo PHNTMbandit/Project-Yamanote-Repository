@@ -8,7 +8,7 @@ namespace ProjectYamanote.Triggers
         public string scene;
         public string spawn;
 
-        public void ExitTrain()
+        public void Exit()
         {
             string currentScene = SaveSystem.GetCurrentSceneName();
             PlayerPrefs.SetString("LastScene", currentScene);

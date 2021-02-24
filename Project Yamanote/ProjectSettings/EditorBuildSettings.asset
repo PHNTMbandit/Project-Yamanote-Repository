@@ -9,8 +9,8 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 073509f23b826974a88574fa5a898e92
   - enabled: 1
-    path: Assets/Scenes/Tsugaru Line.unity
-    guid: 29d2a9b201a74274e8b7669c1921102c
+    path: Assets/Scenes/Loading Screen.unity
+    guid: 9b7fe3c78cba9d54b92269085ea03985
   - enabled: 1
     path: Assets/Scenes/Ou Line.unity
     guid: f4c771cdfabca7546b24ac886857c158

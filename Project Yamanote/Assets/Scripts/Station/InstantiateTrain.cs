@@ -4,7 +4,6 @@ namespace ProjectYamanote.Station
 {
     public class InstantiateTrain : MonoBehaviour
     {
-        [SerializeField] private GameObject _tsugaruLine;
         [SerializeField] private GameObject _ouLine;
         [SerializeField] private Transform _arrivalPosition;
         [SerializeField] private Transform _instantiatePosition;
@@ -15,16 +14,15 @@ namespace ProjectYamanote.Station
 
         private void Start()
         {
-            _tsugaruLineAnimator = GetComponent<Animator>();
-
             string lastScene = PlayerPrefs.GetString("LastScene", null);
             if (lastScene != null)
             {
                 switch (lastScene)
                 {
-                    case "Tsugaru Line":
-                        print("exited tsugaru line");
-                        _tsugaruLine.transform.position = _arrivalPosition.position;
+                    case "Ou Line":
+                        print("exited Ou line");
+                        _ouLine.transform.position = _arrivalPosition.position;
+                        _station.StateMachine.ChangeState(_station.IdleState);
                         break;
                 }
             }

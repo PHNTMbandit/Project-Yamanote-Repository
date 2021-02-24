@@ -1,4 +1,4 @@
-namespace ProjectYamanote.Player.PlayerStates.SuperStates
+namespace ProjectYamanote.Player
 {
     public class PlayerGroundedState : PlayerState
     {

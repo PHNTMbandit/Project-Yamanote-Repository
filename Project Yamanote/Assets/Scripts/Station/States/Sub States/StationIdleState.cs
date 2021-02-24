@@ -1,6 +1,4 @@
-﻿using ProjectYamanote.Station.States.SuperStates;
-
-namespace ProjectYamanote.Station.States.SubStates
+﻿namespace ProjectYamanote.Station
 {
     public class StationIdleState : StationTrainState
     {

@@ -1,6 +1,4 @@
-using ProjectYamanote.Station.States.SuperStates;
-
-namespace ProjectYamanote.Station.States.SubStates
+namespace ProjectYamanote.Station
 {
     public class StationArrivedState : StationTrainState
     {
@@ -29,7 +27,7 @@ namespace ProjectYamanote.Station.States.SubStates
         {
             base.LogicUpdate();
 
-            if(station.isArrived == true)
+            if (station.isArrived == true)
                 stateMachine.ChangeState(station.IdleState);
         }
 

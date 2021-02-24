@@ -1,7 +1,7 @@
 using PixelCrushers;
 using UnityEngine;
 
-namespace ProjectYamanote.UI.Power
+namespace ProjectYamanote.UI
 {
     public class PowerButtons : MonoBehaviour
     {

@@ -1,6 +1,4 @@
-using ProjectYamanote.Player.PlayerStates.SuperStates;
-
-namespace ProjectYamanote.Player.PlayerStates.SubStates
+namespace ProjectYamanote.Player
 {
     public class PlayerSitUpState : PlayerGroundedState
     {
@@ -16,7 +14,6 @@ namespace ProjectYamanote.Player.PlayerStates.SubStates
         public override void Enter()
         {
             base.Enter();
-
         }
 
         public override void Exit()

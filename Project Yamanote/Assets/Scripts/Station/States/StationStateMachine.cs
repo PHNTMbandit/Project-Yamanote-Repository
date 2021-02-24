@@ -1,4 +1,4 @@
-namespace ProjectYamanote.Station.States
+namespace ProjectYamanote.Station
 {
     public class StationStateMachine
     {

@@ -1,4 +1,4 @@
-namespace ProjectYamanote.Player.PlayerStates.SuperStates
+namespace ProjectYamanote.Player
 {
     public class PlayerAbilityState : PlayerState
     {
@@ -24,8 +24,6 @@ namespace ProjectYamanote.Player.PlayerStates.SuperStates
         public override void LogicUpdate()
         {
             base.LogicUpdate();
-
-
         }
 
         public override void PhysicsUpdate()

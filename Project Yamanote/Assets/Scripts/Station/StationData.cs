@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace ProjectYamanote.Station
 {
-    [System.Serializable]
+    [Serializable]
     public class Schedule
     {
         public string origin;

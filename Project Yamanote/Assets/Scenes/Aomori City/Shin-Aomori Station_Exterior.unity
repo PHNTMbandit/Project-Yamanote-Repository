@@ -2000,7 +2000,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: Shin-Aomori Station Platform
 --- !u!222 &149055853
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7625,7 +7625,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: Shin-Aomori Station Platform
 --- !u!222 &1627209989
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9004,7 +9004,7 @@ MonoBehaviour:
   miniMapVisibility: 0
   miniMapClampPosition: 0
   distanceToCameraSQR: 10000
-  computedIconScale: {x: 0, y: 0, z: 0}
+  computedIconScale: {x: 0.89937794, y: 0.89937794, z: 1}
   iconAlpha: 0
   miniMapIconScale: {x: 0.5, y: 0.5, z: 0.5}
 --- !u!114 &1902532298

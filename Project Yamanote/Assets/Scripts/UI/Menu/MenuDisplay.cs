@@ -4,7 +4,7 @@ using ProjectYamanote.Player;
 using System.Collections;
 using System;
 
-namespace ProjectYamanote.UI.Menu
+namespace ProjectYamanote.UI
 {
     public class MenuDisplay : MonoBehaviour
     {
