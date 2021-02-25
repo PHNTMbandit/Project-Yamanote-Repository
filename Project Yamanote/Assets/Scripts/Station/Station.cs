@@ -1,5 +1,7 @@
 using ProjectYamanote.Audio;
 using ProjectYamanote.Train;
+using ProjectYamanote.UI;
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Audio;
@@ -20,7 +22,6 @@ namespace ProjectYamanote.Station
         #endregion State Variables
 
         #region Components
-
         public Animator Animator { get; private set; }
 
         #endregion Components
@@ -33,17 +34,15 @@ namespace ProjectYamanote.Station
         #endregion Check Variables
 
         #region Other Variables
+        public Transform arrivalPosition;
+        public Transform instantiatePosition;
+        public Transform despawnPosition;
 
-        private GameObject _train;
-
-        public Transform _arrivalPosition;
-        public Transform _instantiatePosition;
-        public Transform _despawnPosition;
-
+        [NonSerialized] public GameObject train;
+        
         [SerializeField] private StationData _stationData;
         [SerializeField] private AudioManager _audioManager;
         [SerializeField] private AudioMixer _audioMixer;
-
         #endregion Other Variables
 
         #region Unity Callback Functions
@@ -61,10 +60,12 @@ namespace ProjectYamanote.Station
 
         private void Start()
         {
-            foreach (Schedule train in _stationData.trainSchedule)
-                _train = train.trainPrefab;
+            foreach (var i in _stationData.trainSchedule)
+            {
+                train = i.trainPrefab;
+            }
 
-            Animator = _train.GetComponentInChildren<Animator>();
+            Animator = train.GetComponentInChildren<Animator>();
 
             StateMachine.Initialise(DespawnState);
         }
@@ -82,16 +83,6 @@ namespace ProjectYamanote.Station
         #endregion Unity Callback Functions
 
         #region Set Functions
-
-        public void TrainStart()
-        {
-            isDeparting = true;
-        }
-
-        #endregion Set Functions
-
-        #region Check Functions
-
         public void TrainArrived()
         {
             isArrived = true;
@@ -101,6 +92,10 @@ namespace ProjectYamanote.Station
         {
             isDeparting = false;
         }
+
+        #endregion Set Functions
+
+        #region Check Functions
 
         #endregion Check Functions
 
@@ -114,10 +109,10 @@ namespace ProjectYamanote.Station
         {
             foreach (var i in _stationData.trainSchedule)
             {
-                iTween.MoveTo(_train, iTween.Hash("position", _arrivalPosition.position, "time", 10, "delay", 10,
+                iTween.MoveTo(train, iTween.Hash("position", arrivalPosition.position, "time", 10, "delay", 10,
                     "easetype", iTween.EaseType.easeOutCubic, "oncomplete", "TrainArrived", "oncompletetarget", gameObject));
 
-                _train.GetComponent<TrainData>().SetVariables(i.origin, i.destination, i.timeArriveOriginDT, i.timeArriveDestinationDT, i.trainLine);
+                train.GetComponent<TrainData>().SetVariables(i.origin, i.destination, i.timeArriveOriginDT, i.timeArriveDestinationDT, i.trainLine);
             }
         }
 
@@ -132,17 +127,11 @@ namespace ProjectYamanote.Station
         {
             isArrived = false;
 
-            iTween.MoveTo(_train, iTween.Hash("position", _despawnPosition.position, "time", 10, "delay", 5,
+            iTween.MoveTo(train, iTween.Hash("position", despawnPosition.position, "time", 10, "delay", 5,
                 "easetype", iTween.EaseType.easeInCubic, "oncomplete", "TrainDeparted", "oncompletetarget", gameObject));
 
             yield return null;
         }
-
-        public void TrainReset()
-        {
-            _train.transform.position = _instantiatePosition.position;
-        }
-
         #endregion Other Functions
 
         #region SFX Functions

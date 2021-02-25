@@ -1,3 +1,5 @@
+using ProjectYamanote.UI;
+
 namespace ProjectYamanote.Station
 {
     public class StationTrainState : StationState

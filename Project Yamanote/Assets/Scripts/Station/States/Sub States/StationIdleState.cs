@@ -16,6 +16,7 @@
             base.Enter();
 
             station.StartCoroutine(station.TrainArrivedCouroutine());
+            station.train.transform.position = station.arrivalPosition.position;
         }
 
         public override void Exit()

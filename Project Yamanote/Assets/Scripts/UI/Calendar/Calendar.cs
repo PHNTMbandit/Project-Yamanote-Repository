@@ -48,7 +48,6 @@ namespace ProjectYamanote.UI
 
         public TextMeshProUGUI Month;
         public TextMeshProUGUI Year;
-        public GameClock gameTime;
 
         public Color enabledColour;
         public Color todayColour;
@@ -56,6 +55,7 @@ namespace ProjectYamanote.UI
         private void Start()
         {
             UpdateCalendar(GameClock.dateTime.Year, GameClock.dateTime.Month);
+            
         }
 
         void UpdateCalendar(int year, int month)

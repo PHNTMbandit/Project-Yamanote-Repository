@@ -1,3 +1,4 @@
+using ProjectYamanote.UI;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -29,6 +30,8 @@ namespace ProjectYamanote.Station
                 // Converts time strings to datetime
                 DateTime.TryParseExact(i.timeArriveOrigin, "H:mm", CultureInfo.InvariantCulture, DateTimeStyles.None, out i.timeArriveOriginDT);
                 DateTime.TryParseExact(i.timeArriveDestination, "H:mm", CultureInfo.InvariantCulture, DateTimeStyles.None, out i.timeArriveDestinationDT);
+
+                i.timeArriveOriginDT = new DateTime(GameClock.dateTime.Year, GameClock.dateTime.Month, GameClock.dateTime.Day, i.timeArriveOriginDT.Hour, i.timeArriveOriginDT.Minute, i.timeArriveOriginDT.Second);
             }
         }
     }

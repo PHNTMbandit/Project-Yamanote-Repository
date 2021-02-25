@@ -5348,7 +5348,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1122728537}
-  - component: {fileID: 1122728538}
   m_Layer: 0
   m_Name: Manager_Spawn
   m_TagString: Untagged
@@ -5371,19 +5370,6 @@ Transform:
   m_Father: {fileID: 1273937793}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1122728538
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1122728536}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64596f89ba3298849b3e684a0318d753, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _station: {fileID: 1271177273}
 --- !u!1 &1125474651
 GameObject:
   m_ObjectHideFlags: 0
@@ -5528,6 +5514,17 @@ Transform:
   m_Father: {fileID: 911733769}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1192208854 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4056407501275820827, guid: 82895fac9305d354f9cdd8283c1cc943, type: 3}
+  m_PrefabInstance: {fileID: 1939069675}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d103e43bb39aa2a4b9c0a1764619c7c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1193112968
 GameObject:
   m_ObjectHideFlags: 0
@@ -6284,9 +6281,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isArrived: 0
   isDeparting: 0
-  _arrivalPosition: {fileID: 1062640903}
-  _instantiatePosition: {fileID: 1247033834}
-  _despawnPosition: {fileID: 7121813199062421815}
+  arrivalPosition: {fileID: 1062640903}
+  instantiatePosition: {fileID: 1247033834}
+  despawnPosition: {fileID: 7121813199062421815}
   _stationData: {fileID: 1271177271}
   _audioManager: {fileID: 861289894}
   _audioMixer: {fileID: 24100000, guid: e85ad7a30db4bec4781dc2acc04780d0, type: 2}
@@ -6321,7 +6318,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_key: Manager_Station_838850
   m_appendSaverTypeToKey: 1
-  m_saveAcrossSceneChanges: 1
+  m_saveAcrossSceneChanges: 0
   m_restoreStateOnStart: 0
 --- !u!1 &1273937792
 GameObject:
@@ -6858,6 +6855,7 @@ GameObject:
   - component: {fileID: 1393520116}
   - component: {fileID: 1393520115}
   - component: {fileID: 1393520118}
+  - component: {fileID: 1393520119}
   m_Layer: 0
   m_Name: Shin-Aomori Station_Exterior
   m_TagString: Door
@@ -6921,6 +6919,18 @@ MonoBehaviour:
         - m_Target: {fileID: 1393520115}
           m_TargetAssemblyTypeName: ProjectYamanote.Triggers.ChangeScene, Assembly-CSharp
           m_MethodName: Exit
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1393520119}
+          m_TargetAssemblyTypeName: ProjectYamanote.Station.ResetStation, Assembly-CSharp
+          m_MethodName: ResetTrain
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -7023,6 +7033,19 @@ MonoBehaviour:
   computedIconScale: {x: 0.89937794, y: 0.89937794, z: 1}
   iconAlpha: 0
   miniMapIconScale: {x: 0.5, y: 0.5, z: 0.5}
+--- !u!114 &1393520119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1393520113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 379ddb79959822947adff510efbf53e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  station: {fileID: 1271177273}
 --- !u!1 &1404529689
 GameObject:
   m_ObjectHideFlags: 0
@@ -10874,6 +10897,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI_HUD
       objectReference: {fileID: 0}
+    - target: {fileID: 2403060526312399909, guid: 23710ccae55ab36409f920be499aacce, type: 3}
+      propertyPath: gameTime
+      value: 
+      objectReference: {fileID: 1192208854}
     - target: {fileID: 4779101510503282451, guid: 23710ccae55ab36409f920be499aacce, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -11185,6 +11212,10 @@ PrefabInstance:
     - target: {fileID: 7886024726273440342, guid: 23710ccae55ab36409f920be499aacce, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7886024726392235986, guid: 23710ccae55ab36409f920be499aacce, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7886024726392235997, guid: 23710ccae55ab36409f920be499aacce, type: 3}
       propertyPath: m_AnchorMax.y

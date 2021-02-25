@@ -14,7 +14,7 @@ namespace ProjectYamanote.Station
         public override void Enter()
         {
             base.Enter();
-            station.isDeparting = false;
+
             station.TrainArriving();
             station.TrainArrivingSFX();
         }

@@ -17,7 +17,9 @@ namespace ProjectYamanote.Station
         {
             base.Enter();
 
-            station.TrainReset();
+            station.isDeparting = false;
+            station.isArrived = false;
+            station.train.transform.position = station.instantiatePosition.position;
             station.TrainDespawnSFX();
         }
 
@@ -32,7 +34,7 @@ namespace ProjectYamanote.Station
 
             foreach (var i in stationData.trainSchedule)
             {
-                if (GameClock.dateTime.TimeOfDay.Equals(i.timeArriveOriginDT.TimeOfDay))
+                if (GameClock.dateTime == i.timeArriveOriginDT)
                 {
                     stateMachine.ChangeState(station.ArrivingState);
                 }
