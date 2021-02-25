@@ -1,10 +1,10 @@
 using ProjectYamanote.Audio;
 using ProjectYamanote.Train;
-using ProjectYamanote.UI;
 using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Audio;
+using DG.Tweening;
 
 namespace ProjectYamanote.Station
 {
@@ -22,27 +22,24 @@ namespace ProjectYamanote.Station
         #endregion State Variables
 
         #region Components
+
         public Animator Animator { get; private set; }
 
         #endregion Components
 
         #region Check Variables
-
         public bool isArrived;
+        public bool isDeparted;
         public bool isDeparting;
-
         #endregion Check Variables
 
         #region Other Variables
-        public Transform arrivalPosition;
-        public Transform instantiatePosition;
-        public Transform despawnPosition;
-
         [NonSerialized] public GameObject train;
-        
+
         [SerializeField] private StationData _stationData;
         [SerializeField] private AudioManager _audioManager;
         [SerializeField] private AudioMixer _audioMixer;
+
         #endregion Other Variables
 
         #region Unity Callback Functions
@@ -90,17 +87,12 @@ namespace ProjectYamanote.Station
 
         public void TrainDeparted()
         {
-            isDeparting = false;
+            isDeparted = true;
         }
 
         #endregion Set Functions
 
-        #region Check Functions
-
-        #endregion Check Functions
-
         #region Other Functions
-
         private void AnimationTrigger() => StateMachine.CurrentState.AnimationTrigger();
 
         private void AnimationFinishTrigger() => StateMachine.CurrentState.AnimationFinishTrigger();
@@ -109,28 +101,33 @@ namespace ProjectYamanote.Station
         {
             foreach (var i in _stationData.trainSchedule)
             {
-                iTween.MoveTo(train, iTween.Hash("position", arrivalPosition.position, "time", 10, "delay", 10,
-                    "easetype", iTween.EaseType.easeOutCubic, "oncomplete", "TrainArrived", "oncompletetarget", gameObject));
+                train.transform.DOMove(new Vector3(-20.34f, -0.03298116f, 0f), 10)
+                    .SetDelay(10)
+                    .SetEase(Ease.OutQuart)
+                    .SetId("TrainArriving")
+                    .OnComplete(TrainArrived);
 
                 train.GetComponent<TrainData>().SetVariables(i.origin, i.destination, i.timeArriveOriginDT, i.timeArriveDestinationDT, i.trainLine);
             }
         }
 
-        public IEnumerator TrainArrivedCouroutine()
+        public IEnumerator TrainWaitCouroutine()
         {
             yield return new WaitForSeconds(10);
 
             isDeparting = true;
         }
 
-        public IEnumerator TrainDepartingCouroutine()
+        public void TrainDeparting()
         {
-            isArrived = false;
-
-            iTween.MoveTo(train, iTween.Hash("position", despawnPosition.position, "time", 10, "delay", 5,
-                "easetype", iTween.EaseType.easeInCubic, "oncomplete", "TrainDeparted", "oncompletetarget", gameObject));
-
-            yield return null;
+            foreach (var i in _stationData.trainSchedule)
+            {
+                train.transform.DOMove(new Vector3(-108f, -0.03298116f, 0f), 10)
+                    .SetDelay(5)
+                    .SetEase(Ease.InQuart)
+                    .SetId("TrainDeparting")
+                    .OnComplete(TrainDeparted);
+            }
         }
         #endregion Other Functions
 

@@ -5,9 +5,6 @@ namespace ProjectYamanote.Station
     public class InstantiateTrain : MonoBehaviour
     {
         [SerializeField] private GameObject _ouLine;
-        [SerializeField] private Transform _arrivalPosition;
-        [SerializeField] private Transform _instantiatePosition;
-        [SerializeField] private Transform _despawnPosition;
         [SerializeField] private Station _station;
 
         private Animator _tsugaruLineAnimator;
@@ -21,7 +18,7 @@ namespace ProjectYamanote.Station
                 {
                     case "Ou Line":
                         print("exited Ou line");
-                        _ouLine.transform.position = _arrivalPosition.position;
+                        _ouLine.transform.position = new Vector3(-20.34f, -0.03298116f, 0f);
                         _station.StateMachine.ChangeState(_station.IdleState);
                         break;
                 }

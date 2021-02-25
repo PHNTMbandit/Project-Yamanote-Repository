@@ -16,6 +16,7 @@ namespace ProjectYamanote.Station
             base.Enter();
 
             station.TrainArrivedSFX();
+            
         }
 
         public override void Exit()

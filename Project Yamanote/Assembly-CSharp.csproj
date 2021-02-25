@@ -95,6 +95,7 @@
     <Compile Include="Assets\Scripts\UI\Map\Journey Planner\FindRoute.cs" />
     <Compile Include="Assets\Scripts\Station\States\Super States\StationTrainState.cs" />
     <Compile Include="Assets\Scripts\Player\Player States\Super States\PlayerGroundedState.cs" />
+    <Compile Include="Assets\Scripts\UI\TrainAnnouncement.cs" />
     <Compile Include="Assets\Scripts\Station\InstantiateTrain.cs" />
     <Compile Include="Assets\Scripts\Station\States\Sub States\StationDepartingState.cs" />
     <Compile Include="Assets\Scripts\Player\Player States\Super States\PlayerAbilityState.cs" />
@@ -125,7 +126,6 @@
     <Compile Include="Assets\Scripts\Station\States\Sub States\StationArrivedState.cs" />
     <Compile Include="Assets\Scripts\Player\Player States\Sub States\PlayerPhoneOffState.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerAnimationSFX.cs" />
-    <Compile Include="Assets\Scripts\Station\ResetStation.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Physics\Characters\Daisuke\Daisuke_walk.xml" />
@@ -380,6 +380,15 @@
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
       <HintPath>Library\PackageCache\com.unity.analytics@3.5.3\Unity.Analytics.Tracker.dll</HintPath>
+    </Reference>
+    <Reference Include="DemiLib">
+      <HintPath>Assets\Plugins\Demigiant\DemiLib\Core\DemiLib.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween">
+      <HintPath>Assets\Plugins\Demigiant\DOTween\DOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTweenPro">
+      <HintPath>Assets\Plugins\Demigiant\DOTweenPro\DOTweenPro.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files\Unity\2020.2.5f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
@@ -995,6 +1004,14 @@
     <ProjectReference Include="Unity.2D.SpriteShape.Runtime.csproj">
       <Project>{3D5F7753-26F7-4A32-4A22-B36250A28A76}</Project>
       <Name>Unity.2D.SpriteShape.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="DOTween.Modules.csproj">
+      <Project>{5492342F-ECA2-EA9A-ED57-F098F9DB1E1E}</Project>
+      <Name>DOTween.Modules</Name>
+    </ProjectReference>
+    <ProjectReference Include="DOTweenPro.Scripts.csproj">
+      <Project>{AEF2E900-97DB-CF79-AF3F-98D382A96254}</Project>
+      <Name>DOTweenPro.Scripts</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

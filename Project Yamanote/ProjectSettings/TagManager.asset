@@ -6,12 +6,11 @@ TagManager:
   tags:
   - Parallax
   - UI
-  - Collider
   - Door
   - Clock
   - Seat
   - NPC
-  - Ground
+  - TrainAnnouncement
   layers:
   - Default
   - TransparentFX

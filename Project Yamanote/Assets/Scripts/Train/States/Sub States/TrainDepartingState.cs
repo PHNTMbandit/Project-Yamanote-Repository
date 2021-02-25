@@ -17,6 +17,7 @@ namespace ProjectYamanote.Train.States.SubStates
         {
             base.Enter();
 
+            train.trainAnnouncement.ShowTrainAnnouncement("Train is now departing");
             train.TrainDepartingSFX();
         }
 

@@ -1,4 +1,5 @@
 using ProjectYamanote.UI;
+using UnityEngine;
 
 namespace ProjectYamanote.Station
 {
@@ -17,9 +18,8 @@ namespace ProjectYamanote.Station
         {
             base.Enter();
 
-            station.isDeparting = false;
-            station.isArrived = false;
-            station.train.transform.position = station.instantiatePosition.position;
+            station.train.transform.position = new Vector3(47.1f, -0.03298116f, 0f);
+            station.isDeparted = false;
             station.TrainDespawnSFX();
         }
 

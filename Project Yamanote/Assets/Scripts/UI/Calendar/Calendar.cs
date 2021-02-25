@@ -1,7 +1,7 @@
-﻿using System.Collections.Generic;
-using UnityEngine;
-using System;
+﻿using System;
+using System.Collections.Generic;
 using TMPro;
+using UnityEngine;
 
 namespace ProjectYamanote.UI
 {
@@ -52,16 +52,17 @@ namespace ProjectYamanote.UI
         public Color enabledColour;
         public Color todayColour;
 
+        public DateTime currDate = GameClock.dateTime;
+
         private void Start()
         {
             UpdateCalendar(GameClock.dateTime.Year, GameClock.dateTime.Month);
-            
         }
 
-        void UpdateCalendar(int year, int month)
+        private void UpdateCalendar(int year, int month)
         {
             DateTime temp = new DateTime(year, month, 1);
-            GameClock.dateTime = temp;
+            currDate = temp;
             Month.text = temp.ToString("MMMM");
             Year.text = temp.Year.ToString();
             int startDay = GetMonthStartDay(year, month);
@@ -108,17 +109,16 @@ namespace ProjectYamanote.UI
             {
                 days[(GameClock.dateTime.Day - 1) + startDay].UpdateColor(Color.red);
             }
-
         }
 
-        int GetMonthStartDay(int year, int month)
+        private int GetMonthStartDay(int year, int month)
         {
             DateTime temp = new DateTime(year, month, 1);
 
             return (int)temp.DayOfWeek;
         }
 
-        int GetTotalNumberOfDays(int year, int month)
+        private int GetTotalNumberOfDays(int year, int month)
         {
             return DateTime.DaysInMonth(year, month);
         }
@@ -127,15 +127,14 @@ namespace ProjectYamanote.UI
         {
             if (direction < 0)
             {
-                GameClock.dateTime = GameClock.dateTime.AddMonths(-1);
+                currDate = currDate.AddMonths(-1);
             }
             else
             {
-                GameClock.dateTime = GameClock.dateTime.AddMonths(1);
+                currDate = currDate.AddMonths(1);
             }
 
-            UpdateCalendar(GameClock.dateTime.Year, GameClock.dateTime.Month);
+            UpdateCalendar(currDate.Year, currDate.Month);
         }
     }
 }
-

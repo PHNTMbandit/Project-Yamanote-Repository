@@ -15,7 +15,9 @@ namespace ProjectYamanote.Station
         {
             base.Enter();
 
-            station.StartCoroutine(station.TrainDepartingCouroutine());
+            station.isArrived = false;
+            station.isDeparting = false;
+            station.TrainDeparting();
             station.TrainDepartingSFX();
         }
 
@@ -28,7 +30,7 @@ namespace ProjectYamanote.Station
         {
             base.LogicUpdate();
 
-            if (station.isDeparting == false)
+            if (station.isDeparted == true)
                 stateMachine.ChangeState(station.DespawnState);
         }
 

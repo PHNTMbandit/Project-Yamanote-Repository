@@ -1,4 +1,6 @@
-﻿namespace ProjectYamanote.Station
+﻿using DG.Tweening;
+
+namespace ProjectYamanote.Station
 {
     public class StationIdleState : StationTrainState
     {
@@ -15,8 +17,7 @@
         {
             base.Enter();
 
-            station.StartCoroutine(station.TrainArrivedCouroutine());
-            station.train.transform.position = station.arrivalPosition.position;
+            station.StartCoroutine(station.TrainWaitCouroutine());
         }
 
         public override void Exit()

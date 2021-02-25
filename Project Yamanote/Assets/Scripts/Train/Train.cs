@@ -42,7 +42,7 @@ namespace ProjectYamanote.Train
         public Transform departTransform;
         public Transform arrivedTransfrom;
         public Transform arrivingTransform;
-        [NonSerialized] public GameClock gameClock;
+        [NonSerialized] public TrainAnnouncement trainAnnouncement;
         [SerializeField] private GameObject[] _parallaxBackground;
         [SerializeField] private AudioManager audioManager;
         [SerializeField] private AudioMixer audioMixer;
@@ -65,6 +65,7 @@ namespace ProjectYamanote.Train
         private void Start()
         {
             Animator = GetComponent<Animator>();
+            trainAnnouncement = FindObjectOfType<TrainAnnouncement>();
 
             StateMachine.Intialise(IdleState);
         }
@@ -108,10 +109,7 @@ namespace ProjectYamanote.Train
             {
                 StopCoroutine(background.GetComponent<EasyParallax.SpriteMovement>().SpeedUpParallax());
                 StartCoroutine(background.GetComponent<EasyParallax.SpriteMovement>().SpeedDownParallax());
-            }
-
-            iTween.MoveTo(trainStation, iTween.Hash("position", arrivedTransfrom.position, "time", 6, "delay", 10, "easetype", iTween.EaseType.easeOutCubic,
-                "oncomplete", "TrainArrived", "oncompletetarget", gameObject));
+            } 
         }
 
         public void SpeedUp()
@@ -122,9 +120,6 @@ namespace ProjectYamanote.Train
                 StartCoroutine(background.GetComponent<EasyParallax.SpriteMovement>().SpeedUpParallax());
                 StopCoroutine(background.GetComponent<EasyParallax.SpriteMovement>().SpeedDownParallax());
             }
-
-            iTween.MoveTo(trainStation, iTween.Hash("position", departTransform.position, "time", 10, "easetype", iTween.EaseType.easeInCubic,
-                "oncomplete", "TrainDeparted", "oncompletetarget", gameObject));
         }
 
         public IEnumerator TrainArrivedCouroutine()
