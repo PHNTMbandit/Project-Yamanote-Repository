@@ -14,6 +14,9 @@ namespace ProjectYamanote.Station
         public override void Enter()
         {
             base.Enter();
+
+            station.StartCoroutine(station.trainAnnouncement.ShowTrainAnnouncementAlert
+                ("Train will arrive soon. Please stand behind the yellow line."));
             station.TrainArriving();
             station.TrainArrivingSFX();
         }

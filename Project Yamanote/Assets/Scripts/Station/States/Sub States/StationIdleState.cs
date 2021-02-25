@@ -1,6 +1,4 @@
-﻿using DG.Tweening;
-
-namespace ProjectYamanote.Station
+﻿namespace ProjectYamanote.Station
 {
     public class StationIdleState : StationTrainState
     {

@@ -1,10 +1,11 @@
+using DG.Tweening;
 using ProjectYamanote.Audio;
 using ProjectYamanote.Train;
+using ProjectYamanote.UI;
 using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Audio;
-using DG.Tweening;
 
 namespace ProjectYamanote.Station
 {
@@ -28,14 +29,17 @@ namespace ProjectYamanote.Station
         #endregion Components
 
         #region Check Variables
+
         public bool isArrived;
         public bool isDeparted;
         public bool isDeparting;
+
         #endregion Check Variables
 
         #region Other Variables
-        [NonSerialized] public GameObject train;
 
+        [NonSerialized] public GameObject train;
+        [NonSerialized] public TrainAnnouncement trainAnnouncement;
         [SerializeField] private StationData _stationData;
         [SerializeField] private AudioManager _audioManager;
         [SerializeField] private AudioMixer _audioMixer;
@@ -63,6 +67,7 @@ namespace ProjectYamanote.Station
             }
 
             Animator = train.GetComponentInChildren<Animator>();
+            trainAnnouncement = FindObjectOfType<TrainAnnouncement>();
 
             StateMachine.Initialise(DespawnState);
         }
@@ -80,6 +85,7 @@ namespace ProjectYamanote.Station
         #endregion Unity Callback Functions
 
         #region Set Functions
+
         public void TrainArrived()
         {
             isArrived = true;
@@ -93,6 +99,7 @@ namespace ProjectYamanote.Station
         #endregion Set Functions
 
         #region Other Functions
+
         private void AnimationTrigger() => StateMachine.CurrentState.AnimationTrigger();
 
         private void AnimationFinishTrigger() => StateMachine.CurrentState.AnimationFinishTrigger();
@@ -129,6 +136,7 @@ namespace ProjectYamanote.Station
                     .OnComplete(TrainDeparted);
             }
         }
+
         #endregion Other Functions
 
         #region SFX Functions

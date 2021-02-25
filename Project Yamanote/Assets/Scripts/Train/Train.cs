@@ -109,7 +109,7 @@ namespace ProjectYamanote.Train
             {
                 StopCoroutine(background.GetComponent<EasyParallax.SpriteMovement>().SpeedUpParallax());
                 StartCoroutine(background.GetComponent<EasyParallax.SpriteMovement>().SpeedDownParallax());
-            } 
+            }
         }
 
         public void SpeedUp()
