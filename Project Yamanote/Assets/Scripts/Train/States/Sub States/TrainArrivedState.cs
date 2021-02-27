@@ -1,6 +1,4 @@
-using ProjectYamanote.Train.States.SuperStates;
-
-namespace ProjectYamanote.Train.States.SubStates
+namespace ProjectYamanote.Train
 {
     public class TrainArrivedState : TrainInsideState
     {

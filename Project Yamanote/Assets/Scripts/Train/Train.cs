@@ -1,6 +1,5 @@
+using DG.Tweening;
 using ProjectYamanote.Audio;
-using ProjectYamanote.Train.States;
-using ProjectYamanote.Train.States.SubStates;
 using ProjectYamanote.UI;
 using System;
 using System.Collections;
@@ -39,9 +38,8 @@ namespace ProjectYamanote.Train
 
         public TrainData trainData;
         public GameObject trainStation;
-        public Transform departTransform;
-        public Transform arrivedTransfrom;
-        public Transform arrivingTransform;
+        public GameObject _stationForeground;
+        public GameObject _stationBackground;
         [NonSerialized] public TrainAnnouncement trainAnnouncement;
         [SerializeField] private GameObject[] _parallaxBackground;
         [SerializeField] private AudioManager audioManager;
@@ -110,6 +108,13 @@ namespace ProjectYamanote.Train
                 StopCoroutine(background.GetComponent<EasyParallax.SpriteMovement>().SpeedUpParallax());
                 StartCoroutine(background.GetComponent<EasyParallax.SpriteMovement>().SpeedDownParallax());
             }
+            _stationForeground.transform.DOMove(new Vector3(10.38f, -7.706331f, 0f), 10)
+                    .SetDelay(10)
+                    .SetEase(Ease.OutQuart)
+                    .OnComplete(TrainArrived);
+            _stationBackground.transform.DOMove(new Vector3(10.38f, -7.325131f, 0f), 10)
+                    .SetDelay(10)
+                    .SetEase(Ease.OutQuart);
         }
 
         public void SpeedUp()
@@ -120,6 +125,12 @@ namespace ProjectYamanote.Train
                 StartCoroutine(background.GetComponent<EasyParallax.SpriteMovement>().SpeedUpParallax());
                 StopCoroutine(background.GetComponent<EasyParallax.SpriteMovement>().SpeedDownParallax());
             }
+
+            _stationForeground.transform.DOMove(new Vector3(-51.4f, -7.706331f, 0f), 10)
+                    .SetEase(Ease.InQuart)
+                    .OnComplete(TrainDeparted);
+            _stationBackground.transform.DOMove(new Vector3(-51.4f, -7.325131f, 0f), 10)
+                    .SetEase(Ease.InQuart);
         }
 
         public IEnumerator TrainArrivedCouroutine()

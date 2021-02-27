@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace ProjectYamanote.Train.States
+namespace ProjectYamanote.Train
 {
     public class TrainState
     {

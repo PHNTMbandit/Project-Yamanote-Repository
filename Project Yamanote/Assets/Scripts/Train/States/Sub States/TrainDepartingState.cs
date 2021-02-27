@@ -1,6 +1,4 @@
-using ProjectYamanote.Train.States.SuperStates;
-
-namespace ProjectYamanote.Train.States.SubStates
+namespace ProjectYamanote.Train
 {
     public class TrainDepartingState : TrainInsideState
     {
@@ -19,7 +17,6 @@ namespace ProjectYamanote.Train.States.SubStates
 
             train.StartCoroutine(train.trainAnnouncement.ShowTrainAnnouncementAlert
                 ("The doors are now closing. This train is bound for " + TrainData.destinationStation.ToString() + "."));
-            train.trainAnnouncement.ShowTrainAnnouncementAlert("Train is now departing");
             train.TrainDepartingSFX();
         }
 

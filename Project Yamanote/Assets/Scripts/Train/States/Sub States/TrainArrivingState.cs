@@ -1,6 +1,4 @@
-using ProjectYamanote.Train.States.SuperStates;
-
-namespace ProjectYamanote.Train.States.SubStates
+namespace ProjectYamanote.Train
 {
     public class TrainArrivingState : TrainInsideState
     {
@@ -20,7 +18,6 @@ namespace ProjectYamanote.Train.States.SubStates
             train.StartCoroutine(train.trainAnnouncement.ShowTrainAnnouncementAlert
                 ("The next station is " + TrainData.destinationStation.ToString() + ". The doors on the left side will open."));
             train.SpeedDown();
-            train.trainStation.transform.position = train.arrivingTransform.position;
             train.TrainArrivingSFX();
         }
 

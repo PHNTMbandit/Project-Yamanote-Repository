@@ -1,7 +1,7 @@
-using ProjectYamanote.Train.States.SuperStates;
 using ProjectYamanote.UI;
+using UnityEngine;
 
-namespace ProjectYamanote.Train.States.SubStates
+namespace ProjectYamanote.Train
 {
     public class TrainTravellingState : TrainInsideState
     {
@@ -18,6 +18,8 @@ namespace ProjectYamanote.Train.States.SubStates
         {
             base.Enter();
 
+            train._stationForeground.transform.position = new Vector3(69.7f, -7.706331f, 0f);
+            train._stationBackground.transform.position = new Vector3(69.7f, -7.325131f, 0f);
             train.TrainTravellingSFX();
         }
 

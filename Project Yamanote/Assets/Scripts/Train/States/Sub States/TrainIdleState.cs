@@ -1,6 +1,6 @@
-﻿using ProjectYamanote.Train.States.SuperStates;
+﻿using UnityEngine;
 
-namespace ProjectYamanote.Train.States.SubStates
+namespace ProjectYamanote.Train
 {
     public class TrainIdleState : TrainInsideState
     {
@@ -18,7 +18,8 @@ namespace ProjectYamanote.Train.States.SubStates
             base.Enter();
 
             train.StartCoroutine(train.TrainArrivedCouroutine());
-            train.trainStation.transform.position = train.arrivedTransfrom.position;
+            train._stationForeground.transform.position = new Vector3(10.38f, -7.706331f, 0f);
+            train._stationBackground.transform.position = new Vector3(10.38f, -7.325131f, 0f);
         }
 
         public override void Exit()
