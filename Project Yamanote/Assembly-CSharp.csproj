@@ -129,7 +129,7 @@
     <Compile Include="Assets\Scripts\Player\PlayerAnimationSFX.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Physics\Characters\Daisuke\Daisuke_walk.xml" />
+     <None Include="Assets\Physics\Characters\Daisuke\Daisuke_walk.xml" />
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\2020.2.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
