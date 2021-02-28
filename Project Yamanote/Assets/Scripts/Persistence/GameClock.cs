@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine;
 
-namespace ProjectYamanote.UI
+namespace ProjectYamanote.Persistence
 {
     public class GameClock : MonoBehaviour
     {

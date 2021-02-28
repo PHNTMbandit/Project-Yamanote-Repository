@@ -107,6 +107,7 @@
     <Compile Include="Assets\Scripts\Train\States\Sub States\TrainArrivingState.cs" />
     <Compile Include="Assets\Scripts\UI\UIButton.cs" />
     <Compile Include="Assets\Scripts\Audio\AudioManager.cs" />
+    <Compile Include="Assets\Scripts\UI\SkipTrainTime.cs" />
     <Compile Include="Assets\Scripts\Station\States\StationState.cs" />
     <Compile Include="Assets\Scripts\Custom Saver\ParallaxSaver.cs" />
     <Compile Include="Assets\Scripts\Triggers\AnimationTrigger.cs" />
@@ -116,7 +117,7 @@
     <Compile Include="Assets\Scripts\Triggers\ChangeScene.cs" />
     <Compile Include="Assets\Scripts\UI\Clock\WaitTime.cs" />
     <Compile Include="Assets\Scripts\UI\Power\PowerButtons.cs" />
-    <Compile Include="Assets\Scripts\UI\GameClock.cs" />
+    <Compile Include="Assets\Scripts\Persistence\GameClock.cs" />
     <Compile Include="Assets\Scripts\Player\Player States\Sub States\PlayerPhoneOnState.cs" />
     <Compile Include="Assets\Scripts\UI\FreezeTextRotation.cs" />
     <Compile Include="Assets\Scripts\Train\TrainData.cs" />
@@ -127,10 +128,9 @@
     <Compile Include="Assets\Scripts\Station\States\Sub States\StationArrivedState.cs" />
     <Compile Include="Assets\Scripts\Player\Player States\Sub States\PlayerPhoneOffState.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerAnimationSFX.cs" />
-    <Compile Include="Assets\Scripts\UI\SkipTrainTime.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Physics\Characters\Daisuke\Daisuke_walk.xml" />
+     <None Include="Assets\Physics\Characters\Daisuke\Daisuke_walk.xml" />
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\2020.2.5f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>

@@ -1,11 +1,12 @@
-using System.Collections.Generic;
-using System.Linq;
+using ProjectYamanote.Persistence;
+using ProjectYamanote.Routes;
+using ProjectYamanote.Station;
 using System;
+using System.Collections.Generic;
 using System.Globalization;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
-using ProjectYamanote.Station;
-using ProjectYamanote.Routes;
 
 namespace ProjectYamanote.UI
 {
@@ -97,4 +98,3 @@ namespace ProjectYamanote.UI
         }
     }
 }
-

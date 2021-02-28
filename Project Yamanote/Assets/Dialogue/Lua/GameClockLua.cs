@@ -1,6 +1,6 @@
-using UnityEngine;
 using PixelCrushers.DialogueSystem;
-using ProjectYamanote.UI;
+using ProjectYamanote.Persistence;
+using UnityEngine;
 
 public class GameClockLua : MonoBehaviour
 {
@@ -14,7 +14,7 @@ public class GameClockLua : MonoBehaviour
 
     public bool Month(double month)
     {
-        return GameClock.dateTime.Month== month;
+        return GameClock.dateTime.Month == month;
     }
 
     public bool Day(double day)
@@ -33,7 +33,8 @@ public class GameClockLua : MonoBehaviour
     }
 
     # region Register with Lua
-    void OnEnable()
+
+    private void OnEnable()
     {
         // Make the functions available to Lua: (Replace these lines with your own.)
         Lua.RegisterFunction("Year", this, SymbolExtensions.GetMethodInfo(() => Year((double)0)));
@@ -43,7 +44,7 @@ public class GameClockLua : MonoBehaviour
         Lua.RegisterFunction("Minute", this, SymbolExtensions.GetMethodInfo(() => Minute((double)0)));
     }
 
-    void OnDisable()
+    private void OnDisable()
     {
         if (unregisterOnDisable)
         {
@@ -55,5 +56,6 @@ public class GameClockLua : MonoBehaviour
             Lua.UnregisterFunction("Minute");
         }
     }
+
     #endregion
 }

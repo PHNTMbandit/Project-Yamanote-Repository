@@ -1,6 +1,6 @@
 using DG.Tweening;
+using ProjectYamanote.Persistence;
 using ProjectYamanote.Train;
-using ProjectYamanote.UI;
 using System;
 using System.Collections;
 using UnityEngine;
@@ -38,7 +38,7 @@ namespace ProjectYamanote
             yield return new WaitForSeconds(2);
 
             trainController.StateMachine.ChangeState(trainController.ArrivingState);
-            GameClock.dateTime = new DateTime(TrainData.timeArriveDestinationDT.Ticks);
+            GameClock.dateTime = new DateTime(TrainData.timeArriveDestinationDT.TimeOfDay.Ticks);
             fadeAnimator.SetTrigger("Hide");
         }
     }

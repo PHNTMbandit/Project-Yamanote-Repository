@@ -1,14 +1,14 @@
-﻿using System;
-using UnityEngine;
+﻿using ProjectYamanote.Persistence;
+using System;
 using TMPro;
+using UnityEngine;
 
 namespace ProjectYamanote.UI
 {
     public class ListButtonTemplate : MonoBehaviour
     {
         #region Variables
-        private GameClock _gameClock;
-        
+
         [SerializeField] private TextMeshProUGUI _textCost;
         [SerializeField] private TextMeshProUGUI _textArriveTime;
         [SerializeField] private TextMeshProUGUI _textDepartTime;
@@ -20,9 +20,11 @@ namespace ProjectYamanote.UI
         [SerializeField] private GameObject _divider;
         [SerializeField] private Color redColor;
         [SerializeField] private Color greenColor;
-        #endregion
+
+        #endregion Variables
 
         #region Button Setters
+
         public void SetCost(int cost)
         {
             _textCost.text = cost.ToString();
@@ -94,12 +96,12 @@ namespace ProjectYamanote.UI
 
         public void SetMapTrainRoute(int originStation, int destinationStation, int transferStation)
         {
-
         }
-        #endregion
+
+        #endregion Button Setters
 
         public void OnClick()
-        {         
+        {
         }
     }
 }
