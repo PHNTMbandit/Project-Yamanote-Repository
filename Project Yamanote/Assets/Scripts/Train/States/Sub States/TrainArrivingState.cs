@@ -17,10 +17,10 @@ namespace ProjectYamanote.Train
 
             train.StartCoroutine(train.trainAnnouncement.ShowTrainAnnouncementAlert
                 ("The next station is " + TrainData.destinationStation.ToString() + ". The doors on the left side will open."));
-           
+
             train.SpeedDown();
             train.TrainArrivingSFX();
-            
+
             train.saveButton.interactable = false;
         }
 

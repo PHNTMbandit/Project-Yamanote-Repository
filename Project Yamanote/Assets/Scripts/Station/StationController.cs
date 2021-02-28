@@ -98,6 +98,7 @@ namespace ProjectYamanote.Station
         public void TrainDeparted()
         {
             isDeparted = true;
+            PlayerPrefs.DeleteAll();
         }
 
         #endregion Set Functions

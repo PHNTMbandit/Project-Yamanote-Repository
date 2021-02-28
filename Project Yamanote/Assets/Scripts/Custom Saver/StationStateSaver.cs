@@ -1,6 +1,5 @@
 ﻿using ProjectYamanote.Station;
 using System;
-using UnityEngine;
 
 namespace PixelCrushers
 {
@@ -36,20 +35,25 @@ namespace PixelCrushers
                 case "arrived":
                     m_station.StateMachine.ChangeState(m_station.ArrivedState);
                     break;
+
                 case "arriving":
                     m_station.StateMachine.ChangeState(m_station.ArrivingState);
                     break;
+
                 case "departing":
                     m_station.StateMachine.ChangeState(m_station.DepartingState);
                     break;
+
                 case "despawn":
                     m_station.StateMachine.ChangeState(m_station.DespawnState);
                     break;
+
                 case "idle":
                     m_station.StateMachine.ChangeState(m_station.IdleState);
                     break;
             }
         }
+
         public override void ApplyDataImmediate()
         {
             base.ApplyDataImmediate();

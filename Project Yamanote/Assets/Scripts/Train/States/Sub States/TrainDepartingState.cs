@@ -20,7 +20,7 @@ namespace ProjectYamanote.Train
 
             train.SpeedUp();
             train.TrainDepartingSFX();
-            
+
             train.saveButton.interactable = false;
         }
 

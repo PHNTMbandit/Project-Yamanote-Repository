@@ -40,6 +40,7 @@ namespace ProjectYamanote.Train
         public TrainData trainData;
         public Button waitTimeButton;
         public Button saveButton;
+        public GameObject skipButton;
         public GameObject _stationForeground;
         public GameObject _stationBackground;
 
@@ -48,6 +49,8 @@ namespace ProjectYamanote.Train
         [SerializeField] private GameObject[] _parallaxBackground;
         [SerializeField] private AudioManager audioManager;
         [SerializeField] private AudioMixer audioMixer;
+
+        private SkipTrainTime skipTrain;
 
         #endregion Other Variables
 
@@ -68,6 +71,7 @@ namespace ProjectYamanote.Train
         {
             Animator = GetComponent<Animator>();
             trainAnnouncement = FindObjectOfType<TrainAnnouncement>();
+            skipTrain = FindObjectOfType<SkipTrainTime>();
 
             waitTimeButton.interactable = false;
 

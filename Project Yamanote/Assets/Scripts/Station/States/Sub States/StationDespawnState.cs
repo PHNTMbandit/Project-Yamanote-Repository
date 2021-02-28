@@ -19,11 +19,11 @@ namespace ProjectYamanote.Station
             base.Enter();
 
             station.train.transform.position = new Vector3(47.1f, -0.03298116f, 0f);
-            
+
             station.isDeparted = false;
-            
+
             station.TrainDespawnSFX();
-            
+
             station.waitTimeButton.interactable = true;
             station.saveButton.interactable = true;
         }

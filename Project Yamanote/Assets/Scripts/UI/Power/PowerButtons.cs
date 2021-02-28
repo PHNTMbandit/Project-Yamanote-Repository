@@ -25,7 +25,6 @@ namespace ProjectYamanote.UI
         public void Quit()
         {
             SaveSystem.LoadScene("MainMenu");
-            PlayerPrefs.DeleteAll();
         }
     }
 }

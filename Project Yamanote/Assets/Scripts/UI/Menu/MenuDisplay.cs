@@ -1,8 +1,6 @@
-﻿using UnityEngine;
+﻿using ProjectYamanote.Player;
 using TMPro;
-using ProjectYamanote.Player;
-using System.Collections;
-using System;
+using UnityEngine;
 
 namespace ProjectYamanote.UI
 {
