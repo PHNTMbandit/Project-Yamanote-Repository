@@ -2057,7 +2057,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   miniMapVisibility: 0
   miniMapClampPosition: 0
-  distanceToCameraSQR: 10831.301
+  distanceToCameraSQR: 8634.544
   computedIconScale: {x: 0.89937794, y: 0.89937794, z: 1}
   iconAlpha: 0
   miniMapIconScale: {x: 0.5, y: 0.5, z: 0.5}
@@ -2242,11 +2242,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4734194444030553872, guid: c4934e0a76e40d547b911caae48581bd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -35.65
+      value: 7.8616433
       objectReference: {fileID: 0}
     - target: {fileID: 4734194444030553872, guid: c4934e0a76e40d547b911caae48581bd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.7392402
+      value: -1.7055726
       objectReference: {fileID: 0}
     - target: {fileID: 4734194444030553872, guid: c4934e0a76e40d547b911caae48581bd, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2749,7 +2749,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 637824154574939744, guid: 75306490556f0a94ea793bbed97be06c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -43.84
+      value: 3.03
       objectReference: {fileID: 0}
     - target: {fileID: 637824154574939744, guid: 75306490556f0a94ea793bbed97be06c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3987,7 +3987,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7180870303562499519, guid: 36da88b79b41621469c80b4902a8ae8c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -35.65
+      value: 11.219999
       objectReference: {fileID: 0}
     - target: {fileID: 7180870303562499519, guid: 36da88b79b41621469c80b4902a8ae8c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -7769,6 +7769,7 @@ MonoBehaviour:
     m_NumColorKeys: 8
     m_NumAlphaKeys: 2
   gameCamera: {fileID: 502130912}
+  mapLights: []
 --- !u!1 &6270915276563321564
 GameObject:
   m_ObjectHideFlags: 0

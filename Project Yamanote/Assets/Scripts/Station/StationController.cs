@@ -113,13 +113,17 @@ namespace ProjectYamanote.Station
         {
             foreach (var i in _stationData.trainSchedule)
             {
-                train.transform.DOMove(new Vector3(-20.34f, -0.03298116f, 0f), 10)
-                    .SetDelay(10)
-                    .SetEase(Ease.OutQuart)
-                    .SetId("TrainArriving")
-                    .OnComplete(TrainArrived);
+                if (GameClock.dateTime.TimeOfDay == i.timeArriveOriginDT.TimeOfDay)
+                {
+                    train.transform.DOMove(new Vector3(-20.34f, -0.03298116f, 0f), 10)
+                        .SetDelay(10)
+                        .SetEase(Ease.OutQuart)
+                        .SetId("TrainArriving")
+                        .OnComplete(TrainArrived);
 
-                train.GetComponent<TrainData>().SetVariables(i.origin, i.destination, i.timeArriveOriginDT, i.timeArriveDestinationDT, i.trainLine);
+                    Debug.Log(i.timeArriveDestinationDT);
+                    train.GetComponent<TrainData>().SetVariables(i.origin, i.destination, i.timeArriveOriginDT, i.timeArriveDestinationDT, i.trainLine);
+                }
             }
         }
 

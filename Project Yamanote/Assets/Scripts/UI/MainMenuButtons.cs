@@ -23,7 +23,7 @@ namespace ProjectYamanote.UI
         public void New()
         {
             PlayerPrefs.DeleteAll();
-            GameClock.dateTime = new DateTime(2021, 12, 04, 17, 26, 00);
+            GameClock.dateTime = new DateTime(2021, 12, 04, 5, 45, 50);
         }
 
         public void Quit()
