@@ -10,13 +10,13 @@ namespace ProjectYamanote.UI
     {
         [SerializeField] private TextMeshProUGUI _clockTime;
         [SerializeField] private TextMeshProUGUI _clockDate;
-        [SerializeField] private Image _timeProgressBar;
+        [SerializeField] private Image _clockTimeProgressBar;
 
         public int currentVal, maxValue;
 
         private void Update()
         {
-            _timeProgressBar.fillAmount = Normalise();
+            _clockTimeProgressBar.fillAmount = Normalise();
             _clockTime.text = GameClock.dateTime.ToString("t");
             _clockDate.text = GameClock.dateTime.ToString("D");
             currentVal = (int)GameClock.dateTime.TimeOfDay.TotalMinutes;
