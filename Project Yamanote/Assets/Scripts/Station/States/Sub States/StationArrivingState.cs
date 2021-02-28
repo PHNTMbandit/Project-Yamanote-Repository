@@ -17,9 +17,12 @@ namespace ProjectYamanote.Station
 
             station.StartCoroutine(station.trainAnnouncement.ShowTrainAnnouncementAlert
                 ("Train will arrive soon. Please stand behind the yellow line."));
+           
             station.TrainArriving();
             station.TrainArrivingSFX();
+            
             station.waitTimeButton.interactable = false;
+            station.saveButton.interactable = false;
         }
 
         public override void Exit()

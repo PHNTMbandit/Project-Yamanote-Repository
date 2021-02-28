@@ -20,7 +20,10 @@ namespace ProjectYamanote.Train
 
             train._stationForeground.transform.position = new Vector3(69.7f, -7.706331f, 0f);
             train._stationBackground.transform.position = new Vector3(69.7f, -7.325131f, 0f);
+           
             train.TrainTravellingSFX();
+            
+            train.saveButton.interactable = true;
         }
 
         public override void Exit()

@@ -1,18 +1,17 @@
+using ProjectYamanote.Audio;
+using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
-using TMPro;
-using ProjectYamanote.Audio;
 
 namespace ProjectYamanote.UI
 {
     public class UIButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     {
         private TextMeshProUGUI _text;
-        
+
         private bool _toggle = false;
-        
+
         [SerializeField] private GameObject _toggleGameObject;
-        
 
         private void Awake()
         {
@@ -45,7 +44,6 @@ namespace ProjectYamanote.UI
             {
                 _toggleGameObject.SetActive(true);
                 _toggle = true;
-
             }
             else
             {

@@ -39,6 +39,7 @@ namespace ProjectYamanote.Train
 
         public TrainData trainData;
         public Button waitTimeButton;
+        public Button saveButton;
         public GameObject _stationForeground;
         public GameObject _stationBackground;
 

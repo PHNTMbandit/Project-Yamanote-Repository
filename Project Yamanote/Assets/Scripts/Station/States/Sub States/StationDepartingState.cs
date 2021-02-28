@@ -20,9 +20,12 @@ namespace ProjectYamanote.Station
 
             station.isArrived = false;
             station.isDeparting = false;
+            
             station.TrainDeparting();
             station.TrainDepartingSFX();
+            
             station.waitTimeButton.interactable = false;
+            station.saveButton.interactable = false;
         }
 
         public override void Exit()

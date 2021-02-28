@@ -44,7 +44,8 @@ namespace ProjectYamanote.Station
         [SerializeField] private StationData _stationData;
         [SerializeField] private AudioManager _audioManager;
         [SerializeField] private AudioMixer _audioMixer;
-        
+
+        public Button saveButton;
         public Button waitTimeButton;
 
         #endregion Other Variables

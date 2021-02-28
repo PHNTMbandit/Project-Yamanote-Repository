@@ -15,6 +15,8 @@ namespace ProjectYamanote.Train
         {
             base.Enter();
 
+            train.saveButton.interactable = false;
+            
             train.TrainArrivedSFX();
         }
 

@@ -16,7 +16,9 @@
             base.Enter();
 
             station.StartCoroutine(station.TrainWaitCouroutine());
+            
             station.waitTimeButton.interactable = false;
+            station.saveButton.interactable = true;
         }
 
         public override void Exit()

@@ -18,8 +18,11 @@ namespace ProjectYamanote.Train
             base.Enter();
 
             train.StartCoroutine(train.TrainArrivedCouroutine());
+           
             train._stationForeground.transform.position = new Vector3(10.38f, -7.706331f, 0f);
             train._stationBackground.transform.position = new Vector3(10.38f, -7.325131f, 0f);
+          
+            train.saveButton.interactable = true;
         }
 
         public override void Exit()

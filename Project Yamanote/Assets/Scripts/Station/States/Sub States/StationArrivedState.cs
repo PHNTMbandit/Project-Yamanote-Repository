@@ -16,7 +16,9 @@ namespace ProjectYamanote.Station
             base.Enter();
 
             station.TrainArrivedSFX();
+           
             station.waitTimeButton.interactable = false;
+            station.saveButton.interactable = false;
         }
 
         public override void Exit()
