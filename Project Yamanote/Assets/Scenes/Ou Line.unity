@@ -6409,7 +6409,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1388711866}
   - component: {fileID: 1388711867}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collider_CameraBoundary
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10777,10 +10777,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 637824153264102747, guid: 75306490556f0a94ea793bbed97be06c, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 637824153481156764, guid: 75306490556f0a94ea793bbed97be06c, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 637824153850452352, guid: 75306490556f0a94ea793bbed97be06c, type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 637824153850452355, guid: 75306490556f0a94ea793bbed97be06c, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 637824154574939742, guid: 75306490556f0a94ea793bbed97be06c, type: 3}
       propertyPath: m_Camera
       value: 
@@ -10833,17 +10845,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 637824154574939745, guid: 75306490556f0a94ea793bbed97be06c, type: 3}
-      propertyPath: m_SortingLayer
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 637824154574939745, guid: 75306490556f0a94ea793bbed97be06c, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1487325571
-      objectReference: {fileID: 0}
     - target: {fileID: 637824154574939746, guid: 75306490556f0a94ea793bbed97be06c, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 637824154574939746, guid: 75306490556f0a94ea793bbed97be06c, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 637824154730068856, guid: 75306490556f0a94ea793bbed97be06c, type: 3}
       propertyPath: m_AnchorMax.y
@@ -10867,6 +10875,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 637824154730068856, guid: 75306490556f0a94ea793bbed97be06c, type: 3}
       propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 637824154730068857, guid: 75306490556f0a94ea793bbed97be06c, type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2000074991123423475, guid: 75306490556f0a94ea793bbed97be06c, type: 3}
@@ -10934,13 +10946,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 866898493}
     - target: {fileID: 3049614041797014366, guid: 75306490556f0a94ea793bbed97be06c, type: 3}
-      propertyPath: phone
-      value: 
-      objectReference: {fileID: 866898493}
-    - target: {fileID: 3049614041797014366, guid: 75306490556f0a94ea793bbed97be06c, type: 3}
       propertyPath: audioManager
       value: 
       objectReference: {fileID: 390066046}
+    - target: {fileID: 3049614041797014366, guid: 75306490556f0a94ea793bbed97be06c, type: 3}
+      propertyPath: cameraBoundary
+      value: 
+      objectReference: {fileID: 1388711867}
+    - target: {fileID: 3981554820414007042, guid: 75306490556f0a94ea793bbed97be06c, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 75306490556f0a94ea793bbed97be06c, type: 3}
 --- !u!114 &2015321536596795751

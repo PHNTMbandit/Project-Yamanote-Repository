@@ -129,8 +129,8 @@ namespace ProjectYamanote.Train
             _stationForeground.transform.DOMove(new Vector3(-51.4f, -7.706331f, 0f), 10)
                     .SetEase(Ease.InQuart)
                     .OnComplete(TrainDeparted);
-            _stationBackground.transform.DOMove(new Vector3(-51.4f, -7.325131f, 0f), 10)
-                    .SetEase(Ease.InQuart);
+           // _stationBackground.transform.DOMove(new Vector3(-51.4f, -7.325131f, 0f), 10)
+                  //  .SetEase(Ease.InQuart);
         }
 
         public IEnumerator TrainArrivedCouroutine()
