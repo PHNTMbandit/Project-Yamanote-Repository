@@ -11,6 +11,12 @@ TagManager:
   - Seat
   - NPC
   - TrainAnnouncement
+  - Light
+  - PE
+  - Persistent_Light
+  - FX
+  - Collider
+  - SceneFader
   layers:
   - Default
   - TransparentFX

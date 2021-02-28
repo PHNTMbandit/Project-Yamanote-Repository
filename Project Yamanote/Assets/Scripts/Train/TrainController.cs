@@ -76,6 +76,8 @@ namespace ProjectYamanote.Train
             waitTimeButton.interactable = false;
 
             StateMachine.Intialise(IdleState);
+
+            Debug.Log(TrainData.timeArriveDestinationDT);
         }
 
         private void Update()

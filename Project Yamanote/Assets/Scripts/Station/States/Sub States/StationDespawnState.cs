@@ -39,7 +39,7 @@ namespace ProjectYamanote.Station
 
             foreach (var i in stationData.trainSchedule)
             {
-                if (GameClock.dateTime == i.timeArriveOriginDT)
+                if (GameClock.dateTime.TimeOfDay == i.timeArriveOriginDT.TimeOfDay)
                 {
                     stateMachine.ChangeState(station.ArrivingState);
                 }

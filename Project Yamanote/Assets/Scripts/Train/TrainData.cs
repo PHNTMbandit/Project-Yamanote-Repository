@@ -5,11 +5,11 @@ namespace ProjectYamanote.Train
 {
     public class TrainData : MonoBehaviour
     {
-        [NonSerialized] public static string originStation;
-        [NonSerialized] public static string destinationStation;
-        [NonSerialized] public static string trainLine;
-        [NonSerialized] public static DateTime timeArriveOriginDT;
-        [NonSerialized] public static DateTime timeArriveDestinationDT;
+        public static string originStation;
+        public static string destinationStation;
+        public static string trainLine;
+        public static DateTime timeArriveOriginDT;
+        public static DateTime timeArriveDestinationDT;
 
         public void SetVariables(string originStationString, string destinationStationString, DateTime timeArriveOrigin, DateTime timeArriveDestination, string trainline)
         {

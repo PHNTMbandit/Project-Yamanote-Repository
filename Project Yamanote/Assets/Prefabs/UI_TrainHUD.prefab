@@ -147,7 +147,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonGO: {fileID: 1720706529558211491}
-  fadeAnimator: {fileID: 0}
   trainController: {fileID: 0}
 --- !u!1 &5094791566017078818
 GameObject:

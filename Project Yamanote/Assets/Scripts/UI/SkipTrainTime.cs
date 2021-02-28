@@ -11,13 +11,16 @@ namespace ProjectYamanote
     public class SkipTrainTime : MonoBehaviour
     {
         public GameObject buttonGO;
-        public Animator fadeAnimator;
         public TrainController trainController;
 
         private Button button;
+        private Animator fadeAnimator;
+        private GameObject sceneFader;
 
         private void Start()
         {
+            sceneFader = GameObject.FindGameObjectWithTag("SceneFader");
+            fadeAnimator = sceneFader.GetComponent<Animator>();
             button = buttonGO.GetComponent<Button>();
             buttonGO.SetActive(false);
             button.image.DOFade(0, 0.1f);

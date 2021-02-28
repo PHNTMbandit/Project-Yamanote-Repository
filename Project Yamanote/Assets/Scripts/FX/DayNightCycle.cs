@@ -9,11 +9,16 @@ namespace ProjectYamanote.FX
         public Light2D worldLight;
         public Gradient gradient;
         public Camera gameCamera;
-        private GameObject[] mapLights;
+        [SerializeField] private GameObject[] mapLights;
+
+        private void Start()
+        {
+            mapLights = GameObject.FindGameObjectsWithTag("Light");
+        }
 
         private void Update()
         {
-            if (GameClock.dateTime.Hour >= 20 || GameClock.dateTime.Hour < 6)
+            if (GameClock.dateTime.Hour >= 19 || GameClock.dateTime.Hour < 6)
                 ControlLightMaps(true);
             else
                 ControlLightMaps(false);
@@ -25,9 +30,8 @@ namespace ProjectYamanote.FX
 
         private void ControlLightMaps(bool status)
         {
-            mapLights = GameObject.FindGameObjectsWithTag("Light");
-            foreach (GameObject _light in mapLights)
-                _light.gameObject.SetActive(status);
+            foreach (GameObject light in mapLights)
+                light.gameObject.SetActive(status);
         }
     }
 }
