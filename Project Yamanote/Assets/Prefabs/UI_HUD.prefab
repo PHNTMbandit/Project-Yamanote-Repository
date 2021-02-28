@@ -233,7 +233,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 08:18 hours
+  m_text: 07:57 hours
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 672baec5a3f7b4d329bf5b4052d5109b, type: 2}
   m_sharedMaterial: {fileID: 4707819496639375797, guid: 672baec5a3f7b4d329bf5b4052d5109b, type: 2}
@@ -17926,7 +17926,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4678018286282069511
 RectTransform:
   m_ObjectHideFlags: 0
@@ -41263,7 +41263,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 155343024364292847, guid: 589a82e1747664fda993ef0771a9fea4, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 155343024364292847, guid: 589a82e1747664fda993ef0771a9fea4, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -41299,7 +41299,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6860131745936619967, guid: 589a82e1747664fda993ef0771a9fea4, type: 3}
       propertyPath: m_Value
-      value: 234
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6860131745936619967, guid: 589a82e1747664fda993ef0771a9fea4, type: 3}
       propertyPath: m_MaxValue
@@ -41347,7 +41347,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7198624170491798340, guid: 589a82e1747664fda993ef0771a9fea4, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7198624170491798340, guid: 589a82e1747664fda993ef0771a9fea4, type: 3}
       propertyPath: m_AnchorMin.x
@@ -41637,6 +41637,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2685237432133140780, guid: dccf6cc19b00449e4b835921f5d40ff9, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2685237432133140780, guid: dccf6cc19b00449e4b835921f5d40ff9, type: 3}
       propertyPath: m_Color.b
       value: 0.35686275
       objectReference: {fileID: 0}
@@ -41650,7 +41654,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2685237432133140780, guid: dccf6cc19b00449e4b835921f5d40ff9, type: 3}
       propertyPath: m_FillAmount
-      value: 0.55
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2685237432133140780, guid: dccf6cc19b00449e4b835921f5d40ff9, type: 3}
       propertyPath: m_FillClockwise
@@ -41690,11 +41694,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7514868354821446486, guid: dccf6cc19b00449e4b835921f5d40ff9, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 473.14
+      value: 427.6208
       objectReference: {fileID: 0}
     - target: {fileID: 7514868354821446486, guid: dccf6cc19b00449e4b835921f5d40ff9, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 473.14
+      value: 427.6208
       objectReference: {fileID: 0}
     - target: {fileID: 7514868354821446486, guid: dccf6cc19b00449e4b835921f5d40ff9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -41742,6 +41746,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7514868354821446486, guid: dccf6cc19b00449e4b835921f5d40ff9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7932344054921432636, guid: dccf6cc19b00449e4b835921f5d40ff9, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -41891,7 +41899,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6870329371746582663, guid: 1ebeeda6b1b3c405394adba889827b2e, type: 3}
       propertyPath: m_FillAmount
-      value: 0.499
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6870329371746582663, guid: 1ebeeda6b1b3c405394adba889827b2e, type: 3}
       propertyPath: m_FillClockwise
