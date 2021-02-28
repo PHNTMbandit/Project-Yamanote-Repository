@@ -13,7 +13,7 @@ namespace ProjectYamanote.Player
         public bool ActionInput { get; private set; }
         public bool PhoneInput { get; private set; }
 
-        public Player player;
+        public PlayerController player;
 
         public void OnMoveInput(InputAction.CallbackContext context)
         {

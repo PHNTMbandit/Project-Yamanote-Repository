@@ -5,7 +5,7 @@ namespace ProjectYamanote.Station
     public class InstantiateTrain : MonoBehaviour
     {
         [SerializeField] private GameObject _ouLine;
-        [SerializeField] private Station _station;
+        [SerializeField] private StationController _station;
 
         private Animator _tsugaruLineAnimator;
 

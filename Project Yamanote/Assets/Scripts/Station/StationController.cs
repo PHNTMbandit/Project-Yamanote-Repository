@@ -6,10 +6,11 @@ using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.UI;
 
 namespace ProjectYamanote.Station
 {
-    public class Station : MonoBehaviour
+    public class StationController : MonoBehaviour
     {
         #region State Variables
 
@@ -43,6 +44,8 @@ namespace ProjectYamanote.Station
         [SerializeField] private StationData _stationData;
         [SerializeField] private AudioManager _audioManager;
         [SerializeField] private AudioMixer _audioMixer;
+        
+        public Button waitTimeButton;
 
         #endregion Other Variables
 

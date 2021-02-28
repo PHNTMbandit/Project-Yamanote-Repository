@@ -13,11 +13,11 @@ namespace PixelCrushers
         }
 
         private StationData m_data = new StationData();
-        protected Station m_station;
+        protected StationController m_station;
 
         public override void Awake()
         {
-            m_station = GetComponent<Station>();
+            m_station = GetComponent<StationController>();
         }
 
         public override string RecordData()

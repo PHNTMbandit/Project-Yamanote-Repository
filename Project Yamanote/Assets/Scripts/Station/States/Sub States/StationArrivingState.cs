@@ -2,7 +2,7 @@ namespace ProjectYamanote.Station
 {
     public class StationArrivingState : StationTrainState
     {
-        public StationArrivingState(Station station, StationStateMachine stateMachine, StationData stationData, string animBoolName) : base(station, stateMachine, stationData, animBoolName)
+        public StationArrivingState(StationController station, StationStateMachine stateMachine, StationData stationData, string animBoolName) : base(station, stateMachine, stationData, animBoolName)
         {
         }
 
@@ -19,6 +19,7 @@ namespace ProjectYamanote.Station
                 ("Train will arrive soon. Please stand behind the yellow line."));
             station.TrainArriving();
             station.TrainArrivingSFX();
+            station.waitTimeButton.interactable = false;
         }
 
         public override void Exit()

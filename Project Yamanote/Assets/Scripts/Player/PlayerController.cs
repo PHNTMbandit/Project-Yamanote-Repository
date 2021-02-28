@@ -1,11 +1,10 @@
 ﻿using ProjectYamanote.Audio;
 using TMPro;
 using UnityEngine;
-using System.Collections;
 
 namespace ProjectYamanote.Player
 {
-    public class Player : MonoBehaviour
+    public class PlayerController : MonoBehaviour
     {
         #region State Variables
 
@@ -122,7 +121,6 @@ namespace ProjectYamanote.Player
         {
             IsColliding = true;
             PlayerCollision = collision.tag;
-            print(collision.tag);
         }
 
         public void OnTriggerExit2D(Collider2D collision)

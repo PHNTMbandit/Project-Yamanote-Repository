@@ -2,7 +2,7 @@ namespace ProjectYamanote.Train
 {
     public class TrainDepartingState : TrainInsideState
     {
-        public TrainDepartingState(Train train, TrainStateMachine stateMachine, TrainData trainData, string animBoolName) : base(train, stateMachine, trainData, animBoolName)
+        public TrainDepartingState(TrainController train, TrainStateMachine stateMachine, TrainData trainData, string animBoolName) : base(train, stateMachine, trainData, animBoolName)
         {
         }
 
@@ -17,6 +17,8 @@ namespace ProjectYamanote.Train
 
             train.StartCoroutine(train.trainAnnouncement.ShowTrainAnnouncementAlert
                 ("The doors are now closing. This train is bound for " + TrainData.destinationStation.ToString() + "."));
+
+            train.SpeedUp();
             train.TrainDepartingSFX();
         }
 
@@ -32,7 +34,6 @@ namespace ProjectYamanote.Train
             if (isAnimationFinished)
             {
                 train.isArrived = false;
-                train.SpeedUp();
             }
 
             if (train.isDeparted == false)

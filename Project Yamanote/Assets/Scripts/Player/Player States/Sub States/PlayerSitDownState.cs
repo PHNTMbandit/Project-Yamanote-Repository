@@ -2,7 +2,7 @@ namespace ProjectYamanote.Player
 {
     public class PlayerSitDownState : PlayerGroundedState
     {
-        public PlayerSitDownState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName) : base(player, stateMachine, playerData, animBoolName)
+        public PlayerSitDownState(PlayerController player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName) : base(player, stateMachine, playerData, animBoolName)
         {
         }
 

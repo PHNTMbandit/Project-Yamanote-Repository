@@ -11,11 +11,11 @@ namespace PixelCrushers
         }
 
         private ItweenData m_data = new ItweenData();
-        public Train train;
+        public TrainController train;
 
         public override void Awake()
         {
-            train = GetComponent<Train>();
+            train = GetComponent<TrainController>();
         }
 
         public override string RecordData()

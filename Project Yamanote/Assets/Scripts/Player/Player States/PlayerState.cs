@@ -4,7 +4,7 @@ namespace ProjectYamanote.Player
 {
     public class PlayerState
     {
-        protected Player player;
+        protected PlayerController player;
         protected PlayerStateMachine stateMachine;
         protected PlayerData playerData;
 
@@ -14,7 +14,7 @@ namespace ProjectYamanote.Player
 
         private string animBoolName;
 
-        public PlayerState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName)
+        public PlayerState(PlayerController player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName)
         {
             this.player = player;
             this.stateMachine = stateMachine;

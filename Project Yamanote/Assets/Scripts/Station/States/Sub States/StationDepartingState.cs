@@ -2,7 +2,7 @@ namespace ProjectYamanote.Station
 {
     public class StationDepartingState : StationTrainState
     {
-        public StationDepartingState(Station station, StationStateMachine stateMachine, StationData stationData, string animBoolName) : base(station, stateMachine, stationData, animBoolName)
+        public StationDepartingState(StationController station, StationStateMachine stateMachine, StationData stationData, string animBoolName) : base(station, stateMachine, stationData, animBoolName)
         {
         }
 
@@ -22,6 +22,7 @@ namespace ProjectYamanote.Station
             station.isDeparting = false;
             station.TrainDeparting();
             station.TrainDepartingSFX();
+            station.waitTimeButton.interactable = false;
         }
 
         public override void Exit()

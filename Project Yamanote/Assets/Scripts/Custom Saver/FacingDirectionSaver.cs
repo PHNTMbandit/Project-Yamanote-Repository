@@ -15,11 +15,11 @@ namespace PixelCrushers
         }
 
         private Data m_data = new Data();
-        protected Player player;
+        protected PlayerController player;
 
         public override void Awake()
         {
-            player = GetComponent<Player>();
+            player = GetComponent<PlayerController>();
         }
 
         public override string RecordData()

@@ -5,10 +5,11 @@ using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.UI;
 
 namespace ProjectYamanote.Train
 {
-    public class Train : MonoBehaviour
+    public class TrainController : MonoBehaviour
     {
         #region State Variables
 
@@ -37,10 +38,12 @@ namespace ProjectYamanote.Train
         #region Other Variables
 
         public TrainData trainData;
-        public GameObject trainStation;
+        public Button waitTimeButton;
         public GameObject _stationForeground;
         public GameObject _stationBackground;
+
         [NonSerialized] public TrainAnnouncement trainAnnouncement;
+
         [SerializeField] private GameObject[] _parallaxBackground;
         [SerializeField] private AudioManager audioManager;
         [SerializeField] private AudioMixer audioMixer;
@@ -64,6 +67,8 @@ namespace ProjectYamanote.Train
         {
             Animator = GetComponent<Animator>();
             trainAnnouncement = FindObjectOfType<TrainAnnouncement>();
+
+            waitTimeButton.interactable = false;
 
             StateMachine.Intialise(IdleState);
         }
@@ -112,6 +117,7 @@ namespace ProjectYamanote.Train
                     .SetDelay(10)
                     .SetEase(Ease.OutQuart)
                     .OnComplete(TrainArrived);
+
             _stationBackground.transform.DOMove(new Vector3(10.38f, -7.325131f, 0f), 10)
                     .SetDelay(10)
                     .SetEase(Ease.OutQuart);
@@ -126,11 +132,14 @@ namespace ProjectYamanote.Train
                 StopCoroutine(background.GetComponent<EasyParallax.SpriteMovement>().SpeedDownParallax());
             }
 
-            _stationForeground.transform.DOMove(new Vector3(-51.4f, -7.706331f, 0f), 10)
-                    .SetEase(Ease.InQuart)
+            _stationForeground.transform.DOMove(new Vector3(-51.4f, -7.706331f, 0f), 15)
+                    .SetEase(Ease.InCubic)
+                    .SetDelay(5)
                     .OnComplete(TrainDeparted);
-           // _stationBackground.transform.DOMove(new Vector3(-51.4f, -7.325131f, 0f), 10)
-                  //  .SetEase(Ease.InQuart);
+
+            _stationBackground.transform.DOMove(new Vector3(-51.4f, -7.325131f, 0f), 15)
+                    .SetEase(Ease.InCubic)
+                    .SetDelay(5);
         }
 
         public IEnumerator TrainArrivedCouroutine()

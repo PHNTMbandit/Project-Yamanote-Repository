@@ -5,7 +5,7 @@ namespace ProjectYamanote.Station
 {
     public class StationDespawnState : StationTrainState
     {
-        public StationDespawnState(Station station, StationStateMachine stateMachine, StationData stationData, string animBoolName) : base(station, stateMachine, stationData, animBoolName)
+        public StationDespawnState(StationController station, StationStateMachine stateMachine, StationData stationData, string animBoolName) : base(station, stateMachine, stationData, animBoolName)
         {
         }
 
@@ -21,6 +21,7 @@ namespace ProjectYamanote.Station
             station.train.transform.position = new Vector3(47.1f, -0.03298116f, 0f);
             station.isDeparted = false;
             station.TrainDespawnSFX();
+            station.waitTimeButton.interactable = true;
         }
 
         public override void Exit()

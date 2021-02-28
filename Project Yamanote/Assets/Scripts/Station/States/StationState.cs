@@ -4,7 +4,7 @@ namespace ProjectYamanote.Station
 {
     public class StationState
     {
-        protected Station station;
+        protected StationController station;
         protected StationStateMachine stateMachine;
         protected StationData stationData;
 
@@ -14,7 +14,7 @@ namespace ProjectYamanote.Station
 
         public string animBoolName;
 
-        public StationState(Station station, StationStateMachine stateMachine, StationData stationData, string animBoolName)
+        public StationState(StationController station, StationStateMachine stateMachine, StationData stationData, string animBoolName)
         {
             this.station = station;
             this.stateMachine = stateMachine;

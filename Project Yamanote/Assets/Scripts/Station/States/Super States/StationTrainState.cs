@@ -2,7 +2,7 @@ namespace ProjectYamanote.Station
 {
     public class StationTrainState : StationState
     {
-        public StationTrainState(Station station, StationStateMachine stateMachine, StationData stationData, string animBoolName) : base(station, stateMachine, stationData, animBoolName)
+        public StationTrainState(StationController station, StationStateMachine stateMachine, StationData stationData, string animBoolName) : base(station, stateMachine, stationData, animBoolName)
         {
         }
 

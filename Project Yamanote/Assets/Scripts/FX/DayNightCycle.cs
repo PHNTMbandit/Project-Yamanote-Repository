@@ -9,7 +9,7 @@ namespace ProjectYamanote.FX
         public Light2D worldLight;
         public Gradient gradient;
         public Camera gameCamera;
-        public GameObject[] mapLights;
+        private GameObject[] mapLights;
 
         private void Update()
         {
@@ -25,6 +25,7 @@ namespace ProjectYamanote.FX
 
         private void ControlLightMaps(bool status)
         {
+            mapLights = GameObject.FindGameObjectsWithTag("Light");
             foreach (GameObject _light in mapLights)
                 _light.gameObject.SetActive(status);
         }

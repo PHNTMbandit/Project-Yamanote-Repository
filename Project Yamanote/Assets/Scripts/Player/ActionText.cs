@@ -7,7 +7,7 @@ namespace ProjectYamanote.Player
     {
         [SerializeField] private GameObject actionTextBox;
         [SerializeField] private TextMeshProUGUI actionText;
-        [SerializeField] private Player playerController;
+        [SerializeField] private PlayerController playerController;
 
         private void Awake()
         {

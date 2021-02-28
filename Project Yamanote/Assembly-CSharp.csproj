@@ -60,7 +60,7 @@
     <Compile Include="Assets\Scripts\Player\PlayerInputHandler.cs" />
     <Compile Include="Assets\Scripts\Custom Saver\StationStateSaver.cs" />
     <Compile Include="Assets\Scripts\Station\States\Sub States\StationIdleState.cs" />
-    <Compile Include="Assets\Scripts\Player\Player.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Custom Saver\TrainStateSaver.cs" />
     <Compile Include="Assets\Scripts\Player\ActionText.cs" />
     <Compile Include="Assets\Scripts\UI\Map\StationLookup.cs" />
@@ -73,7 +73,7 @@
     <Compile Include="Assets\Scripts\UI\Map\MapButton.cs" />
     <Compile Include="Assets\Scripts\Audio\FadeMixerGroup.cs" />
     <Compile Include="Assets\Scripts\Player\Player States\Sub States\PlayerSitDownState.cs" />
-    <Compile Include="Assets\Scripts\Station\Station.cs" />
+    <Compile Include="Assets\Scripts\Station\StationController.cs" />
     <Compile Include="Assets\Scripts\Train\States\Super States\TrainInsideState.cs" />
     <Compile Include="Assets\Scripts\Custom Saver\TimeSaver.cs" />
     <Compile Include="Assets\Scripts\Train\States\TrainStateMachine.cs" />
@@ -82,7 +82,7 @@
     <Compile Include="Assets\Scripts\UI\Map\Journey Planner\ListButtonTemplate.cs" />
     <Compile Include="Assets\Scripts\UI\MainMenuButtons.cs" />
     <Compile Include="Assets\Scripts\FX\Parallax.cs" />
-    <Compile Include="Assets\Scripts\Train\Train.cs" />
+    <Compile Include="Assets\Scripts\Train\TrainController.cs" />
     <Compile Include="Assets\Scripts\Routes\RouteDB.cs" />
     <Compile Include="Assets\Scripts\Train\States\TrainState.cs" />
     <Compile Include="Assets\Scripts\Player\Player States\PlayerStateMachine.cs" />
@@ -114,6 +114,7 @@
     <Compile Include="Assets\Scripts\Station\States\Sub States\StationDespawnState.cs" />
     <Compile Include="Assets\Scripts\Routes\StartingRouteVariables.cs" />
     <Compile Include="Assets\Scripts\Triggers\ChangeScene.cs" />
+    <Compile Include="Assets\Scripts\UI\Clock\WaitTime.cs" />
     <Compile Include="Assets\Scripts\UI\Power\PowerButtons.cs" />
     <Compile Include="Assets\Scripts\UI\GameClock.cs" />
     <Compile Include="Assets\Scripts\Player\Player States\Sub States\PlayerPhoneOnState.cs" />
@@ -126,7 +127,6 @@
     <Compile Include="Assets\Scripts\Station\States\Sub States\StationArrivedState.cs" />
     <Compile Include="Assets\Scripts\Player\Player States\Sub States\PlayerPhoneOffState.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerAnimationSFX.cs" />
-    <Compile Include="Assets\Scripts\UI\Clock\WaitTime.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Physics\Characters\Daisuke\Daisuke_walk.xml" />

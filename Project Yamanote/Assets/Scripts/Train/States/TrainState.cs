@@ -4,7 +4,7 @@ namespace ProjectYamanote.Train
 {
     public class TrainState
     {
-        protected Train train;
+        protected TrainController train;
         protected TrainStateMachine stateMachine;
         protected TrainData trainData;
 
@@ -14,7 +14,7 @@ namespace ProjectYamanote.Train
 
         public string animBoolName;
 
-        public TrainState(Train train, TrainStateMachine stateMachine, TrainData trainData, string animBoolName)
+        public TrainState(TrainController train, TrainStateMachine stateMachine, TrainData trainData, string animBoolName)
         {
             this.train = train;
             this.stateMachine = stateMachine;

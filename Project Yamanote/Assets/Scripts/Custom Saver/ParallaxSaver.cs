@@ -15,7 +15,7 @@ namespace PixelCrushers
         }
 
         private ParallaxData m_data = new ParallaxData();
-        public Train train;
+        public TrainController train;
         protected SpriteMovement spriteMovement;
 
         public override void Awake()

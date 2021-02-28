@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 637824153264102746}
   - component: {fileID: 637824153264102744}
   - component: {fileID: 637824153264102745}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Action Text Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88,7 +88,7 @@ GameObject:
   - component: {fileID: 637824153850452352}
   - component: {fileID: 637824153850452353}
   - component: {fileID: 522265296214776888}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Action Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -173,8 +173,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4282529324
-  m_fontColor: {r: 0.17254902, g: 0.21176471, b: 0.25882354, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -279,7 +279,7 @@ GameObject:
   - component: {fileID: 793508110}
   - component: {fileID: 793508111}
   - component: {fileID: 793508126}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -558,7 +558,6 @@ MonoBehaviour:
   playerData: {fileID: 11400000, guid: adba6c4b302d28f4ea3e69b42db3d635, type: 2}
   audioManager: {fileID: 0}
   playerCollider: {fileID: 204354519211235701}
-  cameraBoundary: {fileID: 0}
 --- !u!114 &2000074991123423475
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1038,7 +1037,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5726455125593196276}
   - component: {fileID: 204354519211235701}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: CollisonCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1092,6 +1091,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 637824154574939744}
     m_Modifications:
+    - target: {fileID: 950898969, guid: 3ba81ebb5b5a6824bb8ad6abaac10149, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1914467068, guid: 3ba81ebb5b5a6824bb8ad6abaac10149, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1914467069, guid: 3ba81ebb5b5a6824bb8ad6abaac10149, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

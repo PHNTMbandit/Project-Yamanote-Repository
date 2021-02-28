@@ -14,11 +14,11 @@ namespace PixelCrushers
         }
 
         private TrainData m_data = new TrainData();
-        protected Train m_train;
+        protected TrainController m_train;
 
         public override void Awake()
         {
-            m_train = GetComponent<Train>();
+            m_train = GetComponent<TrainController>();
         }
 
         public override string RecordData()

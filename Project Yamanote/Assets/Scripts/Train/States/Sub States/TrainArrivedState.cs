@@ -2,7 +2,7 @@ namespace ProjectYamanote.Train
 {
     public class TrainArrivedState : TrainInsideState
     {
-        public TrainArrivedState(Train train, TrainStateMachine stateMachine, TrainData trainData, string animBoolName) : base(train, stateMachine, trainData, animBoolName)
+        public TrainArrivedState(TrainController train, TrainStateMachine stateMachine, TrainData trainData, string animBoolName) : base(train, stateMachine, trainData, animBoolName)
         {
         }
 

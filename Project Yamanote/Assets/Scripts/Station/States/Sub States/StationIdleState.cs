@@ -2,7 +2,7 @@
 {
     public class StationIdleState : StationTrainState
     {
-        public StationIdleState(ProjectYamanote.Station.Station station, StationStateMachine stateMachine, StationData stationData, string animBoolName) : base(station, stateMachine, stationData, animBoolName)
+        public StationIdleState(ProjectYamanote.Station.StationController station, StationStateMachine stateMachine, StationData stationData, string animBoolName) : base(station, stateMachine, stationData, animBoolName)
         {
         }
 
@@ -16,6 +16,7 @@
             base.Enter();
 
             station.StartCoroutine(station.TrainWaitCouroutine());
+            station.waitTimeButton.interactable = false;
         }
 
         public override void Exit()

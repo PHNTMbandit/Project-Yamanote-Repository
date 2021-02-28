@@ -2,7 +2,7 @@ namespace ProjectYamanote.Player
 {
     public class PlayerPhoneOffState : PlayerGroundedState
     {
-        public PlayerPhoneOffState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName) : base(player, stateMachine, playerData, animBoolName)
+        public PlayerPhoneOffState(PlayerController player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName) : base(player, stateMachine, playerData, animBoolName)
         {
         }
 
