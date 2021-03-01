@@ -6,7 +6,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace ProjectYamanote
+namespace ProjectYamanote.UI
 {
     public class SkipTrainTime : MonoBehaviour
     {
@@ -31,7 +31,7 @@ namespace ProjectYamanote
             StartCoroutine((SkipCouroutine()));
         }
 
-        public IEnumerator SkipCouroutine()
+        private IEnumerator SkipCouroutine()
         {
             fadeAnimator.SetTrigger("Show");
 

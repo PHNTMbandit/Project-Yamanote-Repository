@@ -9,8 +9,8 @@ namespace ProjectYamanote.Persistence
         public static int year = 2021;
         public static int month = 12;
         public static int day = 04;
-        public static int hour = 5;
-        public static int minute = 45;
+        public static int hour = 12;
+        public static int minute = 47;
         public static int second = 50;
 
         public static DateTime dateTime = new DateTime(year, month, day, hour, minute, second);
