@@ -23,26 +23,24 @@ namespace ProjectYamanote.Train
         #endregion State Variables
 
         #region Components
-
         public Animator Animator { get; private set; }
-
         #endregion Components
 
         #region Check Variables
-
         public bool isArrived;
         public bool isDeparted;
-
         #endregion Check Variables
 
         #region Other Variables
 
+        [Header("Public Fields")]
         public TrainData trainData;
         public Button waitTimeButton;
         public Button saveButton;
         public GameObject skipButton;
         public GameObject _stationForeground;
         public GameObject _stationBackground;
+        public Camera playerCamera;
 
         [NonSerialized] public TrainAnnouncement trainAnnouncement;
 
@@ -77,7 +75,7 @@ namespace ProjectYamanote.Train
 
             StateMachine.Intialise(IdleState);
 
-            Debug.Log(TrainData.timeArriveDestinationDT);
+            InvokeRepeating("HandleShake", 0, 30);
         }
 
         private void Update()
@@ -160,6 +158,15 @@ namespace ProjectYamanote.Train
             yield return new WaitForSeconds(10);
 
             isDeparted = true;
+        }
+
+        public void HandleShake()
+        {
+            if (StateMachine.CurrentState == TravellingState)
+            {
+                playerCamera.DOShakePosition(1);
+                Animator.SetTrigger("shake");
+            }
         }
 
         #endregion Other Functions
