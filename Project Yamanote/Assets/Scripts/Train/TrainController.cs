@@ -23,18 +23,23 @@ namespace ProjectYamanote.Train
         #endregion State Variables
 
         #region Components
+
         public Animator Animator { get; private set; }
+
         #endregion Components
 
         #region Check Variables
+
         public bool isArrived;
         public bool isDeparted;
+
         #endregion Check Variables
 
         #region Other Variables
 
         [Header("Public Fields")]
         public TrainData trainData;
+
         public Button waitTimeButton;
         public Button saveButton;
         public GameObject skipButton;
@@ -164,7 +169,6 @@ namespace ProjectYamanote.Train
         {
             if (StateMachine.CurrentState.animBoolName == "travelling")
             {
-                
                 Animator.SetTrigger("shake");
             }
         }

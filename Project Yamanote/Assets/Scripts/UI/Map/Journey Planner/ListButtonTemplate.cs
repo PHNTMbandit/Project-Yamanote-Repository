@@ -67,7 +67,7 @@ namespace ProjectYamanote.UI
         {
             TimeSpan inTime = departTime.TimeOfDay - GameClock.dateTime.TimeOfDay;
 
-            _textInTime.text = "in " + inTime.TotalMinutes.ToString() + " mins";
+            _textInTime.text = "in " + inTime.TotalMinutes.ToString("0") + " mins";
 
             if (inTime.Minutes <= 0)
             {
