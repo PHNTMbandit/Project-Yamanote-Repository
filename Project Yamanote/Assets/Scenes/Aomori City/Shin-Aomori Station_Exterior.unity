@@ -2797,7 +2797,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4734194444030553872, guid: c4934e0a76e40d547b911caae48581bd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.6238003
+      value: -2.7870002
       objectReference: {fileID: 0}
     - target: {fileID: 4734194444030553872, guid: c4934e0a76e40d547b911caae48581bd, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4805,7 +4805,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7180870303562499519, guid: 36da88b79b41621469c80b4902a8ae8c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.6238003
+      value: -2.7870002
       objectReference: {fileID: 0}
     - target: {fileID: 7180870303562499519, guid: 36da88b79b41621469c80b4902a8ae8c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8332,7 +8332,7 @@ MonoBehaviour:
   miniMapVisibility: 0
   miniMapClampPosition: 0
   distanceToCameraSQR: 10000
-  computedIconScale: {x: 0.059958525, y: 0.059958525, z: 0.06666666}
+  computedIconScale: {x: 0.89937794, y: 0.89937794, z: 1}
   iconAlpha: 0
   miniMapIconScale: {x: 0.5, y: 0.5, z: 0.5}
 --- !u!114 &1902532298
@@ -9296,22 +9296,22 @@ MonoBehaviour:
   worldLight: {fileID: 1577096958269667334}
   gradient:
     serializedVersion: 2
-    key0: {r: 0.08235294, g: 0.105882354, b: 0.32941177, a: 1}
-    key1: {r: 1, g: 0.7921569, b: 0.4862745, a: 1}
-    key2: {r: 0.7882353, g: 0.8862745, b: 1, a: 0}
+    key0: {r: 0.16078432, g: 0.16078432, b: 0.39607844, a: 1}
+    key1: {r: 0.49411765, g: 0.29411766, b: 0.40784314, a: 1}
+    key2: {r: 0.8862745, g: 0.8901961, b: 0.54509807, a: 0}
     key3: {r: 0.7882353, g: 0.8862745, b: 1, a: 0}
-    key4: {r: 0.99215686, g: 0.36862746, b: 0.3254902, a: 0}
-    key5: {r: 0.11372549, g: 0.12156863, b: 0.18431373, a: 0}
-    key6: {r: 0.11372549, g: 0.12156863, b: 0.18431373, a: 0}
-    key7: {r: 0.08235294, g: 0.105882354, b: 0.32941177, a: 0}
-    ctime0: 9830
-    ctime1: 16384
-    ctime2: 22937
-    ctime3: 47609
-    ctime4: 52428
-    ctime5: 55705
-    ctime6: 60909
-    ctime7: 65535
+    key4: {r: 0.7882353, g: 0.8862745, b: 1, a: 0}
+    key5: {r: 0.90588236, g: 0.64705884, b: 0.3254902, a: 0}
+    key6: {r: 0.49411765, g: 0.29411766, b: 0.40784314, a: 0}
+    key7: {r: 0.16078432, g: 0.16078432, b: 0.39607844, a: 0}
+    ctime0: 3277
+    ctime1: 9830
+    ctime2: 16384
+    ctime3: 22937
+    ctime4: 47609
+    ctime5: 52428
+    ctime6: 55705
+    ctime7: 61680
     atime0: 0
     atime1: 65535
     atime2: 0

@@ -17800,6 +17800,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Camera_Main
       objectReference: {fileID: 0}
+    - target: {fileID: 4734194444030554095, guid: c4934e0a76e40d547b911caae48581bd, type: 3}
+      propertyPath: orthographic size
+      value: 1.7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4934e0a76e40d547b911caae48581bd, type: 3}
 --- !u!114 &5736147107059802572
@@ -18504,22 +18508,22 @@ MonoBehaviour:
   worldLight: {fileID: 5736147107059802572}
   gradient:
     serializedVersion: 2
-    key0: {r: 0.08235294, g: 0.105882354, b: 0.32941177, a: 1}
-    key1: {r: 1, g: 0.7921569, b: 0.4862745, a: 1}
-    key2: {r: 0.7882353, g: 0.8862745, b: 1, a: 0}
+    key0: {r: 0.16078432, g: 0.16078432, b: 0.39607844, a: 1}
+    key1: {r: 0.49411765, g: 0.29411766, b: 0.40784314, a: 1}
+    key2: {r: 0.8862745, g: 0.8901961, b: 0.54509807, a: 0}
     key3: {r: 0.7882353, g: 0.8862745, b: 1, a: 0}
-    key4: {r: 0.99215686, g: 0.36862746, b: 0.3254902, a: 0}
-    key5: {r: 0.11372549, g: 0.12156863, b: 0.18431373, a: 0}
-    key6: {r: 0.11372549, g: 0.12156863, b: 0.18431373, a: 0}
-    key7: {r: 0.08235294, g: 0.105882354, b: 0.32941177, a: 0}
-    ctime0: 9830
-    ctime1: 16384
-    ctime2: 22937
-    ctime3: 47609
-    ctime4: 52428
-    ctime5: 55705
-    ctime6: 60909
-    ctime7: 65535
+    key4: {r: 0.7882353, g: 0.8862745, b: 1, a: 0}
+    key5: {r: 0.90588236, g: 0.64705884, b: 0.3254902, a: 0}
+    key6: {r: 0.49411765, g: 0.29411766, b: 0.40784314, a: 0}
+    key7: {r: 0.16078432, g: 0.16078432, b: 0.39607844, a: 0}
+    ctime0: 3277
+    ctime1: 9830
+    ctime2: 16384
+    ctime3: 22937
+    ctime4: 47609
+    ctime5: 52428
+    ctime6: 55705
+    ctime7: 61680
     atime0: 0
     atime1: 65535
     atime2: 0
