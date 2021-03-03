@@ -71,8 +71,8 @@ namespace ProjectYamanote.Train
             trainAnnouncement = FindObjectOfType<TrainAnnouncement>();
             skipTrain = FindObjectOfType<SkipTrainTime>();
 
+            playerCamera.DOShakePosition(1, 3, 10, 90, true);
             waitTimeButton.interactable = false;
-
             StateMachine.Intialise(IdleState);
 
             InvokeRepeating("HandleShake", 0, 30);
@@ -162,9 +162,9 @@ namespace ProjectYamanote.Train
 
         public void HandleShake()
         {
-            if (StateMachine.CurrentState == TravellingState)
+            if (StateMachine.CurrentState.animBoolName == "travelling")
             {
-                playerCamera.DOShakePosition(1);
+                
                 Animator.SetTrigger("shake");
             }
         }
