@@ -484,7 +484,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 425660, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 425660, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2022,7 +2022,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: Shin-Aomori Station Platform
 --- !u!222 &149055853
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3853,7 +3853,7 @@ PrefabInstance:
       objectReference: {fileID: 84131685}
     - target: {fileID: 637824154574939744, guid: 75306490556f0a94ea793bbed97be06c, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 637824154574939744, guid: 75306490556f0a94ea793bbed97be06c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7571,7 +7571,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: Shin-Aomori Station Platform
 --- !u!222 &1627209989
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8700,7 +8700,7 @@ MonoBehaviour:
   miniMapVisibility: 0
   miniMapClampPosition: 0
   distanceToCameraSQR: 10000
-  computedIconScale: {x: 0, y: 0, z: 0}
+  computedIconScale: {x: 0.059958525, y: 0.059958525, z: 0.06666666}
   iconAlpha: 0
   miniMapIconScale: {x: 0.5, y: 0.5, z: 0.5}
 --- !u!114 &1902532298

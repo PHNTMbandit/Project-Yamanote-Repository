@@ -426,7 +426,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 425660, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 425660, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1746,7 +1746,7 @@ GameObject:
   - component: {fileID: 316473378}
   - component: {fileID: 316473381}
   m_Layer: 7
-  m_Name: TicketGates
+  m_Name: Art_TicketGates
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3417,7 +3417,7 @@ PrefabInstance:
       objectReference: {fileID: 285513305}
     - target: {fileID: 637824154574939744, guid: 75306490556f0a94ea793bbed97be06c, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 637824154574939744, guid: 75306490556f0a94ea793bbed97be06c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4341,7 +4341,7 @@ GameObject:
   m_Component:
   - component: {fileID: 911733769}
   m_Layer: 0
-  m_Name: Foreground
+  m_Name: Art_Foreground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4525,7 +4525,7 @@ GameObject:
   m_Component:
   - component: {fileID: 941379112}
   m_Layer: 0
-  m_Name: Background
+  m_Name: Art_Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5502,7 +5502,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1207741295}
   m_Layer: 0
-  m_Name: Floor
+  m_Name: Art_Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8052,7 +8052,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1744041765}
   m_Layer: 0
-  m_Name: LightBars
+  m_Name: Art_LightBars
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8149,7 +8149,7 @@ GameObject:
   - component: {fileID: 1761771542}
   - component: {fileID: 1761771543}
   m_Layer: 8
-  m_Name: Interior
+  m_Name: Art_Interior
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10054,7 +10054,7 @@ GameObject:
   - component: {fileID: 2037398453}
   - component: {fileID: 2037398454}
   m_Layer: 0
-  m_Name: Seats
+  m_Name: Art_Seats
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
