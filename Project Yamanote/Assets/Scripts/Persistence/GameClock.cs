@@ -10,8 +10,8 @@ namespace ProjectYamanote.Persistence
         public static int month = 12;
         public static int day = 04;
         public static int hour = 12;
-        public static int minute = 47;
-        public static int second = 50;
+        public static int minute = 00;
+        public static int second = 00;
 
         public static DateTime dateTime = new DateTime(year, month, day, hour, minute, second);
 

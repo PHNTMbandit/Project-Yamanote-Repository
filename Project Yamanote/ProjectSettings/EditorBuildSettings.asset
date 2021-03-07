@@ -23,5 +23,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Aomori City/Aomori City.unity
     guid: 234e05a33850e84409d247c55d7c48a5
+  - enabled: 1
+    path: Assets/Scenes/Flashback/Hospital/Hospital_Hallway.unity
+    guid: c083e64b103dc2b449ad24433eb6eb8d
+  - enabled: 1
+    path: Assets/Scenes/Flashback/Hospital/Hospital_Room.unity
+    guid: bc0de5bbcc2e2bf44ba79a5cf9a82dfd
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 5b44bfb62ec284f4ea597d1277ebe2a3, type: 2}
