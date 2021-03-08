@@ -80,7 +80,7 @@
     <Compile Include="Assets\Scripts\UI\Clock\RadialClock.cs" />
     <Compile Include="Assets\Scripts\Player\Player States\Sub States\PlayerIdleState.cs" />
     <Compile Include="Assets\Scripts\UI\Map\Journey Planner\ListButtonTemplate.cs" />
-    <Compile Include="Assets\Scripts\UI\MainMenuButtons.cs" />
+    <Compile Include="Assets\Scripts\UI\TitleScreenButtons.cs" />
     <Compile Include="Assets\Scripts\FX\Parallax.cs" />
     <Compile Include="Assets\Scripts\Train\TrainController.cs" />
     <Compile Include="Assets\Scripts\Routes\RouteDB.cs" />
@@ -100,7 +100,7 @@
     <Compile Include="Assets\Scripts\Station\States\Sub States\StationDepartingState.cs" />
     <Compile Include="Assets\Scripts\Player\Player States\Super States\PlayerAbilityState.cs" />
     <Compile Include="Assets\Scripts\Player\Player States\PlayerState.cs" />
-    <Compile Include="Assets\Dialogue\Lua\GameClockLua.cs" />
+    <Compile Include="Assets\Scripts\Lua\GetGameClockLua.cs" />
     <Compile Include="Assets\Scripts\Station\States\Sub States\StationArrivingState.cs" />
     <Compile Include="Assets\Scripts\Player\Player States\Sub States\PlayerSitUpState.cs" />
     <Compile Include="Assets\Scripts\Train\States\Sub States\TrainIdleState.cs" />
@@ -128,6 +128,7 @@
     <Compile Include="Assets\Scripts\Station\States\Sub States\StationArrivedState.cs" />
     <Compile Include="Assets\Scripts\Player\Player States\Sub States\PlayerPhoneOffState.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerAnimationSFX.cs" />
+    <Compile Include="Assets\Scripts\Lua\SetGameClockLua.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Physics\Characters\Daisuke\Daisuke_walk.xml" />

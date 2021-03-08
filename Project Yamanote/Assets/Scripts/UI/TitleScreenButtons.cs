@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 namespace ProjectYamanote.UI
 {
-    public class MainMenuButtons : MonoBehaviour
+    public class TitleScreenButtons : MonoBehaviour
     {
         [SerializeField] private Button _startButton;
         [SerializeField] private TextMeshProUGUI _startText;
@@ -24,7 +24,7 @@ namespace ProjectYamanote.UI
         public void New()
         {
             PlayerPrefs.DeleteAll();
-            GameClock.dateTime = new DateTime(2021, 12, 04, 5, 45, 50);
+            GameClock.dateTime = new DateTime(2021, 12, 04, 23, 45, 50);
         }
 
         public void Quit()
