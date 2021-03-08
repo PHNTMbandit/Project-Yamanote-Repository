@@ -11,6 +11,14 @@ namespace ProjectYamanote.Audio
 
         private void Awake()
         {
+            //if (instance == null)
+            //    instance = this;
+            //else
+            //{
+            //    Destroy(gameObject);
+            //    return;
+            //}
+
             foreach (Sound s in sounds)
             {
                 s.source = gameObject.AddComponent<AudioSource>();
