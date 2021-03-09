@@ -12,9 +12,14 @@ namespace ProjectYamanote.UI
         public TextMeshProUGUI stationLocText;
         public StationDB stationDB;
 
-        public void OnValueChanage(int val)
+        public void ButtonOnValueChange(int val)
         {
             stationDB.stationDatabase[val].mapIcon.GetComponent<Button>().onClick.Invoke();
+        }
+
+        public void DropDownOnValueChange()
+        {
+            stationDB.stationDatabase[stationDropdown.value].mapIcon.GetComponent<Button>().onClick.Invoke();
         }
     }
 }

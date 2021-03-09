@@ -260,7 +260,6 @@ GameObject:
   - component: {fileID: 637824154574939743}
   - component: {fileID: 637824154574939742}
   - component: {fileID: 3049614041797014366}
-  - component: {fileID: 2000074991123423475}
   - component: {fileID: 7847047156534390743}
   - component: {fileID: 186424547}
   - component: {fileID: 637824154574939735}
@@ -279,6 +278,7 @@ GameObject:
   - component: {fileID: 793508110}
   - component: {fileID: 793508111}
   - component: {fileID: 793508126}
+  - component: {fileID: 793508121}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -556,21 +556,8 @@ MonoBehaviour:
   menu: {fileID: 0}
   actionText: {fileID: 637824153850452353}
   playerData: {fileID: 11400000, guid: adba6c4b302d28f4ea3e69b42db3d635, type: 2}
-  audioManager: {fileID: 0}
+  audioManager: {fileID: 793508121}
   playerCollider: {fileID: 204354519211235701}
---- !u!114 &2000074991123423475
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 637824154574939746}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51ea5981f38a94240a5345542cbe3358, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioManager: {fileID: 0}
 --- !u!114 &7847047156534390743
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1027,6 +1014,47 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e82ccbd1fc144d9e8e6ff5d06c99a412, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &793508121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 637824154574939746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8040c2fef82432f43b49100f78504770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Walk
+    clip: {fileID: 8300000, guid: ef3e53be745ff584480a3a13787f059c, type: 3}
+    outputAudioMixerGroup: {fileID: 4163534561498899703, guid: e85ad7a30db4bec4781dc2acc04780d0, type: 2}
+    volume: 0.7
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: PhoneOn
+    clip: {fileID: 8300000, guid: dcd7433a032189b4b881297e2c381bc5, type: 3}
+    outputAudioMixerGroup: {fileID: 4163534561498899703, guid: e85ad7a30db4bec4781dc2acc04780d0, type: 2}
+    volume: 0.1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: PhoneOff
+    clip: {fileID: 8300000, guid: 305cb325e71c10247bcd1d3ee74f0b77, type: 3}
+    outputAudioMixerGroup: {fileID: 4163534561498899703, guid: e85ad7a30db4bec4781dc2acc04780d0, type: 2}
+    volume: 0.1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: ClickButton
+    clip: {fileID: 8300000, guid: 100c0c72a3698f94f9a6223f13b04aec, type: 3}
+    outputAudioMixerGroup: {fileID: 4163534561498899703, guid: e85ad7a30db4bec4781dc2acc04780d0, type: 2}
+    volume: 0.1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
 --- !u!1 &3981554820414007042
 GameObject:
   m_ObjectHideFlags: 0
