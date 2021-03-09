@@ -61,7 +61,7 @@
     <Compile Include="Assets\Scripts\Custom Saver\StationStateSaver.cs" />
     <Compile Include="Assets\Scripts\Station\States\Sub States\StationIdleState.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
-    <Compile Include="Assets\Scripts\Lua\SetGameClockLua.cs" />
+    <Compile Include="Assets\Scripts\Dialogue System\SetGameClockLua.cs" />
     <Compile Include="Assets\Scripts\Custom Saver\TrainStateSaver.cs" />
     <Compile Include="Assets\Scripts\Player\ActionText.cs" />
     <Compile Include="Assets\Scripts\UI\Map\StationLookup.cs" />
@@ -101,7 +101,7 @@
     <Compile Include="Assets\Scripts\Station\States\Sub States\StationDepartingState.cs" />
     <Compile Include="Assets\Scripts\Player\Player States\Super States\PlayerAbilityState.cs" />
     <Compile Include="Assets\Scripts\Player\Player States\PlayerState.cs" />
-    <Compile Include="Assets\Scripts\Lua\GetGameClockLua.cs" />
+    <Compile Include="Assets\Scripts\Dialogue System\GetGameClockLua.cs" />
     <Compile Include="Assets\Scripts\Station\States\Sub States\StationArrivingState.cs" />
     <Compile Include="Assets\Scripts\Player\Player States\Sub States\PlayerSitUpState.cs" />
     <Compile Include="Assets\Scripts\Train\States\Sub States\TrainIdleState.cs" />
