@@ -8,10 +8,15 @@ namespace ProjectYamanote.FX
     {
         public Light2D worldLight;
         public Gradient worldLightGradient;
-        public Gradient alphaGradient;
         public Camera gameCamera;
-        public Material material;
-        public string colourPropertyName;
+
+        [Header("Skies")]
+        public GameObject dawn;
+        public GameObject morning;
+        public GameObject midday;
+        public GameObject evening;
+        public GameObject dusk;
+        public GameObject midnight;
 
         [SerializeField] private GameObject[] mapLights;
 
@@ -30,8 +35,6 @@ namespace ProjectYamanote.FX
             float t = Mathf.InverseLerp(0.0f, 1440.0f, (float)GameClock.dateTime.TimeOfDay.TotalMinutes);
             worldLight.color = worldLightGradient.Evaluate(t);
             gameCamera.backgroundColor = worldLightGradient.Evaluate(t);
-
-            material.SetColor(colourPropertyName, alphaGradient.Evaluate(t));
         }
 
         private void ControlLightMaps(bool status)
