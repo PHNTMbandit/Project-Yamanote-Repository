@@ -4,11 +4,15 @@ using UnityEngine.Experimental.Rendering.Universal;
 
 namespace ProjectYamanote.FX
 {
-    public class DayNightCycle : MonoBehaviour
+    public class DayNightCycleController : MonoBehaviour
     {
         public Light2D worldLight;
-        public Gradient gradient;
+        public Gradient worldLightGradient;
+        public Gradient alphaGradient;
         public Camera gameCamera;
+        public Material material;
+        public string colourPropertyName;
+
         [SerializeField] private GameObject[] mapLights;
 
         private void Start()
@@ -24,8 +28,10 @@ namespace ProjectYamanote.FX
                 ControlLightMaps(false);
 
             float t = Mathf.InverseLerp(0.0f, 1440.0f, (float)GameClock.dateTime.TimeOfDay.TotalMinutes);
-            worldLight.color = gradient.Evaluate(t);
-            gameCamera.backgroundColor = gradient.Evaluate(t);
+            worldLight.color = worldLightGradient.Evaluate(t);
+            gameCamera.backgroundColor = worldLightGradient.Evaluate(t);
+
+            material.SetColor(colourPropertyName, alphaGradient.Evaluate(t));
         }
 
         private void ControlLightMaps(bool status)

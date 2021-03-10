@@ -8838,6 +8838,22 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6287947794262656060, guid: 23710ccae55ab36409f920be499aacce, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6287947794262656060, guid: 23710ccae55ab36409f920be499aacce, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6287947794262656060, guid: 23710ccae55ab36409f920be499aacce, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2086295153}
+    - target: {fileID: 6287947794262656060, guid: 23710ccae55ab36409f920be499aacce, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6287947794262656450, guid: 23710ccae55ab36409f920be499aacce, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -8857,6 +8873,14 @@ PrefabInstance:
     - target: {fileID: 6287947794262656451, guid: 23710ccae55ab36409f920be499aacce, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -45.6325
+      objectReference: {fileID: 0}
+    - target: {fileID: 6287947794465627332, guid: 23710ccae55ab36409f920be499aacce, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6287947794465627334, guid: 23710ccae55ab36409f920be499aacce, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6287947795391864096, guid: 23710ccae55ab36409f920be499aacce, type: 3}
       propertyPath: m_AnchorMax.x
@@ -17193,7 +17217,7 @@ MonoBehaviour:
   miniMapVisibility: 0
   miniMapClampPosition: 0
   distanceToCameraSQR: 10022.444
-  computedIconScale: {x: 0.89937794, y: 0.89937794, z: 1}
+  computedIconScale: {x: 0, y: 0, z: 0}
   iconAlpha: 0
   miniMapIconScale: {x: 0.5, y: 0.5, z: 0.5}
 --- !u!114 &1853363694
@@ -18359,6 +18383,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9a9540f98bb79346b296ec5feb51073, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2086295153 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3466348437049502999, guid: 23710ccae55ab36409f920be499aacce, type: 3}
+  m_PrefabInstance: {fileID: 598852439}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31c1ca5bbd9a1ca44a3b0559d3f092a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2086720025
