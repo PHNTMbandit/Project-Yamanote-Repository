@@ -18,6 +18,7 @@ namespace ProjectYamanote.FX
         public SpriteRenderer evening;
         public SpriteRenderer dusk;
         public SpriteRenderer midnight;
+        public SpriteRenderer stars;
 
         private Color _dawnColour;
         private Color _morningColour;
@@ -25,6 +26,7 @@ namespace ProjectYamanote.FX
         private Color _eveningColour;
         private Color _duskColour;
         private Color _midnightColour;
+        private Color _starsColour;
 
         [SerializeField] private AnimationCurve _dawnCurve;
         [SerializeField] private AnimationCurve _morningCurve;
@@ -44,6 +46,7 @@ namespace ProjectYamanote.FX
             evening = evening.GetComponent<SpriteRenderer>();
             dusk = dusk.GetComponent<SpriteRenderer>();
             midnight = midnight.GetComponent<SpriteRenderer>();
+            stars = stars.GetComponent<SpriteRenderer>();
 
             _dawnColour = dawn.color;
             _morningColour = morning.color;
@@ -51,6 +54,7 @@ namespace ProjectYamanote.FX
             _eveningColour = evening.color;
             _duskColour = dusk.color;
             _midnightColour = midnight.color;
+            _starsColour = stars.color;
         }
 
         private void Update()
@@ -84,6 +88,9 @@ namespace ProjectYamanote.FX
 
             _midnightColour.a = _midnightCurve.Evaluate(t);
             midnight.color = _midnightColour;
+
+            _starsColour.a = _midnightCurve.Evaluate(t);
+            stars.color = _starsColour;
             #endregion
         }
 
