@@ -28805,6 +28805,860 @@ MonoBehaviour:
       transferTimeArrive: 23:45
       transferTimeDepart: 7:06
       transferTrainLine: Shinkansen Yamabiko 97
+  - originStation: 2
+    destinationStation: 12
+    journeyCost: 8570
+    timeDepart: 6:51
+    timeArrive: 8:38
+    trainLine: Shinkansen Yamabiko 202
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 12
+    journeyCost: 8570
+    timeDepart: 7:04
+    timeArrive: 8:57
+    trainLine: Shinkansen Yamabiko 204
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 12
+    journeyCost: 8570
+    timeDepart: 7:38
+    timeArrive: 9:34
+    trainLine: Shinkansen Yamabiko 206
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 12
+    journeyCost: 8570
+    timeDepart: 8:14
+    timeArrive: 9:50
+    trainLine: Shinkansen Yamabiko 122
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 12
+    journeyCost: 8570
+    timeDepart: 6:16
+    timeArrive: 9:59
+    trainLine: JP Tohoku Line
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 7:39
+      transferTimeDepart: 8:02
+      transferTrainLine: Shinkansen Hayabusa 4
+  - originStation: 2
+    destinationStation: 12
+    journeyCost: 8570
+    timeDepart: 8:31
+    timeArrive: 10:22
+    trainLine: Shinkansen Yamabiko 208
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 12
+    journeyCost: 8570
+    timeDepart: 9:17
+    timeArrive: 10:48
+    trainLine: Shinkansen Yamabiko 124
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 12
+    journeyCost: 8570
+    timeDepart: 9:23
+    timeArrive: 10:58
+    trainLine: Shinkansen Yamabiko 50
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 12
+    journeyCost: 8570
+    timeDepart: 9:40
+    timeArrive: 11:22
+    trainLine: Shinkansen Yamabiko 210
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 12
+    journeyCost: 12300
+    timeDepart: 8:07
+    timeArrive: 11:38
+    trainLine: JP Tohoku Line
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 9:28
+      transferTimeDepart: 9:46
+      transferTrainLine: Shinkansen Komachi 10
+  - originStation: 2
+    destinationStation: 12
+    journeyCost: 12300
+    timeDepart: 8:55
+    timeArrive: 12:30
+    trainLine: Sendai-City-Rabbit 1
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 10:12
+      transferTimeDepart: 10:29
+      transferTrainLine: Shinkansen Hayabusa 108
+  - originStation: 2
+    destinationStation: 12
+    journeyCost: 8570
+    timeDepart: 10:16
+    timeArrive: 11:50
+    trainLine: Shinkansen Yamabiko 128
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 12
+    journeyCost: 8570
+    timeDepart: 10:27
+    timeArrive: 11:57
+    trainLine: Shinkansen Yamabiko 130
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 12
+    journeyCost: 8570
+    timeDepart: 11:16
+    timeArrive: 12:50
+    trainLine: Shinkansen Yamabiko 132
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 12
+    journeyCost: 8570
+    timeDepart: 11:27
+    timeArrive: 12:58
+    trainLine: Shinkansen Yamabiko 134
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 12
+    journeyCost: 8570
+    timeDepart: 11:38
+    timeArrive: 13:22
+    trainLine: Shinkansen Yamabiko 14
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 12
+    journeyCost: 12300
+    timeDepart: 10:39
+    timeArrive: 14:38
+    trainLine: Sendai-City-Rabbit 3
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 11:55
+      transferTimeDepart: 12:46
+      transferTrainLine: Shinkansen Komachi 18
+  - originStation: 2
+    destinationStation: 12
+    journeyCost: 8570
+    timeDepart: 12:16
+    timeArrive: 13:50
+    trainLine: Shinkansen Yamabiko 136
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 12
+    journeyCost: 8570
+    timeDepart: 12:27
+    timeArrive: 13:58
+    trainLine: Shinkansen Yamabiko 52
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 12
+    journeyCost: 8570
+    timeDepart: 13:16
+    timeArrive: 14:50
+    trainLine: Shinkansen Yamabiko 138
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 12
+    journeyCost: 8570
+    timeDepart: 13:27
+    timeArrive: 14:57
+    trainLine: Shinkansen Yamabiko 54
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 12
+    journeyCost: 8570
+    timeDepart: 13:35
+    timeArrive: 15:22
+    trainLine: Shinkansen Yamabiko 16
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 12
+    journeyCost: 12300
+    timeDepart: 12:40
+    timeArrive: 16:38
+    trainLine: Sendai-City-Rabbit 5
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 13:55
+      transferTimeDepart: 14:46
+      transferTrainLine: Shinkansen Komachi 24
+  - originStation: 2
+    destinationStation: 12
+    journeyCost: 8570
+    timeDepart: 14:16
+    timeArrive: 15:50
+    trainLine: Shinkansen Yamabiko 140
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 12
+    journeyCost: 8570
+    timeDepart: 14:27
+    timeArrive: 15:58
+    trainLine: Shinkansen Yamabiko 56
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 12
+    journeyCost: 8570
+    timeDepart: 15:16
+    timeArrive: 16:50
+    trainLine: Shinkansen Yamabiko 142
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 12
+    journeyCost: 8570
+    timeDepart: 15:27
+    timeArrive: 16:58
+    trainLine: Shinkansen Yamabiko 58
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 12
+    journeyCost: 8570
+    timeDepart: 15:33
+    timeArrive: 17:22
+    trainLine: Shinkansen Yamabiko 18
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 12
+    journeyCost: 12300
+    timeDepart: 14:39
+    timeArrive: 18:06
+    trainLine: JP Tohoku Line
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 16:02
+      transferTimeDepart: 17:17
+      transferTrainLine: Shinkansen Hayabusa 30
+  - originStation: 2
+    destinationStation: 12
+    journeyCost: 12300
+    timeDepart: 14:39
+    timeArrive: 18:38
+    trainLine: JP Tohoku Line
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 16:02
+      transferTimeDepart: 16:46
+      transferTrainLine: Shinkansen Komachi 32
+  - originStation: 2
+    destinationStation: 12
+    journeyCost: 8570
+    timeDepart: 16:16
+    timeArrive: 17:50
+    trainLine: Shinkansen Yamabiko 144
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 16:02
+      transferTimeDepart: 16:46
+      transferTrainLine: Shinkansen Komachi 32
+  - originStation: 2
+    destinationStation: 12
+    journeyCost: 8570
+    timeDepart: 16:27
+    timeArrive: 17:58
+    trainLine: Shinkansen Yamabiko 60
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 16:02
+      transferTimeDepart: 16:46
+      transferTrainLine: Shinkansen Komachi 32
+  - originStation: 2
+    destinationStation: 12
+    journeyCost: 8570
+    timeDepart: 17:18
+    timeArrive: 18:50
+    trainLine: Shinkansen Yamabiko 146
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 16:02
+      transferTimeDepart: 16:46
+      transferTrainLine: Shinkansen Komachi 32
+  - originStation: 2
+    destinationStation: 12
+    journeyCost: 8570
+    timeDepart: 17:27
+    timeArrive: 19:02
+    trainLine: Shinkansen Yamabiko 62
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 16:02
+      transferTimeDepart: 16:46
+      transferTrainLine: Shinkansen Komachi 32
+  - originStation: 2
+    destinationStation: 12
+    journeyCost: 8570
+    timeDepart: 18:16
+    timeArrive: 19:54
+    trainLine: Shinkansen Yamabiko 150
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 16:02
+      transferTimeDepart: 16:46
+      transferTrainLine: Shinkansen Komachi 32
+  - originStation: 2
+    destinationStation: 12
+    journeyCost: 12300
+    timeDepart: 16:42
+    timeArrive: 20:38
+    trainLine: JP Tohoku Line
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 18:05
+      transferTimeDepart: 18:46
+      transferTrainLine: Shinkansen Komachi 38
+  - originStation: 2
+    destinationStation: 12
+    journeyCost: 8570
+    timeDepart: 19:06
+    timeArrive: 20:46
+    trainLine: Shinkansen Yamabiko 152
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 12
+    journeyCost: 8570
+    timeDepart: 19:17
+    timeArrive: 20:58
+    trainLine: Shinkansen Yamabiko 154
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 12
+    journeyCost: 8570
+    timeDepart: 19:35
+    timeArrive: 21:14
+    trainLine: Shinkansen Yamabiko 218
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 12
+    journeyCost: 8570
+    timeDepart: 19:59
+    timeArrive: 21:34
+    trainLine: Shinkansen Yamabiko 64
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 12
+    journeyCost: 12300
+    timeDepart: 18:35
+    timeArrive: 22:00
+    trainLine: JP Tohoku Line
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 19:56
+      transferTimeDepart: 20:09
+      transferTrainLine: Shinkansen Hayabusa 44
+  - originStation: 2
+    destinationStation: 12
+    journeyCost: 12300
+    timeDepart: 18:35
+    timeArrive: 22:46
+    trainLine: JP Tohoku Line
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 19:56
+      transferTimeDepart: 20:47
+      transferTrainLine: Shinkansen Komachi 46
+  - originStation: 2
+    destinationStation: 12
+    journeyCost: 8570
+    timeDepart: 20:35
+    timeArrive: 22:14
+    trainLine: Shinkansen Yamabiko 220
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 12
+    journeyCost: 8570
+    timeDepart: 20:57
+    timeArrive: 22:22
+    trainLine: Shinkansen Yamabiko 156
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 12
+    journeyCost: 8570
+    timeDepart: 21:04
+    timeArrive: 22:38
+    trainLine: Shinkansen Yamabiko 66
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 12
+    journeyCost: 8570
+    timeDepart: 21:36
+    timeArrive: 23:02
+    trainLine: Shinkansen Tsubasa 158
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 12
+    journeyCost: 8570
+    timeDepart: 21:45
+    timeArrive: 23:18
+    trainLine: Shinkansen Yamabiko 68
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 12
+    journeyCost: 12300
+    timeDepart: 22:01
+    timeArrive: 8:31
+    trainLine: JP Tohoku Line
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 23:21
+      transferTimeDepart: 6:36
+      transferTrainLine: Shinkansen Hayabusa 2
+  - originStation: 2
+    destinationStation: 12
+    journeyCost: 12300
+    timeDepart: 22:01
+    timeArrive: 10:37
+    trainLine: JP Tohoku Line
+    numberOfTransfers:
+    - transferStation: 13
+      transferTimeArrive: 23:21
+      transferTimeDepart: 8:35
+      transferTrainLine: Shinkansen Komachi 6
+  - originStation: 2
+    destinationStation: 13
+    journeyCost: 1340
+    timeDepart: 6:16
+    timeArrive: 7:39
+    trainLine: JP Tohoku Line
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 13
+    journeyCost: 3210
+    timeDepart: 7:30
+    timeArrive: 8:10
+    trainLine: Shinkansen Yamabiko 291
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 13
+    journeyCost: 1340
+    timeDepart: 7:03
+    timeArrive: 8:27
+    trainLine: JP Tohoku Line
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 13
+    journeyCost: 1340
+    timeDepart: 8:00
+    timeArrive: 8:41
+    trainLine: Shinkansen Yamabiko 51
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 13
+    journeyCost: 1340
+    timeDepart: 7:47
+    timeArrive: 9:08
+    trainLine: JP Tohoku Line
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 13
+    journeyCost: 3210
+    timeDepart: 8:26
+    timeArrive: 9:09
+    trainLine: Shinkansen Yamabiko 293
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 13
+    journeyCost: 3740
+    timeDepart: 8:36
+    timeArrive: 9:16
+    trainLine: Shinkansen Yamabiko 201
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 13
+    journeyCost: 1340
+    timeDepart: 8:07
+    timeArrive: 9:28
+    trainLine: JP Tohoku Line
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 13
+    journeyCost: 3740
+    timeDepart: 9:01
+    timeArrive: 9:39
+    trainLine: Shinkansen Yamabiko 203
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 13
+    journeyCost: 4370
+    timeDepart: 12:35
+    timeArrive: 15:13
+    trainLine: Shinkansen Tsubasa 133
+    numberOfTransfers:
+    - transferStation: 17
+      transferTimeArrive: 13:44
+      transferTimeDepart: 13:55
+      transferTrainLine: JP Senzan Line Rapid
+  - originStation: 2
+    destinationStation: 13
+    journeyCost: 3740
+    timeDepart: 9:40
+    timeArrive: 10:21
+    trainLine: Shinkansen Yamabiko 125
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 13
+    journeyCost: 3740
+    timeDepart: 9:55
+    timeArrive: 10:55
+    trainLine: Shinkansen Yamabiko 123
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 13
+    journeyCost: 3740
+    timeDepart: 10:16
+    timeArrive: 11:00
+    trainLine: Shinkansen Yamabiko 205
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 13
+    journeyCost: 3740
+    timeDepart: 10:35
+    timeArrive: 11:16
+    trainLine: Shinkansen Yamabiko 127
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 13
+    journeyCost: 1340
+    timeDepart: 10:39
+    timeArrive: 11:55
+    trainLine: Sendai-City-Rabbit 3
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 13
+    journeyCost: 1340
+    timeDepart: 12:40
+    timeArrive: 13:55
+    trainLine: Sendai-City-Rabbit 5
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 13
+    journeyCost: 4370
+    timeDepart: 11:35
+    timeArrive: 14:16
+    trainLine: Shinkansen Tsubasa 129
+    numberOfTransfers:
+    - transferStation: 17
+      transferTimeArrive: 12:44
+      transferTimeDepart: 12:56
+      transferTrainLine: JP Senzan Line
+  - originStation: 2
+    destinationStation: 13
+    journeyCost: 3740
+    timeDepart: 11:37
+    timeArrive: 12:21
+    trainLine: Shinkansen Yamabiko 129
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 13
+    journeyCost: 3740
+    timeDepart: 11:44
+    timeArrive: 12:25
+    trainLine: Shinkansen Yamabiko 55
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 13
+    journeyCost: 3740
+    timeDepart: 12:36
+    timeArrive: 13:20
+    trainLine: Shinkansen Yamabiko 133
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 13
+    journeyCost: 3740
+    timeDepart: 12:44
+    timeArrive: 13:25
+    trainLine: Shinkansen Yamabiko 57
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 13
+    journeyCost: 1340
+    timeDepart: 12:40
+    timeArrive: 13:55
+    trainLine: Sendai-City-Rabbit 5
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 13
+    journeyCost: 3740
+    timeDepart: 13:14
+    timeArrive: 13:56
+    trainLine: Shinkansen Yamabiko 207
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 13
+    journeyCost: 1340
+    timeDepart: 13:45
+    timeArrive: 15:08
+    trainLine: JP Tohoku Line
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 13
+    journeyCost: 1340
+    timeDepart: 14:39
+    timeArrive: 16:02
+    trainLine: JP Tohoku Line
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 13
+    journeyCost: 4370
+    timeDepart: 13:36
+    timeArrive: 16:25
+    trainLine: Shinkansen Tsubasa 135
+    numberOfTransfers:
+    - transferStation: 17
+      transferTimeArrive: 14:44
+      transferTimeDepart: 14:56
+      transferTrainLine: JP Senzan Line
+  - originStation: 2
+    destinationStation: 13
+    journeyCost: 3740
+    timeDepart: 14:37
+    timeArrive: 15:20
+    trainLine: Shinkansen Yamabiko 137
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 13
+    journeyCost: 3740
+    timeDepart: 14:44
+    timeArrive: 15:25
+    trainLine: Shinkansen Yamabiko 61
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 13
+    journeyCost: 3740
+    timeDepart: 14:44
+    timeArrive: 15:25
+    trainLine: Shinkansen Yamabiko 61
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 13
+    journeyCost: 3740
+    timeDepart: 15:17
+    timeArrive: 15:57
+    trainLine: Shinkansen Yamabiko 209
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 13
+    journeyCost: 1340
+    timeDepart: 14:39
+    timeArrive: 16:02
+    trainLine: JP Tohoku Line
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 13
+    journeyCost: 3740
+    timeDepart: 15:36
+    timeArrive: 16:20
+    trainLine: Shinkansen Yamabiko 139
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 13
+    journeyCost: 3740
+    timeDepart: 15:44
+    timeArrive: 16:26
+    trainLine: Shinkansen Yamabiko 63
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 13
+    journeyCost: 1340
+    timeDepart: 15:45
+    timeArrive: 17:09
+    trainLine: JP Tohoku Line
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 13
+    journeyCost: 1340
+    timeDepart: 16:42
+    timeArrive: 18:05
+    trainLine: JP Tohoku Line
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 13
+    journeyCost: 4370
+    timeDepart: 16:35
+    timeArrive: 19:13
+    trainLine: Shinkansen Tsubasa 141
+    numberOfTransfers:
+    - transferStation: 17
+      transferTimeArrive: 17:46
+      transferTimeDepart: 17:59
+      transferTrainLine: JP Senzan Line Rapid
+  - originStation: 2
+    destinationStation: 13
+    journeyCost: 3740
+    timeDepart: 16:36
+    timeArrive: 17:20
+    trainLine: Shinkansen Yamabiko 141
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 13
+    journeyCost: 3740
+    timeDepart: 16:44
+    timeArrive: 17:26
+    trainLine: Shinkansen Yamabiko 65
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 13
+    journeyCost: 3740
+    timeDepart: 17:15
+    timeArrive: 17:54
+    trainLine: Shinkansen Yamabiko 211
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 13
+    journeyCost: 1340
+    timeDepart: 16:42
+    timeArrive: 18:05
+    trainLine: JP Tohoku Line
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 13
+    journeyCost: 3740
+    timeDepart: 17:36
+    timeArrive: 18:18
+    trainLine: Shinkansen Yamabiko 143
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 13
+    journeyCost: 3740
+    timeDepart: 17:44
+    timeArrive: 18:21
+    trainLine: Shinkansen Yamabiko 67
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 13
+    journeyCost: 3740
+    timeDepart: 17:35
+    timeArrive: 18:58
+    trainLine: JP Tohoku Line
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 13
+    journeyCost: 1340
+    timeDepart: 18:35
+    timeArrive: 19:56
+    trainLine: JP Tohoku Line
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 13
+    journeyCost: 1340
+    timeDepart: 19:37
+    timeArrive: 20:56
+    trainLine: JP Tohoku Line
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 13
+    journeyCost: 3740
+    timeDepart: 18:39
+    timeArrive: 19:23
+    trainLine: Shinkansen Yamabiko 145
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 13
+    journeyCost: 3740
+    timeDepart: 18:45
+    timeArrive: 19:26
+    trainLine: Shinkansen Yamabiko 147
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 13
+    journeyCost: 3740
+    timeDepart: 19:17
+    timeArrive: 19:56
+    trainLine: Shinkansen Yamabiko 213
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 13
+    journeyCost: 1340
+    timeDepart: 18:35
+    timeArrive: 19:56
+    trainLine: JP Tohoku Line
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 13
+    journeyCost: 3740
+    timeDepart: 19:44
+    timeArrive: 20:27
+    trainLine: Shinkansen Yamabiko 149
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 13
+    journeyCost: 3740
+    timeDepart: 20:11
+    timeArrive: 20:56
+    trainLine: Shinkansen Yamabiko 215
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 13
+    journeyCost: 1340
+    timeDepart: 19:37
+    timeArrive: 20:56
+    trainLine: JP Tohoku Line
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 13
+    journeyCost: 1340
+    timeDepart: 20:51
+    timeArrive: 22:11
+    trainLine: JP Tohoku Line
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 13
+    journeyCost: 1340
+    timeDepart: 22:01
+    timeArrive: 23:21
+    trainLine: JP Tohoku Line
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 13
+    journeyCost: 3740
+    timeDepart: 20:37
+    timeArrive: 21:20
+    trainLine: Shinkansen Yamabiko 153
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 13
+    journeyCost: 3740
+    timeDepart: 20:50
+    timeArrive: 21:33
+    trainLine: Shinkansen Yamabiko 217
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 13
+    journeyCost: 1340
+    timeDepart: 20:51
+    timeArrive: 22:11
+    trainLine: JP Tohoku Line
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 13
+    journeyCost: 3740
+    timeDepart: 21:47
+    timeArrive: 22:30
+    trainLine: Shinkansen Yamabiko 219
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 13
+    journeyCost: 3740
+    timeDepart: 22:20
+    timeArrive: 23:02
+    trainLine: Shinkansen Yamabiko 157
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 13
+    journeyCost: 1340
+    timeDepart: 22:01
+    timeArrive: 23:21
+    trainLine: JP Tohoku Line
+    numberOfTransfers: []
+  - originStation: 2
+    destinationStation: 13
+    journeyCost: 3740
+    timeDepart: 23:04
+    timeArrive: 23:45
+    trainLine: Shinkansen Yamabiko 221
+    numberOfTransfers: []
 --- !u!1 &6287947793790747802
 GameObject:
   m_ObjectHideFlags: 0

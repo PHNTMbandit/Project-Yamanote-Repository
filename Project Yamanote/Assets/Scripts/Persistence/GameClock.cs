@@ -15,9 +15,18 @@ namespace ProjectYamanote.Persistence
 
         public static DateTime dateTime = new DateTime(year, month, day, hour, minute, second);
 
+        public bool fastForwardClock;
+
         private void Start()
         {
             StartCoroutine(ClockCounter());
+        }
+        public void Update()
+        {
+            if (fastForwardClock == true)
+                StartCoroutine(FastForwardClock());
+            else
+                StopCoroutine(FastForwardClock());
         }
 
         public IEnumerator ClockCounter()
@@ -29,5 +38,17 @@ namespace ProjectYamanote.Persistence
                 yield return new WaitForSeconds(1);
             }
         }
+
+        public IEnumerator FastForwardClock()
+        {
+            while (fastForwardClock == true)
+            {
+                dateTime = dateTime.AddSeconds(1);
+                print(dateTime.TimeOfDay);
+
+                yield return null;
+            }
+        }
+
     }
 }
