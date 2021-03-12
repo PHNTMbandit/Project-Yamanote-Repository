@@ -113,12 +113,12 @@ MonoBehaviour:
     m_NumColorKeys: 8
     m_NumAlphaKeys: 2
   gameCamera: {fileID: 0}
-  dawn: {fileID: 5860381671267572787}
-  morning: {fileID: 5860381672737713402}
-  midday: {fileID: 5860381671060102477}
+  dawn: {fileID: 5860381671060102477}
+  morning: {fileID: 5860381671164577369}
+  midday: {fileID: 5860381671267572787}
   evening: {fileID: 5860381672474226681}
-  dusk: {fileID: 5860381672847605317}
-  midnight: {fileID: 5860381671164577369}
+  dusk: {fileID: 5860381672737713402}
+  midnight: {fileID: 5860381672847605317}
   stars: {fileID: 1576414346950595093}
   _dawnCurve:
     serializedVersion: 2
@@ -454,7 +454,7 @@ MonoBehaviour:
   m_Color: {r: 0.78823537, g: 0.8862746, b: 1, a: 1}
   m_Intensity: 0.8
   m_LightVolumeOpacity: 0
-  m_ApplyToSortingLayers: 93c7ccf5e962273de5495327efb3e7effdea115a953c290ba756bcc97d3659a76fe7b8b23d7d9be46bf749b0e3c57254
+  m_ApplyToSortingLayers: 93c7ccf5e962273de5495327efb3e7effdea115a953c290ba756bcc97d3659a76fe7b8b23d7d9be46bf749b0
   m_LightCookieSprite: {fileID: 0}
   m_UseNormalMap: 0
   m_LightOrder: 0
@@ -503,7 +503,7 @@ Transform:
   m_GameObject: {fileID: 1147693646292040485}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2738.309, y: 112.364044, z: 1}
   m_Children: []
   m_Father: {fileID: 1812756348921844015}
   m_RootOrder: 5
@@ -552,7 +552,7 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
-  m_DrawMode: 2
+  m_DrawMode: 0
   m_Size: {x: 27.38309, y: 5.618202}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
@@ -585,7 +585,7 @@ Transform:
   m_GameObject: {fileID: 2957915590895089640}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2738.309, y: 112.364044, z: 1}
   m_Children: []
   m_Father: {fileID: 1812756348921844015}
   m_RootOrder: 2
@@ -634,7 +634,7 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
-  m_DrawMode: 2
+  m_DrawMode: 0
   m_Size: {x: 27.38309, y: 5.618202}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
@@ -840,7 +840,7 @@ Transform:
   m_GameObject: {fileID: 4449604760866918611}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2738.309, y: 112.364044, z: 1}
   m_Children: []
   m_Father: {fileID: 1812756348921844015}
   m_RootOrder: 3
@@ -889,7 +889,7 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
-  m_DrawMode: 2
+  m_DrawMode: 0
   m_Size: {x: 27.38309, y: 5.618202}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
@@ -922,7 +922,7 @@ Transform:
   m_GameObject: {fileID: 4676610152196403808}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2738.309, y: 112.364044, z: 1}
   m_Children: []
   m_Father: {fileID: 1812756348921844015}
   m_RootOrder: 4
@@ -971,7 +971,7 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
-  m_DrawMode: 2
+  m_DrawMode: 0
   m_Size: {x: 27.38309, y: 5.618202}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
@@ -1004,7 +1004,7 @@ Transform:
   m_GameObject: {fileID: 8414901727744501234}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2738.309, y: 112.364044, z: 1}
   m_Children: []
   m_Father: {fileID: 1812756348921844015}
   m_RootOrder: 1
@@ -1053,7 +1053,7 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
-  m_DrawMode: 2
+  m_DrawMode: 0
   m_Size: {x: 27.38309, y: 5.618202}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
@@ -1086,7 +1086,7 @@ Transform:
   m_GameObject: {fileID: 8514484259000662737}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2738.309, y: 112.364044, z: 1}
   m_Children: []
   m_Father: {fileID: 1812756348921844015}
   m_RootOrder: 0
@@ -1135,7 +1135,7 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
-  m_DrawMode: 2
+  m_DrawMode: 0
   m_Size: {x: 27.38309, y: 5.618202}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
