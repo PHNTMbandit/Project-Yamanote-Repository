@@ -76,6 +76,7 @@
     <Compile Include="Assets\Scripts\Player\Player States\Sub States\PlayerSitDownState.cs" />
     <Compile Include="Assets\Scripts\Station\StationController.cs" />
     <Compile Include="Assets\Scripts\Train\States\Super States\TrainInsideState.cs" />
+    <Compile Include="Assets\Scripts\FX\SpriteMovement.cs" />
     <Compile Include="Assets\Scripts\Custom Saver\TimeSaver.cs" />
     <Compile Include="Assets\Scripts\Train\States\TrainStateMachine.cs" />
     <Compile Include="Assets\Scripts\UI\Clock\RadialClock.cs" />
@@ -125,6 +126,7 @@
     <Compile Include="Assets\Dialogue\Dialogue System Examples\Screen Space Bubble Example\UIFollowObject.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerData.cs" />
     <Compile Include="Assets\Scripts\UI\Calendar\Calendar.cs" />
+    <Compile Include="Assets\Scripts\FX\SpriteDuplicator.cs" />
     <Compile Include="Assets\Scripts\Triggers\CinemachineTrigger.cs" />
     <Compile Include="Assets\Scripts\Station\States\Sub States\StationArrivedState.cs" />
     <Compile Include="Assets\Scripts\Player\Player States\Sub States\PlayerPhoneOffState.cs" />
